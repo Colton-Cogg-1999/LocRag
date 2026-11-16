@@ -11,27 +11,27 @@ nothing. This project tests what that threshold leaves out. It compares fuzzy ma
 embedding-based semantic search, first as retrievers and then as sources of in-context examples for an LLM
 translator.
 
-Main observations:
+**Main finding: the 75% threshold throws away reusable translations, and semantic search recovers them.**
 
-1. **Fuzzy matching does not recover reworded content.** On 160 controlled probes, the correct TM entry was
-   ranked first in 25% (paraphrase) and 53% (restructured) of cases by fuzzy matching, against 95–100% for
-   three embedding models. None of the paraphrased or restructured probes reached the 75% CAT threshold.
-2. **Above about 85% fuzzy, semantic search adds nothing.** Translation quality with fuzzy-retrieved examples
-   was equal to or better than with semantic examples. Over all bands the two did not differ significantly (p = 0.31).
-3. **Below the threshold, semantic retrieval is measurably useful in some cases.** Of 300 real segments with no
-   fuzzy match ≥ 75%, semantic search found a candidate (cosine ≥ 0.80) for 85 (28%). On those 85, a blind
-   judge preferred translations that used the retrieved examples over zero-shot translations 50 : 13
-   (p ≈ 3×10⁻⁶). Consistency with previously approved translations rose from 36 to 77 of 85, and accuracy did
-   not change.
-4. **The gain is consistency, not general quality.** A second judge that did not see the TM entry found no
-   difference (30 : 25). chrF++ against the human reference rose 71.5 → 74.5, which is not significant at
-   α = 0.05 (p ≈ 0.06).
-5. **Neither retriever can tell same meaning from same words with opposite meaning.** In a stress test, the
-   translation model still preserved polarity in 40/40 cases.
+1. **Fuzzy matching cannot see reworded content.** When a TM sentence was paraphrased or restructured, the
+   correct entry *never* reached the 75% threshold (0% of probes). Embedding search ranked it first 95–100% of
+   the time, and all three embedding models gave nearly identical results.
+2. **About a quarter of "no match" segments have a usable earlier translation.** Of 300 real segments where a
+   CAT tool would show nothing, semantic search found a match for 85 (28%).
+3. **Using those matches makes translations more consistent with approved work, with no loss of accuracy.**
+   A blind judge preferred translations that used them 50 : 13 (p ≈ 3×10⁻⁶). Agreement with previously
+   approved translations roughly doubled (36 → 77 of 85), and accuracy was essentially unchanged (84 → 82).
+4. **The 50–74% band ("near misses") benefits most.** These segments are discarded by CAT tools today, and the
+   judge preferred the semantic version there 38 : 7 (p ≈ 3×10⁻⁶).
+5. **Each method has its own range.** Above about 85% fuzzy, fuzzy matching is as good or better. Below the
+   threshold, semantic search adds value. A tiered setup (fuzzy above 85%, semantic below) scored best overall.
+6. **Misleading examples did not mislead the translator.** Given TM examples with the opposite meaning (negated
+   sentences), the model still translated the polarity correctly in 40/40 cases.
 
-Taken together, the results suggest that semantic search complements fuzzy matching below the threshold
-and does not replace it. All results come from one language pair, one domain and LLM judges (see
-[Limitations](#limitations)).
+The benefit is specifically *consistency with approved translations*, such as product names, house phrasing
+and formatting. A judge that ignored the TM saw no difference, and the chrF++ gain against the human
+reference (71.5 → 74.5) was not significant (p ≈ 0.06). All results come from one language pair, one domain
+and LLM judges (see [Limitations](#limitations)).
 
 ## Research questions
 
