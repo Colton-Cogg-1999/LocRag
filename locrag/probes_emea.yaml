@@ -1,0 +1,203 @@
+# Controlled retrieval probes over the EMEA TM (hand-written).
+# For each TM segment: edit (surface change), paraphrase (same meaning, new words),
+# restructure (same meaning, reordered/voice change), negation (same words, meaning flipped).
+- tm: tm12265
+  edit: Upon repeated administration of opioids such as morphine, tolerance and physical and/ or psychological dependence may develop.
+  paraphrase: Patients who take opioids like fentanyl over and over can become tolerant and physically or psychologically dependent.
+  restructure: Tolerance and physical and/or psychological dependence may develop when opioids such as fentanyl are given repeatedly.
+  negation: Upon repeated administration of opioids such as fentanyl, tolerance and physical and/ or psychological dependence do not develop.
+- tm: tm15143
+  edit: Press the pump onto the top of the bottle, and turn it clockwise until it clicks firmly into place.
+  paraphrase: Push the pump down on the bottle neck and screw it to the right until you hear it lock securely.
+  restructure: Turn the pump clockwise after pressing it onto the top of the bottle, until it clicks tightly into place.
+  negation: Press the pump onto the top of the bottle, and turn it anticlockwise until it clicks tightly into place.
+- tm: tm1859
+  edit: Rivastigmine oral solution may be swallowed directly from the oral syringe.
+  paraphrase: You can take the rivastigmine liquid straight from the dosing syringe without diluting it.
+  restructure: The oral solution of rivastigmine can be swallowed straight out of the syringe.
+  negation: Rivastigmine oral solution must not be swallowed directly from the syringe.
+- tm: tm3545
+  edit: The oral solution is recommended when starting treatment in children weighing less than 25 kg.
+  paraphrase: For children under 20 kg, the liquid formulation is the preferred option at the start of therapy.
+  restructure: In children weighing less than 20 kg, the oral solution is recommended at the start of treatment.
+  negation: The oral solution is recommended when starting treatment in children weighing more than 20 kg.
+- tm: tm8107
+  edit: Dose adjustments of tadalafil may be required when co-administered with CYP3A4 inducers (see section 4.5).
+  paraphrase: If sildenafil is given together with drugs that induce CYP3A4, its dose might need to be changed (see section 4.5).
+  restructure: When co-administered with CYP3A4 inducers, sildenafil may require dose adjustments (see section 4.5).
+  negation: Dose adjustments of sildenafil may be required when co-administered with CYP3A4 inhibitors (see section 4.5).
+- tm: tm3221
+  edit: A slower infusion is preferable in patients who react to the treatment with “flu-like” symptoms.
+  paraphrase: Patients who get flu-like symptoms after treatment should be injected more slowly.
+  restructure: In patients who react to the treatment with flu-like symptoms, a slower injection is preferable.
+  negation: A faster injection is preferable in patients who react to the treatment with “flu-like” symptoms.
+- tm: tm9024
+  edit: Due to increase of thrombotic risk in patients with malignant diseases, the use of anticoagulant treatment is common.
+  paraphrase: Because cancer patients have a higher risk of blood clots, they are often given anticoagulants.
+  restructure: The use of anticoagulant treatment is frequent in patients with malignant diseases, due to their increased thrombotic risk.
+  negation: Due to increase of thrombotic risk in patients with malignant diseases, the use of anticoagulants treatment is rare.
+- tm: tm16289
+  edit: Some of these patients developed severe infections which in a few instances did not respond to intensive antibiotic therapy.
+  paraphrase: Several of the patients got serious infections, and in a small number of cases intensive antibiotics did not help.
+  restructure: In a few instances, the serious infections that some of these patients developed did not respond to intensive antibiotic therapy.
+  negation: Some of these patients developed serious infections which in all instances responded to intensive antibiotic therapy.
+- tm: tm8418
+  edit: The use of Invirase in combination with ritonavir in patients with severe hepatic impairment has not been studied.
+  paraphrase: Invirase boosted with ritonavir has not been investigated in people with moderately reduced liver function.
+  restructure: In patients with moderate hepatic impairment, the use of Invirase together with ritonavir has not been studied.
+  negation: The use of Invirase in combination with ritonavir in patients with moderate hepatic impairment has been studied extensively.
+- tm: tm8320
+  edit: The manifestations of acute overdose include nausea, vomiting, diarrhoea, mucositis, gastrointestinal irritation and bleeding, and bone marrow suppression.
+  paraphrase: Signs of taking too much at once are feeling and being sick, diarrhoea, mouth sores, stomach and gut irritation or bleeding, and reduced bone marrow function.
+  restructure: Nausea, vomiting, diarrhoea, mucositis, gastrointestinal irritation and bleeding, and bone marrow depression are among the manifestations of acute overdose.
+  negation: The manifestations of acute overdose do not include nausea, vomiting, diarrhoea, mucositis, gastrointestinal irritation and bleeding, or bone marrow depression.
+- tm: tm1784
+  edit: There are no long-term data on the effect of anastrozole on bone.
+  paraphrase: How fulvestrant affects bone over long periods has not been established.
+  restructure: On the effect of fulvestrant on bone, no long-term data are available.
+  negation: There are extensive long-term data on the effect of fulvestrant on bone.
+- tm: tm4971
+  edit: Cases of reduced sweating and elevated body temperature have been reported mainly in paediatric patients.
+  paraphrase: Mostly in children, there have been reports of sweating less and having a raised temperature.
+  restructure: Mainly in paediatric patients, cases of decreased sweating and elevated body temperature have been reported.
+  negation: Cases of increased sweating and lowered body temperature have been reported mainly in paediatric patients.
+- tm: tm6775
+  edit: Insuman Comb 25 must not be administered intravenously and must not be used in infusion pumps or external or implanted insulin pumps.
+  paraphrase: Never give Insuman Comb 50 into a vein, and do not use it in any kind of infusion or insulin pump, whether external or implanted.
+  restructure: Infusion pumps and external or implanted insulin pumps must not be used with Insuman Comb 50, which must also not be given intravenously.
+  negation: Insuman Comb 50 may be administered intravenously and may be used in infusion pumps or external or implanted insulin pumps.
+- tm: tm2250
+  edit: Acute renal failure has been reported through post-marketing surveillance in patients receiving celecoxib (see section 4.8).
+  paraphrase: After the product was launched, there were reports of sudden kidney failure in people treated with parecoxib (see section 4.8).
+  restructure: In patients receiving parecoxib, post-marketing surveillance has reported acute renal failure (see section 4.8).
+  negation: Acute renal failure has never been reported through post-marketing surveillance in patients receiving parecoxib (see section 4.8).
+- tm: tm7744
+  edit: If these medicinal products are to be prescribed with the hydrochlorothiazide-valsartan combination, monitoring of potassium plasma levels is advised.
+  paraphrase: When these drugs are given together with telmisartan/hydrochlorothiazide, blood potassium should be checked.
+  restructure: Monitoring of plasma potassium levels is advised if the hydrochlorothiazide-telmisartan combination is prescribed with these medicinal products.
+  negation: If these medicinal products are to be prescribed with the hydrochlorothiazide-telmisartan combination, monitoring of potassium plasma levels is not necessary.
+- tm: tm18953
+  edit: No data are available in patients with moderate hepatic impairment (Child-Pugh class B).
+  paraphrase: There is no information on use in people with seriously reduced liver function (Child-Pugh C).
+  restructure: In patients with severe hepatic impairment (Child-Pugh class C), there are no data available.
+  negation: Extensive data are available in patients with severe hepatic impairment (Child-Pugh class C).
+- tm: tm17801
+  edit: Pregnancy must be excluded before the start of treatment in female patients.
+  paraphrase: Women have to be confirmed as not pregnant before they begin therapy.
+  restructure: Before treatment is started in women, pregnancy must be excluded.
+  negation: Pregnancy need not be excluded before the start of treatment in women.
+- tm: tm17308
+  edit: Atripla can reduce the amount of statins in the blood.
+  paraphrase: Taking Atripla may lower your blood levels of cholesterol-lowering statin medicines.
+  restructure: The amount of statins in your blood can be reduced by Atripla.
+  negation: Statins can reduce the amount of Atripla in your blood.
+- tm: tm13838
+  edit: No clinical study safety data are available in patients below 12 years of age.
+  paraphrase: The safety of this medicine has not been tested in clinical trials in children younger than 6.
+  restructure: In patients below 6 years of age, no safety data from clinical studies are available.
+  negation: Clinical study safety data are available in patients below 6 years of age.
+- tm: tm6747
+  edit: Busilvex must not be used in people who may be hypersensitive (allergic) to busulfan or any of the other ingredients.
+  paraphrase: Do not give Busilvex to anyone who could be allergic to busulfan or to any other component of the product.
+  restructure: People who may be hypersensitive (allergic) to busulfan or any of the other ingredients should not use Busilvex.
+  negation: Busilvex can be used in people who may be hypersensitive (allergic) to busulfan or any of the other ingredients.
+- tm: tm11387
+  edit: Patients administering NovoRapid by CSII must have alternative insulin available in case of pump failure.
+  paraphrase: Anyone using NovoRapid in an insulin pump should keep a backup insulin on hand in case the pump stops working.
+  restructure: In case of pump system failure, patients administering NovoRapid by CSII must have alternative insulin available.
+  negation: Patients administering NovoRapid by CSII do not need alternative insulin available in case of pump system failure.
+- tm: tm13083
+  edit: The subcutaneous injection site should be rotated to prevent lipoatrophy.
+  paraphrase: Change where you inject under the skin each time so that the fatty tissue does not shrink.
+  restructure: To prevent lipoatrophy, the subcutaneous injection site should be alternated.
+  negation: The subcutaneous injection site should not be alternated, to prevent lipoatrophy.
+- tm: tm17151
+  edit: After reconstitution, protect from light and use within 8 hours.
+  paraphrase: Once the powder has been dissolved, keep the solution away from light and use it no later than three hours afterwards.
+  restructure: Use within 3 hours after reconstitution and protect from light.
+  negation: Before reconstitution, protect from light and use within 3 hours.
+- tm: tm2757
+  edit: Non-enzymatic methods for glucose determinations in urine may give false-positive results.
+  paraphrase: Urine sugar tests that do not use enzymes can wrongly show a positive result.
+  restructure: False-positive results may be yielded by non-enzymatic methods for urine glucose determinations.
+  negation: Enzymatic methods for glucose determinations in urine may yield false-negative results.
+- tm: tm19565
+  edit: To help prevent side effects occurring, your doctor will make sure you are on the lowest dose of Flutiform that will control your asthma.
+  paraphrase: Your doctor will keep you on the smallest amount of Seretide that keeps your asthma under control, to reduce the risk of side effects.
+  restructure: Your doctor will make sure you are on the lowest dose of Seretide that will control your asthma, to help prevent side effects occurring.
+  negation: To help control your asthma, your doctor will make sure you are on the highest dose of Seretide that does not cause side effects.
+- tm: tm6206
+  edit: These conditions may not make you feel unwell so you should see your doctor for a general health check.
+  paraphrase: You might feel fine even if you have these conditions, so get a general check-up from your doctor.
+  restructure: You should see your doctor for a general health check, as these conditions may not cause you to feel unwell.
+  negation: These conditions will cause you to feel unwell so you do not need to see your doctor for a general health check.
+- tm: tm5664
+  edit: The insulin should be mixed by turning SoloStar slowly up and down at least 10 times.
+  paraphrase: Mix the insulin by gently tipping the OptiSet pen upside down and back again ten times or more.
+  restructure: Turn OptiSet slowly up and down at least 10 times to mix the insulin.
+  negation: The insulin should be mixed by shaking OptiSet vigorously at least 10 times.
+- tm: tm1482
+  edit: Treatment of postmenopausal osteoporosis in women who are not receiving vitamin D supplementation and are at risk of vitamin D insufficiency.
+  paraphrase: For osteoporosis after the menopause in women who do not take vitamin D supplements and may be low in vitamin D.
+  restructure: In patients at risk of vitamin D insufficiency who are not receiving vitamin D supplementation, treatment of postmenopausal osteoporosis.
+  negation: Treatment of postmenopausal osteoporosis in patients who are receiving vitamin D supplementation and are not at risk of vitamin D insufficiency.
+- tm: tm2917
+  edit: The use of haematopoietic growth factors neither improves the recovery of platelet counts nor decreases the incidence of fever.
+  paraphrase: Giving blood cell growth factors did not help neutrophils recover faster and did not reduce how often fever occurred.
+  restructure: Neither the recovery of neutrophil counts nor the incidence of fever is improved by the use of haematopoietic growth factors.
+  negation: The use of haematopoietic growth factors both improves the recovery of neutrophil counts and decreases the incidence of fever.
+- tm: tm11889
+  edit: Kadcyla treatment should only be initiated by a physician experienced in the administration of cytotoxic chemotherapy (see 4.4).
+  paraphrase: Only doctors with experience in giving cancer chemotherapy should start patients on Herceptin (see 4.4).
+  restructure: Only a physician experienced in the administration of cytotoxic chemotherapy should initiate Herceptin treatment (see 4.4).
+  negation: Herceptin treatment can be initiated by any physician, even one not experienced in the administration of cytotoxic chemotherapy (see 4.4).
+- tm: tm18971
+  edit: Concomitant use of voriconazole and efavirenz should be avoided unless the benefit outweighs the risk.
+  paraphrase: Voriconazole and rifabutin should not be taken together unless the advantages are greater than the dangers.
+  restructure: Unless the benefit outweighs the risk, voriconazole and rifabutin should not be used concomitantly.
+  negation: Concomitant use of voriconazole and rifabutin is recommended unless the risk outweighs the benefit.
+- tm: tm17421
+  edit: Dry cough has been reported with the use of ACE inhibitors.
+  paraphrase: People taking ACE inhibitors have reported coughing.
+  restructure: With the use of ACE inhibitors, cough has been reported.
+  negation: Cough has not been reported with the use of ACE inhibitors.
+- tm: tm10205
+  edit: Your doctor will decide which strength of Durogesic is most suitable for you.
+  paraphrase: The right Fentanyl-ratiopharm dose strength for you will be chosen by your doctor.
+  restructure: Which strength of Fentanyl-ratiopharm is most suitable for you will be decided by your doctor.
+  negation: You can decide for yourself which strength of Fentanyl-ratiopharm is most suitable for you.
+- tm: tm11738
+  edit: Depending on how your anaemia responds, the dose may be changed until your condition is controlled.
+  paraphrase: Your dose might be changed according to how well the anaemia improves, until it is under control.
+  restructure: The dose may be adjusted, depending on how your anaemia responds, until your condition is controlled.
+  negation: Regardless of how your anaemia responds, the dose will not be adjusted until your condition is controlled.
+- tm: tm10758
+  edit: Competact should not be used in patients with severe renal function disorders (creatinine clearance < 30 ml/ min, see section 4.3).
+  paraphrase: Do not give Tandemact to people whose kidneys work very poorly (creatinine clearance below 30 ml/min, see section 4.3).
+  restructure: In patients with severe renal function disorders (creatinine clearance < 30 ml/ min, see section 4.3), Tandemact should not be used.
+  negation: Tandemact can be used in patients with severe renal function disorders (creatinine clearance < 30 ml/ min, see section 4.3).
+- tm: tm14780
+  edit: Patients should be monitored for signs and symptoms of heart failure, weight gain or oedema particularly those with reduced cardiac reserve.
+  paraphrase: Watch patients for signs of heart failure, putting on weight or swelling, especially if their heart function is already limited.
+  restructure: Particularly in those with reduced cardiac reserve, patients should be observed for signs and symptoms of heart failure, weight gain or oedema.
+  negation: Patients do not need to be observed for signs and symptoms of heart failure, weight gain or oedema, even those with reduced cardiac reserve.
+- tm: tm820
+  edit: Metacam must not be administered in conjunction with other NSAIDs or glucocorticosteroids.
+  paraphrase: Do not give Rheumocam together with other non-steroidal anti-inflammatory drugs or with corticosteroids.
+  restructure: Other NSAIDs or glucocorticosteroids must not be administered in conjunction with Rheumocam.
+  negation: Rheumocam may be administered in conjunction with other NSAIDs or glucocorticosteroids.
+- tm: tm17634
+  edit: Doses up to 5 mg/ kg body weight have shown to be safe.
+  paraphrase: Up to 3 mg per kilogram of body weight has been shown to be a safe dose.
+  restructure: It has been shown that doses of up to 3 mg/kg body weight are safe.
+  negation: Doses up to 3 mg/ kg body weight have shown to be unsafe.
+- tm: tm18834
+  edit: If you give the injections yourself or have it done by your partner, follow the instructions below carefully.
+  paraphrase: Read and follow these instructions carefully if you or your partner will be giving the injections.
+  restructure: Follow the instructions below carefully if you administer the injections yourself or have your partner do it.
+  negation: If a nurse administers the injections, you do not need to follow the instructions below.
+- tm: tm2233
+  edit: Remove the plastic flip-top cap from the ReFacto vial to expose the central portion of the rubber stopper.
+  paraphrase: Take the plastic cap off the BeneFIX bottle so that the middle of the rubber seal is uncovered.
+  restructure: To expose the central portion of the rubber stopper, remove the plastic flip-top cap from the BeneFIX vial.
+  negation: Do not remove the plastic flip-top cap from the BeneFIX vial or expose the central portion of the rubber stopper.
