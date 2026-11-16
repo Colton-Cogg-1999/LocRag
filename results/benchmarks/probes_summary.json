@@ -1,0 +1,131 @@
+{
+  "n_items": 40,
+  "summary": {
+    "fuzzy": {
+      "edit": {
+        "R@1": 1.0,
+        "R@5": 1.0,
+        "MRR@10": 1.0
+      },
+      "paraphrase": {
+        "R@1": 0.25,
+        "R@5": 0.375,
+        "MRR@10": 0.31
+      },
+      "restructure": {
+        "R@1": 0.525,
+        "R@5": 0.625,
+        "MRR@10": 0.57
+      },
+      "meaning_AUC": 0.009,
+      "mean_score": {
+        "edit": 93.2,
+        "paraphrase": 22.8,
+        "restructure": 32.5,
+        "negation": 84.3
+      }
+    },
+    "semantic:bge-m3": {
+      "edit": {
+        "R@1": 0.975,
+        "R@5": 1.0,
+        "MRR@10": 0.988
+      },
+      "paraphrase": {
+        "R@1": 0.975,
+        "R@5": 1.0,
+        "MRR@10": 0.988
+      },
+      "restructure": {
+        "R@1": 1.0,
+        "R@5": 1.0,
+        "MRR@10": 1.0
+      },
+      "meaning_AUC": 0.626,
+      "mean_score": {
+        "edit": 94.4,
+        "paraphrase": 86.8,
+        "restructure": 97.3,
+        "negation": 89.5
+      }
+    },
+    "semantic:text-embedding-3-large": {
+      "edit": {
+        "R@1": 0.975,
+        "R@5": 1.0,
+        "MRR@10": 0.988
+      },
+      "paraphrase": {
+        "R@1": 0.95,
+        "R@5": 1.0,
+        "MRR@10": 0.975
+      },
+      "restructure": {
+        "R@1": 1.0,
+        "R@5": 1.0,
+        "MRR@10": 1.0
+      },
+      "meaning_AUC": 0.495,
+      "mean_score": {
+        "edit": 92.1,
+        "paraphrase": 80.6,
+        "restructure": 92.9,
+        "negation": 87.5
+      }
+    },
+    "semantic:qwen3-embedding-8b": {
+      "edit": {
+        "R@1": 0.975,
+        "R@5": 1.0,
+        "MRR@10": 0.988
+      },
+      "paraphrase": {
+        "R@1": 0.95,
+        "R@5": 1.0,
+        "MRR@10": 0.975
+      },
+      "restructure": {
+        "R@1": 1.0,
+        "R@5": 1.0,
+        "MRR@10": 1.0
+      },
+      "meaning_AUC": 0.594,
+      "mean_score": {
+        "edit": 94.2,
+        "paraphrase": 89.2,
+        "restructure": 96.7,
+        "negation": 91.8
+      }
+    },
+    "hybrid(bge-m3)": {
+      "edit": {
+        "R@1": 1.0,
+        "R@5": 1.0,
+        "MRR@10": 1.0
+      },
+      "paraphrase": {
+        "R@1": 0.45,
+        "R@5": 0.9,
+        "MRR@10": 0.624
+      },
+      "restructure": {
+        "R@1": 0.675,
+        "R@5": 0.975,
+        "MRR@10": 0.784
+      },
+      "meaning_AUC": 0.009,
+      "mean_score": {
+        "edit": 93.2,
+        "paraphrase": 22.8,
+        "restructure": 32.5,
+        "negation": 84.3
+      }
+    }
+  },
+  "cat_surfaced_at_75": {
+    "edit": 1.0,
+    "paraphrase": 0.0,
+    "restructure": 0.0,
+    "negation": 0.825
+  }
+}
