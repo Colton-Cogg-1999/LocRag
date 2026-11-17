@@ -1,0 +1,12 @@
+{
+  "metric": "metricx24_qe",
+  "model": "google/metricx-24-hybrid-large-v2p6",
+  "direction": "lower_better",
+  "tokenizer": "google/mt5-xl",
+  "torch": "2.15.0+cpu",
+  "transformers": "4.57.6",
+  "unbabel_comet": "2.2.7",
+  "python": "3.12.16",
+  "threads": 12,
+  "batch_size": 16
+}

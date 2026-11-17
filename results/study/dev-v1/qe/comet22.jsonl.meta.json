@@ -1,0 +1,12 @@
+{
+  "metric": "comet22",
+  "model": "Unbabel/wmt22-comet-da",
+  "direction": "higher_better",
+  "tokenizer": null,
+  "torch": "2.15.0+cpu",
+  "transformers": "4.57.6",
+  "unbabel_comet": "2.2.7",
+  "python": "3.12.16",
+  "threads": 12,
+  "batch_size": 16
+}

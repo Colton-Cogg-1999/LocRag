@@ -1,0 +1,1004 @@
+{
+"J001": {
+"row_id": "E467660b72381:es",
+"A": [
+"tm_as_is",
+"hybrid_ctx"
+],
+"B": [
+"nmt_deepl"
+],
+"C": [
+"zero_shot"
+]
+},
+"J002": {
+"row_id": "E5412cd5aa72b:es",
+"A": [
+"nmt_deepl"
+],
+"B": [
+"hybrid_ctx",
+"zero_shot"
+],
+"C": [
+"tm_as_is"
+]
+},
+"J003": {
+"row_id": "K1e7923866912:zh_CN",
+"A": [
+"tm_as_is"
+],
+"B": [
+"hybrid_ctx"
+],
+"C": [
+"zero_shot"
+],
+"D": [
+"nmt_deepl"
+]
+},
+"J004": {
+"row_id": "E66d163842b8b:es",
+"A": [
+"tm_as_is"
+],
+"B": [
+"hybrid_ctx"
+],
+"C": [
+"zero_shot"
+],
+"D": [
+"nmt_deepl"
+]
+},
+"J005": {
+"row_id": "K3d40ea2ed84c:zh_CN",
+"A": [
+"hybrid_ctx"
+],
+"B": [
+"zero_shot"
+],
+"C": [
+"tm_as_is"
+],
+"D": [
+"nmt_deepl"
+]
+},
+"J006": {
+"row_id": "K08e3087bc5cf:de",
+"A": [
+"hybrid_ctx",
+"zero_shot",
+"nmt_deepl"
+],
+"B": [
+"tm_as_is"
+]
+},
+"J007": {
+"row_id": "K9482b39378d0:de",
+"A": [
+"tm_as_is",
+"hybrid_ctx",
+"zero_shot",
+"nmt_deepl"
+]
+},
+"J008": {
+"row_id": "Kbf3634a87b31:de",
+"A": [
+"hybrid_ctx"
+],
+"B": [
+"zero_shot",
+"nmt_deepl"
+],
+"C": [
+"tm_as_is"
+]
+},
+"J009": {
+"row_id": "K6f5df909b732:es",
+"A": [
+"hybrid_ctx"
+],
+"B": [
+"tm_as_is"
+],
+"C": [
+"nmt_deepl"
+],
+"D": [
+"zero_shot"
+]
+},
+"J010": {
+"row_id": "E5b168cc13a23:es",
+"A": [
+"nmt_deepl"
+],
+"B": [
+"hybrid_ctx"
+],
+"C": [
+"tm_as_is"
+],
+"D": [
+"zero_shot"
+]
+},
+"J011": {
+"row_id": "K0bb77393fbaf:de",
+"A": [
+"zero_shot"
+],
+"B": [
+"tm_as_is"
+],
+"C": [
+"nmt_deepl"
+],
+"D": [
+"hybrid_ctx"
+]
+},
+"J012": {
+"row_id": "E9d70e2f7d410:es",
+"A": [
+"nmt_deepl"
+],
+"B": [
+"zero_shot"
+],
+"C": [
+"hybrid_ctx"
+],
+"D": [
+"tm_as_is"
+]
+},
+"J013": {
+"row_id": "E41bea80af94d:es",
+"A": [
+"zero_shot"
+],
+"B": [
+"hybrid_ctx"
+],
+"C": [
+"tm_as_is"
+],
+"D": [
+"nmt_deepl"
+]
+},
+"J014": {
+"row_id": "Keaf4e8eace11:zh_CN",
+"A": [
+"hybrid_ctx"
+],
+"B": [
+"nmt_deepl"
+],
+"C": [
+"zero_shot"
+],
+"D": [
+"tm_as_is"
+]
+},
+"J015": {
+"row_id": "Kb1e220d62496:de",
+"A": [
+"tm_as_is"
+],
+"B": [
+"zero_shot",
+"nmt_deepl"
+],
+"C": [
+"hybrid_ctx"
+]
+},
+"J016": {
+"row_id": "K7450ed0bd2b3:de",
+"A": [
+"hybrid_ctx",
+"zero_shot",
+"nmt_deepl"
+],
+"B": [
+"tm_as_is"
+]
+},
+"J017": {
+"row_id": "E90b133cb147d:es",
+"A": [
+"hybrid_ctx",
+"zero_shot",
+"nmt_deepl"
+],
+"B": [
+"tm_as_is"
+]
+},
+"J018": {
+"row_id": "K9d86a7e1065e:es",
+"A": [
+"nmt_deepl"
+],
+"B": [
+"tm_as_is"
+],
+"C": [
+"hybrid_ctx"
+],
+"D": [
+"zero_shot"
+]
+},
+"J019": {
+"row_id": "E080f68aefa53:es",
+"A": [
+"hybrid_ctx"
+],
+"B": [
+"nmt_deepl"
+],
+"C": [
+"tm_as_is"
+],
+"D": [
+"zero_shot"
+]
+},
+"J020": {
+"row_id": "Ka1c7d577e418:es",
+"A": [
+"tm_as_is",
+"hybrid_ctx",
+"nmt_deepl"
+],
+"B": [
+"zero_shot"
+]
+},
+"J021": {
+"row_id": "E89b5a164743f:es",
+"A": [
+"tm_as_is"
+],
+"B": [
+"nmt_deepl"
+],
+"C": [
+"hybrid_ctx"
+],
+"D": [
+"zero_shot"
+]
+},
+"J022": {
+"row_id": "K1a607a1aa462:es",
+"A": [
+"nmt_deepl"
+],
+"B": [
+"tm_as_is"
+],
+"C": [
+"zero_shot"
+],
+"D": [
+"hybrid_ctx"
+]
+},
+"J023": {
+"row_id": "E9c9c3087c8c1:es",
+"A": [
+"hybrid_ctx",
+"zero_shot"
+],
+"B": [
+"nmt_deepl"
+],
+"C": [
+"tm_as_is"
+]
+},
+"J024": {
+"row_id": "E6af73d9294e7:es",
+"A": [
+"hybrid_ctx"
+],
+"B": [
+"zero_shot"
+],
+"C": [
+"tm_as_is"
+],
+"D": [
+"nmt_deepl"
+]
+},
+"J025": {
+"row_id": "E36c790a485c5:es",
+"A": [
+"nmt_deepl"
+],
+"B": [
+"tm_as_is"
+],
+"C": [
+"zero_shot"
+],
+"D": [
+"hybrid_ctx"
+]
+},
+"J026": {
+"row_id": "E6199a4577783:es",
+"A": [
+"hybrid_ctx"
+],
+"B": [
+"tm_as_is"
+],
+"C": [
+"zero_shot"
+],
+"D": [
+"nmt_deepl"
+]
+},
+"J027": {
+"row_id": "Ef9d2390f9939:es",
+"A": [
+"hybrid_ctx"
+],
+"B": [
+"zero_shot"
+],
+"C": [
+"tm_as_is"
+],
+"D": [
+"nmt_deepl"
+]
+},
+"J028": {
+"row_id": "E47c9752e10e1:es",
+"A": [
+"tm_as_is",
+"hybrid_ctx"
+],
+"B": [
+"zero_shot",
+"nmt_deepl"
+]
+},
+"J029": {
+"row_id": "E4f44383687d8:es",
+"A": [
+"tm_as_is"
+],
+"B": [
+"zero_shot",
+"nmt_deepl"
+],
+"C": [
+"hybrid_ctx"
+]
+},
+"J030": {
+"row_id": "E923637d5c20a:es",
+"A": [
+"tm_as_is"
+],
+"B": [
+"nmt_deepl"
+],
+"C": [
+"hybrid_ctx",
+"zero_shot"
+]
+},
+"J031": {
+"row_id": "E41c0b8656b39:es",
+"A": [
+"tm_as_is"
+],
+"B": [
+"zero_shot",
+"nmt_deepl"
+],
+"C": [
+"hybrid_ctx"
+]
+},
+"J032": {
+"row_id": "Kb72f15556751:es",
+"A": [
+"tm_as_is",
+"hybrid_ctx"
+],
+"B": [
+"zero_shot",
+"nmt_deepl"
+]
+},
+"J033": {
+"row_id": "K9dbbb15aedd3:zh_CN",
+"A": [
+"tm_as_is"
+],
+"B": [
+"hybrid_ctx"
+],
+"C": [
+"nmt_deepl"
+],
+"D": [
+"zero_shot"
+]
+},
+"J034": {
+"row_id": "K24a94b8714eb:de",
+"A": [
+"tm_as_is"
+],
+"B": [
+"hybrid_ctx"
+],
+"C": [
+"zero_shot",
+"nmt_deepl"
+]
+},
+"J035": {
+"row_id": "E2988ba61a758:es",
+"A": [
+"tm_as_is"
+],
+"B": [
+"hybrid_ctx"
+],
+"C": [
+"nmt_deepl"
+],
+"D": [
+"zero_shot"
+]
+},
+"J036": {
+"row_id": "K9f4e4037548b:de",
+"A": [
+"nmt_deepl"
+],
+"B": [
+"hybrid_ctx"
+],
+"C": [
+"tm_as_is"
+],
+"D": [
+"zero_shot"
+]
+},
+"J037": {
+"row_id": "Kf8f8c5a42397:es",
+"A": [
+"tm_as_is"
+],
+"B": [
+"hybrid_ctx",
+"zero_shot",
+"nmt_deepl"
+]
+},
+"J038": {
+"row_id": "Ecbb57670a3ce:es",
+"A": [
+"tm_as_is"
+],
+"B": [
+"nmt_deepl"
+],
+"C": [
+"hybrid_ctx"
+],
+"D": [
+"zero_shot"
+]
+},
+"J039": {
+"row_id": "K1721830ff712:zh_CN",
+"A": [
+"tm_as_is"
+],
+"B": [
+"hybrid_ctx",
+"zero_shot",
+"nmt_deepl"
+]
+},
+"J040": {
+"row_id": "K1b96aac6639d:zh_CN",
+"A": [
+"nmt_deepl"
+],
+"B": [
+"zero_shot"
+],
+"C": [
+"hybrid_ctx"
+],
+"D": [
+"tm_as_is"
+]
+},
+"J041": {
+"row_id": "E75c6fc7076c1:es",
+"A": [
+"hybrid_ctx"
+],
+"B": [
+"nmt_deepl"
+],
+"C": [
+"tm_as_is"
+],
+"D": [
+"zero_shot"
+]
+},
+"J042": {
+"row_id": "Eab0866791713:es",
+"A": [
+"tm_as_is"
+],
+"B": [
+"zero_shot"
+],
+"C": [
+"nmt_deepl"
+],
+"D": [
+"hybrid_ctx"
+]
+},
+"J043": {
+"row_id": "K6f61662bb55f:zh_CN",
+"A": [
+"nmt_deepl"
+],
+"B": [
+"hybrid_ctx"
+],
+"C": [
+"zero_shot"
+],
+"D": [
+"tm_as_is"
+]
+},
+"J044": {
+"row_id": "K914acc0b11dd:zh_CN",
+"A": [
+"hybrid_ctx"
+],
+"B": [
+"tm_as_is"
+],
+"C": [
+"zero_shot"
+],
+"D": [
+"nmt_deepl"
+]
+},
+"J045": {
+"row_id": "Ee6a7014b3881:es",
+"A": [
+"hybrid_ctx"
+],
+"B": [
+"nmt_deepl"
+],
+"C": [
+"zero_shot"
+],
+"D": [
+"tm_as_is"
+]
+},
+"J046": {
+"row_id": "K13d0f2203fe4:de",
+"A": [
+"tm_as_is"
+],
+"B": [
+"nmt_deepl"
+],
+"C": [
+"zero_shot"
+],
+"D": [
+"hybrid_ctx"
+]
+},
+"J047": {
+"row_id": "K9ecb72161f38:es",
+"A": [
+"hybrid_ctx"
+],
+"B": [
+"zero_shot"
+],
+"C": [
+"tm_as_is"
+],
+"D": [
+"nmt_deepl"
+]
+},
+"J048": {
+"row_id": "Eebcc6f825dec:es",
+"A": [
+"nmt_deepl"
+],
+"B": [
+"hybrid_ctx"
+],
+"C": [
+"zero_shot"
+],
+"D": [
+"tm_as_is"
+]
+},
+"J049": {
+"row_id": "E44fd65519930:es",
+"A": [
+"nmt_deepl"
+],
+"B": [
+"zero_shot"
+],
+"C": [
+"tm_as_is",
+"hybrid_ctx"
+]
+},
+"J050": {
+"row_id": "K2a3f8a70ee07:zh_CN",
+"A": [
+"tm_as_is"
+],
+"B": [
+"hybrid_ctx"
+],
+"C": [
+"zero_shot",
+"nmt_deepl"
+]
+},
+"J051": {
+"row_id": "K62a777e77535:zh_CN",
+"A": [
+"tm_as_is"
+],
+"B": [
+"hybrid_ctx"
+],
+"C": [
+"zero_shot",
+"nmt_deepl"
+]
+},
+"J052": {
+"row_id": "E33869518d73c:es",
+"A": [
+"hybrid_ctx"
+],
+"B": [
+"tm_as_is"
+],
+"C": [
+"zero_shot"
+],
+"D": [
+"nmt_deepl"
+]
+},
+"J053": {
+"row_id": "Kbc6a2c3f46d4:es",
+"A": [
+"nmt_deepl"
+],
+"B": [
+"tm_as_is"
+],
+"C": [
+"hybrid_ctx",
+"zero_shot"
+]
+},
+"J054": {
+"row_id": "E6981a9871f42:es",
+"A": [
+"nmt_deepl"
+],
+"B": [
+"zero_shot"
+],
+"C": [
+"tm_as_is",
+"hybrid_ctx"
+]
+},
+"J055": {
+"row_id": "K16cd03528ffe:de",
+"A": [
+"hybrid_ctx"
+],
+"B": [
+"nmt_deepl"
+],
+"C": [
+"tm_as_is"
+],
+"D": [
+"zero_shot"
+]
+},
+"J056": {
+"row_id": "K02022f544e6a:zh_CN",
+"A": [
+"nmt_deepl"
+],
+"B": [
+"tm_as_is"
+],
+"C": [
+"zero_shot"
+],
+"D": [
+"hybrid_ctx"
+]
+},
+"J057": {
+"row_id": "Ke9a94e74f8f7:es",
+"A": [
+"hybrid_ctx"
+],
+"B": [
+"nmt_deepl"
+],
+"C": [
+"tm_as_is"
+],
+"D": [
+"zero_shot"
+]
+},
+"J058": {
+"row_id": "E6eb332f82d08:es",
+"A": [
+"zero_shot",
+"nmt_deepl"
+],
+"B": [
+"hybrid_ctx"
+],
+"C": [
+"tm_as_is"
+]
+},
+"J059": {
+"row_id": "E615ae00bf9cf:es",
+"A": [
+"tm_as_is"
+],
+"B": [
+"zero_shot"
+],
+"C": [
+"nmt_deepl"
+],
+"D": [
+"hybrid_ctx"
+]
+},
+"J060": {
+"row_id": "Kff771d68b5a6:es",
+"A": [
+"zero_shot"
+],
+"B": [
+"hybrid_ctx"
+],
+"C": [
+"tm_as_is"
+],
+"D": [
+"nmt_deepl"
+]
+},
+"J061": {
+"row_id": "K6d331ca7b0e2:de",
+"A": [
+"tm_as_is"
+],
+"B": [
+"hybrid_ctx",
+"zero_shot",
+"nmt_deepl"
+]
+},
+"J062": {
+"row_id": "E5601b9467932:es",
+"A": [
+"zero_shot",
+"nmt_deepl"
+],
+"B": [
+"hybrid_ctx"
+],
+"C": [
+"tm_as_is"
+]
+},
+"J063": {
+"row_id": "Ebbd2c220c36c:es",
+"A": [
+"zero_shot"
+],
+"B": [
+"hybrid_ctx"
+],
+"C": [
+"nmt_deepl"
+],
+"D": [
+"tm_as_is"
+]
+},
+"J064": {
+"row_id": "Ea4bc03d90f6b:es",
+"A": [
+"zero_shot"
+],
+"B": [
+"hybrid_ctx"
+],
+"C": [
+"nmt_deepl"
+],
+"D": [
+"tm_as_is"
+]
+},
+"J065": {
+"row_id": "E9e788bb9e6a7:es",
+"A": [
+"nmt_deepl"
+],
+"B": [
+"tm_as_is"
+],
+"C": [
+"hybrid_ctx"
+],
+"D": [
+"zero_shot"
+]
+},
+"J066": {
+"row_id": "K353532e5a40b:zh_CN",
+"A": [
+"tm_as_is"
+],
+"B": [
+"zero_shot"
+],
+"C": [
+"nmt_deepl"
+],
+"D": [
+"hybrid_ctx"
+]
+},
+"J067": {
+"row_id": "K1b1032d1c4b4:es",
+"A": [
+"hybrid_ctx"
+],
+"B": [
+"zero_shot"
+],
+"C": [
+"tm_as_is"
+],
+"D": [
+"nmt_deepl"
+]
+},
+"J068": {
+"row_id": "E3b2911d0d40a:es",
+"A": [
+"nmt_deepl"
+],
+"B": [
+"tm_as_is"
+],
+"C": [
+"hybrid_ctx",
+"zero_shot"
+]
+},
+"J069": {
+"row_id": "E2c4ebf404622:es",
+"A": [
+"nmt_deepl"
+],
+"B": [
+"tm_as_is"
+],
+"C": [
+"zero_shot"
+],
+"D": [
+"hybrid_ctx"
+]
+},
+"J070": {
+"row_id": "E2b3a13b121df:es",
+"A": [
+"tm_as_is",
+"hybrid_ctx"
+],
+"B": [
+"nmt_deepl"
+],
+"C": [
+"zero_shot"
+]
+},
+"J071": {
+"row_id": "Kd3baf37457da:es",
+"A": [
+"hybrid_ctx"
+],
+"B": [
+"tm_as_is"
+],
+"C": [
+"zero_shot"
+],
+"D": [
+"nmt_deepl"
+]
+},
+"J072": {
+"row_id": "K3c2b5b6aa56d:de",
+"A": [
+"zero_shot"
+],
+"B": [
+"nmt_deepl"
+],
+"C": [
+"hybrid_ctx"
+],
+"D": [
+"tm_as_is"
+]
+}
+}

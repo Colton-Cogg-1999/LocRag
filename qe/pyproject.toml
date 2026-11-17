@@ -1,0 +1,30 @@
+[project]
+name = "locrag-qe"
+version = "0.1.0"
+description = "Isolated MT quality-estimation scorers for LocRAG 2.0 (CometKiwi-22, COMET-22, MetricX-24)"
+requires-python = ">=3.12,<3.13"
+# Separate environment: unbabel-comet requires numpy<2, the main project numpy>=2.5. Isolation is also a
+# design property: the scorer cannot import the pipeline and only ever sees (id, src, mt[, ref]) files.
+dependencies = [
+    "unbabel-comet>=2.2.7",
+    "torch>=2.6",
+    "transformers>=4.50,<5",
+    "sentencepiece==0.2.0",  # 0.2.1+ pb2 needs protobuf>=5; comet pins protobuf<5
+    "protobuf>=4.24,<5",
+    "setuptools<81",  # torchmetrics 0.10 (pinned by unbabel-comet) imports pkg_resources
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[tool.setuptools]
+packages = ["locrag_qe"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

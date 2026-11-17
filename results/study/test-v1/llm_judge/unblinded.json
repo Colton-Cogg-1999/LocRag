@@ -1,0 +1,5146 @@
+[
+{
+"item": "J001",
+"row_id": "E467660b72381:es",
+"sys": "tm_as_is",
+"band": "100",
+"corpus": "EMEA",
+"score": 60,
+"mqm": 5,
+"worst": 5,
+"kiwi": 0.848382830619812,
+"comet": 0.7326558828353882,
+"chrf": 62.200698658832486,
+"errors": [
+[
+"accuracy/mistranslation",
+"major",
+"'no debe' = must not; source says it is not necessary"
+]
+],
+"mt": "No debe eliminar la burbuja de aire antes de la inyección."
+},
+{
+"item": "J001",
+"row_id": "E467660b72381:es",
+"sys": "hybrid_ctx",
+"band": "100",
+"corpus": "EMEA",
+"score": 60,
+"mqm": 5,
+"worst": 5,
+"kiwi": 0.848382830619812,
+"comet": 0.7326558828353882,
+"chrf": 62.200698658832486,
+"errors": [
+[
+"accuracy/mistranslation",
+"major",
+"'no debe' = must not; source says it is not necessary"
+]
+],
+"mt": "No debe eliminar la burbuja de aire antes de la inyección."
+},
+{
+"item": "J001",
+"row_id": "E467660b72381:es",
+"sys": "nmt_deepl",
+"band": "100",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8818134665489197,
+"comet": 0.7769525647163391,
+"chrf": 67.39293580239863,
+"errors": [],
+"mt": "No es necesario eliminar la burbuja de aire antes de inyectar."
+},
+{
+"item": "J001",
+"row_id": "E467660b72381:es",
+"sys": "zero_shot",
+"band": "100",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8813603520393372,
+"comet": 0.819325864315033,
+"chrf": 87.7028438651352,
+"errors": [],
+"mt": "No es necesario eliminar la burbuja de aire antes de la inyección."
+},
+{
+"item": "J002",
+"row_id": "E5412cd5aa72b:es",
+"sys": "nmt_deepl",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 90,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8533559441566467,
+"comet": 0.9479960799217224,
+"chrf": 81.59834193440332,
+"errors": [
+[
+"style/register",
+"minor",
+"informal tú in patient leaflet"
+]
+],
+"mt": "Ten especial cuidado con Emtriva"
+},
+{
+"item": "J002",
+"row_id": "E5412cd5aa72b:es",
+"sys": "hybrid_ctx",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8596407771110535,
+"comet": 0.9714550971984863,
+"chrf": 94.48292727000916,
+"errors": [],
+"mt": "Tenga especial cuidado con Emtriva"
+},
+{
+"item": "J002",
+"row_id": "E5412cd5aa72b:es",
+"sys": "zero_shot",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8596407771110535,
+"comet": 0.9714550971984863,
+"chrf": 94.48292727000916,
+"errors": [],
+"mt": "Tenga especial cuidado con Emtriva"
+},
+{
+"item": "J002",
+"row_id": "E5412cd5aa72b:es",
+"sys": "tm_as_is",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 10,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.6154069900512695,
+"comet": 0.7786465287208557,
+"chrf": 70.8719560856409,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"wrong product name TORISEL for Emtriva"
+]
+],
+"mt": "Tenga especial cuidado con TORISEL"
+},
+{
+"item": "J003",
+"row_id": "K1e7923866912:zh_CN",
+"sys": "tm_as_is",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 15,
+"mqm": 11,
+"worst": 10,
+"kiwi": 0.6783026456832886,
+"comet": 0.8331385254859924,
+"chrf": 70.50825763354368,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"start date instead of end date"
+],
+[
+"accuracy/addition",
+"minor",
+"'@ info: tooltip' artefact"
+]
+],
+"mt": "选中该事件的起始日期 。 @ info: tooltip"
+},
+{
+"item": "J003",
+"row_id": "K1e7923866912:zh_CN",
+"sys": "hybrid_ctx",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 96,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8250037431716919,
+"comet": 0.7014370560646057,
+"chrf": 13.802386467250157,
+"errors": [],
+"mt": "选中该事件的结束日期 。"
+},
+{
+"item": "J003",
+"row_id": "K1e7923866912:zh_CN",
+"sys": "zero_shot",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8461104035377502,
+"comet": 0.8257071375846863,
+"chrf": 12.035464100184825,
+"errors": [],
+"mt": "选择此事件的结束日期。"
+},
+{
+"item": "J003",
+"row_id": "K1e7923866912:zh_CN",
+"sys": "nmt_deepl",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 92,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8561677932739258,
+"comet": 0.7604891657829285,
+"chrf": 7.9079304065428495,
+"errors": [
+[
+"terminology",
+"minor",
+"活动 for calendar event; 事件 expected"
+]
+],
+"mt": "请选择此活动的结束日期。"
+},
+{
+"item": "J004",
+"row_id": "E66d163842b8b:es",
+"sys": "tm_as_is",
+"band": "<50",
+"corpus": "EMEA",
+"score": 0,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.3375651240348816,
+"comet": 0.39484724402427673,
+"chrf": 19.370884155110765,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"unrelated sentence (pseudoephedrine)"
+]
+],
+"mt": "Se supone que la pseudoefedrina atraviesa la placenta y la barrera hematoencefálica."
+},
+{
+"item": "J004",
+"row_id": "E66d163842b8b:es",
+"sys": "hybrid_ctx",
+"band": "<50",
+"corpus": "EMEA",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8851965665817261,
+"comet": 0.8746411204338074,
+"chrf": 58.55416554120758,
+"errors": [],
+"mt": "El objetivo es permitir una mejor interacción entre el Grupo y las empresas que soliciten asesoramiento."
+},
+{
+"item": "J004",
+"row_id": "E66d163842b8b:es",
+"sys": "zero_shot",
+"band": "<50",
+"corpus": "EMEA",
+"score": 95,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8857095241546631,
+"comet": 0.8794805407524109,
+"chrf": 58.50095907210605,
+"errors": [
+[
+"fluency",
+"minor",
+"wordy 'El objetivo de esto es'"
+]
+],
+"mt": "El objetivo de esto es permitir una mejor interacción entre el Grupo y las empresas que soliciten asesoramiento."
+},
+{
+"item": "J004",
+"row_id": "E66d163842b8b:es",
+"sys": "nmt_deepl",
+"band": "<50",
+"corpus": "EMEA",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8864485025405884,
+"comet": 0.8794876337051392,
+"chrf": 62.051510950564726,
+"errors": [],
+"mt": "El objetivo es facilitar una mejor interacción entre el Grupo y las empresas que solicitan asesoramiento."
+},
+{
+"item": "J005",
+"row_id": "K3d40ea2ed84c:zh_CN",
+"sys": "hybrid_ctx",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8747988939285278,
+"comet": 0.968112051486969,
+"chrf": 100.0,
+"errors": [],
+"mt": "“%1” 不是一个函数。"
+},
+{
+"item": "J005",
+"row_id": "K3d40ea2ed84c:zh_CN",
+"sys": "zero_shot",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8746848106384277,
+"comet": 0.9520757794380188,
+"chrf": 55.594035594035596,
+"errors": [],
+"mt": "'%1' 不是一个函数。"
+},
+{
+"item": "J005",
+"row_id": "K3d40ea2ed84c:zh_CN",
+"sys": "tm_as_is",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 25,
+"mqm": 10,
+"worst": 5,
+"kiwi": 0.6640530824661255,
+"comet": 0.8173548579216003,
+"chrf": 64.68795093795093,
+"errors": [
+[
+"accuracy/mistranslation",
+"major",
+"部件 (widget) instead of function"
+],
+[
+"accuracy/placeholder",
+"major",
+"placeholder broken as '% 1'"
+]
+],
+"mt": "“% 1” 不是一个部件 。"
+},
+{
+"item": "J005",
+"row_id": "K3d40ea2ed84c:zh_CN",
+"sys": "nmt_deepl",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8787424564361572,
+"comet": 0.963631808757782,
+"chrf": 100.0,
+"errors": [],
+"mt": "“%1”不是一个函数。"
+},
+{
+"item": "J006",
+"row_id": "K08e3087bc5cf:de",
+"sys": "hybrid_ctx",
+"band": "<50",
+"corpus": "KDE4",
+"score": 92,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8412644863128662,
+"comet": 0.816429853439331,
+"chrf": 40.08645876954159,
+"errors": [
+[
+"terminology",
+"minor",
+"Konto vs project term Zugang"
+]
+],
+"mt": "Löscht das ausgewählte Konto. Mit Vorsicht verwenden!"
+},
+{
+"item": "J006",
+"row_id": "K08e3087bc5cf:de",
+"sys": "zero_shot",
+"band": "<50",
+"corpus": "KDE4",
+"score": 92,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8412644863128662,
+"comet": 0.816429853439331,
+"chrf": 40.08645876954159,
+"errors": [
+[
+"terminology",
+"minor",
+"Konto vs project term Zugang"
+]
+],
+"mt": "Löscht das ausgewählte Konto. Mit Vorsicht verwenden!"
+},
+{
+"item": "J006",
+"row_id": "K08e3087bc5cf:de",
+"sys": "nmt_deepl",
+"band": "<50",
+"corpus": "KDE4",
+"score": 92,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8412644863128662,
+"comet": 0.816429853439331,
+"chrf": 40.08645876954159,
+"errors": [
+[
+"terminology",
+"minor",
+"Konto vs project term Zugang"
+]
+],
+"mt": "Löscht das ausgewählte Konto. Mit Vorsicht verwenden!"
+},
+{
+"item": "J006",
+"row_id": "K08e3087bc5cf:de",
+"sys": "tm_as_is",
+"band": "<50",
+"corpus": "KDE4",
+"score": 50,
+"mqm": 6,
+"worst": 5,
+"kiwi": 0.5180813074111938,
+"comet": 0.647680938243866,
+"chrf": 46.23027999521303,
+"errors": [
+[
+"accuracy/omission",
+"major",
+"'Use with care!' omitted"
+],
+[
+"style",
+"minor",
+"infinitive instead of descriptive 'Löscht'"
+]
+],
+"mt": "Den ausgewählten Zugang entfernen."
+},
+{
+"item": "J007",
+"row_id": "K9482b39378d0:de",
+"sys": "tm_as_is",
+"band": "100",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8554997444152832,
+"comet": 0.8518177270889282,
+"chrf": 75.03335485764767,
+"errors": [],
+"mt": "Seitengröße & & Ränder"
+},
+{
+"item": "J007",
+"row_id": "K9482b39378d0:de",
+"sys": "hybrid_ctx",
+"band": "100",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8554997444152832,
+"comet": 0.8518177270889282,
+"chrf": 75.03335485764767,
+"errors": [],
+"mt": "Seitengröße & & Ränder"
+},
+{
+"item": "J007",
+"row_id": "K9482b39378d0:de",
+"sys": "zero_shot",
+"band": "100",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8554997444152832,
+"comet": 0.8518177270889282,
+"chrf": 75.03335485764767,
+"errors": [],
+"mt": "Seitengröße & & Ränder"
+},
+{
+"item": "J007",
+"row_id": "K9482b39378d0:de",
+"sys": "nmt_deepl",
+"band": "100",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8554997444152832,
+"comet": 0.8518177270889282,
+"chrf": 75.03335485764767,
+"errors": [],
+"mt": "Seitengröße & & Ränder"
+},
+{
+"item": "J008",
+"row_id": "Kbf3634a87b31:de",
+"sys": "hybrid_ctx",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8342268466949463,
+"comet": 0.8550517559051514,
+"chrf": 83.27867953964737,
+"errors": [],
+"mt": "Unerwarteter Rückgabewert vom Chiasmus-Hintergrundprogramm. Die Funktion „x-decrypt“ hat kein Bytefeld zurückgegeben. Bitte melden Sie diesen Fehler."
+},
+{
+"item": "J008",
+"row_id": "Kbf3634a87b31:de",
+"sys": "zero_shot",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8399313688278198,
+"comet": 0.8453391194343567,
+"chrf": 67.19568370000263,
+"errors": [],
+"mt": "Unerwarteter Rückgabewert vom Chiasmus-Backend: Die Funktion „x-decrypt“ hat kein Byte-Array zurückgegeben. Bitte melden Sie diesen Fehler."
+},
+{
+"item": "J008",
+"row_id": "Kbf3634a87b31:de",
+"sys": "nmt_deepl",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8399313688278198,
+"comet": 0.8453391194343567,
+"chrf": 67.19568370000263,
+"errors": [],
+"mt": "Unerwarteter Rückgabewert vom Chiasmus-Backend: Die Funktion „x-decrypt“ hat kein Byte-Array zurückgegeben. Bitte melden Sie diesen Fehler."
+},
+{
+"item": "J008",
+"row_id": "Kbf3634a87b31:de",
+"sys": "tm_as_is",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 40,
+"mqm": 6,
+"worst": 5,
+"kiwi": 0.8273074626922607,
+"comet": 0.8453593850135803,
+"chrf": 80.72911070917927,
+"errors": [
+[
+"accuracy/mistranslation",
+"major",
+"x-encrypt instead of x-decrypt"
+],
+[
+"fluency/punctuation",
+"minor",
+"„ x quote spacing"
+]
+],
+"mt": "Unerwarteter Rückgabewert vom Chiasmus-Hintergrundprogramm. Die Funktion„ x-encrypt“ hat kein Bytefeld zurückgegeben. Bitte melden Sie diesen Fehler."
+},
+{
+"item": "J009",
+"row_id": "K6f5df909b732:es",
+"sys": "hybrid_ctx",
+"band": "<50",
+"corpus": "KDE4",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.6073895692825317,
+"comet": 0.8649377822875977,
+"chrf": 88.84860367307955,
+"errors": [],
+"mt": "Tratar las diferencias de mayúsculas y minúsculas como cambios de los espacios en blanco. ('a '< = > 'A')"
+},
+{
+"item": "J009",
+"row_id": "K6f5df909b732:es",
+"sys": "tm_as_is",
+"band": "<50",
+"corpus": "KDE4",
+"score": 0,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.3018395006656647,
+"comet": 0.5135735869407654,
+"chrf": 8.12738624827089,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"unrelated message"
+]
+],
+"mt": "No puedo hacer un « < = » sin 2 variables"
+},
+{
+"item": "J009",
+"row_id": "K6f5df909b732:es",
+"sys": "nmt_deepl",
+"band": "<50",
+"corpus": "KDE4",
+"score": 85,
+"mqm": 2,
+"worst": 1,
+"kiwi": 0.7015902996063232,
+"comet": 0.8370577692985535,
+"chrf": 72.18267331828902,
+"errors": [
+[
+"style",
+"minor",
+"'Trata' form for UI option"
+],
+[
+"accuracy/literal",
+"minor",
+"altered literal example quoting"
+]
+],
+"mt": "Trata las diferencias de mayúsculas y minúsculas como cambios en los espacios en blanco. («a » <= > «A»)"
+},
+{
+"item": "J009",
+"row_id": "K6f5df909b732:es",
+"sys": "zero_shot",
+"band": "<50",
+"corpus": "KDE4",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.6137195825576782,
+"comet": 0.8815762400627136,
+"chrf": 93.12486945408614,
+"errors": [],
+"mt": "Tratar las diferencias de mayúsculas y minúsculas como cambios de espacios en blanco. ('a '< = > 'A')"
+},
+{
+"item": "J010",
+"row_id": "E5b168cc13a23:es",
+"sys": "nmt_deepl",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.896679699420929,
+"comet": 0.9281676411628723,
+"chrf": 83.27084787107988,
+"errors": [],
+"mt": "El 26 de septiembre de 2006, la Comisión Europea concedió a Pfizer Limited una autorización de comercialización válida en toda la Unión Europea para CHAMPIX."
+},
+{
+"item": "J010",
+"row_id": "E5b168cc13a23:es",
+"sys": "hybrid_ctx",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 94,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.893123984336853,
+"comet": 0.9229754209518433,
+"chrf": 82.51819086708505,
+"errors": [
+[
+"accuracy/addition",
+"minor",
+"'el medicamento' added"
+]
+],
+"mt": "La Comisión Europea emitió una autorización de comercialización válida en toda la Unión Europea para el medicamento CHAMPIX a Pfizer Limited el 26 de septiembre de 2006."
+},
+{
+"item": "J010",
+"row_id": "E5b168cc13a23:es",
+"sys": "tm_as_is",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 0,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.7027100324630737,
+"comet": 0.9026888012886047,
+"chrf": 85.54918511325103,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"Viagra and 14 September 1998 instead of CHAMPIX and 26 September 2006"
+]
+],
+"mt": "La Comisión Europea concedió una autorización de comercialización de Viagra válida para toda la Unión Europea a Pfizer Limited el 14 de septiembre de 1998."
+},
+{
+"item": "J010",
+"row_id": "E5b168cc13a23:es",
+"sys": "zero_shot",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8950625658035278,
+"comet": 0.9374045729637146,
+"chrf": 85.59002036935837,
+"errors": [],
+"mt": "La Comisión Europea concedió a Pfizer Limited una autorización de comercialización válida en toda la Unión Europea para CHAMPIX el 26 de septiembre de 2006."
+},
+{
+"item": "J011",
+"row_id": "K0bb77393fbaf:de",
+"sys": "zero_shot",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 92,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.7657462358474731,
+"comet": 0.853851854801178,
+"chrf": 62.43278480040583,
+"errors": [
+[
+"terminology",
+"minor",
+"Hauptbuch vs project term Kontobuch"
+]
+],
+"mt": "Kontenauswahl von Hauptbuch- und Investmentansicht synchronisieren"
+},
+{
+"item": "J011",
+"row_id": "K0bb77393fbaf:de",
+"sys": "tm_as_is",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 65,
+"mqm": 5,
+"worst": 5,
+"kiwi": 0.6796042323112488,
+"comet": 0.8797847628593445,
+"chrf": 80.66590703384463,
+"errors": [
+[
+"accuracy/omission",
+"major",
+"'selection' dropped: synchronises the account, not the account selection"
+]
+],
+"mt": "Synchronisiere Konto in Kontobuch- und Investment-Ansicht"
+},
+{
+"item": "J011",
+"row_id": "K0bb77393fbaf:de",
+"sys": "nmt_deepl",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 93,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.7733510732650757,
+"comet": 0.8284595608711243,
+"chrf": 46.247838886353755,
+"errors": [
+[
+"terminology",
+"minor",
+"Hauptbuch/Anlageansicht vs project terms"
+]
+],
+"mt": "Kontenauswahl in der Hauptbuch- und der Anlageansicht synchronisieren"
+},
+{
+"item": "J011",
+"row_id": "K0bb77393fbaf:de",
+"sys": "hybrid_ctx",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 85,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.7756117582321167,
+"comet": 0.8303938508033752,
+"chrf": 59.17480482258583,
+"errors": [
+[
+"fluency/spelling",
+"minor",
+"'Kontoaustwahl' typo"
+]
+],
+"mt": "Kontoaustwahl in Kontobuch- und Investment-Ansicht abgleichen"
+},
+{
+"item": "J012",
+"row_id": "E9d70e2f7d410:es",
+"sys": "nmt_deepl",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 95,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8256908059120178,
+"comet": 0.7866188287734985,
+"chrf": 47.52625078890173,
+"errors": [],
+"mt": "La solución oral Zeffix se presenta en cajas con precinto de seguridad que contienen un frasco blanco de polietileno con tapón a prueba de niños."
+},
+{
+"item": "J012",
+"row_id": "E9d70e2f7d410:es",
+"sys": "zero_shot",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 90,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8109018802642822,
+"comet": 0.8221094012260437,
+"chrf": 53.238030808224444,
+"errors": [
+[
+"terminology",
+"minor",
+"'cierre de seguridad' imprecise for tamper-evident"
+]
+],
+"mt": "Zeffix solución oral se suministra en cajas con cierre de seguridad que contienen un frasco de polietileno blanco con tapón resistente a la apertura por niños."
+},
+{
+"item": "J012",
+"row_id": "E9d70e2f7d410:es",
+"sys": "hybrid_ctx",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.7424511313438416,
+"comet": 0.8077426552772522,
+"chrf": 51.666686554885175,
+"errors": [],
+"mt": "Zeffix solución oral se suministra en estuches con dispositivo de inviolabilidad que contienen un frasco de polietileno blanco con cierre a prueba de niños."
+},
+{
+"item": "J012",
+"row_id": "E9d70e2f7d410:es",
+"sys": "tm_as_is",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 55,
+"mqm": 5,
+"worst": 5,
+"kiwi": 0.6563249230384827,
+"comet": 0.7105845212936401,
+"chrf": 41.42652010391595,
+"errors": [
+[
+"accuracy/omission",
+"major",
+"product name and tamper-evident omitted"
+]
+],
+"mt": "Se presenta en estuches que contienen un frasco de polietileno blanco con cierre a prueba de niños."
+},
+{
+"item": "J013",
+"row_id": "E41bea80af94d:es",
+"sys": "zero_shot",
+"band": "<50",
+"corpus": "EMEA",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8819928765296936,
+"comet": 0.91916823387146,
+"chrf": 83.3160386355733,
+"errors": [],
+"mt": "El Comité de Medicamentos de Uso Humano (CHMP) decidió que, en pacientes con enfermedad de Fabry, el tratamiento con Fabrazyme podría proporcionar beneficios clínicos a largo plazo."
+},
+{
+"item": "J013",
+"row_id": "E41bea80af94d:es",
+"sys": "hybrid_ctx",
+"band": "<50",
+"corpus": "EMEA",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8825055360794067,
+"comet": 0.9212788939476013,
+"chrf": 86.11300575803517,
+"errors": [],
+"mt": "El Comité de Medicamentos de Uso Humano (CHMP) decidió que, en pacientes con la enfermedad de Fabry, el tratamiento con Fabrazyme podría proporcionar beneficios clínicos a largo plazo."
+},
+{
+"item": "J013",
+"row_id": "E41bea80af94d:es",
+"sys": "tm_as_is",
+"band": "<50",
+"corpus": "EMEA",
+"score": 0,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.5580920577049255,
+"comet": 0.7435681819915771,
+"chrf": 45.80307884338629,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"unrelated sentence (Zarzio/Neupogen)"
+]
+],
+"mt": "El Comité de Medicamentos de Uso Humano (CHMP) decidió que, de acuerdo con los requisitos de la Unión Europea, Zarzio ha demostrado tener un perfil de calidad, seguridad y eficacia similar al de Neupogen."
+},
+{
+"item": "J013",
+"row_id": "E41bea80af94d:es",
+"sys": "nmt_deepl",
+"band": "<50",
+"corpus": "EMEA",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8859044909477234,
+"comet": 0.9203118681907654,
+"chrf": 83.52135125545733,
+"errors": [],
+"mt": "El Comité de Medicamentos de Uso Humano (CHMP) ha decidido que, en el caso de los pacientes con enfermedad de Fabry, el tratamiento con Fabrazyme podría aportar beneficios clínicos a largo plazo."
+},
+{
+"item": "J014",
+"row_id": "Keaf4e8eace11:zh_CN",
+"sys": "hybrid_ctx",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8725760579109192,
+"comet": 0.7723543047904968,
+"chrf": 38.24217704568777,
+"errors": [],
+"mt": "构建一个新的 Python 脚本。"
+},
+{
+"item": "J014",
+"row_id": "Keaf4e8eace11:zh_CN",
+"sys": "nmt_deepl",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 90,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8759217262268066,
+"comet": 0.769090473651886,
+"chrf": 37.68977771302711,
+"errors": [
+[
+"accuracy/mistranslation",
+"minor",
+"编写 (write) for construct"
+]
+],
+"mt": "编写一个新的 Python 脚本。"
+},
+{
+"item": "J014",
+"row_id": "Keaf4e8eace11:zh_CN",
+"sys": "zero_shot",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 96,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8757783770561218,
+"comet": 0.7665547728538513,
+"chrf": 30.890130775552528,
+"errors": [],
+"mt": "创建新的 Python 脚本。"
+},
+{
+"item": "J014",
+"row_id": "Keaf4e8eace11:zh_CN",
+"sys": "tm_as_is",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 55,
+"mqm": 5,
+"worst": 5,
+"kiwi": 0.6567083597183228,
+"comet": 0.5950389504432678,
+"chrf": 4.197668940920267,
+"errors": [
+[
+"accuracy/omission",
+"major",
+"'Python' dropped; 'add' for construct"
+]
+],
+"mt": "添加新脚本 。"
+},
+{
+"item": "J015",
+"row_id": "Kb1e220d62496:de",
+"sys": "tm_as_is",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 0,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.38434115052223206,
+"comet": 0.5374063849449158,
+"chrf": 17.402339495465323,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"unrelated string (save search terms)"
+]
+],
+"mt": "Liste der Suchbegriffe in & Datei speichern..."
+},
+{
+"item": "J015",
+"row_id": "Kb1e220d62496:de",
+"sys": "zero_shot",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 95,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.6853924989700317,
+"comet": 0.5242334008216858,
+"chrf": 27.841411370056633,
+"errors": [],
+"mt": "& Website-Vorlage extrahieren nach..."
+},
+{
+"item": "J015",
+"row_id": "Kb1e220d62496:de",
+"sys": "nmt_deepl",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 95,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.6853924989700317,
+"comet": 0.5242334008216858,
+"chrf": 27.841411370056633,
+"errors": [],
+"mt": "& Website-Vorlage extrahieren nach..."
+},
+{
+"item": "J015",
+"row_id": "Kb1e220d62496:de",
+"sys": "hybrid_ctx",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 88,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.7017872333526611,
+"comet": 0.59727543592453,
+"chrf": 29.54639762600022,
+"errors": [
+[
+"accuracy/mistranslation",
+"minor",
+"export for extract"
+]
+],
+"mt": "Website-Vorlage & exportieren nach..."
+},
+{
+"item": "J016",
+"row_id": "K7450ed0bd2b3:de",
+"sys": "hybrid_ctx",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8450589776039124,
+"comet": 0.977588951587677,
+"chrf": 96.94535245834635,
+"errors": [],
+"mt": "Bitte wählen Sie einen Ordner aus"
+},
+{
+"item": "J016",
+"row_id": "K7450ed0bd2b3:de",
+"sys": "zero_shot",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8450589776039124,
+"comet": 0.977588951587677,
+"chrf": 96.94535245834635,
+"errors": [],
+"mt": "Bitte wählen Sie einen Ordner aus"
+},
+{
+"item": "J016",
+"row_id": "K7450ed0bd2b3:de",
+"sys": "nmt_deepl",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8450589776039124,
+"comet": 0.977588951587677,
+"chrf": 96.94535245834635,
+"errors": [],
+"mt": "Bitte wählen Sie einen Ordner aus"
+},
+{
+"item": "J016",
+"row_id": "K7450ed0bd2b3:de",
+"sys": "tm_as_is",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 25,
+"mqm": 5,
+"worst": 5,
+"kiwi": 0.6070666313171387,
+"comet": 0.6850035786628723,
+"chrf": 39.36512941551705,
+"errors": [
+[
+"accuracy/mistranslation",
+"major",
+"different, incomplete instruction ('Legen Sie einen Speicherordner')"
+]
+],
+"mt": "Legen Sie einen Speicherordner"
+},
+{
+"item": "J017",
+"row_id": "E90b133cb147d:es",
+"sys": "hybrid_ctx",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8679876327514648,
+"comet": 0.987845242023468,
+"chrf": 100.0,
+"errors": [],
+"mt": "QUÉ ES NOXAFIL Y PARA QUÉ SE UTILIZA"
+},
+{
+"item": "J017",
+"row_id": "E90b133cb147d:es",
+"sys": "zero_shot",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8679876327514648,
+"comet": 0.987845242023468,
+"chrf": 100.0,
+"errors": [],
+"mt": "QUÉ ES NOXAFIL Y PARA QUÉ SE UTILIZA"
+},
+{
+"item": "J017",
+"row_id": "E90b133cb147d:es",
+"sys": "nmt_deepl",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8679876327514648,
+"comet": 0.987845242023468,
+"chrf": 100.0,
+"errors": [],
+"mt": "QUÉ ES NOXAFIL Y PARA QUÉ SE UTILIZA"
+},
+{
+"item": "J017",
+"row_id": "E90b133cb147d:es",
+"sys": "tm_as_is",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 5,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.6790037155151367,
+"comet": 0.8613017201423645,
+"chrf": 64.73205338722579,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"wrong product name IVEMEND"
+]
+],
+"mt": "QUÉ ES IVEMEND Y PARA QUÉ SE UTILIZA"
+},
+{
+"item": "J018",
+"row_id": "K9d86a7e1065e:es",
+"sys": "nmt_deepl",
+"band": "<50",
+"corpus": "KDE4",
+"score": 95,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8524821996688843,
+"comet": 0.7719228863716125,
+"chrf": 51.8277514329524,
+"errors": [],
+"mt": "El servicio «Gestión de red» del sistema no se está ejecutando"
+},
+{
+"item": "J018",
+"row_id": "K9d86a7e1065e:es",
+"sys": "tm_as_is",
+"band": "<50",
+"corpus": "KDE4",
+"score": 0,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.39905086159706116,
+"comet": 0.4710231125354767,
+"chrf": 21.294935911621245,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"unrelated message (Zeroconf daemon)"
+]
+],
+"mt": "El demonio Zeroconf (mdnsd) no se esta ejecutando."
+},
+{
+"item": "J018",
+"row_id": "K9d86a7e1065e:es",
+"sys": "hybrid_ctx",
+"band": "<50",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8381837010383606,
+"comet": 0.7690423727035522,
+"chrf": 61.93655650611854,
+"errors": [],
+"mt": "El servicio de gestión de red del sistema no se está ejecutando"
+},
+{
+"item": "J018",
+"row_id": "K9d86a7e1065e:es",
+"sys": "zero_shot",
+"band": "<50",
+"corpus": "KDE4",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8500587940216064,
+"comet": 0.7639576196670532,
+"chrf": 53.07991921973162,
+"errors": [],
+"mt": "El servicio de Gestión de Red del sistema no se está ejecutando"
+},
+{
+"item": "J019",
+"row_id": "E080f68aefa53:es",
+"sys": "hybrid_ctx",
+"band": "100",
+"corpus": "EMEA",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8903681039810181,
+"comet": 0.895512044429779,
+"chrf": 94.43298076898976,
+"errors": [],
+"mt": "Se evaluaron las anormalidades citogenéticas en 117 de la población total de 176 pacientes."
+},
+{
+"item": "J019",
+"row_id": "E080f68aefa53:es",
+"sys": "nmt_deepl",
+"band": "100",
+"corpus": "EMEA",
+"score": 96,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8906114101409912,
+"comet": 0.8466574549674988,
+"chrf": 67.73083714786141,
+"errors": [],
+"mt": "Se evaluaron las anomalías citogenéticas en 117 de los 176 pacientes que componían la población total."
+},
+{
+"item": "J019",
+"row_id": "E080f68aefa53:es",
+"sys": "tm_as_is",
+"band": "100",
+"corpus": "EMEA",
+"score": 35,
+"mqm": 10,
+"worst": 5,
+"kiwi": 0.6408370733261108,
+"comet": 0.9142504334449768,
+"chrf": 96.99049534511371,
+"errors": [
+[
+"accuracy/omission",
+"major",
+"main verb ('Se evaluaron') missing"
+],
+[
+"accuracy/addition",
+"major",
+"spurious number '21'"
+]
+],
+"mt": "21 las anormalidades citogenéticas en 117 de la población total de 176 pacientes."
+},
+{
+"item": "J019",
+"row_id": "E080f68aefa53:es",
+"sys": "zero_shot",
+"band": "100",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8889505863189697,
+"comet": 0.8825611472129822,
+"chrf": 80.59747140022253,
+"errors": [],
+"mt": "Se evaluaron las anomalías citogenéticas en 117 de la población total de 176 pacientes."
+},
+{
+"item": "J020",
+"row_id": "Ka1c7d577e418:es",
+"sys": "tm_as_is",
+"band": "100",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8816953897476196,
+"comet": 0.9084573984146118,
+"chrf": 85.46718494106503,
+"errors": [],
+"mt": "Ha fallado la inicialización basada en la configuración almacenada."
+},
+{
+"item": "J020",
+"row_id": "Ka1c7d577e418:es",
+"sys": "hybrid_ctx",
+"band": "100",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8816953897476196,
+"comet": 0.9084573984146118,
+"chrf": 85.46718494106503,
+"errors": [],
+"mt": "Ha fallado la inicialización basada en la configuración almacenada."
+},
+{
+"item": "J020",
+"row_id": "Ka1c7d577e418:es",
+"sys": "nmt_deepl",
+"band": "100",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8816953897476196,
+"comet": 0.9084573984146118,
+"chrf": 85.46718494106503,
+"errors": [],
+"mt": "Ha fallado la inicialización basada en la configuración almacenada."
+},
+{
+"item": "J020",
+"row_id": "Ka1c7d577e418:es",
+"sys": "zero_shot",
+"band": "100",
+"corpus": "KDE4",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8850328922271729,
+"comet": 0.9030751585960388,
+"chrf": 77.31698716809376,
+"errors": [],
+"mt": "La inicialización basada en la configuración almacenada ha fallado."
+},
+{
+"item": "J021",
+"row_id": "E89b5a164743f:es",
+"sys": "tm_as_is",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 70,
+"mqm": 5,
+"worst": 5,
+"kiwi": 0.8565982580184937,
+"comet": 0.9332619905471802,
+"chrf": 99.70777096621201,
+"errors": [
+[
+"accuracy/addition",
+"major",
+"spurious leading number '41'"
+]
+],
+"mt": "41 Prepare el lugar de inyección. • Limpie la piel del lugar de inyección con un algodón impregnado en alcohol. • No vuelva a tocar esta zona antes de ponerse la inyección."
+},
+{
+"item": "J021",
+"row_id": "E89b5a164743f:es",
+"sys": "nmt_deepl",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 85,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8694717884063721,
+"comet": 0.8695459961891174,
+"chrf": 60.08756972559788,
+"errors": [
+[
+"style/register",
+"minor",
+"informal tú in patient instructions"
+]
+],
+"mt": "Prepara la zona de la inyección • Limpia la zona de la inyección en la piel con un bastoncillo impregnado en alcohol • No vuelvas a tocar esta zona antes de administrar la inyección."
+},
+{
+"item": "J021",
+"row_id": "E89b5a164743f:es",
+"sys": "hybrid_ctx",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8693770170211792,
+"comet": 0.9317724704742432,
+"chrf": 95.11836066084139,
+"errors": [],
+"mt": "Prepare el lugar de inyección • Limpie la piel del lugar de inyección con un algodón impregnado en alcohol • No vuelva a tocar esta zona antes de ponerse la inyección."
+},
+{
+"item": "J021",
+"row_id": "E89b5a164743f:es",
+"sys": "zero_shot",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 96,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8580791354179382,
+"comet": 0.848107635974884,
+"chrf": 67.73992527983731,
+"errors": [],
+"mt": "Preparación del lugar de la inyección • Limpie el lugar de la inyección en la piel con una torunda impregnada de alcohol • No vuelva a tocar esta zona antes de administrar la inyección."
+},
+{
+"item": "J022",
+"row_id": "K1a607a1aa462:es",
+"sys": "nmt_deepl",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 96,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8422473669052124,
+"comet": 0.7217500805854797,
+"chrf": 48.76137063498681,
+"errors": [],
+"mt": "Error al cambiar el tamaño o mover la partición: No se ha podido reducir la partición %1."
+},
+{
+"item": "J022",
+"row_id": "K1a607a1aa462:es",
+"sys": "tm_as_is",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 45,
+"mqm": 6,
+"worst": 5,
+"kiwi": 0.5678810477256775,
+"comet": 0.7872175574302673,
+"chrf": 86.79289148793569,
+"errors": [
+[
+"accuracy/addition",
+"major",
+"adds 'could not resize the file system'"
+],
+[
+"accuracy/addition",
+"minor",
+"'@info/ plain' artefact"
+]
+],
+"mt": "Falló el cambio de tamaño/ movimiento: No se pudo cambiar el tamaño del sistema de archivos para reducir la partición %1. @info/ plain"
+},
+{
+"item": "J022",
+"row_id": "K1a607a1aa462:es",
+"sys": "zero_shot",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.7706421613693237,
+"comet": 0.7078636288642883,
+"chrf": 47.70009780090908,
+"errors": [],
+"mt": "Error al redimensionar/mover: No se pudo reducir la partición %1."
+},
+{
+"item": "J022",
+"row_id": "K1a607a1aa462:es",
+"sys": "hybrid_ctx",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.7908730506896973,
+"comet": 0.8093942999839783,
+"chrf": 87.107853702266,
+"errors": [],
+"mt": "Falló el cambio de tamaño/ movimiento: No se pudo reducir la partición %1."
+},
+{
+"item": "J023",
+"row_id": "E9c9c3087c8c1:es",
+"sys": "hybrid_ctx",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8775452971458435,
+"comet": 0.9913707375526428,
+"chrf": 100.0,
+"errors": [],
+"mt": "¿Por qué se ha aprobado Zenapax?"
+},
+{
+"item": "J023",
+"row_id": "E9c9c3087c8c1:es",
+"sys": "zero_shot",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8775452971458435,
+"comet": 0.9913707375526428,
+"chrf": 100.0,
+"errors": [],
+"mt": "¿Por qué se ha aprobado Zenapax?"
+},
+{
+"item": "J023",
+"row_id": "E9c9c3087c8c1:es",
+"sys": "nmt_deepl",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8700330853462219,
+"comet": 0.9721376895904541,
+"chrf": 72.90031795016063,
+"errors": [],
+"mt": "¿Por qué se ha autorizado Zenapax?"
+},
+{
+"item": "J023",
+"row_id": "E9c9c3087c8c1:es",
+"sys": "tm_as_is",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 0,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.7201707363128662,
+"comet": 0.8255098462104797,
+"chrf": 28.698607011011863,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"different question and wrong product (Naxcel)"
+]
+],
+"mt": "¿En qué se basa la aprobación de la comercialización de Naxcel?"
+},
+{
+"item": "J024",
+"row_id": "E6af73d9294e7:es",
+"sys": "hybrid_ctx",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8851302862167358,
+"comet": 0.9351784586906433,
+"chrf": 83.77467201053108,
+"errors": [],
+"mt": "No se deben superar ni la dosis inicial ni la subsiguiente escalada de dosis debido al riesgo de erupción cutánea (ver sección 4.4)."
+},
+{
+"item": "J024",
+"row_id": "E6af73d9294e7:es",
+"sys": "zero_shot",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.883415937423706,
+"comet": 0.8933830261230469,
+"chrf": 44.03972323188291,
+"errors": [],
+"mt": "Debido al riesgo de erupción cutánea, no se debe exceder la dosis inicial ni el posterior aumento de la dosis (véase el apartado 4.4)."
+},
+{
+"item": "J024",
+"row_id": "E6af73d9294e7:es",
+"sys": "tm_as_is",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 85,
+"mqm": 2,
+"worst": 1,
+"kiwi": 0.8769683837890625,
+"comet": 0.9584696292877197,
+"chrf": 100.0,
+"errors": [
+[
+"fluency/spelling",
+"minor",
+"'erúpción cutanea' misspelt"
+],
+[
+"fluency/punctuation",
+"minor",
+"final period missing"
+]
+],
+"mt": "No se deben superar ni la dosis inicial ni la subsiguiente escalada de dosis debido al riesgo de que se produzca erúpción cutanea (ver sección 4.4)"
+},
+{
+"item": "J024",
+"row_id": "E6af73d9294e7:es",
+"sys": "nmt_deepl",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8820056915283203,
+"comet": 0.9015204310417175,
+"chrf": 54.271302468007974,
+"errors": [],
+"mt": "Debido al riesgo de erupción cutánea, no deben superarse la dosis inicial ni los aumentos de dosis posteriores (véase la sección 4.4)."
+},
+{
+"item": "J025",
+"row_id": "E36c790a485c5:es",
+"sys": "nmt_deepl",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 92,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8486210107803345,
+"comet": 0.8461135625839233,
+"chrf": 32.54916515458558,
+"errors": [
+[
+"fluency/grammar",
+"minor",
+"article before product name"
+]
+],
+"mt": "¿Cómo se ha estudiado el Beromun?"
+},
+{
+"item": "J025",
+"row_id": "E36c790a485c5:es",
+"sys": "tm_as_is",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 5,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.6301479339599609,
+"comet": 0.9200853705406189,
+"chrf": 75.15969804470394,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"wrong product name Macugen"
+]
+],
+"mt": "¿Qué tipo de estudios se han realizado sobre Macugen?"
+},
+{
+"item": "J025",
+"row_id": "E36c790a485c5:es",
+"sys": "zero_shot",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8469271659851074,
+"comet": 0.8670228123664856,
+"chrf": 32.051282940928445,
+"errors": [],
+"mt": "¿Cómo se ha estudiado Beromun?"
+},
+{
+"item": "J025",
+"row_id": "E36c790a485c5:es",
+"sys": "hybrid_ctx",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8515281677246094,
+"comet": 0.9809823632240295,
+"chrf": 100.0,
+"errors": [],
+"mt": "¿Qué tipo de estudios se han realizado con Beromun?"
+},
+{
+"item": "J026",
+"row_id": "E6199a4577783:es",
+"sys": "hybrid_ctx",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8738604784011841,
+"comet": 0.9109272360801697,
+"chrf": 98.23642348938452,
+"errors": [],
+"mt": "Los resultados de estas investigaciones mostraron que la ribavirina en monoterapia no ejercía efectos en cuanto a la eliminación del virus de la hepatitis (ARN-VHC) o a la mejoría de la histología hepática tras seis a 12 meses de tratamiento y seis meses de seguimiento."
+},
+{
+"item": "J026",
+"row_id": "E6199a4577783:es",
+"sys": "tm_as_is",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 55,
+"mqm": 5,
+"worst": 5,
+"kiwi": 0.8288511037826538,
+"comet": 0.8982083201408386,
+"chrf": 95.13397257557729,
+"errors": [
+[
+"accuracy/mistranslation",
+"major",
+"brand Rebetol substituted for ribavirin"
+]
+],
+"mt": "Los resultados de estas investigaciones mostraron que Rebetol en monoterapia no ejercía efectos en cuanto a la eliminación del virus de la hepatitis (ARN-VHC) o a la mejoría de la histología hepática tras seis a 12 meses de tratamiento y seis meses de seguimiento."
+},
+{
+"item": "J026",
+"row_id": "E6199a4577783:es",
+"sys": "zero_shot",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8883141875267029,
+"comet": 0.8654221892356873,
+"chrf": 77.76154829185629,
+"errors": [],
+"mt": "Los resultados de estas investigaciones mostraron que la monoterapia con ribavirina no tuvo efecto en la eliminación del virus de la hepatitis (ARN del VHC) ni en la mejora de la histología hepática tras seis a 12 meses de terapia y seis meses de seguimiento."
+},
+{
+"item": "J026",
+"row_id": "E6199a4577783:es",
+"sys": "nmt_deepl",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8905820250511169,
+"comet": 0.8518686890602112,
+"chrf": 64.97173500726527,
+"errors": [],
+"mt": "Los resultados de estos estudios revelaron que la monoterapia con ribavirina no tuvo ningún efecto en la eliminación del virus de la hepatitis (ARN del VHC) ni en la mejora de la histología hepática tras un periodo de tratamiento de entre seis y doce meses y un seguimiento de seis meses."
+},
+{
+"item": "J027",
+"row_id": "Ef9d2390f9939:es",
+"sys": "hybrid_ctx",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 93,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.870518147945404,
+"comet": 0.9355263113975525,
+"chrf": 82.62644660162394,
+"errors": [
+[
+"terminology",
+"minor",
+"plural for the defined term Safety Specification"
+]
+],
+"mt": "- Cuando se reciba nueva información que pueda afectar a las especificaciones de seguridad vigentes,"
+},
+{
+"item": "J027",
+"row_id": "Ef9d2390f9939:es",
+"sys": "zero_shot",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8742587566375732,
+"comet": 0.9409984350204468,
+"chrf": 74.6673730504974,
+"errors": [],
+"mt": "- Cuando se reciba información nueva que pueda tener un impacto en la Especificación de Seguridad actual,"
+},
+{
+"item": "J027",
+"row_id": "Ef9d2390f9939:es",
+"sys": "tm_as_is",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 35,
+"mqm": 5,
+"worst": 5,
+"kiwi": 0.5401415824890137,
+"comet": 0.751928985118866,
+"chrf": 62.000689316849446,
+"errors": [
+[
+"accuracy/addition",
+"major",
+"adds lead-in 'an updated RMP must be submitted' and two extra list items"
+]
+],
+"mt": "Además se debe presentar un PGR actualizado: • Cuando se reciba nueva información que pueda impactar en las Especificaciones de Seguridad actuales, en el Plan de Farmacovigilancia o en las actividades de minimización de riesgos."
+},
+{
+"item": "J027",
+"row_id": "Ef9d2390f9939:es",
+"sys": "nmt_deepl",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8717840909957886,
+"comet": 0.9416303038597107,
+"chrf": 88.11968497093162,
+"errors": [],
+"mt": "- Cuando se reciba nueva información que pueda afectar a la especificación de seguridad vigente,"
+},
+{
+"item": "J028",
+"row_id": "E47c9752e10e1:es",
+"sys": "tm_as_is",
+"band": "100",
+"corpus": "EMEA",
+"score": 85,
+"mqm": 2,
+"worst": 1,
+"kiwi": 0.6819567680358887,
+"comet": 0.9304730892181396,
+"chrf": 97.46198531578678,
+"errors": [
+[
+"accuracy/addition",
+"minor",
+"'Esta modalidad de aprobación' added"
+],
+[
+"accuracy/mistranslation",
+"minor",
+"'su enfermedad' for 'this disease'"
+]
+],
+"mt": "Esta modalidad de aprobación significa que debido a la rareza de su enfermedad no ha sido posible obtener una información completa de este medicamento."
+},
+{
+"item": "J028",
+"row_id": "E47c9752e10e1:es",
+"sys": "hybrid_ctx",
+"band": "100",
+"corpus": "EMEA",
+"score": 85,
+"mqm": 2,
+"worst": 1,
+"kiwi": 0.6819567680358887,
+"comet": 0.9304730892181396,
+"chrf": 97.46198531578678,
+"errors": [
+[
+"accuracy/addition",
+"minor",
+"'Esta modalidad de aprobación' added"
+],
+[
+"accuracy/mistranslation",
+"minor",
+"'su enfermedad' for 'this disease'"
+]
+],
+"mt": "Esta modalidad de aprobación significa que debido a la rareza de su enfermedad no ha sido posible obtener una información completa de este medicamento."
+},
+{
+"item": "J028",
+"row_id": "E47c9752e10e1:es",
+"sys": "zero_shot",
+"band": "100",
+"corpus": "EMEA",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8971853852272034,
+"comet": 0.8894678950309753,
+"chrf": 70.16927373683967,
+"errors": [],
+"mt": "Esto significa que, debido a la rareza de esta enfermedad, ha sido imposible obtener información completa sobre este medicamento."
+},
+{
+"item": "J028",
+"row_id": "E47c9752e10e1:es",
+"sys": "nmt_deepl",
+"band": "100",
+"corpus": "EMEA",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8971853852272034,
+"comet": 0.8894678950309753,
+"chrf": 70.16927373683967,
+"errors": [],
+"mt": "Esto significa que, debido a la rareza de esta enfermedad, ha sido imposible obtener información completa sobre este medicamento."
+},
+{
+"item": "J029",
+"row_id": "E4f44383687d8:es",
+"sys": "tm_as_is",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 5,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.6487696766853333,
+"comet": 0.8953796625137329,
+"chrf": 80.66077405287741,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"wrong product name Metalyse"
+]
+],
+"mt": "El texto completo del EPAR de Metalyse puede encontrarse aquí."
+},
+{
+"item": "J029",
+"row_id": "E4f44383687d8:es",
+"sys": "zero_shot",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8649368286132812,
+"comet": 0.9009512066841125,
+"chrf": 44.31546194613388,
+"errors": [],
+"mt": "El EPAR completo de IntronA está disponible aquí."
+},
+{
+"item": "J029",
+"row_id": "E4f44383687d8:es",
+"sys": "nmt_deepl",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8649368286132812,
+"comet": 0.9009512066841125,
+"chrf": 44.31546194613388,
+"errors": [],
+"mt": "El EPAR completo de IntronA está disponible aquí."
+},
+{
+"item": "J029",
+"row_id": "E4f44383687d8:es",
+"sys": "hybrid_ctx",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8574476838111877,
+"comet": 0.9684619307518005,
+"chrf": 100.0,
+"errors": [],
+"mt": "El texto completo del EPAR de IntronA puede encontrarse aquí."
+},
+{
+"item": "J030",
+"row_id": "E923637d5c20a:es",
+"sys": "tm_as_is",
+"band": "<50",
+"corpus": "EMEA",
+"score": 0,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.5622218251228333,
+"comet": 0.5995203852653503,
+"chrf": 36.220929443907615,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"unrelated sentence (Binocrit/chemotherapy)"
+]
+],
+"mt": "El tratamiento con Binocrit deberá mantenerse hasta un mes después del fin de la quimioterapia."
+},
+{
+"item": "J030",
+"row_id": "E923637d5c20a:es",
+"sys": "nmt_deepl",
+"band": "<50",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8895058035850525,
+"comet": 0.9039549231529236,
+"chrf": 69.15093723250719,
+"errors": [],
+"mt": "El tratamiento debe proseguirse a intervalos mensuales regulares hasta un mes después de la última exposición a los mosquitos."
+},
+{
+"item": "J030",
+"row_id": "E923637d5c20a:es",
+"sys": "hybrid_ctx",
+"band": "<50",
+"corpus": "EMEA",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8889088034629822,
+"comet": 0.9104401469230652,
+"chrf": 77.48254508720169,
+"errors": [],
+"mt": "El tratamiento debe continuarse a intervalos mensuales regulares hasta un mes después de la última exposición a los mosquitos."
+},
+{
+"item": "J030",
+"row_id": "E923637d5c20a:es",
+"sys": "zero_shot",
+"band": "<50",
+"corpus": "EMEA",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8889088034629822,
+"comet": 0.9104401469230652,
+"chrf": 77.48254508720169,
+"errors": [],
+"mt": "El tratamiento debe continuarse a intervalos mensuales regulares hasta un mes después de la última exposición a los mosquitos."
+},
+{
+"item": "J031",
+"row_id": "E41c0b8656b39:es",
+"sys": "tm_as_is",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 92,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8313283920288086,
+"comet": 0.9366070032119751,
+"chrf": 100.0,
+"errors": [
+[
+"accuracy/addition",
+"minor",
+"dangling 'la'"
+]
+],
+"mt": "- los medicamentos simpaticomiméticos (como la epinefrina [adrenalina] o el salbutamol, la"
+},
+{
+"item": "J031",
+"row_id": "E41c0b8656b39:es",
+"sys": "zero_shot",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 95,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8786871433258057,
+"comet": 0.9144086241722107,
+"chrf": 93.58780226511976,
+"errors": [
+[
+"fluency/grammar",
+"minor",
+"article missing"
+]
+],
+"mt": "- medicamentos simpaticomiméticos (como la epinefrina [adrenalina] o el salbutamol,"
+},
+{
+"item": "J031",
+"row_id": "E41c0b8656b39:es",
+"sys": "nmt_deepl",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 95,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8786871433258057,
+"comet": 0.9144086241722107,
+"chrf": 93.58780226511976,
+"errors": [
+[
+"fluency/grammar",
+"minor",
+"article missing"
+]
+],
+"mt": "- medicamentos simpaticomiméticos (como la epinefrina [adrenalina] o el salbutamol,"
+},
+{
+"item": "J031",
+"row_id": "E41c0b8656b39:es",
+"sys": "hybrid_ctx",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8774847388267517,
+"comet": 0.9194920063018799,
+"chrf": 97.89644901444507,
+"errors": [],
+"mt": "- los medicamentos simpaticomiméticos (como la epinefrina [adrenalina] o el salbutamol,"
+},
+{
+"item": "J032",
+"row_id": "Kb72f15556751:es",
+"sys": "tm_as_is",
+"band": "100",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8649242520332336,
+"comet": 0.9348389506340027,
+"chrf": 83.34335292109996,
+"errors": [],
+"mt": "& Borrar los archivos en vez de moverlos a la papelera"
+},
+{
+"item": "J032",
+"row_id": "Kb72f15556751:es",
+"sys": "hybrid_ctx",
+"band": "100",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8649242520332336,
+"comet": 0.9348389506340027,
+"chrf": 83.34335292109996,
+"errors": [],
+"mt": "& Borrar los archivos en vez de moverlos a la papelera"
+},
+{
+"item": "J032",
+"row_id": "Kb72f15556751:es",
+"sys": "zero_shot",
+"band": "100",
+"corpus": "KDE4",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8720645904541016,
+"comet": 0.9118306040763855,
+"chrf": 79.91208190693723,
+"errors": [],
+"mt": "& Eliminar archivos en lugar de moverlos a la papelera"
+},
+{
+"item": "J032",
+"row_id": "Kb72f15556751:es",
+"sys": "nmt_deepl",
+"band": "100",
+"corpus": "KDE4",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8720645904541016,
+"comet": 0.9118306040763855,
+"chrf": 79.91208190693723,
+"errors": [],
+"mt": "& Eliminar archivos en lugar de moverlos a la papelera"
+},
+{
+"item": "J033",
+"row_id": "K9dbbb15aedd3:zh_CN",
+"sys": "tm_as_is",
+"band": "<50",
+"corpus": "KDE4",
+"score": 0,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.37323299050331116,
+"comet": 0.48200729489326477,
+"chrf": 8.98158247536484,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"unrelated string (send mail via KMail)"
+]
+],
+"mt": "通过 KMail 从您的手持设备发送邮件。 Comment"
+},
+{
+"item": "J033",
+"row_id": "K9dbbb15aedd3:zh_CN",
+"sys": "hybrid_ctx",
+"band": "<50",
+"corpus": "KDE4",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8656678199768066,
+"comet": 0.8779248595237732,
+"chrf": 36.832534019951964,
+"errors": [],
+"mt": "从手持设备检索系统、硬件和用户信息，并将其存储到文件中。"
+},
+{
+"item": "J033",
+"row_id": "K9dbbb15aedd3:zh_CN",
+"sys": "nmt_deepl",
+"band": "<50",
+"corpus": "KDE4",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8677225112915039,
+"comet": 0.9233991503715515,
+"chrf": 46.78206690105572,
+"errors": [],
+"mt": "从手持设备中获取系统、硬件和用户信息，并将它们保存到文件中。"
+},
+{
+"item": "J033",
+"row_id": "K9dbbb15aedd3:zh_CN",
+"sys": "zero_shot",
+"band": "<50",
+"corpus": "KDE4",
+"score": 88,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8669242858886719,
+"comet": 0.8984983563423157,
+"chrf": 27.974461260693147,
+"errors": [
+[
+"terminology",
+"minor",
+"掌机 (game handheld) for handheld device"
+]
+],
+"mt": "从掌机中检索系统、硬件和用户信息，并将其存储到文件中。"
+},
+{
+"item": "J034",
+"row_id": "K24a94b8714eb:de",
+"sys": "tm_as_is",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 30,
+"mqm": 6,
+"worst": 5,
+"kiwi": 0.5988796949386597,
+"comet": 0.9294845461845398,
+"chrf": 88.72584626625543,
+"errors": [
+[
+"accuracy/mistranslation",
+"major",
+"rain showers instead of snow showers"
+],
+[
+"accuracy/addition",
+"minor",
+"'weather condition' artefact"
+]
+],
+"mt": "Regenschauer in der Nähe, Nebel/Dunstweather condition"
+},
+{
+"item": "J034",
+"row_id": "K24a94b8714eb:de",
+"sys": "hybrid_ctx",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8190731406211853,
+"comet": 0.8355098366737366,
+"chrf": 71.0659518096775,
+"errors": [],
+"mt": "Schneeschauer in der Nähe, Nebel/Dunst"
+},
+{
+"item": "J034",
+"row_id": "K24a94b8714eb:de",
+"sys": "zero_shot",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8191320896148682,
+"comet": 0.8236056566238403,
+"chrf": 55.92592784410788,
+"errors": [],
+"mt": "Schneeschauer in der Umgebung, Nebel/Dunst"
+},
+{
+"item": "J034",
+"row_id": "K24a94b8714eb:de",
+"sys": "nmt_deepl",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8191320896148682,
+"comet": 0.8236056566238403,
+"chrf": 55.92592784410788,
+"errors": [],
+"mt": "Schneeschauer in der Umgebung, Nebel/Dunst"
+},
+{
+"item": "J035",
+"row_id": "E2988ba61a758:es",
+"sys": "tm_as_is",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 55,
+"mqm": 5,
+"worst": 5,
+"kiwi": 0.605711817741394,
+"comet": 0.7138546705245972,
+"chrf": 44.85191486232023,
+"errors": [
+[
+"accuracy/mistranslation",
+"major",
+"'how to use' instead of 'how much to use'"
+]
+],
+"mt": "Como utilizar: ver también la otra cara del prospecto"
+},
+{
+"item": "J035",
+"row_id": "E2988ba61a758:es",
+"sys": "hybrid_ctx",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 88,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.7540960311889648,
+"comet": 0.5389772057533264,
+"chrf": 24.53947807524179,
+"errors": [
+[
+"accuracy/mistranslation",
+"minor",
+"'side 1' rendered as 'the other side'"
+]
+],
+"mt": "Cuánto utilizar < ver la otra cara"
+},
+{
+"item": "J035",
+"row_id": "E2988ba61a758:es",
+"sys": "nmt_deepl",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 92,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8496867418289185,
+"comet": 0.6951018571853638,
+"chrf": 32.52694123653032,
+"errors": [
+[
+"accuracy/mistranslation",
+"minor",
+"'side' rendered as 'page'"
+]
+],
+"mt": "Cantidad que se debe utilizar < véase la página 1"
+},
+{
+"item": "J035",
+"row_id": "E2988ba61a758:es",
+"sys": "zero_shot",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.7720504999160767,
+"comet": 0.6655302047729492,
+"chrf": 47.18761834775644,
+"errors": [],
+"mt": "Cantidad a utilizar < ver cara 1"
+},
+{
+"item": "J036",
+"row_id": "K9f4e4037548b:de",
+"sys": "nmt_deepl",
+"band": "<50",
+"corpus": "KDE4",
+"score": 93,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.6098217964172363,
+"comet": 0.8220322728157043,
+"chrf": 61.45978335338662,
+"errors": [
+[
+"fluency/grammar",
+"minor",
+"'Blätter' where unit 'Blatt' expected"
+]
+],
+"mt": "Alle 10 Blätter heften"
+},
+{
+"item": "J036",
+"row_id": "K9f4e4037548b:de",
+"sys": "hybrid_ctx",
+"band": "<50",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.6943901777267456,
+"comet": 0.9596154689788818,
+"chrf": 100.0,
+"errors": [],
+"mt": "Alle 10 Blatt heften"
+},
+{
+"item": "J036",
+"row_id": "K9f4e4037548b:de",
+"sys": "tm_as_is",
+"band": "<50",
+"corpus": "KDE4",
+"score": 0,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.41240841150283813,
+"comet": 0.5453406572341919,
+"chrf": 59.61413787720239,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"different option (jobs up to 20 sheets)"
+]
+],
+"mt": "Aufträge bis zu 20 Blatt heften"
+},
+{
+"item": "J036",
+"row_id": "K9f4e4037548b:de",
+"sys": "zero_shot",
+"band": "<50",
+"corpus": "KDE4",
+"score": 85,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.6478235721588135,
+"comet": 0.8843350410461426,
+"chrf": 46.48224288840108,
+"errors": [
+[
+"accuracy/mistranslation",
+"minor",
+"pages instead of sheets"
+]
+],
+"mt": "Alle 10 Seiten heften"
+},
+{
+"item": "J037",
+"row_id": "Kf8f8c5a42397:es",
+"sys": "tm_as_is",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 60,
+"mqm": 5,
+"worst": 5,
+"kiwi": 0.6158342361450195,
+"comet": 0.7945546507835388,
+"chrf": 80.74094943362567,
+"errors": [
+[
+"accuracy/addition",
+"major",
+"'racional' added"
+]
+],
+"mt": "Ocultar una curva racional de Bézier"
+},
+{
+"item": "J037",
+"row_id": "Kf8f8c5a42397:es",
+"sys": "hybrid_ctx",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.832349419593811,
+"comet": 0.9695858359336853,
+"chrf": 100.0,
+"errors": [],
+"mt": "Ocultar una curva de Bézier"
+},
+{
+"item": "J037",
+"row_id": "Kf8f8c5a42397:es",
+"sys": "zero_shot",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.832349419593811,
+"comet": 0.9695858359336853,
+"chrf": 100.0,
+"errors": [],
+"mt": "Ocultar una curva de Bézier"
+},
+{
+"item": "J037",
+"row_id": "Kf8f8c5a42397:es",
+"sys": "nmt_deepl",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.832349419593811,
+"comet": 0.9695858359336853,
+"chrf": 100.0,
+"errors": [],
+"mt": "Ocultar una curva de Bézier"
+},
+{
+"item": "J038",
+"row_id": "Ecbb57670a3ce:es",
+"sys": "tm_as_is",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 5,
+"mqm": 11,
+"worst": 10,
+"kiwi": 0.5515578389167786,
+"comet": 0.7340442538261414,
+"chrf": 69.50774605991485,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"wrong product name Ferriprox"
+],
+[
+"accuracy/omission",
+"minor",
+"'and the label' dropped"
+]
+],
+"mt": "No utilice Ferriprox después de la fecha de caducidad que aparece en el envase después de CAD."
+},
+{
+"item": "J038",
+"row_id": "Ecbb57670a3ce:es",
+"sys": "nmt_deepl",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 82,
+"mqm": 2,
+"worst": 1,
+"kiwi": 0.8755790591239929,
+"comet": 0.8042331337928772,
+"chrf": 62.11368121900556,
+"errors": [
+[
+"style/register",
+"minor",
+"informal tú"
+],
+[
+"locale",
+"minor",
+"EXP kept; Spanish labels use CAD"
+]
+],
+"mt": "No utilices Focetria después de la fecha de caducidad que figura en la caja y en la etiqueta, seguida de «EXP»."
+},
+{
+"item": "J038",
+"row_id": "Ecbb57670a3ce:es",
+"sys": "hybrid_ctx",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.6671425104141235,
+"comet": 0.8562324047088623,
+"chrf": 88.97791685208014,
+"errors": [],
+"mt": "No utilice Focetria después de la fecha de caducidad que aparece en el estuche y en la etiqueta después de CAD."
+},
+{
+"item": "J038",
+"row_id": "Ecbb57670a3ce:es",
+"sys": "zero_shot",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 93,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8602610230445862,
+"comet": 0.7757749557495117,
+"chrf": 71.45122945560836,
+"errors": [
+[
+"locale",
+"minor",
+"EXP kept; Spanish labels use CAD"
+]
+],
+"mt": "No utilice Focetria después de la fecha de caducidad indicada en el embalaje y en la etiqueta después de EXP."
+},
+{
+"item": "J039",
+"row_id": "K1721830ff712:zh_CN",
+"sys": "tm_as_is",
+"band": "100",
+"corpus": "KDE4",
+"score": 0,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.4562950134277344,
+"comet": 0.40770870447158813,
+"chrf": 0.0,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"garbage output 'france. kgm'"
+]
+],
+"mt": "france. kgm"
+},
+{
+"item": "J039",
+"row_id": "K1721830ff712:zh_CN",
+"sys": "hybrid_ctx",
+"band": "100",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8615094423294067,
+"comet": 0.9392169117927551,
+"chrf": 17.46031746031746,
+"errors": [],
+"mt": "圣基茨和尼维斯"
+},
+{
+"item": "J039",
+"row_id": "K1721830ff712:zh_CN",
+"sys": "zero_shot",
+"band": "100",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8615094423294067,
+"comet": 0.9392169117927551,
+"chrf": 17.46031746031746,
+"errors": [],
+"mt": "圣基茨和尼维斯"
+},
+{
+"item": "J039",
+"row_id": "K1721830ff712:zh_CN",
+"sys": "nmt_deepl",
+"band": "100",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8615094423294067,
+"comet": 0.9392169117927551,
+"chrf": 17.46031746031746,
+"errors": [],
+"mt": "圣基茨和尼维斯"
+},
+{
+"item": "J040",
+"row_id": "K1b96aac6639d:zh_CN",
+"sys": "nmt_deepl",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8601239919662476,
+"comet": 0.8670865893363953,
+"chrf": 60.38971366568426,
+"errors": [],
+"mt": "将该字段在列表中向下移动。列表的排序对条目编辑器的布局至关重要。"
+},
+{
+"item": "J040",
+"row_id": "K1b96aac6639d:zh_CN",
+"sys": "zero_shot",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8600267171859741,
+"comet": 0.8744691610336304,
+"chrf": 61.62509572819168,
+"errors": [],
+"mt": "将此字段在列表中向下移动。列表顺序对于条目编辑器的布局至关重要。"
+},
+{
+"item": "J040",
+"row_id": "K1b96aac6639d:zh_CN",
+"sys": "hybrid_ctx",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8011780381202698,
+"comet": 0.9094715714454651,
+"chrf": 100.0,
+"errors": [],
+"mt": "下移列表中的域。列表顺序对条目编辑器的布局至关重要。"
+},
+{
+"item": "J040",
+"row_id": "K1b96aac6639d:zh_CN",
+"sys": "tm_as_is",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 15,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.7884071469306946,
+"comet": 0.9197439551353455,
+"chrf": 95.7219990154773,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"move up instead of move down"
+]
+],
+"mt": "上移列表中的域。 列表顺序对条目编辑器的布局至关重要 。"
+},
+{
+"item": "J041",
+"row_id": "E75c6fc7076c1:es",
+"sys": "hybrid_ctx",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8809211254119873,
+"comet": 0.9224610924720764,
+"chrf": 100.0,
+"errors": [],
+"mt": "Los comprimidos de Iscover 75 mg son redondos, biconvexos, de color rosa, están recubiertos con película y llevan grabado en una cara el número “75” y en la otra el número “1171”."
+},
+{
+"item": "J041",
+"row_id": "E75c6fc7076c1:es",
+"sys": "nmt_deepl",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8793519735336304,
+"comet": 0.9080597758293152,
+"chrf": 75.91896989131958,
+"errors": [],
+"mt": "Los comprimidos de Iscover de 75 mg son redondos, biconvexos, de color rosa y recubiertos con una película; llevan grabado el número «75» en una cara y el número «1171» en la otra."
+},
+{
+"item": "J041",
+"row_id": "E75c6fc7076c1:es",
+"sys": "tm_as_is",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 10,
+"mqm": 11,
+"worst": 10,
+"kiwi": 0.6792707443237305,
+"comet": 0.867550790309906,
+"chrf": 88.29899348443921,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"wrong product (Clopidogrel Winthrop)"
+],
+[
+"accuracy/addition",
+"minor",
+"section heading prepended"
+]
+],
+"mt": "Aspecto del producto y contenido del envase Los comprimidos de Clopidogrel Winthrop 75 mg son redondos, biconvexos, de color rosa, están recubiertos con película y llevan grabado en una cara el número “ 75” y en la otra el número “ 1171”."
+},
+{
+"item": "J041",
+"row_id": "E75c6fc7076c1:es",
+"sys": "zero_shot",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 92,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8423973321914673,
+"comet": 0.8725126385688782,
+"chrf": 71.46295992220502,
+"errors": [
+[
+"fluency",
+"minor",
+"label-style subject phrase"
+]
+],
+"mt": "Iscover 75 mg comprimidos recubiertos con película son redondos, biconvexos, de color rosa, con el número «75» grabado en una cara y el número «1171» en la otra."
+},
+{
+"item": "J042",
+"row_id": "Eab0866791713:es",
+"sys": "tm_as_is",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 50,
+"mqm": 5,
+"worst": 5,
+"kiwi": 0.8031395673751831,
+"comet": 0.8695228695869446,
+"chrf": 62.8623718844732,
+"errors": [
+[
+"accuracy/addition",
+"major",
+"product name and 'must be used as complementary therapy' added"
+]
+],
+"mt": "Cystadane debe utilizarse como terapia complementaria a otras terapias tales como la vitamina B6 (piridoxina), vitamina B12 (cobalamina), folato y una dieta específica."
+},
+{
+"item": "J042",
+"row_id": "Eab0866791713:es",
+"sys": "zero_shot",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8833317756652832,
+"comet": 0.948641836643219,
+"chrf": 94.18986078479409,
+"errors": [],
+"mt": "Se utiliza junto con otros tratamientos, como la vitamina B6 (piridoxina), la vitamina B12 (cobalamina), el folato y una dieta especial."
+},
+{
+"item": "J042",
+"row_id": "Eab0866791713:es",
+"sys": "nmt_deepl",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 92,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8839824795722961,
+"comet": 0.9378699064254761,
+"chrf": 87.31474646286406,
+"errors": [
+[
+"terminology",
+"minor",
+"ácido fólico for folate"
+]
+],
+"mt": "Se utiliza junto con otros tratamientos, como la vitamina B6 (piridoxina), la vitamina B12 (cobalamina), el ácido fólico y una dieta especial."
+},
+{
+"item": "J042",
+"row_id": "Eab0866791713:es",
+"sys": "hybrid_ctx",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 96,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8791244626045227,
+"comet": 0.9392161965370178,
+"chrf": 86.77193804084058,
+"errors": [
+[
+"fluency/grammar",
+"minor",
+"articles dropped in list"
+]
+],
+"mt": "Se utiliza junto con otros tratamientos, como la vitamina B6 (piridoxina), vitamina B12 (cobalamina), folato y una dieta especial."
+},
+{
+"item": "J043",
+"row_id": "K6f61662bb55f:zh_CN",
+"sys": "nmt_deepl",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8542351126670837,
+"comet": 0.8651116490364075,
+"chrf": 55.050911320242726,
+"errors": [],
+"mt": "无法以写入方式打开输出文件“%1”"
+},
+{
+"item": "J043",
+"row_id": "K6f61662bb55f:zh_CN",
+"sys": "hybrid_ctx",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 96,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8388807773590088,
+"comet": 0.8383990526199341,
+"chrf": 52.34952666603318,
+"errors": [],
+"mt": "无法以写模式打开输出文件 “%1”"
+},
+{
+"item": "J043",
+"row_id": "K6f61662bb55f:zh_CN",
+"sys": "zero_shot",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8417928218841553,
+"comet": 0.8467528820037842,
+"chrf": 57.414621381955065,
+"errors": [],
+"mt": "无法打开输出文件“%1”进行写入"
+},
+{
+"item": "J043",
+"row_id": "K6f61662bb55f:zh_CN",
+"sys": "tm_as_is",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 0,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.4627843201160431,
+"comet": 0.6456649899482727,
+"chrf": 26.61088911088911,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"unrelated message (menu item highlighting)"
+]
+],
+"mt": "菜单项 “% 1” 无法被加亮显示 。"
+},
+{
+"item": "J044",
+"row_id": "K914acc0b11dd:zh_CN",
+"sys": "hybrid_ctx",
+"band": "<50",
+"corpus": "KDE4",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8432519435882568,
+"comet": 0.8750731348991394,
+"chrf": 54.828019003697214,
+"errors": [],
+"mt": "如果您禁用此项，Konqueror 将停止解析 JavaScript 的 window.open() 命令。如果您经常访问大量使用该命令弹出广告横幅的网站，此功能将非常有用。注意：禁用此选项可能会导致某些需要 window.open() 才能正常运行的网站失效。请谨慎使用此功能。"
+},
+{
+"item": "J044",
+"row_id": "K914acc0b11dd:zh_CN",
+"sys": "tm_as_is",
+"band": "<50",
+"corpus": "KDE4",
+"score": 0,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.3729870021343231,
+"comet": 0.6472846865653992,
+"chrf": 4.460087361879333,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"unrelated text (kppp/X server)"
+]
+],
+"mt": "选中这个选项后， 当 X 服务器关闭时， kppp 会断开所有的连接。 您应该启用这个选项 ， 除非您确实知道有理由不这么 。 请看这里以获得更多 的信息 。"
+},
+{
+"item": "J044",
+"row_id": "K914acc0b11dd:zh_CN",
+"sys": "zero_shot",
+"band": "<50",
+"corpus": "KDE4",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8374825716018677,
+"comet": 0.876409649848938,
+"chrf": 51.15218423102711,
+"errors": [],
+"mt": "如果禁用此项，Konqueror 将停止解析 JavaScript 的 window.open() 命令。如果您经常访问大量使用该命令弹出广告横幅的网站，此设置会很有用。注意：禁用此选项可能会导致某些需要 window.open() 才能正常运行的网站失效。请谨慎使用此功能。"
+},
+{
+"item": "J044",
+"row_id": "K914acc0b11dd:zh_CN",
+"sys": "nmt_deepl",
+"band": "<50",
+"corpus": "KDE4",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8469927906990051,
+"comet": 0.872865617275238,
+"chrf": 55.108016453619044,
+"errors": [],
+"mt": "如果禁用此选项，Konqueror 将停止解析 JavaScript 命令 window.open()。如果您经常访问大量使用该命令弹出广告横幅的网站，此功能将非常有用。注意：禁用此选项也可能导致某些依赖 window.open() 才能正常运行的网站无法正常工作。请谨慎使用此功能。"
+},
+{
+"item": "J045",
+"row_id": "Ee6a7014b3881:es",
+"sys": "hybrid_ctx",
+"band": "<50",
+"corpus": "EMEA",
+"score": 95,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8716622591018677,
+"comet": 0.9166787266731262,
+"chrf": 67.381876373323,
+"errors": [],
+"mt": "En situaciones en que sea deseable una dosis de refuerzo contra la hepatitis A o B, puede administrarse Ambirix, o una vacuna distinta contra la hepatitis A o B."
+},
+{
+"item": "J045",
+"row_id": "Ee6a7014b3881:es",
+"sys": "nmt_deepl",
+"band": "<50",
+"corpus": "EMEA",
+"score": 95,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8726971745491028,
+"comet": 0.9102144837379456,
+"chrf": 68.10658258057072,
+"errors": [],
+"mt": "En caso de que se desee administrar una dosis de refuerzo contra la hepatitis A o B, se puede administrar Ambirix o una vacuna específica contra la hepatitis A o B."
+},
+{
+"item": "J045",
+"row_id": "Ee6a7014b3881:es",
+"sys": "zero_shot",
+"band": "<50",
+"corpus": "EMEA",
+"score": 93,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.868738055229187,
+"comet": 0.9080392718315125,
+"chrf": 66.8246979522979,
+"errors": [
+[
+"fluency",
+"minor",
+"'refuerzo de la hepatitis'"
+]
+],
+"mt": "Cuando se desee administrar una dosis de refuerzo de la hepatitis A o B, puede administrarse Ambirix o una vacuna independiente contra la hepatitis A o B."
+},
+{
+"item": "J045",
+"row_id": "Ee6a7014b3881:es",
+"sys": "tm_as_is",
+"band": "<50",
+"corpus": "EMEA",
+"score": 5,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.6570589542388916,
+"comet": 0.8291680216789246,
+"chrf": 47.55775093160846,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"wrong product (Twinrix Pediátrico), different statement"
+]
+],
+"mt": "Puede administrarse una dosis de refuerzo de Twinrix Pediátrico, o de otra vacuna distinta contra la hepatitis A o B, conforme a las recomendaciones oficiales."
+},
+{
+"item": "J046",
+"row_id": "K13d0f2203fe4:de",
+"sys": "tm_as_is",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 15,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.5348014235496521,
+"comet": 0.8031537532806396,
+"chrf": 83.00488801451488,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"'setzen' (set) instead of remove"
+]
+],
+"mt": "Überwachungen für die folgenden Ereignisse setzen:"
+},
+{
+"item": "J046",
+"row_id": "K13d0f2203fe4:de",
+"sys": "nmt_deepl",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 5,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.8182151913642883,
+"comet": 0.6553760170936584,
+"chrf": 46.249797141267294,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"watches as wristwatches"
+]
+],
+"mt": "Bei den folgenden Ereignissen sind die Uhren abzunehmen:"
+},
+{
+"item": "J046",
+"row_id": "K13d0f2203fe4:de",
+"sys": "zero_shot",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 95,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.571890652179718,
+"comet": 0.8116165399551392,
+"chrf": 73.74030093947265,
+"errors": [
+[
+"fluency/grammar",
+"minor",
+"singular Überwachung"
+]
+],
+"mt": "Überwachung für die folgenden Ereignisse entfernen:"
+},
+{
+"item": "J046",
+"row_id": "K13d0f2203fe4:de",
+"sys": "hybrid_ctx",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.6221664547920227,
+"comet": 0.8704411387443542,
+"chrf": 82.24400343397359,
+"errors": [],
+"mt": "Überwachungen für die folgenden Ereignisse entfernen:"
+},
+{
+"item": "J047",
+"row_id": "K9ecb72161f38:es",
+"sys": "hybrid_ctx",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8781687021255493,
+"comet": 0.9526364207267761,
+"chrf": 100.0,
+"errors": [],
+"mt": "Se han encontrado algunos archivos de este torrent en el directorio de descargas finalizadas. ¿Desea importarlos y usar el directorio de descargas finalizadas como ubicación?"
+},
+{
+"item": "J047",
+"row_id": "K9ecb72161f38:es",
+"sys": "zero_shot",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8678699731826782,
+"comet": 0.9091734290122986,
+"chrf": 82.76064544781383,
+"errors": [],
+"mt": "Se han encontrado algunos archivos de este torrent en el directorio de descargas completadas. ¿Desea importar estos archivos y utilizar el directorio de descargas completadas como ubicación?"
+},
+{
+"item": "J047",
+"row_id": "K9ecb72161f38:es",
+"sys": "tm_as_is",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 50,
+"mqm": 5,
+"worst": 5,
+"kiwi": 0.8684124946594238,
+"comet": 0.9271314144134521,
+"chrf": 94.88362302081146,
+"errors": [
+[
+"accuracy/mistranslation",
+"major",
+"'all' instead of 'some' files"
+]
+],
+"mt": "Se han encontrado todos los archivos de este torrent en el directorio de descargas finalizadas. ¿Desea importarlos y usar el directorio de descargas finalizadas como ubicación?"
+},
+{
+"item": "J047",
+"row_id": "K9ecb72161f38:es",
+"sys": "nmt_deepl",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 92,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8673002123832703,
+"comet": 0.8988547921180725,
+"chrf": 78.09555124681891,
+"errors": [
+[
+"style/register",
+"minor",
+"mixed tú register"
+]
+],
+"mt": "Se han encontrado algunos archivos de este torrent en el directorio de descargas completadas. ¿Quieres importar estos archivos y utilizar el directorio de descargas completadas como ubicación?"
+},
+{
+"item": "J048",
+"row_id": "Eebcc6f825dec:es",
+"sys": "nmt_deepl",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8512369394302368,
+"comet": 0.8132746815681458,
+"chrf": 69.79728551196511,
+"errors": [],
+"mt": "Tras la administración intravenosa de topotecán en dosis de 0,5 a 1,5 mg/m² mediante una infusión de 30 minutos al día durante cinco días, el topotecán mostró un elevado aclaramiento plasmático de 62 l/h (DE 22), lo que corresponde aproximadamente a dos tercios del flujo sanguíneo hepático."
+},
+{
+"item": "J048",
+"row_id": "Eebcc6f825dec:es",
+"sys": "hybrid_ctx",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8201026916503906,
+"comet": 0.8575858473777771,
+"chrf": 97.87395973265457,
+"errors": [],
+"mt": "Después de la administración intravenosa de topotecan a dosis de 0,5 a 1,5 mg/ m2 como infusión diaria de 30 minutos durante cinco días, topotecan presentó un aclaramiento plasmático elevado de 62 l/ h (DE 22), que corresponde a aproximadamente 2/ 3 del flujo de sangre hepática."
+},
+{
+"item": "J048",
+"row_id": "Eebcc6f825dec:es",
+"sys": "zero_shot",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8430826663970947,
+"comet": 0.8135344982147217,
+"chrf": 74.70678907083636,
+"errors": [],
+"mt": "Tras la administración intravenosa de topotecán en dosis de 0,5 a 1,5 mg/m2 mediante una perfusión de 30 minutos diarios durante cinco días, el topotecán demostró un aclaramiento plasmático elevado de 62 l/h (DE 22), lo que corresponde aproximadamente a 2/3 del flujo sanguíneo hepático."
+},
+{
+"item": "J048",
+"row_id": "Eebcc6f825dec:es",
+"sys": "tm_as_is",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 93,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8068658113479614,
+"comet": 0.8910983204841614,
+"chrf": 100.0,
+"errors": [
+[
+"accuracy/omission",
+"minor",
+"'of topotecan' after administration dropped"
+]
+],
+"mt": "Después de la administración intravenosa a dosis de 0,5 a 1,5 mg/ m2 como infusión diaria de 30 minutos durante cinco días, topotecan presentó un aclaramiento plasmático elevado de 62 l/ h (DE 22), que corresponde a aproximadamente 2/ 3 del flujo de sangre hepática."
+},
+{
+"item": "J049",
+"row_id": "E44fd65519930:es",
+"sys": "nmt_deepl",
+"band": "100",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.875542402267456,
+"comet": 0.8223954439163208,
+"chrf": 68.93153429826754,
+"errors": [],
+"mt": "Una única inyección subcutánea (ganado vacuno) o intramuscular (cerdos) de 2,5 mg de tulatromicina por kg de peso corporal (1 ml por cada 40 kg de peso corporal)."
+},
+{
+"item": "J049",
+"row_id": "E44fd65519930:es",
+"sys": "zero_shot",
+"band": "100",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.878862738609314,
+"comet": 0.8364565968513489,
+"chrf": 71.38362098368923,
+"errors": [],
+"mt": "Una única inyección subcutánea (bovinos) o intramuscular (cerdos) de 2,5 mg de tulatromicina/kg de peso corporal (1 ml/40 kg de peso corporal)."
+},
+{
+"item": "J049",
+"row_id": "E44fd65519930:es",
+"sys": "tm_as_is",
+"band": "100",
+"corpus": "EMEA",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8725855350494385,
+"comet": 0.9093232750892639,
+"chrf": 99.83696943122844,
+"errors": [],
+"mt": "Una única inyección subcutánea (ganado bovino) o intramuscular (ganado porcino) de 2,5 mg de tulatromicina/ kg de peso vivo (1 ml/ 40 kg de peso vivo)."
+},
+{
+"item": "J049",
+"row_id": "E44fd65519930:es",
+"sys": "hybrid_ctx",
+"band": "100",
+"corpus": "EMEA",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8725855350494385,
+"comet": 0.9093232750892639,
+"chrf": 99.83696943122844,
+"errors": [],
+"mt": "Una única inyección subcutánea (ganado bovino) o intramuscular (ganado porcino) de 2,5 mg de tulatromicina/ kg de peso vivo (1 ml/ 40 kg de peso vivo)."
+},
+{
+"item": "J050",
+"row_id": "K2a3f8a70ee07:zh_CN",
+"sys": "tm_as_is",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 45,
+"mqm": 6,
+"worst": 5,
+"kiwi": 0.5690687894821167,
+"comet": 0.8549602031707764,
+"chrf": 81.49602956713144,
+"errors": [
+[
+"accuracy/addition",
+"major",
+"'heavy' showers"
+],
+[
+"accuracy/addition",
+"minor",
+"'weather condition' artefact"
+]
+],
+"mt": "大阵雨雾weather condition"
+},
+{
+"item": "J050",
+"row_id": "K2a3f8a70ee07:zh_CN",
+"sys": "hybrid_ctx",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8257508277893066,
+"comet": 0.8255822062492371,
+"chrf": 18.441861598832656,
+"errors": [],
+"mt": "阵雨，有雾"
+},
+{
+"item": "J050",
+"row_id": "K2a3f8a70ee07:zh_CN",
+"sys": "zero_shot",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 95,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8341018557548523,
+"comet": 0.7741963863372803,
+"chrf": 3.7589498806682573,
+"errors": [],
+"mt": "阵雨 雾/薄雾"
+},
+{
+"item": "J050",
+"row_id": "K2a3f8a70ee07:zh_CN",
+"sys": "nmt_deepl",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 95,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8341018557548523,
+"comet": 0.7741963863372803,
+"chrf": 3.7589498806682573,
+"errors": [],
+"mt": "阵雨 雾/薄雾"
+},
+{
+"item": "J051",
+"row_id": "K62a777e77535:zh_CN",
+"sys": "tm_as_is",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 45,
+"mqm": 6,
+"worst": 5,
+"kiwi": 0.4496656060218811,
+"comet": 0.7406740784645081,
+"chrf": 75.60716327475721,
+"errors": [
+[
+"accuracy/addition",
+"major",
+"'jagged' added"
+],
+[
+"accuracy/addition",
+"minor",
+"'Stencils' artefact"
+]
+],
+"mt": "几何 - 有锯齿的右箭头Stencils"
+},
+{
+"item": "J051",
+"row_id": "K62a777e77535:zh_CN",
+"sys": "hybrid_ctx",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 90,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.4799618422985077,
+"comet": 0.936492383480072,
+"chrf": 100.0,
+"errors": [
+[
+"accuracy/addition",
+"minor",
+"'Stencils' artefact"
+]
+],
+"mt": "几何 - 右箭头Stencils"
+},
+{
+"item": "J051",
+"row_id": "K62a777e77535:zh_CN",
+"sys": "zero_shot",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.7920095920562744,
+"comet": 0.7469556927680969,
+"chrf": 33.624842971327595,
+"errors": [],
+"mt": "几何 - 右箭头"
+},
+{
+"item": "J051",
+"row_id": "K62a777e77535:zh_CN",
+"sys": "nmt_deepl",
+"band": "75-84",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.7920095920562744,
+"comet": 0.7469556927680969,
+"chrf": 33.624842971327595,
+"errors": [],
+"mt": "几何 - 右箭头"
+},
+{
+"item": "J052",
+"row_id": "E33869518d73c:es",
+"sys": "hybrid_ctx",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8343948721885681,
+"comet": 0.8714512586593628,
+"chrf": 80.26008464779134,
+"errors": [],
+"mt": "Con el perro en posición de pie, separe el pelo entre las escápulas hasta que se vea la piel."
+},
+{
+"item": "J052",
+"row_id": "E33869518d73c:es",
+"sys": "tm_as_is",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 55,
+"mqm": 5,
+"worst": 5,
+"kiwi": 0.6171083450317383,
+"comet": 0.627439022064209,
+"chrf": 47.11783661893512,
+"errors": [
+[
+"accuracy/omission",
+"major",
+"standing-position instruction dropped"
+]
+],
+"mt": "Separe el pelo del dorso del animal entre las escápulas hasta que se vea la piel."
+},
+{
+"item": "J052",
+"row_id": "E33869518d73c:es",
+"sys": "zero_shot",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8348058462142944,
+"comet": 0.8446796536445618,
+"chrf": 76.44315235151943,
+"errors": [],
+"mt": "Con el perro en posición de pie, separe el pelaje entre los omóplatos hasta que la piel sea visible."
+},
+{
+"item": "J052",
+"row_id": "E33869518d73c:es",
+"sys": "nmt_deepl",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 92,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8249548673629761,
+"comet": 0.7195543646812439,
+"chrf": 48.45542424092749,
+"errors": [
+[
+"style/register",
+"minor",
+"informal tú"
+]
+],
+"mt": "Con el perro de pie, separa el pelaje entre los omóplatos hasta que se vea la piel."
+},
+{
+"item": "J053",
+"row_id": "Kbc6a2c3f46d4:es",
+"sys": "nmt_deepl",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 92,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8836616277694702,
+"comet": 0.8823345303535461,
+"chrf": 73.03032752497074,
+"errors": [
+[
+"style/register",
+"minor",
+"informal tú in UI"
+]
+],
+"mt": "¿Estás seguro de que quieres eliminar el tema %1? Esto eliminará los archivos instalados por este tema."
+},
+{
+"item": "J053",
+"row_id": "Kbc6a2c3f46d4:es",
+"sys": "tm_as_is",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 70,
+"mqm": 5,
+"worst": 5,
+"kiwi": 0.8181039094924927,
+"comet": 0.881208598613739,
+"chrf": 86.64789192955656,
+"errors": [
+[
+"accuracy/addition",
+"major",
+"'icon' theme added"
+]
+],
+"mt": "¿Está seguro de que desea eliminar el tema de iconos %1? Esto borrará los archivos instalados por este tema."
+},
+{
+"item": "J053",
+"row_id": "Kbc6a2c3f46d4:es",
+"sys": "hybrid_ctx",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8837720155715942,
+"comet": 0.9149485230445862,
+"chrf": 91.68418517505972,
+"errors": [],
+"mt": "¿Está seguro de que desea eliminar el tema %1? Esto borrará los archivos instalados por este tema."
+},
+{
+"item": "J053",
+"row_id": "Kbc6a2c3f46d4:es",
+"sys": "zero_shot",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8837720155715942,
+"comet": 0.9149485230445862,
+"chrf": 91.68418517505972,
+"errors": [],
+"mt": "¿Está seguro de que desea eliminar el tema %1? Esto borrará los archivos instalados por este tema."
+},
+{
+"item": "J054",
+"row_id": "E6981a9871f42:es",
+"sys": "nmt_deepl",
+"band": "100",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8102039694786072,
+"comet": 0.8897593021392822,
+"chrf": 76.39012651229461,
+"errors": [],
+"mt": "En pacientes con insuficiencia hepática grave, se recomienda reducir a la mitad la dosis de mantenimiento debido a la disminución del aclaramiento (véanse las secciones 4.2 y 5.2)."
+},
+{
+"item": "J054",
+"row_id": "E6981a9871f42:es",
+"sys": "zero_shot",
+"band": "100",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8151257038116455,
+"comet": 0.8915532231330872,
+"chrf": 77.88897295408297,
+"errors": [],
+"mt": "En pacientes con insuficiencia hepática grave, se recomienda reducir la dosis de mantenimiento a la mitad debido a la disminución del aclaramiento (véanse las secciones 4.2 y 5.2)."
+},
+{
+"item": "J054",
+"row_id": "E6981a9871f42:es",
+"sys": "tm_as_is",
+"band": "100",
+"corpus": "EMEA",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8121728897094727,
+"comet": 0.9092052578926086,
+"chrf": 98.98786447452012,
+"errors": [],
+"mt": "En pacientes con insuficiencia hepática grave, se recomienda la reducción de la dosis de mantenimiento a la mitad, en función de la reducción del aclaramiento (ver las secciones 4.2 y 5.2)."
+},
+{
+"item": "J054",
+"row_id": "E6981a9871f42:es",
+"sys": "hybrid_ctx",
+"band": "100",
+"corpus": "EMEA",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8121728897094727,
+"comet": 0.9092052578926086,
+"chrf": 98.98786447452012,
+"errors": [],
+"mt": "En pacientes con insuficiencia hepática grave, se recomienda la reducción de la dosis de mantenimiento a la mitad, en función de la reducción del aclaramiento (ver las secciones 4.2 y 5.2)."
+},
+{
+"item": "J055",
+"row_id": "K16cd03528ffe:de",
+"sys": "hybrid_ctx",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8589366674423218,
+"comet": 0.9440958499908447,
+"chrf": 100.0,
+"errors": [],
+"mt": "Der für den Benutzer sichtbare Name der Gruppe. Er wird im Strukturbaum als oberster Knoten angezeigt, wenn es keine zu dieser Gruppe gehörenden Elemente im Dokument gibt."
+},
+{
+"item": "J055",
+"row_id": "K16cd03528ffe:de",
+"sys": "nmt_deepl",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.859565019607544,
+"comet": 0.8979635238647461,
+"chrf": 87.01828979064283,
+"errors": [],
+"mt": "Der für den Benutzer sichtbare Name der Gruppe. Er wird im Strukturbaum als oberster Knoten angezeigt, wenn im Dokument keine Elemente vorhanden sind, die zu dieser Gruppe gehören."
+},
+{
+"item": "J055",
+"row_id": "K16cd03528ffe:de",
+"sys": "tm_as_is",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 15,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.7507667541503906,
+"comet": 0.8833393454551697,
+"chrf": 93.0341683869628,
+"errors": [
+[
+"accuracy/negation",
+"critical",
+"'keine' dropped: shown when elements DO exist"
+]
+],
+"mt": "Der für den Benutzer sichtbare Name der Gruppe. Er wird im Strukturbaum als oberster Knoten angezeigt, wenn es zu dieser Gruppe gehörende Elemente im Dokument gibt."
+},
+{
+"item": "J055",
+"row_id": "K16cd03528ffe:de",
+"sys": "zero_shot",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8594892621040344,
+"comet": 0.9048848748207092,
+"chrf": 87.25298862308468,
+"errors": [],
+"mt": "Der für den Benutzer sichtbare Name der Gruppe. Er wird im Strukturbaum als oberster Knoten angezeigt, wenn sich im Dokument keine Elemente befinden, die zu dieser Gruppe gehören."
+},
+{
+"item": "J056",
+"row_id": "K02022f544e6a:zh_CN",
+"sys": "nmt_deepl",
+"band": "100",
+"corpus": "KDE4",
+"score": 50,
+"mqm": 6,
+"worst": 5,
+"kiwi": 0.8445212244987488,
+"comet": 0.7920411229133606,
+"chrf": 13.284479562667137,
+"errors": [
+[
+"accuracy/mistranslation",
+"major",
+"钥匙扣 (key fob) for keyring database"
+],
+[
+"terminology",
+"minor",
+"通道 for conduit"
+]
+],
+"mt": "该通道将手持式钥匙扣数据库与存储在电脑上的数据库进行同步。"
+},
+{
+"item": "J056",
+"row_id": "K02022f544e6a:zh_CN",
+"sys": "tm_as_is",
+"band": "100",
+"corpus": "KDE4",
+"score": 82,
+"mqm": 2,
+"worst": 1,
+"kiwi": 0.6759871244430542,
+"comet": 0.8347188234329224,
+"chrf": 64.88750175272071,
+"errors": [
+[
+"accuracy/omission",
+"minor",
+"second 'database' dropped"
+],
+[
+"accuracy/addition",
+"minor",
+"'Name' artefact"
+]
+],
+"mt": "此管道会将您的手持设备中的密钥环数据库和个人电脑上的同步。 Name"
+},
+{
+"item": "J056",
+"row_id": "K02022f544e6a:zh_CN",
+"sys": "zero_shot",
+"band": "100",
+"corpus": "KDE4",
+"score": 88,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8235549926757812,
+"comet": 0.7938692569732666,
+"chrf": 14.557877192180127,
+"errors": [
+[
+"terminology",
+"minor",
+"导管 (physical pipe) for conduit"
+]
+],
+"mt": "此导管将手持设备的密钥环数据库与存储在 PC 上的数据库进行同步。"
+},
+{
+"item": "J056",
+"row_id": "K02022f544e6a:zh_CN",
+"sys": "hybrid_ctx",
+"band": "100",
+"corpus": "KDE4",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.815384030342102,
+"comet": 0.8210182785987854,
+"chrf": 28.65755436170797,
+"errors": [],
+"mt": "此管道会将手持设备的密钥环数据库与存储在个人电脑上的数据库进行同步。"
+},
+{
+"item": "J057",
+"row_id": "Ke9a94e74f8f7:es",
+"sys": "hybrid_ctx",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8734145760536194,
+"comet": 0.7596190571784973,
+"chrf": 59.96895726418637,
+"errors": [],
+"mt": "El complemento o la definición del objeto pueden estar dañados."
+},
+{
+"item": "J057",
+"row_id": "Ke9a94e74f8f7:es",
+"sys": "nmt_deepl",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8758922815322876,
+"comet": 0.7216164469718933,
+"chrf": 36.491583363564004,
+"errors": [],
+"mt": "Es posible que la definición del complemento o del objeto esté dañada."
+},
+{
+"item": "J057",
+"row_id": "Ke9a94e74f8f7:es",
+"sys": "tm_as_is",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 45,
+"mqm": 5,
+"worst": 5,
+"kiwi": 0.5437126755714417,
+"comet": 0.9685945510864258,
+"chrf": 100.0,
+"errors": [
+[
+"accuracy/omission",
+"major",
+"'plugin' dropped; 'design' for definition"
+]
+],
+"mt": "El diseño del objeto puede estar dañado."
+},
+{
+"item": "J057",
+"row_id": "Ke9a94e74f8f7:es",
+"sys": "zero_shot",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 96,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8801217675209045,
+"comet": 0.6954694390296936,
+"chrf": 31.244752566080464,
+"errors": [],
+"mt": "Es posible que la definición del complemento o del objeto esté corrupta."
+},
+{
+"item": "J058",
+"row_id": "E6eb332f82d08:es",
+"sys": "zero_shot",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8573580980300903,
+"comet": 0.9176440238952637,
+"chrf": 97.86849127162267,
+"errors": [],
+"mt": "- Tratamiento de la anemia sintomática asociada a la insuficiencia renal crónica (IRC) en adultos y"
+},
+{
+"item": "J058",
+"row_id": "E6eb332f82d08:es",
+"sys": "nmt_deepl",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8573580980300903,
+"comet": 0.9176440238952637,
+"chrf": 97.86849127162267,
+"errors": [],
+"mt": "- Tratamiento de la anemia sintomática asociada a la insuficiencia renal crónica (IRC) en adultos y"
+},
+{
+"item": "J058",
+"row_id": "E6eb332f82d08:es",
+"sys": "hybrid_ctx",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.851405143737793,
+"comet": 0.9137629866600037,
+"chrf": 93.8684957536165,
+"errors": [],
+"mt": "- Tratamiento de la anemia sintomática asociada a insuficiencia renal crónica (IRC) en adultos y"
+},
+{
+"item": "J058",
+"row_id": "E6eb332f82d08:es",
+"sys": "tm_as_is",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 55,
+"mqm": 6,
+"worst": 5,
+"kiwi": 0.8264867067337036,
+"comet": 0.8936718106269836,
+"chrf": 87.82764330762706,
+"errors": [
+[
+"accuracy/addition",
+"major",
+"'pacientes pediátricos' invented to complete fragment"
+],
+[
+"fluency",
+"minor",
+"list dash dropped"
+]
+],
+"mt": "Tratamiento de la anemia sintomática asociada a insuficiencia renal crónica (IRC) en adultos y pacientes pediátricos."
+},
+{
+"item": "J059",
+"row_id": "E615ae00bf9cf:es",
+"sys": "tm_as_is",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 5,
+"mqm": 11,
+"worst": 10,
+"kiwi": 0.8855431079864502,
+"comet": 0.8919503092765808,
+"chrf": 56.13012496742713,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"aripiprazole instead of olanzapine"
+],
+[
+"accuracy/omission",
+"minor",
+"'should be advised' dropped"
+]
+],
+"mt": "Las pacientes deben notificar a su médico si están embarazadas o tienen intención de quedarse embarazadas durante el tratamiento con aripiprazol."
+},
+{
+"item": "J059",
+"row_id": "E615ae00bf9cf:es",
+"sys": "zero_shot",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8957546949386597,
+"comet": 0.9098028540611267,
+"chrf": 70.75033335909615,
+"errors": [],
+"mt": "Se debe aconsejar a las pacientes que notifiquen a su médico si quedan embarazadas o tienen la intención de quedar embarazadas durante el tratamiento con olanzapina."
+},
+{
+"item": "J059",
+"row_id": "E615ae00bf9cf:es",
+"sys": "nmt_deepl",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8948149681091309,
+"comet": 0.910892128944397,
+"chrf": 74.62372161761216,
+"errors": [],
+"mt": "Se debe recomendar a las pacientes que informen a su médico si quedan embarazadas o tienen intención de quedarse embarazadas durante el tratamiento con olanzapina."
+},
+{
+"item": "J059",
+"row_id": "E615ae00bf9cf:es",
+"sys": "hybrid_ctx",
+"band": "95-99",
+"corpus": "EMEA",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8963719606399536,
+"comet": 0.9197676777839661,
+"chrf": 80.05647199037055,
+"errors": [],
+"mt": "Se debe recomendar a las pacientes que notifiquen a su médico si quedan embarazadas o tienen intención de quedarse embarazadas durante el tratamiento con olanzapina."
+},
+{
+"item": "J060",
+"row_id": "Kff771d68b5a6:es",
+"sys": "zero_shot",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8557723760604858,
+"comet": 0.7911547422409058,
+"chrf": 50.639483782576754,
+"errors": [],
+"mt": "Indique con cuánta antelación a la alarma principal debe mostrarse una alarma de recordatorio. %1"
+},
+{
+"item": "J060",
+"row_id": "Kff771d68b5a6:es",
+"sys": "hybrid_ctx",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 95,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.7685675621032715,
+"comet": 0.7565903067588806,
+"chrf": 69.49508724312805,
+"errors": [],
+"mt": "Introduzca con cuánto tiempo de antelación a la alarma principal mostrar un recordatorio. %1"
+},
+{
+"item": "J060",
+"row_id": "Kff771d68b5a6:es",
+"sys": "tm_as_is",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 50,
+"mqm": 7,
+"worst": 5,
+"kiwi": 0.5764153003692627,
+"comet": 0.7837648987770081,
+"chrf": 88.52679999865288,
+"errors": [
+[
+"accuracy/placeholder",
+"major",
+"%1 dropped"
+],
+[
+"accuracy/addition",
+"minor",
+"'@info: whatsthis' artefact"
+],
+[
+"fluency/spelling",
+"minor",
+"'cuanto' without accent"
+]
+],
+"mt": "Introduzca con cuanto tiempo de antelación sobre la alarma principal mostrar un recordatorio. @info: whatsthis"
+},
+{
+"item": "J060",
+"row_id": "Kff771d68b5a6:es",
+"sys": "nmt_deepl",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 90,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8495650291442871,
+"comet": 0.7973983883857727,
+"chrf": 48.306196388780315,
+"errors": [
+[
+"style/register",
+"minor",
+"informal tú in UI"
+]
+],
+"mt": "Introduce con cuánta antelación respecto a la alarma principal quieres que se muestre una alarma de recordatorio. %1"
+},
+{
+"item": "J061",
+"row_id": "K6d331ca7b0e2:de",
+"sys": "tm_as_is",
+"band": "100",
+"corpus": "KDE4",
+"score": 85,
+"mqm": 2,
+"worst": 1,
+"kiwi": 0.727228045463562,
+"comet": 0.6042233109474182,
+"chrf": 26.71735497953366,
+"errors": [
+[
+"accuracy/mistranslation",
+"minor",
+"'Hinweis' for Warning"
+],
+[
+"accuracy/addition",
+"minor",
+"'@action:inmenu' artefact"
+]
+],
+"mt": "Hinweis: Das Byte-Datenfeld wurde seit der letzten Aktualisierung geändert.@action:inmenu"
+},
+{
+"item": "J061",
+"row_id": "K6d331ca7b0e2:de",
+"sys": "hybrid_ctx",
+"band": "100",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8411263227462769,
+"comet": 0.6547433733940125,
+"chrf": 24.538541407133117,
+"errors": [],
+"mt": "Warnung: Das Byte-Array wurde seit der letzten Aktualisierung geändert."
+},
+{
+"item": "J061",
+"row_id": "K6d331ca7b0e2:de",
+"sys": "zero_shot",
+"band": "100",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8411263227462769,
+"comet": 0.6547433733940125,
+"chrf": 24.538541407133117,
+"errors": [],
+"mt": "Warnung: Das Byte-Array wurde seit der letzten Aktualisierung geändert."
+},
+{
+"item": "J061",
+"row_id": "K6d331ca7b0e2:de",
+"sys": "nmt_deepl",
+"band": "100",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8411263227462769,
+"comet": 0.6547433733940125,
+"chrf": 24.538541407133117,
+"errors": [],
+"mt": "Warnung: Das Byte-Array wurde seit der letzten Aktualisierung geändert."
+},
+{
+"item": "J062",
+"row_id": "E5601b9467932:es",
+"sys": "zero_shot",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.830037534236908,
+"comet": 0.829109787940979,
+"chrf": 29.639065929558654,
+"errors": [],
+"mt": "18 DATOS MÍNIMOS QUE DEBEN FIGURAR EN LOS BLÍSTERS"
+},
+{
+"item": "J062",
+"row_id": "E5601b9467932:es",
+"sys": "nmt_deepl",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.830037534236908,
+"comet": 0.829109787940979,
+"chrf": 29.639065929558654,
+"errors": [],
+"mt": "18 DATOS MÍNIMOS QUE DEBEN FIGURAR EN LOS BLÍSTERS"
+},
+{
+"item": "J062",
+"row_id": "E5601b9467932:es",
+"sys": "hybrid_ctx",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.7534228563308716,
+"comet": 0.9729007482528687,
+"chrf": 94.63908283761225,
+"errors": [],
+"mt": "18 INFORMACIÓN MÍNIMA A INCLUIR EN BLÍSTERS"
+},
+{
+"item": "J062",
+"row_id": "E5601b9467932:es",
+"sys": "tm_as_is",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 40,
+"mqm": 6,
+"worst": 5,
+"kiwi": 0.5985170602798462,
+"comet": 0.9190764427185059,
+"chrf": 91.0166857642248,
+"errors": [
+[
+"accuracy/number",
+"major",
+"section 20 instead of 18"
+],
+[
+"accuracy/addition",
+"minor",
+"'O TIRAS' added"
+]
+],
+"mt": "20 INFORMACIÓN MÍNIMA A INCLUIR EN BLÍSTERS O TIRAS"
+},
+{
+"item": "J063",
+"row_id": "Ebbd2c220c36c:es",
+"sys": "zero_shot",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 90,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.7662451267242432,
+"comet": 0.7106944918632507,
+"chrf": 64.64227918979152,
+"errors": [],
+"mt": "Trastornos poco frecuentes y del laberinto:"
+},
+{
+"item": "J063",
+"row_id": "Ebbd2c220c36c:es",
+"sys": "hybrid_ctx",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 92,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.7720891833305359,
+"comet": 0.5422437787055969,
+"chrf": 65.35914195739767,
+"errors": [],
+"mt": "Poco frecuentes y trastornos del laberinto:"
+},
+{
+"item": "J063",
+"row_id": "Ebbd2c220c36c:es",
+"sys": "nmt_deepl",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 85,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.7880935668945312,
+"comet": 0.6790507435798645,
+"chrf": 41.47230571881171,
+"errors": [
+[
+"terminology",
+"minor",
+"'sistema laberíntico'"
+]
+],
+"mt": "Trastornos poco frecuentes y del sistema laberíntico:"
+},
+{
+"item": "J063",
+"row_id": "Ebbd2c220c36c:es",
+"sys": "tm_as_is",
+"band": "50-74",
+"corpus": "EMEA",
+"score": 30,
+"mqm": 5,
+"worst": 5,
+"kiwi": 0.4871487319469452,
+"comet": 0.7309665083885193,
+"chrf": 55.987923457107684,
+"errors": [
+[
+"accuracy/mistranslation",
+"major",
+"'Raros' (rare) for uncommon; labyrinth dropped"
+]
+],
+"mt": "Trastornos del oído Raros:"
+},
+{
+"item": "J064",
+"row_id": "Ea4bc03d90f6b:es",
+"sys": "zero_shot",
+"band": "<50",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8930572271347046,
+"comet": 0.9000428318977356,
+"chrf": 61.42788905841844,
+"errors": [],
+"mt": "Si se presentan tales signos y síntomas, el paciente debe ser evaluado inmediatamente y se debe interrumpir el tratamiento con Lamictal si no se puede establecer una etiología alternativa."
+},
+{
+"item": "J064",
+"row_id": "Ea4bc03d90f6b:es",
+"sys": "hybrid_ctx",
+"band": "<50",
+"corpus": "EMEA",
+"score": 96,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8829572200775146,
+"comet": 0.8602206707000732,
+"chrf": 54.47473902071997,
+"errors": [],
+"mt": "Si se presentan tales signos y síntomas, el paciente debe ser evaluado inmediatamente y se debe interrumpir Lamictal si no se puede establecer una etiología alternativa."
+},
+{
+"item": "J064",
+"row_id": "Ea4bc03d90f6b:es",
+"sys": "nmt_deepl",
+"band": "<50",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8921038508415222,
+"comet": 0.8971177935600281,
+"chrf": 67.13462899050111,
+"errors": [],
+"mt": "Si se presentan dichos signos y síntomas, se debe evaluar al paciente de inmediato y suspender el tratamiento con Lamictal si no se puede determinar una etiología alternativa."
+},
+{
+"item": "J064",
+"row_id": "Ea4bc03d90f6b:es",
+"sys": "tm_as_is",
+"band": "<50",
+"corpus": "EMEA",
+"score": 0,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.5538942217826843,
+"comet": 0.6171459555625916,
+"chrf": 20.100854417407675,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"unrelated sentence (visual symptoms, ophthalmologist)"
+]
+],
+"mt": "Si se presentaran síntomas visuales, el paciente deberá ser remitido a un oftalmólogo."
+},
+{
+"item": "J065",
+"row_id": "E9e788bb9e6a7:es",
+"sys": "nmt_deepl",
+"band": "<50",
+"corpus": "EMEA",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8719183802604675,
+"comet": 0.8244454264640808,
+"chrf": 81.21678285999211,
+"errors": [],
+"mt": "Xeloda se utiliza, solo o en combinación con otros medicamentos contra el cáncer, en pacientes que se han sometido a una intervención quirúrgica por cáncer de colon en «estadio III» o «estadio C de Dukes»; • cáncer colorrectal metastásico (cáncer del intestino grueso que se ha extendido a otras partes del cuerpo)."
+},
+{
+"item": "J065",
+"row_id": "E9e788bb9e6a7:es",
+"sys": "tm_as_is",
+"band": "<50",
+"corpus": "EMEA",
+"score": 0,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.5952783823013306,
+"comet": 0.6814938187599182,
+"chrf": 50.57645221930818,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"different indication (cisplatin, breast cancer)"
+]
+],
+"mt": "Xeloda se usa con otros medicamentos contra el cáncer, por ejemplo con un fármaco contra el cáncer que contiene platino como el cisplatino; • el cáncer de mama localmente avanzado o metastático (cáncer de mama que ha empezado a extenderse a otras partes del cuerpo)."
+},
+{
+"item": "J065",
+"row_id": "E9e788bb9e6a7:es",
+"sys": "hybrid_ctx",
+"band": "<50",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8642317056655884,
+"comet": 0.8543950319290161,
+"chrf": 85.40494290147011,
+"errors": [],
+"mt": "Xeloda se utiliza con o sin otros medicamentos contra el cáncer en pacientes que han sido sometidos a cirugía por cáncer de colon en «estadio III» o «estadio C de Dukes»; • el cáncer colorrectal metastásico (cáncer del intestino grueso que se ha extendido a otras partes del cuerpo)."
+},
+{
+"item": "J065",
+"row_id": "E9e788bb9e6a7:es",
+"sys": "zero_shot",
+"band": "<50",
+"corpus": "EMEA",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8706718683242798,
+"comet": 0.8426480889320374,
+"chrf": 77.14229485117133,
+"errors": [],
+"mt": "Xeloda se utiliza con o sin otros medicamentos anticancerígenos en pacientes que se han sometido a una cirugía por cáncer de colon en «estadio III» o «estadio C de Dukes»; • cáncer colorrectal metastásico (cáncer del intestino grueso que se ha extendido a otras partes del cuerpo)."
+},
+{
+"item": "J066",
+"row_id": "K353532e5a40b:zh_CN",
+"sys": "tm_as_is",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 5,
+"mqm": 15,
+"worst": 10,
+"kiwi": 0.4880915582180023,
+"comet": 0.7296875715255737,
+"chrf": 75.37811858107489,
+"errors": [
+[
+"accuracy/negation",
+"critical",
+"'does NOT have timeslicing'"
+],
+[
+"accuracy/untranslated",
+"major",
+"English fragment and CSS junk left in"
+]
+],
+"mt": "p, li {white- space: pre- wrap;} Process will run whenever right: 0px; - qt- block- indent: 0; text- indent: 0px; \"> 只要可以， 进程就将运行。 进程不会有时间片动作， 其优先级比普通或批处理模式都要高 。"
+},
+{
+"item": "J066",
+"row_id": "K353532e5a40b:zh_CN",
+"sys": "zero_shot",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 95,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.7353451251983643,
+"comet": 0.7934306263923645,
+"chrf": 48.48089813534684,
+"errors": [],
+"mt": "p, li {white-space: pre-wrap;} 进程在可运行状态时将立即运行。优先级高于“普通”或“批处理”。具有时间片轮转。"
+},
+{
+"item": "J066",
+"row_id": "K353532e5a40b:zh_CN",
+"sys": "nmt_deepl",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 93,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.7434272766113281,
+"comet": 0.7959709167480469,
+"chrf": 46.06795153027948,
+"errors": [
+[
+"accuracy/untranslated",
+"minor",
+"Normal/Batch left in English"
+]
+],
+"mt": "p, li {white-space: pre-wrap;} 该进程将在可运行时立即运行。其优先级高于“Normal”或“Batch”。具有时间片分配机制。"
+},
+{
+"item": "J066",
+"row_id": "K353532e5a40b:zh_CN",
+"sys": "hybrid_ctx",
+"band": "95-99",
+"corpus": "KDE4",
+"score": 96,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.6746165752410889,
+"comet": 0.8334400057792664,
+"chrf": 72.57424839763324,
+"errors": [],
+"mt": "p, li {white-space: pre-wrap;} 只要可以运行，进程就将运行。优先级比普通或批处理模式更高。具有时间片。"
+},
+{
+"item": "J067",
+"row_id": "K1b1032d1c4b4:es",
+"sys": "hybrid_ctx",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8436490893363953,
+"comet": 0.9267967939376831,
+"chrf": 100.0,
+"errors": [],
+"mt": "p, li {white-space: pre-wrap;} Mueve hacia arriba los archivos seleccionados en la lista. Esta opción permite que los archivos sean leídos primero por KSystemLog."
+},
+{
+"item": "J067",
+"row_id": "K1b1032d1c4b4:es",
+"sys": "zero_shot",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8366376757621765,
+"comet": 0.8379176259040833,
+"chrf": 73.99566157394881,
+"errors": [],
+"mt": "p, li {white-space: pre-wrap;} Sube los archivos seleccionados en la lista. Esta opción permite que KSystemLog lea primero estos archivos."
+},
+{
+"item": "J067",
+"row_id": "K1b1032d1c4b4:es",
+"sys": "tm_as_is",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 15,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.8102731704711914,
+"comet": 0.8552036881446838,
+"chrf": 93.14344925287092,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"'al final' (last) instead of first"
+]
+],
+"mt": "p, li {white-space: pre-wrap;} Mueve hacia arriba los archivos seleccionados en la lista. Esta opción permite que los archivos sean leídos al final por KSystemLog."
+},
+{
+"item": "J067",
+"row_id": "K1b1032d1c4b4:es",
+"sys": "nmt_deepl",
+"band": "85-94",
+"corpus": "KDE4",
+"score": 99,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8362287282943726,
+"comet": 0.8407236337661743,
+"chrf": 74.10740663082895,
+"errors": [],
+"mt": "p, li {white-space: pre-wrap;} Sube los archivos seleccionados en la lista. Esta opción permite que KSystemLog lea primero esos archivos."
+},
+{
+"item": "J068",
+"row_id": "E3b2911d0d40a:es",
+"sys": "nmt_deepl",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8789085149765015,
+"comet": 0.949384331703186,
+"chrf": 55.145719432372374,
+"errors": [],
+"mt": "¿Cómo funciona IntronA?"
+},
+{
+"item": "J068",
+"row_id": "E3b2911d0d40a:es",
+"sys": "tm_as_is",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 5,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.6740548610687256,
+"comet": 0.9327536225318909,
+"chrf": 49.59886518710048,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"wrong product name RILUTEK"
+]
+],
+"mt": "¿Cómo actúa RILUTEK?"
+},
+{
+"item": "J068",
+"row_id": "E3b2911d0d40a:es",
+"sys": "hybrid_ctx",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8809252977371216,
+"comet": 0.9875571131706238,
+"chrf": 100.0,
+"errors": [],
+"mt": "¿Cómo actúa IntronA?"
+},
+{
+"item": "J068",
+"row_id": "E3b2911d0d40a:es",
+"sys": "zero_shot",
+"band": "75-84",
+"corpus": "EMEA",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8809252977371216,
+"comet": 0.9875571131706238,
+"chrf": 100.0,
+"errors": [],
+"mt": "¿Cómo actúa IntronA?"
+},
+{
+"item": "J069",
+"row_id": "E2c4ebf404622:es",
+"sys": "nmt_deepl",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 85,
+"mqm": 2,
+"worst": 1,
+"kiwi": 0.8899022936820984,
+"comet": 0.9078503251075745,
+"chrf": 42.84147100258648,
+"errors": [
+[
+"style/register",
+"minor",
+"informal tú"
+],
+[
+"accuracy/mistranslation",
+"minor",
+"'tomando' for an injected product"
+]
+],
+"mt": "- Si padeces psoriasis, es posible que esta empeore mientras estés tomando PegIntron."
+},
+{
+"item": "J069",
+"row_id": "E2c4ebf404622:es",
+"sys": "tm_as_is",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 10,
+"mqm": 10,
+"worst": 10,
+"kiwi": 0.7799975275993347,
+"comet": 0.9222218990325928,
+"chrf": 87.91522819516312,
+"errors": [
+[
+"accuracy/mistranslation",
+"critical",
+"different brand name ViraferonPeg"
+]
+],
+"mt": "- Si tiene psoriasis, puede empeorar durante el tratamiento con ViraferonPeg."
+},
+{
+"item": "J069",
+"row_id": "E2c4ebf404622:es",
+"sys": "zero_shot",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8853412866592407,
+"comet": 0.9342024326324463,
+"chrf": 53.693118966352074,
+"errors": [],
+"mt": "- Si padece psoriasis, esta puede empeorar mientras utiliza PegIntron."
+},
+{
+"item": "J069",
+"row_id": "E2c4ebf404622:es",
+"sys": "hybrid_ctx",
+"band": "85-94",
+"corpus": "EMEA",
+"score": 100,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.8767142295837402,
+"comet": 0.974422812461853,
+"chrf": 100.0,
+"errors": [],
+"mt": "- Si tiene psoriasis, puede empeorar durante el tratamiento con PegIntron."
+},
+{
+"item": "J070",
+"row_id": "E2b3a13b121df:es",
+"sys": "tm_as_is",
+"band": "100",
+"corpus": "EMEA",
+"score": 90,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8629966974258423,
+"comet": 0.8891417384147644,
+"chrf": 76.2560154004386,
+"errors": [
+[
+"accuracy/tense",
+"minor",
+"present 'hay' for pluperfect"
+]
+],
+"mt": "Además, en la bibliografía publicada hay informes de otros casos, de los que no dispuso el JECFA."
+},
+{
+"item": "J070",
+"row_id": "E2b3a13b121df:es",
+"sys": "hybrid_ctx",
+"band": "100",
+"corpus": "EMEA",
+"score": 90,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8629966974258423,
+"comet": 0.8891417384147644,
+"chrf": 76.2560154004386,
+"errors": [
+[
+"accuracy/tense",
+"minor",
+"present 'hay' for pluperfect"
+]
+],
+"mt": "Además, en la bibliografía publicada hay informes de otros casos, de los que no dispuso el JECFA."
+},
+{
+"item": "J070",
+"row_id": "E2b3a13b121df:es",
+"sys": "nmt_deepl",
+"band": "100",
+"corpus": "EMEA",
+"score": 92,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8744553923606873,
+"comet": 0.9186338782310486,
+"chrf": 65.81263116204147,
+"errors": [
+[
+"fluency/grammar",
+"minor",
+"redundant 'de los que ... de información'"
+]
+],
+"mt": "En la bibliografía publicada también se habían descrito otros casos, de los que el JECFA no disponía de información."
+},
+{
+"item": "J070",
+"row_id": "E2b3a13b121df:es",
+"sys": "zero_shot",
+"band": "100",
+"corpus": "EMEA",
+"score": 90,
+"mqm": 1,
+"worst": 1,
+"kiwi": 0.8713381886482239,
+"comet": 0.8889068961143494,
+"chrf": 48.292701287012655,
+"errors": [
+[
+"fluency",
+"minor",
+"'otros casos adicionales' redundant; 'literatura' anglicism"
+]
+],
+"mt": "En la literatura publicada también se habían notificado otros casos adicionales de los que el JECFA no disponía."
+},
+{
+"item": "J071",
+"row_id": "Kd3baf37457da:es",
+"sys": "hybrid_ctx",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 96,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.6867469549179077,
+"comet": 0.7455403208732605,
+"chrf": 58.37190860116435,
+"errors": [],
+"mt": "Servidor de IU de información de progreso de KDE"
+},
+{
+"item": "J071",
+"row_id": "Kd3baf37457da:es",
+"sys": "tm_as_is",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 80,
+"mqm": 2,
+"worst": 1,
+"kiwi": 0.4823577105998993,
+"comet": 0.5210801959037781,
+"chrf": 36.80971395609072,
+"errors": [
+[
+"accuracy/addition",
+"minor",
+"'Name' artefact"
+],
+[
+"accuracy/omission",
+"minor",
+"'Information' dropped"
+]
+],
+"mt": "Servidor de IU de progreso de KDEName"
+},
+{
+"item": "J071",
+"row_id": "Kd3baf37457da:es",
+"sys": "zero_shot",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.7745628952980042,
+"comet": 0.8797323107719421,
+"chrf": 77.24884641426257,
+"errors": [],
+"mt": "Servidor de interfaz de usuario de información de progreso de KDE"
+},
+{
+"item": "J071",
+"row_id": "Kd3baf37457da:es",
+"sys": "nmt_deepl",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 97,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.7996028065681458,
+"comet": 0.8760433793067932,
+"chrf": 69.03835137167734,
+"errors": [],
+"mt": "Servidor de interfaz de usuario de información sobre el progreso de KDE"
+},
+{
+"item": "J072",
+"row_id": "K3c2b5b6aa56d:de",
+"sys": "zero_shot",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 93,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.7676299810409546,
+"comet": 0.7811098694801331,
+"chrf": 37.85060166425911,
+"errors": [],
+"mt": "Ob die Standard-/vordefinierten Tastaturschriften überschrieben werden sollen."
+},
+{
+"item": "J072",
+"row_id": "K3c2b5b6aa56d:de",
+"sys": "nmt_deepl",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 95,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.7884659767150879,
+"comet": 0.7797197103500366,
+"chrf": 42.65640520848172,
+"errors": [],
+"mt": "Ob die Standard-/vordefinierten Tastaturschriftarten überschrieben werden sollen."
+},
+{
+"item": "J072",
+"row_id": "K3c2b5b6aa56d:de",
+"sys": "hybrid_ctx",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 98,
+"mqm": 0,
+"worst": 0,
+"kiwi": 0.7499934434890747,
+"comet": 0.7786831259727478,
+"chrf": 63.44947690444671,
+"errors": [],
+"mt": "Gibt an, ob die voreingestellten Tastaturschriftarten überschrieben werden sollen."
+},
+{
+"item": "J072",
+"row_id": "K3c2b5b6aa56d:de",
+"sys": "tm_as_is",
+"band": "50-74",
+"corpus": "KDE4",
+"score": 45,
+"mqm": 6,
+"worst": 5,
+"kiwi": 0.44774338603019714,
+"comet": 0.740234375,
+"chrf": 69.47658475703827,
+"errors": [
+[
+"accuracy/mistranslation",
+"major",
+"'Lektionsschriftarten' (lesson fonts)"
+],
+[
+"accuracy/omission",
+"minor",
+"'whether' dropped"
+]
+],
+"mt": "Überschreibt die voreingestellten Lektionsschriftarten."
+}
+]

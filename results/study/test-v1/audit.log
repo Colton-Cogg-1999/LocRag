@@ -1,0 +1,7 @@
+[00:58:24] reuse classification on a stratified subsample: 1200/4229 rows
+[01:02:00] reuse: 1200 requests, 1200 uncached
+[01:02:00] reuse: est. $8.40; balance $11.22
+[01:17:08] extraction_audit: 150 requests, 150 uncached
+[01:17:09] extraction_audit: est. $0.80; balance $2.55
+[01:18:27] audit complete
+[01:18:28] AUDIT EXIT 0

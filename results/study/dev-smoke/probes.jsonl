@@ -1,0 +1,169 @@
+{"row_id": "Ebad978e79ef7:es", "probe": "untranslated", "translation": "This makes it easier to resuspend.", "condition": "probe:untranslated"}
+{"row_id": "Ebad978e79ef7:es", "probe": "append_unrelated", "translation": "Esto facilita su resuspensión. Si LITAK entra en contacto con la piel o los ojos, enjuague inmediatamente la zona afectada con abundante agua.", "condition": "probe:append_unrelated"}
+{"row_id": "E8d4c3c4c1f78:es", "probe": "drop_end", "translation": "Se prevé que el abacavir también se secrete en la leche", "condition": "probe:drop_end"}
+{"row_id": "E8d4c3c4c1f78:es", "probe": "untranslated", "translation": "It is expected that abacavir will also be secreted into human milk, although this has not been confirmed.", "condition": "probe:untranslated"}
+{"row_id": "E8d4c3c4c1f78:es", "probe": "append_unrelated", "translation": "Se prevé que el abacavir también se secrete en la leche humana, aunque esto no se ha confirmado. No se pudo encontrar la clave precompartida, compruebe la configuración de PSK.", "condition": "probe:append_unrelated"}
+{"row_id": "E8d4c3c4c1f78:es", "probe": "negation_removed", "translation": "Se prevé que el abacavir también se secrete en la leche humana, aunque esto se ha confirmado.", "condition": "probe:negation_removed"}
+{"row_id": "Kd2585fdc51e4:es", "probe": "append_unrelated", "translation": "Santa Cruz del Quiché Cápsula blanca, tamaño 0", "condition": "probe:append_unrelated"}
+{"row_id": "K70b05c3c6128:zh_CN", "probe": "drop_end", "translation": "选择用于打印的", "condition": "probe:drop_end"}
+{"row_id": "K70b05c3c6128:zh_CN", "probe": "untranslated", "translation": "Select the color scheme to use for the print.", "condition": "probe:untranslated"}
+{"row_id": "K70b05c3c6128:zh_CN", "probe": "append_unrelated", "translation": "选择用于打印的配色方案。无法挂载共享文件夹“%1”。由于没有错误消息，无法提供详细信息。", "condition": "probe:append_unrelated"}
+{"row_id": "Kd2585fdc51e4:zh_CN", "probe": "drop_end", "translation": "圣克鲁斯-", "condition": "probe:drop_end"}
+{"row_id": "Kd2585fdc51e4:zh_CN", "probe": "untranslated", "translation": "Santa Cruz del Quiché", "condition": "probe:untranslated"}
+{"row_id": "Kd2585fdc51e4:zh_CN", "probe": "append_unrelated", "translation": "圣克鲁斯-德尔基切使用此按钮记录此交易", "condition": "probe:append_unrelated"}
+{"row_id": "Kaa5339f3ff22:de", "probe": "drop_end", "translation": "Text suchen Zeigt einen Dialog an, mit dem Sie Text", "condition": "probe:drop_end"}
+{"row_id": "Kaa5339f3ff22:de", "probe": "untranslated", "translation": "Find text Shows a dialog that allows you to find text on the displayed page.", "condition": "probe:untranslated"}
+{"row_id": "Kaa5339f3ff22:de", "probe": "append_unrelated", "translation": "Text suchen Zeigt einen Dialog an, mit dem Sie Text auf der angezeigten Seite suchen können. Wählen Sie das Farbschema aus, das für den Druck verwendet werden soll.", "condition": "probe:append_unrelated"}
+{"row_id": "K7ede7068b57a:zh_CN", "probe": "drop_end", "translation": "您未为其中一名收件人选择加密密钥；如果您对其进行加", "condition": "probe:drop_end"}
+{"row_id": "K7ede7068b57a:zh_CN", "probe": "untranslated", "translation": "You did not select an encryption key for one of the recipients; this person will not be able to decrypt the message if you encrypt it.", "condition": "probe:untranslated"}
+{"row_id": "K7ede7068b57a:zh_CN", "probe": "append_unrelated", "translation": "您未为其中一名收件人选择加密密钥；如果您对其进行加密，该人员将无法解密此消息。圣克鲁斯-德尔基切", "condition": "probe:append_unrelated"}
+{"row_id": "K7ede7068b57a:zh_CN", "probe": "negation_removed", "translation": "您为其中一名收件人选择加密密钥；如果您对其进行加密，该人员将无法解密此消息。", "condition": "probe:negation_removed"}
+{"row_id": "Kfef00712051a:es", "probe": "drop_end", "translation": "Desplace la imagen", "condition": "probe:drop_end"}
+{"row_id": "Kfef00712051a:es", "probe": "untranslated", "translation": "Pan the image to a region", "condition": "probe:untranslated"}
+{"row_id": "Kfef00712051a:es", "probe": "append_unrelated", "translation": "Desplace la imagen hacia una región Use este botón para registrar esta transacción", "condition": "probe:append_unrelated"}
+{"row_id": "Ec46bb083e1ec:es", "probe": "number_change", "translation": "Tras la administración intravenosa de una dosis única de 101 mg de [14C]-fosaprepitant, un profármaco del aprepitant, a sujetos sanos, se recuperó el 57 % de la radiactividad en la orina y el 45 % en las heces.", "condition": "probe:number_change"}
+{"row_id": "Ec46bb083e1ec:es", "probe": "drop_end", "translation": "Tras la administración intravenosa de una dosis única de 100 mg de [14C]-fosaprepitant, un profármaco del aprepitant, a sujetos sanos, se recuperó el 57", "condition": "probe:drop_end"}
+{"row_id": "Ec46bb083e1ec:es", "probe": "untranslated", "translation": "Following a single intravenously administered 100 mg dose of [14C]- fosaprepitant, a prodrug for aprepitant, to healthy subjects, 57% of the radioactivity was recovered in urine and 45% in faeces.", "condition": "probe:untranslated"}
+{"row_id": "Ec46bb083e1ec:es", "probe": "append_unrelated", "translation": "Tras la administración intravenosa de una dosis única de 100 mg de [14C]-fosaprepitant, un profármaco del aprepitant, a sujetos sanos, se recuperó el 57 % de la radiactividad en la orina y el 45 % en las heces. Cápsula blanca, tamaño 0", "condition": "probe:append_unrelated"}
+{"row_id": "Kaa5339f3ff22:es", "probe": "drop_end", "translation": "Buscar texto Muestra un diálogo que permite buscar", "condition": "probe:drop_end"}
+{"row_id": "Kaa5339f3ff22:es", "probe": "untranslated", "translation": "Find text Shows a dialog that allows you to find text on the displayed page.", "condition": "probe:untranslated"}
+{"row_id": "Kaa5339f3ff22:es", "probe": "append_unrelated", "translation": "Buscar texto Muestra un diálogo que permite buscar texto en la página mostrada. - cambia la zona de la piel donde se inyecta la insulina (por ejemplo, del muslo a la parte superior del brazo),", "condition": "probe:append_unrelated"}
+{"row_id": "Ee8eeb019ea54:es", "probe": "drop_end", "translation": "¿Por qué se", "condition": "probe:drop_end"}
+{"row_id": "Ee8eeb019ea54:es", "probe": "untranslated", "translation": "Why has Oprymea been approved?", "condition": "probe:untranslated"}
+{"row_id": "Ee8eeb019ea54:es", "probe": "append_unrelated", "translation": "¿Por qué se ha aprobado Oprymea? No se sabe si el filgrastim se excreta en la leche humana; por lo tanto, no se recomienda su uso en mujeres en periodo de lactancia.", "condition": "probe:append_unrelated"}
+{"row_id": "K79c36708f4d3:de", "probe": "drop_end", "translation": "Der vorab gemeinsame Schlüssel (PSK) konnte nicht gefunden werden;", "condition": "probe:drop_end"}
+{"row_id": "K79c36708f4d3:de", "probe": "untranslated", "translation": "The pre shared key could not be found, check PSK settings.", "condition": "probe:untranslated"}
+{"row_id": "K79c36708f4d3:de", "probe": "append_unrelated", "translation": "Der vorab gemeinsame Schlüssel (PSK) konnte nicht gefunden werden; bitte prüfen Sie die PSK-Einstellungen. Die Freigabe „%1“ konnte nicht eingehängt werden. Detaillierte Informationen können nicht bereitgestellt werden, da keine Fehlermeldung vorlag.", "condition": "probe:append_unrelated"}
+{"row_id": "K79c36708f4d3:de", "probe": "negation_removed", "translation": "Der vorab gemeinsame Schlüssel (PSK) konnte gefunden werden; bitte prüfen Sie die PSK-Einstellungen.", "condition": "probe:negation_removed"}
+{"row_id": "K79c36708f4d3:de", "probe": "tm_swap", "translation": "Ihr geheimer Schlüssel kann nicht exportiert werden. Überprüfen Sie den Schlüssel.", "condition": "probe:tm_swap"}
+{"row_id": "Efcae570c6ef3:es", "probe": "drop_end", "translation": "No se sabe si el filgrastim se excreta en la leche humana; por lo tanto, no", "condition": "probe:drop_end"}
+{"row_id": "Efcae570c6ef3:es", "probe": "untranslated", "translation": "It is not known whether filgrastim is excreted in human milk, therefore it is not recommended for use in breast-feeding women.", "condition": "probe:untranslated"}
+{"row_id": "Efcae570c6ef3:es", "probe": "append_unrelated", "translation": "No se sabe si el filgrastim se excreta en la leche humana; por lo tanto, no se recomienda su uso en mujeres en periodo de lactancia. Se prevé que el abacavir también se secrete en la leche humana, aunque esto no se ha confirmado.", "condition": "probe:append_unrelated"}
+{"row_id": "Efcae570c6ef3:es", "probe": "negation_removed", "translation": "se sabe si el filgrastim se excreta en la leche humana; por lo tanto, no se recomienda su uso en mujeres en periodo de lactancia.", "condition": "probe:negation_removed"}
+{"row_id": "Kfef00712051a:de", "probe": "drop_end", "translation": "Das Bild zu", "condition": "probe:drop_end"}
+{"row_id": "Kfef00712051a:de", "probe": "untranslated", "translation": "Pan the image to a region", "condition": "probe:untranslated"}
+{"row_id": "Kfef00712051a:de", "probe": "append_unrelated", "translation": "Das Bild zu einem Bereich schwenken Santa Cruz del Quiché", "condition": "probe:append_unrelated"}
+{"row_id": "K79c36708f4d3:es", "probe": "drop_end", "translation": "No se pudo encontrar la clave precompartida,", "condition": "probe:drop_end"}
+{"row_id": "K79c36708f4d3:es", "probe": "untranslated", "translation": "The pre shared key could not be found, check PSK settings.", "condition": "probe:untranslated"}
+{"row_id": "K79c36708f4d3:es", "probe": "append_unrelated", "translation": "No se pudo encontrar la clave precompartida, compruebe la configuración de PSK. Cápsula blanca, tamaño 0", "condition": "probe:append_unrelated"}
+{"row_id": "K79c36708f4d3:es", "probe": "negation_removed", "translation": "se pudo encontrar la clave precompartida, compruebe la configuración de PSK.", "condition": "probe:negation_removed"}
+{"row_id": "K79c36708f4d3:es", "probe": "tm_swap", "translation": "No se puede exportar su clave privada. Compruebe la clave.", "condition": "probe:tm_swap"}
+{"row_id": "K70b05c3c6128:es", "probe": "drop_end", "translation": "Seleccione el esquema de colores que desea", "condition": "probe:drop_end"}
+{"row_id": "K70b05c3c6128:es", "probe": "untranslated", "translation": "Select the color scheme to use for the print.", "condition": "probe:untranslated"}
+{"row_id": "K70b05c3c6128:es", "probe": "append_unrelated", "translation": "Seleccione el esquema de colores que desea utilizar para la impresión. No se sabe si el filgrastim se excreta en la leche humana; por lo tanto, no se recomienda su uso en mujeres en periodo de lactancia.", "condition": "probe:append_unrelated"}
+{"row_id": "K7ede7068b57a:es", "probe": "drop_end", "translation": "No ha seleccionado una clave de cifrado para uno de los destinatarios; esta persona", "condition": "probe:drop_end"}
+{"row_id": "K7ede7068b57a:es", "probe": "untranslated", "translation": "You did not select an encryption key for one of the recipients; this person will not be able to decrypt the message if you encrypt it.", "condition": "probe:untranslated"}
+{"row_id": "K7ede7068b57a:es", "probe": "append_unrelated", "translation": "No ha seleccionado una clave de cifrado para uno de los destinatarios; esta persona no podrá descifrar el mensaje si lo cifra. Santa Cruz del Quiché", "condition": "probe:append_unrelated"}
+{"row_id": "K7ede7068b57a:es", "probe": "negation_removed", "translation": "ha seleccionado una clave de cifrado para uno de los destinatarios; esta persona no podrá descifrar el mensaje si lo cifra.", "condition": "probe:negation_removed"}
+{"row_id": "K70b05c3c6128:de", "probe": "drop_end", "translation": "Wählen Sie das Farbschema aus, das für", "condition": "probe:drop_end"}
+{"row_id": "K70b05c3c6128:de", "probe": "untranslated", "translation": "Select the color scheme to use for the print.", "condition": "probe:untranslated"}
+{"row_id": "K70b05c3c6128:de", "probe": "append_unrelated", "translation": "Wählen Sie das Farbschema aus, das für den Druck verwendet werden soll. Sie haben für einen der Empfänger keinen Verschlüsselungsschlüssel ausgewählt; diese Person wird die Nachricht nicht entschlüsseln können, falls Sie sie verschlüsseln.", "condition": "probe:append_unrelated"}
+{"row_id": "K550a1f803a1b:zh_CN", "probe": "number_change", "translation": "文件夹 %2 中服务器上的邮件已被删除。是否要在本地删除它们？UID： %2", "condition": "probe:number_change"}
+{"row_id": "K550a1f803a1b:zh_CN", "probe": "drop_end", "translation": "文件夹 %1 中服务器上的邮件已被删除。是否要在", "condition": "probe:drop_end"}
+{"row_id": "K550a1f803a1b:zh_CN", "probe": "untranslated", "translation": "Mails on the server in folder %1 were deleted. Do you want to delete them locally? UIDs: %2", "condition": "probe:untranslated"}
+{"row_id": "K550a1f803a1b:zh_CN", "probe": "append_unrelated", "translation": "文件夹 %1 中服务器上的邮件已被删除。是否要在本地删除它们？UID： %2无法初始化（“挂载”）请求的设备。报告的错误为：%1", "condition": "probe:append_unrelated"}
+{"row_id": "K550a1f803a1b:zh_CN", "probe": "negation_removed", "translation": "文件夹 %1 中服务器上的邮件已被删除。是要在本地删除它们？UID： %2", "condition": "probe:negation_removed"}
+{"row_id": "K550a1f803a1b:zh_CN", "probe": "tm_swap", "translation": "似乎文件夹% 1 已删除。 您想要从服务器上删除吗 ？", "condition": "probe:tm_swap"}
+{"row_id": "Ka43608cada29:de", "probe": "untranslated", "translation": "Geometric - Notched Left Arrow", "condition": "probe:untranslated"}
+{"row_id": "Ka43608cada29:de", "probe": "append_unrelated", "translation": "Geometrisch - Einkerbung Pfeil links Wählen Sie das Farbschema aus, das für den Druck verwendet werden soll.", "condition": "probe:append_unrelated"}
+{"row_id": "K0de9eec90b8a:zh_CN", "probe": "number_change", "translation": "无法挂载共享文件夹“%2”。由于没有错误消息，无法提供详细信息。", "condition": "probe:number_change"}
+{"row_id": "K0de9eec90b8a:zh_CN", "probe": "drop_end", "translation": "无法挂载共享文件夹“%1”。由于没有错误", "condition": "probe:drop_end"}
+{"row_id": "K0de9eec90b8a:zh_CN", "probe": "untranslated", "translation": "The share \"%1\" could not be mounted. Detailed information cannot be provided because there was no error message.", "condition": "probe:untranslated"}
+{"row_id": "K0de9eec90b8a:zh_CN", "probe": "append_unrelated", "translation": "无法挂载共享文件夹“%1”。由于没有错误消息，无法提供详细信息。查找文本 显示一个允许您在当前显示页面中查找文本的对话框。", "condition": "probe:append_unrelated"}
+{"row_id": "K0de9eec90b8a:zh_CN", "probe": "negation_removed", "translation": "法挂载共享文件夹“%1”。由于没有错误消息，无法提供详细信息。", "condition": "probe:negation_removed"}
+{"row_id": "Ka43608cada29:zh_CN", "probe": "drop_end", "translation": "几何 - 左向", "condition": "probe:drop_end"}
+{"row_id": "Ka43608cada29:zh_CN", "probe": "untranslated", "translation": "Geometric - Notched Left Arrow", "condition": "probe:untranslated"}
+{"row_id": "Ka43608cada29:zh_CN", "probe": "append_unrelated", "translation": "几何 - 左向缺口箭头您未为其中一名收件人选择加密密钥；如果您对其进行加密，该人员将无法解密此消息。", "condition": "probe:append_unrelated"}
+{"row_id": "Ke4a42dc6389d:de", "probe": "drop_end", "translation": "Verwenden Sie diese Schaltfläche, um", "condition": "probe:drop_end"}
+{"row_id": "Ke4a42dc6389d:de", "probe": "untranslated", "translation": "Use this button to record this transaction", "condition": "probe:untranslated"}
+{"row_id": "Ke4a42dc6389d:de", "probe": "append_unrelated", "translation": "Verwenden Sie diese Schaltfläche, um diese Transaktion aufzuzeichnen Die Freigabe „%1“ konnte nicht eingehängt werden. Detaillierte Informationen können nicht bereitgestellt werden, da keine Fehlermeldung vorlag.", "condition": "probe:append_unrelated"}
+{"row_id": "Kfef00712051a:zh_CN", "probe": "drop_end", "translation": "将图像平移至", "condition": "probe:drop_end"}
+{"row_id": "Kfef00712051a:zh_CN", "probe": "untranslated", "translation": "Pan the image to a region", "condition": "probe:untranslated"}
+{"row_id": "Kfef00712051a:zh_CN", "probe": "append_unrelated", "translation": "将图像平移至某个区域文件夹 %1 中服务器上的邮件已被删除。是否要在本地删除它们？UID： %2", "condition": "probe:append_unrelated"}
+{"row_id": "Ea5624da3a779:es", "probe": "drop_end", "translation": "Si LITAK entra en contacto con la piel o los ojos, enjuague", "condition": "probe:drop_end"}
+{"row_id": "Ea5624da3a779:es", "probe": "untranslated", "translation": "If LITAK contacts the skin or eyes, rinse the involved surface immediately with copious amounts of water.", "condition": "probe:untranslated"}
+{"row_id": "Ea5624da3a779:es", "probe": "append_unrelated", "translation": "Si LITAK entra en contacto con la piel o los ojos, enjuague inmediatamente la zona afectada con abundante agua. No se pudo montar el recurso compartido «%1». No se puede proporcionar información detallada porque no hubo ningún mensaje de error.", "condition": "probe:append_unrelated"}
+{"row_id": "Ea79d78aa0b7c:es", "probe": "number_change", "translation": "Cápsula blanca, tamaño 1", "condition": "probe:number_change"}
+{"row_id": "Ea79d78aa0b7c:es", "probe": "untranslated", "translation": "Size 0, white capsule", "condition": "probe:untranslated"}
+{"row_id": "Ea79d78aa0b7c:es", "probe": "append_unrelated", "translation": "Cápsula blanca, tamaño 0 Buscar texto Muestra un diálogo que permite buscar texto en la página mostrada.", "condition": "probe:append_unrelated"}
+{"row_id": "Ea79d78aa0b7c:es", "probe": "tm_swap", "translation": "Cada cápsula consta de un cuerpo blanco opaco y de una tapa azul pálido opaco.", "condition": "probe:tm_swap"}
+{"row_id": "K0de9eec90b8a:de", "probe": "number_change", "translation": "Die Freigabe „%2“ konnte nicht eingehängt werden. Detaillierte Informationen können nicht bereitgestellt werden, da keine Fehlermeldung vorlag.", "condition": "probe:number_change"}
+{"row_id": "K0de9eec90b8a:de", "probe": "drop_end", "translation": "Die Freigabe „%1“ konnte nicht eingehängt werden. Detaillierte Informationen können nicht", "condition": "probe:drop_end"}
+{"row_id": "K0de9eec90b8a:de", "probe": "untranslated", "translation": "The share \"%1\" could not be mounted. Detailed information cannot be provided because there was no error message.", "condition": "probe:untranslated"}
+{"row_id": "K0de9eec90b8a:de", "probe": "append_unrelated", "translation": "Die Freigabe „%1“ konnte nicht eingehängt werden. Detaillierte Informationen können nicht bereitgestellt werden, da keine Fehlermeldung vorlag. Santa Cruz del Quiché", "condition": "probe:append_unrelated"}
+{"row_id": "K0de9eec90b8a:de", "probe": "negation_removed", "translation": "Die Freigabe „%1“ konnte eingehängt werden. Detaillierte Informationen können nicht bereitgestellt werden, da keine Fehlermeldung vorlag.", "condition": "probe:negation_removed"}
+{"row_id": "Ke4a42dc6389d:zh_CN", "probe": "drop_end", "translation": "使用此按钮记", "condition": "probe:drop_end"}
+{"row_id": "Ke4a42dc6389d:zh_CN", "probe": "untranslated", "translation": "Use this button to record this transaction", "condition": "probe:untranslated"}
+{"row_id": "Ke4a42dc6389d:zh_CN", "probe": "append_unrelated", "translation": "使用此按钮记录此交易选择用于打印的配色方案。", "condition": "probe:append_unrelated"}
+{"row_id": "K692786e06f39:zh_CN", "probe": "number_change", "translation": "无法初始化（“挂载”）请求的设备。报告的错误为：%2", "condition": "probe:number_change"}
+{"row_id": "K692786e06f39:zh_CN", "probe": "drop_end", "translation": "无法初始化（“挂载”）请求的设备", "condition": "probe:drop_end"}
+{"row_id": "K692786e06f39:zh_CN", "probe": "untranslated", "translation": "The requested device could not be initialized (\"mounted\"). The reported error was: %1", "condition": "probe:untranslated"}
+{"row_id": "K692786e06f39:zh_CN", "probe": "append_unrelated", "translation": "无法初始化（“挂载”）请求的设备。报告的错误为：%1查找文本 显示一个允许您在当前显示页面中查找文本的对话框。", "condition": "probe:append_unrelated"}
+{"row_id": "K692786e06f39:zh_CN", "probe": "negation_removed", "translation": "法初始化（“挂载”）请求的设备。报告的错误为：%1", "condition": "probe:negation_removed"}
+{"row_id": "K0de9eec90b8a:es", "probe": "number_change", "translation": "No se pudo montar el recurso compartido «%2». No se puede proporcionar información detallada porque no hubo ningún mensaje de error.", "condition": "probe:number_change"}
+{"row_id": "K0de9eec90b8a:es", "probe": "drop_end", "translation": "No se pudo montar el recurso compartido «%1». No se puede proporcionar información", "condition": "probe:drop_end"}
+{"row_id": "K0de9eec90b8a:es", "probe": "untranslated", "translation": "The share \"%1\" could not be mounted. Detailed information cannot be provided because there was no error message.", "condition": "probe:untranslated"}
+{"row_id": "K0de9eec90b8a:es", "probe": "append_unrelated", "translation": "No se pudo montar el recurso compartido «%1». No se puede proporcionar información detallada porque no hubo ningún mensaje de error. Esto facilita su resuspensión.", "condition": "probe:append_unrelated"}
+{"row_id": "K0de9eec90b8a:es", "probe": "negation_removed", "translation": "se pudo montar el recurso compartido «%1». No se puede proporcionar información detallada porque no hubo ningún mensaje de error.", "condition": "probe:negation_removed"}
+{"row_id": "Kaa5339f3ff22:zh_CN", "probe": "drop_end", "translation": "查找文本 显示一个允许您在当前显示页", "condition": "probe:drop_end"}
+{"row_id": "Kaa5339f3ff22:zh_CN", "probe": "untranslated", "translation": "Find text Shows a dialog that allows you to find text on the displayed page.", "condition": "probe:untranslated"}
+{"row_id": "Kaa5339f3ff22:zh_CN", "probe": "append_unrelated", "translation": "查找文本 显示一个允许您在当前显示页面中查找文本的对话框。找不到预共享密钥，请检查 PSK 设置。", "condition": "probe:append_unrelated"}
+{"row_id": "Ec210f5569ed0:es", "probe": "drop_end", "translation": "- si padece irritación", "condition": "probe:drop_end"}
+{"row_id": "Ec210f5569ed0:es", "probe": "untranslated", "translation": "- if you suffer from oesophageal irritation or ulceration", "condition": "probe:untranslated"}
+{"row_id": "Ec210f5569ed0:es", "probe": "append_unrelated", "translation": "- si padece irritación o ulceración esofágica No ha seleccionado una clave de cifrado para uno de los destinatarios; esta persona no podrá descifrar el mensaje si lo cifra.", "condition": "probe:append_unrelated"}
+{"row_id": "K7ede7068b57a:de", "probe": "drop_end", "translation": "Sie haben für einen der Empfänger keinen Verschlüsselungsschlüssel ausgewählt; diese Person wird die", "condition": "probe:drop_end"}
+{"row_id": "K7ede7068b57a:de", "probe": "untranslated", "translation": "You did not select an encryption key for one of the recipients; this person will not be able to decrypt the message if you encrypt it.", "condition": "probe:untranslated"}
+{"row_id": "K7ede7068b57a:de", "probe": "append_unrelated", "translation": "Sie haben für einen der Empfänger keinen Verschlüsselungsschlüssel ausgewählt; diese Person wird die Nachricht nicht entschlüsseln können, falls Sie sie verschlüsseln. Verwenden Sie diese Schaltfläche, um diese Transaktion aufzuzeichnen", "condition": "probe:append_unrelated"}
+{"row_id": "K7ede7068b57a:de", "probe": "negation_removed", "translation": "Sie haben für einen der Empfänger Verschlüsselungsschlüssel ausgewählt; diese Person wird die Nachricht nicht entschlüsseln können, falls Sie sie verschlüsseln.", "condition": "probe:negation_removed"}
+{"row_id": "Ka43608cada29:es", "probe": "drop_end", "translation": "Geométrico - Flecha", "condition": "probe:drop_end"}
+{"row_id": "Ka43608cada29:es", "probe": "untranslated", "translation": "Geometric - Notched Left Arrow", "condition": "probe:untranslated"}
+{"row_id": "Ka43608cada29:es", "probe": "append_unrelated", "translation": "Geométrico - Flecha izquierda con muesca • falta de respuesta significativa a los fármacos utilizados para tratar la anemia; o", "condition": "probe:append_unrelated"}
+{"row_id": "K550a1f803a1b:de", "probe": "number_change", "translation": "E-Mails auf dem Server im Ordner %2 wurden gelöscht. Möchten Sie diese auch lokal löschen? UIDs: %2", "condition": "probe:number_change"}
+{"row_id": "K550a1f803a1b:de", "probe": "drop_end", "translation": "E-Mails auf dem Server im Ordner %1 wurden gelöscht. Möchten Sie", "condition": "probe:drop_end"}
+{"row_id": "K550a1f803a1b:de", "probe": "untranslated", "translation": "Mails on the server in folder %1 were deleted. Do you want to delete them locally? UIDs: %2", "condition": "probe:untranslated"}
+{"row_id": "K550a1f803a1b:de", "probe": "append_unrelated", "translation": "E-Mails auf dem Server im Ordner %1 wurden gelöscht. Möchten Sie diese auch lokal löschen? UIDs: %2 Geometrisch - Einkerbung Pfeil links", "condition": "probe:append_unrelated"}
+{"row_id": "K550a1f803a1b:de", "probe": "tm_swap", "translation": "Anscheinend wurde der Ordner %1 gelöscht. Soll er auf dem Server ebenfalls gelöscht werden?", "condition": "probe:tm_swap"}
+{"row_id": "Kd2585fdc51e4:de", "probe": "append_unrelated", "translation": "Santa Cruz del Quiché Der vorab gemeinsame Schlüssel (PSK) konnte nicht gefunden werden; bitte prüfen Sie die PSK-Einstellungen.", "condition": "probe:append_unrelated"}
+{"row_id": "E714c308c34e4:es", "probe": "drop_end", "translation": "• falta de respuesta significativa a los fármacos utilizados", "condition": "probe:drop_end"}
+{"row_id": "E714c308c34e4:es", "probe": "untranslated", "translation": "• significant lack of response to drugs used to treat anaemia; or", "condition": "probe:untranslated"}
+{"row_id": "E714c308c34e4:es", "probe": "append_unrelated", "translation": "• falta de respuesta significativa a los fármacos utilizados para tratar la anemia; o - si padece irritación o ulceración esofágica", "condition": "probe:append_unrelated"}
+{"row_id": "E8e1c42c5a92c:es", "probe": "drop_end", "translation": "Las reacciones anafilácticas graves requieren", "condition": "probe:drop_end"}
+{"row_id": "E8e1c42c5a92c:es", "probe": "untranslated", "translation": "Serious anaphylactic reactions require immediate emergency treatment.", "condition": "probe:untranslated"}
+{"row_id": "E8e1c42c5a92c:es", "probe": "append_unrelated", "translation": "Las reacciones anafilácticas graves requieren tratamiento de urgencia inmediato. Se han eliminado los correos del servidor en la carpeta %1. ¿Desea eliminarlos localmente? UIDs: %2", "condition": "probe:append_unrelated"}
+{"row_id": "E8e1c42c5a92c:es", "probe": "tm_swap", "translation": "an reacciones será necesaria la atención inmediata de un médico y someter al paciente a cuidados intensivos.", "condition": "probe:tm_swap"}
+{"row_id": "K79c36708f4d3:zh_CN", "probe": "drop_end", "translation": "找不到预共享密钥，请检查 ", "condition": "probe:drop_end"}
+{"row_id": "K79c36708f4d3:zh_CN", "probe": "untranslated", "translation": "The pre shared key could not be found, check PSK settings.", "condition": "probe:untranslated"}
+{"row_id": "K79c36708f4d3:zh_CN", "probe": "append_unrelated", "translation": "找不到预共享密钥，请检查 PSK 设置。您未为其中一名收件人选择加密密钥；如果您对其进行加密，该人员将无法解密此消息。", "condition": "probe:append_unrelated"}
+{"row_id": "K79c36708f4d3:zh_CN", "probe": "negation_removed", "translation": "找到预共享密钥，请检查 PSK 设置。", "condition": "probe:negation_removed"}
+{"row_id": "K79c36708f4d3:zh_CN", "probe": "tm_swap", "translation": "您的绝密密钥无法导出 。 请检查该密钥是否有问题 。", "condition": "probe:tm_swap"}
+{"row_id": "K692786e06f39:es", "probe": "number_change", "translation": "No se pudo inicializar (\"montar\") el dispositivo solicitado. El error reportado fue: %2", "condition": "probe:number_change"}
+{"row_id": "K692786e06f39:es", "probe": "drop_end", "translation": "No se pudo inicializar (\"montar\") el dispositivo solicitado.", "condition": "probe:drop_end"}
+{"row_id": "K692786e06f39:es", "probe": "untranslated", "translation": "The requested device could not be initialized (\"mounted\"). The reported error was: %1", "condition": "probe:untranslated"}
+{"row_id": "K692786e06f39:es", "probe": "append_unrelated", "translation": "No se pudo inicializar (\"montar\") el dispositivo solicitado. El error reportado fue: %1 Use este botón para registrar esta transacción", "condition": "probe:append_unrelated"}
+{"row_id": "K692786e06f39:es", "probe": "negation_removed", "translation": "se pudo inicializar (\"montar\") el dispositivo solicitado. El error reportado fue: %1", "condition": "probe:negation_removed"}
+{"row_id": "Ke4a42dc6389d:es", "probe": "drop_end", "translation": "Use este botón para", "condition": "probe:drop_end"}
+{"row_id": "Ke4a42dc6389d:es", "probe": "untranslated", "translation": "Use this button to record this transaction", "condition": "probe:untranslated"}
+{"row_id": "Ke4a42dc6389d:es", "probe": "append_unrelated", "translation": "Use este botón para registrar esta transacción Santa Cruz del Quiché", "condition": "probe:append_unrelated"}
+{"row_id": "K550a1f803a1b:es", "probe": "number_change", "translation": "Se han eliminado los correos del servidor en la carpeta %2. ¿Desea eliminarlos localmente? UIDs: %2", "condition": "probe:number_change"}
+{"row_id": "K550a1f803a1b:es", "probe": "drop_end", "translation": "Se han eliminado los correos del servidor en la carpeta", "condition": "probe:drop_end"}
+{"row_id": "K550a1f803a1b:es", "probe": "untranslated", "translation": "Mails on the server in folder %1 were deleted. Do you want to delete them locally? UIDs: %2", "condition": "probe:untranslated"}
+{"row_id": "K550a1f803a1b:es", "probe": "append_unrelated", "translation": "Se han eliminado los correos del servidor en la carpeta %1. ¿Desea eliminarlos localmente? UIDs: %2 No se pudo montar el recurso compartido «%1». No se puede proporcionar información detallada porque no hubo ningún mensaje de error.", "condition": "probe:append_unrelated"}
+{"row_id": "K550a1f803a1b:es", "probe": "tm_swap", "translation": "Parece que se eliminó la carpeta %1. ¿Quiere eliminarla del servidor?", "condition": "probe:tm_swap"}
+{"row_id": "K692786e06f39:de", "probe": "number_change", "translation": "Das angeforderte Gerät konnte nicht initialisiert („eingehängt“) werden. Der gemeldete Fehler war: %2", "condition": "probe:number_change"}
+{"row_id": "K692786e06f39:de", "probe": "drop_end", "translation": "Das angeforderte Gerät konnte nicht initialisiert („eingehängt“) werden.", "condition": "probe:drop_end"}
+{"row_id": "K692786e06f39:de", "probe": "untranslated", "translation": "The requested device could not be initialized (\"mounted\"). The reported error was: %1", "condition": "probe:untranslated"}
+{"row_id": "K692786e06f39:de", "probe": "append_unrelated", "translation": "Das angeforderte Gerät konnte nicht initialisiert („eingehängt“) werden. Der gemeldete Fehler war: %1 Text suchen Zeigt einen Dialog an, mit dem Sie Text auf der angezeigten Seite suchen können.", "condition": "probe:append_unrelated"}
+{"row_id": "K692786e06f39:de", "probe": "negation_removed", "translation": "Das angeforderte Gerät konnte initialisiert („eingehängt“) werden. Der gemeldete Fehler war: %1", "condition": "probe:negation_removed"}
+{"row_id": "K0ae48fe4cc74:es", "probe": "untranslated", "translation": "Create a new journal", "condition": "probe:untranslated"}
+{"row_id": "K0ae48fe4cc74:es", "probe": "append_unrelated", "translation": "Crear un nuevo diario • falta de respuesta significativa a los fármacos utilizados para tratar la anemia; o", "condition": "probe:append_unrelated"}
+{"row_id": "K0ae48fe4cc74:de", "probe": "untranslated", "translation": "Create a new journal", "condition": "probe:untranslated"}
+{"row_id": "K0ae48fe4cc74:de", "probe": "append_unrelated", "translation": "Neues Tagebuch erstellen Wählen Sie das Farbschema aus, das für den Druck verwendet werden soll.", "condition": "probe:append_unrelated"}
+{"row_id": "K0ae48fe4cc74:zh_CN", "probe": "untranslated", "translation": "Create a new journal", "condition": "probe:untranslated"}
+{"row_id": "K0ae48fe4cc74:zh_CN", "probe": "append_unrelated", "translation": "创建新日志找不到预共享密钥，请检查 PSK 设置。", "condition": "probe:append_unrelated"}
+{"row_id": "E8925bc1668d3:es", "probe": "number_change", "translation": "Los pacientes que recibieron VIRACEPT tres veces al día (n=12) alcanzaron concentraciones plasmáticas máximas (Cmax) de nelfinavir de 3,0 ± 1,6 µg/ml y concentraciones valle matutinas y vespertinas de 1,4 ± 0,6 µg/ml y 1,0 ± 0,5 µg/ml, respectivamente.", "condition": "probe:number_change"}
+{"row_id": "E8925bc1668d3:es", "probe": "drop_end", "translation": "Los pacientes que recibieron VIRACEPT tres veces al día (n=11) alcanzaron concentraciones plasmáticas máximas (Cmax) de nelfinavir de 3,0 ± 1,6 µg/ml y concentraciones valle", "condition": "probe:drop_end"}
+{"row_id": "E8925bc1668d3:es", "probe": "untranslated", "translation": "Patients receiving VIRACEPT TID (n=11) achieved nelfinavir peak plasma concentrations (Cmax) of 3.0 ± 1.6 µg/ml and morning and evening trough concentrations of 1.4 ± 0.6 µg/ml and 1.0 ± 0.5 µg/ml, respectively.", "condition": "probe:untranslated"}
+{"row_id": "E8925bc1668d3:es", "probe": "append_unrelated", "translation": "Los pacientes que recibieron VIRACEPT tres veces al día (n=11) alcanzaron concentraciones plasmáticas máximas (Cmax) de nelfinavir de 3,0 ± 1,6 µg/ml y concentraciones valle matutinas y vespertinas de 1,4 ± 0,6 µg/ml y 1,0 ± 0,5 µg/ml, respectivamente. - cambia la zona de la piel donde se inyecta la insulina (por ejemplo, del muslo a la parte superior del brazo),", "condition": "probe:append_unrelated"}
+{"row_id": "Ed8a47e5fbb40:es", "probe": "drop_end", "translation": "- cambia la zona de la piel donde se inyecta la insulina (por ejemplo,", "condition": "probe:drop_end"}
+{"row_id": "Ed8a47e5fbb40:es", "probe": "untranslated", "translation": "- you change the area of skin where you inject insulin (for example from the thigh to the upper arm),", "condition": "probe:untranslated"}
+{"row_id": "Ed8a47e5fbb40:es", "probe": "append_unrelated", "translation": "- cambia la zona de la piel donde se inyecta la insulina (por ejemplo, del muslo a la parte superior del brazo), Desplace la imagen hacia una región", "condition": "probe:append_unrelated"}

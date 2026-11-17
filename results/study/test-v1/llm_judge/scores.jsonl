@@ -1,0 +1,249 @@
+{"item":"J001","cand":"A","score":60,"errors":[["accuracy/mistranslation","major","'no debe' = must not; source says it is not necessary"]]}
+{"item":"J001","cand":"B","score":98,"errors":[]}
+{"item":"J001","cand":"C","score":98,"errors":[]}
+{"item":"J002","cand":"A","score":90,"errors":[["style/register","minor","informal tú in patient leaflet"]]}
+{"item":"J002","cand":"B","score":100,"errors":[]}
+{"item":"J002","cand":"C","score":10,"errors":[["accuracy/mistranslation","critical","wrong product name TORISEL for Emtriva"]]}
+{"item":"J003","cand":"A","score":15,"errors":[["accuracy/mistranslation","critical","start date instead of end date"],["accuracy/addition","minor","'@ info: tooltip' artefact"]]}
+{"item":"J003","cand":"B","score":96,"errors":[]}
+{"item":"J003","cand":"C","score":100,"errors":[]}
+{"item":"J003","cand":"D","score":92,"errors":[["terminology","minor","活动 for calendar event; 事件 expected"]]}
+{"item":"J004","cand":"A","score":0,"errors":[["accuracy/mistranslation","critical","unrelated sentence (pseudoephedrine)"]]}
+{"item":"J004","cand":"B","score":97,"errors":[]}
+{"item":"J004","cand":"C","score":95,"errors":[["fluency","minor","wordy 'El objetivo de esto es'"]]}
+{"item":"J004","cand":"D","score":97,"errors":[]}
+{"item":"J005","cand":"A","score":100,"errors":[]}
+{"item":"J005","cand":"B","score":98,"errors":[]}
+{"item":"J005","cand":"C","score":25,"errors":[["accuracy/mistranslation","major","部件 (widget) instead of function"],["accuracy/placeholder","major","placeholder broken as '% 1'"]]}
+{"item":"J005","cand":"D","score":100,"errors":[]}
+{"item":"J006","cand":"A","score":92,"errors":[["terminology","minor","Konto vs project term Zugang"]]}
+{"item":"J006","cand":"B","score":50,"errors":[["accuracy/omission","major","'Use with care!' omitted"],["style","minor","infinitive instead of descriptive 'Löscht'"]]}
+{"item":"J007","cand":"A","score":100,"errors":[]}
+{"item":"J008","cand":"A","score":100,"errors":[]}
+{"item":"J008","cand":"B","score":97,"errors":[]}
+{"item":"J008","cand":"C","score":40,"errors":[["accuracy/mistranslation","major","x-encrypt instead of x-decrypt"],["fluency/punctuation","minor","„ x quote spacing"]]}
+{"item":"J009","cand":"A","score":97,"errors":[]}
+{"item":"J009","cand":"B","score":0,"errors":[["accuracy/mistranslation","critical","unrelated message"]]}
+{"item":"J009","cand":"C","score":85,"errors":[["style","minor","'Trata' form for UI option"],["accuracy/literal","minor","altered literal example quoting"]]}
+{"item":"J009","cand":"D","score":98,"errors":[]}
+{"item":"J010","cand":"A","score":98,"errors":[]}
+{"item":"J010","cand":"B","score":94,"errors":[["accuracy/addition","minor","'el medicamento' added"]]}
+{"item":"J010","cand":"C","score":0,"errors":[["accuracy/mistranslation","critical","Viagra and 14 September 1998 instead of CHAMPIX and 26 September 2006"]]}
+{"item":"J010","cand":"D","score":99,"errors":[]}
+{"item":"J011","cand":"A","score":92,"errors":[["terminology","minor","Hauptbuch vs project term Kontobuch"]]}
+{"item":"J011","cand":"B","score":65,"errors":[["accuracy/omission","major","'selection' dropped: synchronises the account, not the account selection"]]}
+{"item":"J011","cand":"C","score":93,"errors":[["terminology","minor","Hauptbuch/Anlageansicht vs project terms"]]}
+{"item":"J011","cand":"D","score":85,"errors":[["fluency/spelling","minor","'Kontoaustwahl' typo"]]}
+{"item":"J012","cand":"A","score":95,"errors":[]}
+{"item":"J012","cand":"B","score":90,"errors":[["terminology","minor","'cierre de seguridad' imprecise for tamper-evident"]]}
+{"item":"J012","cand":"C","score":97,"errors":[]}
+{"item":"J012","cand":"D","score":55,"errors":[["accuracy/omission","major","product name and tamper-evident omitted"]]}
+{"item":"J013","cand":"A","score":97,"errors":[]}
+{"item":"J013","cand":"B","score":97,"errors":[]}
+{"item":"J013","cand":"C","score":0,"errors":[["accuracy/mistranslation","critical","unrelated sentence (Zarzio/Neupogen)"]]}
+{"item":"J013","cand":"D","score":97,"errors":[]}
+{"item":"J014","cand":"A","score":97,"errors":[]}
+{"item":"J014","cand":"B","score":90,"errors":[["accuracy/mistranslation","minor","编写 (write) for construct"]]}
+{"item":"J014","cand":"C","score":96,"errors":[]}
+{"item":"J014","cand":"D","score":55,"errors":[["accuracy/omission","major","'Python' dropped; 'add' for construct"]]}
+{"item":"J015","cand":"A","score":0,"errors":[["accuracy/mistranslation","critical","unrelated string (save search terms)"]]}
+{"item":"J015","cand":"B","score":95,"errors":[]}
+{"item":"J015","cand":"C","score":88,"errors":[["accuracy/mistranslation","minor","export for extract"]]}
+{"item":"J016","cand":"A","score":100,"errors":[]}
+{"item":"J016","cand":"B","score":25,"errors":[["accuracy/mistranslation","major","different, incomplete instruction ('Legen Sie einen Speicherordner')"]]}
+{"item":"J017","cand":"A","score":100,"errors":[]}
+{"item":"J017","cand":"B","score":5,"errors":[["accuracy/mistranslation","critical","wrong product name IVEMEND"]]}
+{"item":"J018","cand":"A","score":95,"errors":[]}
+{"item":"J018","cand":"B","score":0,"errors":[["accuracy/mistranslation","critical","unrelated message (Zeroconf daemon)"]]}
+{"item":"J018","cand":"C","score":100,"errors":[]}
+{"item":"J018","cand":"D","score":97,"errors":[]}
+{"item":"J019","cand":"A","score":97,"errors":[]}
+{"item":"J019","cand":"B","score":96,"errors":[]}
+{"item":"J019","cand":"C","score":35,"errors":[["accuracy/omission","major","main verb ('Se evaluaron') missing"],["accuracy/addition","major","spurious number '21'"]]}
+{"item":"J019","cand":"D","score":98,"errors":[]}
+{"item":"J020","cand":"A","score":100,"errors":[]}
+{"item":"J020","cand":"B","score":98,"errors":[]}
+{"item":"J021","cand":"A","score":70,"errors":[["accuracy/addition","major","spurious leading number '41'"]]}
+{"item":"J021","cand":"B","score":85,"errors":[["style/register","minor","informal tú in patient instructions"]]}
+{"item":"J021","cand":"C","score":98,"errors":[]}
+{"item":"J021","cand":"D","score":96,"errors":[]}
+{"item":"J022","cand":"A","score":96,"errors":[]}
+{"item":"J022","cand":"B","score":45,"errors":[["accuracy/addition","major","adds 'could not resize the file system'"],["accuracy/addition","minor","'@info/ plain' artefact"]]}
+{"item":"J022","cand":"C","score":97,"errors":[]}
+{"item":"J022","cand":"D","score":99,"errors":[]}
+{"item":"J023","cand":"A","score":100,"errors":[]}
+{"item":"J023","cand":"B","score":97,"errors":[]}
+{"item":"J023","cand":"C","score":0,"errors":[["accuracy/mistranslation","critical","different question and wrong product (Naxcel)"]]}
+{"item":"J024","cand":"A","score":99,"errors":[]}
+{"item":"J024","cand":"B","score":97,"errors":[]}
+{"item":"J024","cand":"C","score":85,"errors":[["fluency/spelling","minor","'erúpción cutanea' misspelt"],["fluency/punctuation","minor","final period missing"]]}
+{"item":"J024","cand":"D","score":98,"errors":[]}
+{"item":"J025","cand":"A","score":92,"errors":[["fluency/grammar","minor","article before product name"]]}
+{"item":"J025","cand":"B","score":5,"errors":[["accuracy/mistranslation","critical","wrong product name Macugen"]]}
+{"item":"J025","cand":"C","score":97,"errors":[]}
+{"item":"J025","cand":"D","score":100,"errors":[]}
+{"item":"J026","cand":"A","score":99,"errors":[]}
+{"item":"J026","cand":"B","score":55,"errors":[["accuracy/mistranslation","major","brand Rebetol substituted for ribavirin"]]}
+{"item":"J026","cand":"C","score":98,"errors":[]}
+{"item":"J026","cand":"D","score":98,"errors":[]}
+{"item":"J027","cand":"A","score":93,"errors":[["terminology","minor","plural for the defined term Safety Specification"]]}
+{"item":"J027","cand":"B","score":97,"errors":[]}
+{"item":"J027","cand":"C","score":35,"errors":[["accuracy/addition","major","adds lead-in 'an updated RMP must be submitted' and two extra list items"]]}
+{"item":"J027","cand":"D","score":97,"errors":[]}
+{"item":"J028","cand":"A","score":85,"errors":[["accuracy/addition","minor","'Esta modalidad de aprobación' added"],["accuracy/mistranslation","minor","'su enfermedad' for 'this disease'"]]}
+{"item":"J028","cand":"B","score":99,"errors":[]}
+{"item":"J029","cand":"A","score":5,"errors":[["accuracy/mistranslation","critical","wrong product name Metalyse"]]}
+{"item":"J029","cand":"B","score":97,"errors":[]}
+{"item":"J029","cand":"C","score":100,"errors":[]}
+{"item":"J030","cand":"A","score":0,"errors":[["accuracy/mistranslation","critical","unrelated sentence (Binocrit/chemotherapy)"]]}
+{"item":"J030","cand":"B","score":98,"errors":[]}
+{"item":"J030","cand":"C","score":99,"errors":[]}
+{"item":"J031","cand":"A","score":92,"errors":[["accuracy/addition","minor","dangling 'la'"]]}
+{"item":"J031","cand":"B","score":95,"errors":[["fluency/grammar","minor","article missing"]]}
+{"item":"J031","cand":"C","score":100,"errors":[]}
+{"item":"J032","cand":"A","score":100,"errors":[]}
+{"item":"J032","cand":"B","score":99,"errors":[]}
+{"item":"J033","cand":"A","score":0,"errors":[["accuracy/mistranslation","critical","unrelated string (send mail via KMail)"]]}
+{"item":"J033","cand":"B","score":97,"errors":[]}
+{"item":"J033","cand":"C","score":98,"errors":[]}
+{"item":"J033","cand":"D","score":88,"errors":[["terminology","minor","掌机 (game handheld) for handheld device"]]}
+{"item":"J034","cand":"A","score":30,"errors":[["accuracy/mistranslation","major","rain showers instead of snow showers"],["accuracy/addition","minor","'weather condition' artefact"]]}
+{"item":"J034","cand":"B","score":100,"errors":[]}
+{"item":"J034","cand":"C","score":98,"errors":[]}
+{"item":"J035","cand":"A","score":55,"errors":[["accuracy/mistranslation","major","'how to use' instead of 'how much to use'"]]}
+{"item":"J035","cand":"B","score":88,"errors":[["accuracy/mistranslation","minor","'side 1' rendered as 'the other side'"]]}
+{"item":"J035","cand":"C","score":92,"errors":[["accuracy/mistranslation","minor","'side' rendered as 'page'"]]}
+{"item":"J035","cand":"D","score":97,"errors":[]}
+{"item":"J036","cand":"A","score":93,"errors":[["fluency/grammar","minor","'Blätter' where unit 'Blatt' expected"]]}
+{"item":"J036","cand":"B","score":100,"errors":[]}
+{"item":"J036","cand":"C","score":0,"errors":[["accuracy/mistranslation","critical","different option (jobs up to 20 sheets)"]]}
+{"item":"J036","cand":"D","score":85,"errors":[["accuracy/mistranslation","minor","pages instead of sheets"]]}
+{"item":"J037","cand":"A","score":60,"errors":[["accuracy/addition","major","'racional' added"]]}
+{"item":"J037","cand":"B","score":100,"errors":[]}
+{"item":"J038","cand":"A","score":5,"errors":[["accuracy/mistranslation","critical","wrong product name Ferriprox"],["accuracy/omission","minor","'and the label' dropped"]]}
+{"item":"J038","cand":"B","score":82,"errors":[["style/register","minor","informal tú"],["locale","minor","EXP kept; Spanish labels use CAD"]]}
+{"item":"J038","cand":"C","score":99,"errors":[]}
+{"item":"J038","cand":"D","score":93,"errors":[["locale","minor","EXP kept; Spanish labels use CAD"]]}
+{"item":"J039","cand":"A","score":0,"errors":[["accuracy/mistranslation","critical","garbage output 'france. kgm'"]]}
+{"item":"J039","cand":"B","score":100,"errors":[]}
+{"item":"J040","cand":"A","score":98,"errors":[]}
+{"item":"J040","cand":"B","score":98,"errors":[]}
+{"item":"J040","cand":"C","score":99,"errors":[]}
+{"item":"J040","cand":"D","score":15,"errors":[["accuracy/mistranslation","critical","move up instead of move down"]]}
+{"item":"J041","cand":"A","score":100,"errors":[]}
+{"item":"J041","cand":"B","score":97,"errors":[]}
+{"item":"J041","cand":"C","score":10,"errors":[["accuracy/mistranslation","critical","wrong product (Clopidogrel Winthrop)"],["accuracy/addition","minor","section heading prepended"]]}
+{"item":"J041","cand":"D","score":92,"errors":[["fluency","minor","label-style subject phrase"]]}
+{"item":"J042","cand":"A","score":50,"errors":[["accuracy/addition","major","product name and 'must be used as complementary therapy' added"]]}
+{"item":"J042","cand":"B","score":100,"errors":[]}
+{"item":"J042","cand":"C","score":92,"errors":[["terminology","minor","ácido fólico for folate"]]}
+{"item":"J042","cand":"D","score":96,"errors":[["fluency/grammar","minor","articles dropped in list"]]}
+{"item":"J043","cand":"A","score":98,"errors":[]}
+{"item":"J043","cand":"B","score":96,"errors":[]}
+{"item":"J043","cand":"C","score":97,"errors":[]}
+{"item":"J043","cand":"D","score":0,"errors":[["accuracy/mistranslation","critical","unrelated message (menu item highlighting)"]]}
+{"item":"J044","cand":"A","score":98,"errors":[]}
+{"item":"J044","cand":"B","score":0,"errors":[["accuracy/mistranslation","critical","unrelated text (kppp/X server)"]]}
+{"item":"J044","cand":"C","score":97,"errors":[]}
+{"item":"J044","cand":"D","score":98,"errors":[]}
+{"item":"J045","cand":"A","score":95,"errors":[]}
+{"item":"J045","cand":"B","score":95,"errors":[]}
+{"item":"J045","cand":"C","score":93,"errors":[["fluency","minor","'refuerzo de la hepatitis'"]]}
+{"item":"J045","cand":"D","score":5,"errors":[["accuracy/mistranslation","critical","wrong product (Twinrix Pediátrico), different statement"]]}
+{"item":"J046","cand":"A","score":15,"errors":[["accuracy/mistranslation","critical","'setzen' (set) instead of remove"]]}
+{"item":"J046","cand":"B","score":5,"errors":[["accuracy/mistranslation","critical","watches as wristwatches"]]}
+{"item":"J046","cand":"C","score":95,"errors":[["fluency/grammar","minor","singular Überwachung"]]}
+{"item":"J046","cand":"D","score":99,"errors":[]}
+{"item":"J047","cand":"A","score":100,"errors":[]}
+{"item":"J047","cand":"B","score":99,"errors":[]}
+{"item":"J047","cand":"C","score":50,"errors":[["accuracy/mistranslation","major","'all' instead of 'some' files"]]}
+{"item":"J047","cand":"D","score":92,"errors":[["style/register","minor","mixed tú register"]]}
+{"item":"J048","cand":"A","score":98,"errors":[]}
+{"item":"J048","cand":"B","score":99,"errors":[]}
+{"item":"J048","cand":"C","score":98,"errors":[]}
+{"item":"J048","cand":"D","score":93,"errors":[["accuracy/omission","minor","'of topotecan' after administration dropped"]]}
+{"item":"J049","cand":"A","score":98,"errors":[]}
+{"item":"J049","cand":"B","score":98,"errors":[]}
+{"item":"J049","cand":"C","score":100,"errors":[]}
+{"item":"J050","cand":"A","score":45,"errors":[["accuracy/addition","major","'heavy' showers"],["accuracy/addition","minor","'weather condition' artefact"]]}
+{"item":"J050","cand":"B","score":100,"errors":[]}
+{"item":"J050","cand":"C","score":95,"errors":[]}
+{"item":"J051","cand":"A","score":45,"errors":[["accuracy/addition","major","'jagged' added"],["accuracy/addition","minor","'Stencils' artefact"]]}
+{"item":"J051","cand":"B","score":90,"errors":[["accuracy/addition","minor","'Stencils' artefact"]]}
+{"item":"J051","cand":"C","score":100,"errors":[]}
+{"item":"J052","cand":"A","score":99,"errors":[]}
+{"item":"J052","cand":"B","score":55,"errors":[["accuracy/omission","major","standing-position instruction dropped"]]}
+{"item":"J052","cand":"C","score":98,"errors":[]}
+{"item":"J052","cand":"D","score":92,"errors":[["style/register","minor","informal tú"]]}
+{"item":"J053","cand":"A","score":92,"errors":[["style/register","minor","informal tú in UI"]]}
+{"item":"J053","cand":"B","score":70,"errors":[["accuracy/addition","major","'icon' theme added"]]}
+{"item":"J053","cand":"C","score":100,"errors":[]}
+{"item":"J054","cand":"A","score":98,"errors":[]}
+{"item":"J054","cand":"B","score":98,"errors":[]}
+{"item":"J054","cand":"C","score":100,"errors":[]}
+{"item":"J055","cand":"A","score":100,"errors":[]}
+{"item":"J055","cand":"B","score":99,"errors":[]}
+{"item":"J055","cand":"C","score":15,"errors":[["accuracy/negation","critical","'keine' dropped: shown when elements DO exist"]]}
+{"item":"J055","cand":"D","score":99,"errors":[]}
+{"item":"J056","cand":"A","score":50,"errors":[["accuracy/mistranslation","major","钥匙扣 (key fob) for keyring database"],["terminology","minor","通道 for conduit"]]}
+{"item":"J056","cand":"B","score":82,"errors":[["accuracy/omission","minor","second 'database' dropped"],["accuracy/addition","minor","'Name' artefact"]]}
+{"item":"J056","cand":"C","score":88,"errors":[["terminology","minor","导管 (physical pipe) for conduit"]]}
+{"item":"J056","cand":"D","score":98,"errors":[]}
+{"item":"J057","cand":"A","score":97,"errors":[]}
+{"item":"J057","cand":"B","score":97,"errors":[]}
+{"item":"J057","cand":"C","score":45,"errors":[["accuracy/omission","major","'plugin' dropped; 'design' for definition"]]}
+{"item":"J057","cand":"D","score":96,"errors":[]}
+{"item":"J058","cand":"A","score":100,"errors":[]}
+{"item":"J058","cand":"B","score":98,"errors":[]}
+{"item":"J058","cand":"C","score":55,"errors":[["accuracy/addition","major","'pacientes pediátricos' invented to complete fragment"],["fluency","minor","list dash dropped"]]}
+{"item":"J059","cand":"A","score":5,"errors":[["accuracy/mistranslation","critical","aripiprazole instead of olanzapine"],["accuracy/omission","minor","'should be advised' dropped"]]}
+{"item":"J059","cand":"B","score":98,"errors":[]}
+{"item":"J059","cand":"C","score":98,"errors":[]}
+{"item":"J059","cand":"D","score":99,"errors":[]}
+{"item":"J060","cand":"A","score":98,"errors":[]}
+{"item":"J060","cand":"B","score":95,"errors":[]}
+{"item":"J060","cand":"C","score":50,"errors":[["accuracy/placeholder","major","%1 dropped"],["accuracy/addition","minor","'@info: whatsthis' artefact"],["fluency/spelling","minor","'cuanto' without accent"]]}
+{"item":"J060","cand":"D","score":90,"errors":[["style/register","minor","informal tú in UI"]]}
+{"item":"J061","cand":"A","score":85,"errors":[["accuracy/mistranslation","minor","'Hinweis' for Warning"],["accuracy/addition","minor","'@action:inmenu' artefact"]]}
+{"item":"J061","cand":"B","score":100,"errors":[]}
+{"item":"J062","cand":"A","score":99,"errors":[]}
+{"item":"J062","cand":"B","score":100,"errors":[]}
+{"item":"J062","cand":"C","score":40,"errors":[["accuracy/number","major","section 20 instead of 18"],["accuracy/addition","minor","'O TIRAS' added"]]}
+{"item":"J063","cand":"A","score":90,"errors":[]}
+{"item":"J063","cand":"B","score":92,"errors":[]}
+{"item":"J063","cand":"C","score":85,"errors":[["terminology","minor","'sistema laberíntico'"]]}
+{"item":"J063","cand":"D","score":30,"errors":[["accuracy/mistranslation","major","'Raros' (rare) for uncommon; labyrinth dropped"]]}
+{"item":"J064","cand":"A","score":98,"errors":[]}
+{"item":"J064","cand":"B","score":96,"errors":[]}
+{"item":"J064","cand":"C","score":98,"errors":[]}
+{"item":"J064","cand":"D","score":0,"errors":[["accuracy/mistranslation","critical","unrelated sentence (visual symptoms, ophthalmologist)"]]}
+{"item":"J065","cand":"A","score":97,"errors":[]}
+{"item":"J065","cand":"B","score":0,"errors":[["accuracy/mistranslation","critical","different indication (cisplatin, breast cancer)"]]}
+{"item":"J065","cand":"C","score":98,"errors":[]}
+{"item":"J065","cand":"D","score":97,"errors":[]}
+{"item":"J066","cand":"A","score":5,"errors":[["accuracy/negation","critical","'does NOT have timeslicing'"],["accuracy/untranslated","major","English fragment and CSS junk left in"]]}
+{"item":"J066","cand":"B","score":95,"errors":[]}
+{"item":"J066","cand":"C","score":93,"errors":[["accuracy/untranslated","minor","Normal/Batch left in English"]]}
+{"item":"J066","cand":"D","score":96,"errors":[]}
+{"item":"J067","cand":"A","score":100,"errors":[]}
+{"item":"J067","cand":"B","score":99,"errors":[]}
+{"item":"J067","cand":"C","score":15,"errors":[["accuracy/mistranslation","critical","'al final' (last) instead of first"]]}
+{"item":"J067","cand":"D","score":99,"errors":[]}
+{"item":"J068","cand":"A","score":97,"errors":[]}
+{"item":"J068","cand":"B","score":5,"errors":[["accuracy/mistranslation","critical","wrong product name RILUTEK"]]}
+{"item":"J068","cand":"C","score":100,"errors":[]}
+{"item":"J069","cand":"A","score":85,"errors":[["style/register","minor","informal tú"],["accuracy/mistranslation","minor","'tomando' for an injected product"]]}
+{"item":"J069","cand":"B","score":10,"errors":[["accuracy/mistranslation","critical","different brand name ViraferonPeg"]]}
+{"item":"J069","cand":"C","score":98,"errors":[]}
+{"item":"J069","cand":"D","score":100,"errors":[]}
+{"item":"J070","cand":"A","score":90,"errors":[["accuracy/tense","minor","present 'hay' for pluperfect"]]}
+{"item":"J070","cand":"B","score":92,"errors":[["fluency/grammar","minor","redundant 'de los que ... de información'"]]}
+{"item":"J070","cand":"C","score":90,"errors":[["fluency","minor","'otros casos adicionales' redundant; 'literatura' anglicism"]]}
+{"item":"J071","cand":"A","score":96,"errors":[]}
+{"item":"J071","cand":"B","score":80,"errors":[["accuracy/addition","minor","'Name' artefact"],["accuracy/omission","minor","'Information' dropped"]]}
+{"item":"J071","cand":"C","score":98,"errors":[]}
+{"item":"J071","cand":"D","score":97,"errors":[]}
+{"item":"J072","cand":"A","score":93,"errors":[]}
+{"item":"J072","cand":"B","score":95,"errors":[]}
+{"item":"J072","cand":"C","score":98,"errors":[]}
+{"item":"J072","cand":"D","score":45,"errors":[["accuracy/mistranslation","major","'Lektionsschriftarten' (lesson fonts)"],["accuracy/omission","minor","'whether' dropped"]]}
