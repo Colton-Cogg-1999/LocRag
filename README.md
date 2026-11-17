@@ -37,10 +37,12 @@ Full write-up: **[docs/v2-results.md](docs/v2-results.md)**.
    - **Overlap metrics miss critical errors.** Reference-based metrics scored many critically wrong fuzzy matches as good, because they share almost every word with the reference: Viagra-for-CHAMPIX scored 0.90 on COMET-22. Of 62 badly wrong outputs, COMET-22 rated 15 above a typical correct translation, and chrF rated 26.
    - **The QE model catches errors but not conventions.** CometKiwi caught the blatant errors (2 of 62 slipped through) and agreed with the judge best of the three metrics. But it doesn't reward conformity with the TM, so it rates RAG slightly *below* zero-shot (−0.9 points). Under that pre-registered primary metric, "RAG improves quality" is not supported.
 5. **Where raw TM stops paying off.** By reference metrics, pasting the fuzzy match beats a context-free LLM or DeepL only above about 80–90 fuzzy. An LLM given the TM matches or beats the raw match below about 96–100. Context helps most in the 75–99 bands and fades toward zero below 50.
-6. **Reusable material below the fuzzy cutoff is common, but semantic search adds little to it.**
-   - For sentences whose best fuzzy match is under 75%, retrieved TM units held verbatim-verified full or partial reuse for 96% of medical sentences and 80% of software sentences.
-   - Retrieval by meaning found material that fuzzy retrieval missed in only 7–13% of them.
-   - Fuzzy, semantic and hybrid retrieval, and plain vs "here's a draft" prompting, land within a few tenths of a point of each other. Extracting reusable items first was the weakest option and cost 4× more.
+6. **RAG finds usable TM material where a fuzzy-match threshold hides it, but the win comes from retrieving below the threshold, not from searching by meaning.**
+   - A CAT tool shows nothing below its 75% cutoff. For those sentences, the retrieved TM units still held verbatim-verified full or partial reuse for 96% of medical sentences and 80% of software sentences.
+   - Giving that material to the LLM brought translations closer to the human reference: +1.0 COMET-22 and +5 chrF over translating without it.
+   - Fuzzy retrieval without the threshold (simply showing the top 3 fuzzy matches) finds most of the same material. Semantic search found something fuzzy missed in only 12.5% of medical and 6.6% of software sentences below the cutoff.
+   - Fuzzy, semantic and hybrid context, and plain vs "here's a draft" prompting, produced translations within a few tenths of a point of each other. Extracting reusable items first was the weakest option and cost 4× more.
+   - The benefit is closer alignment with the client's terminology and phrasing, not fewer meaning errors.
 7. **Cost.** Context adds about $0.00003 per segment. The whole test run cost $12 in API fees, 78% of it for the auditor.
 
 **Limitations:**
