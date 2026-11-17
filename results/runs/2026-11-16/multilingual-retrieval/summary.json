@@ -1,0 +1,50 @@
+{
+  "status": "retrieval complete; no new translations or usefulness judgments",
+  "model": "BAAI/bge-m3",
+  "data_manifest_sha256": "9bfa686baada090bf9e9ec261d6ca0b1e3366503c0fd52e7342b1ca659aa790e",
+  "languages_sharing_these_sources": [
+    "es",
+    "de",
+    "zh_CN"
+  ],
+  "tm_size": 5000,
+  "index_seconds_including_model_load_or_cache": 999.2865540549974,
+  "query_encoding_seconds": 136.343024116999,
+  "platform": "Linux-7.2.15-1-omarchy-x86_64-with-glibc2.44",
+  "splits": {
+    "development": {
+      "n": 150,
+      "routes": {
+        "none": 115,
+        "fuzzy": 14,
+        "semantic": 21
+      },
+      "top_cosine_quantiles": {
+        "0.1": 0.6394860506057739,
+        "0.5": 0.7171640694141388,
+        "0.9": 0.8488282680511474
+      },
+      "latency_ms_excluding_query_encoding": {
+        "p50": 2.497038498404436,
+        "p95": 4.619650897802783
+      }
+    },
+    "test": {
+      "n": 300,
+      "routes": {
+        "none": 235,
+        "semantic": 43,
+        "fuzzy": 22
+      },
+      "top_cosine_quantiles": {
+        "0.1": 0.6372432291507721,
+        "0.5": 0.7167387008666992,
+        "0.9": 0.8592628717422486
+      },
+      "latency_ms_excluding_query_encoding": {
+        "p50": 2.5238140078727156,
+        "p95": 4.960303663392552
+      }
+    }
+  }
+}

@@ -16,3 +16,7 @@ data/
 
 # run logs
 results/logs/
+demo/dist/
+demo/.site-workflow/
+demo/.git/
+results/multilingual/run-*/

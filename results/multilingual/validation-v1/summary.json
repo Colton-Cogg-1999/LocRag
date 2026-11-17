@@ -1,0 +1,987 @@
+{
+  "es": {
+    "zero-shot": {
+      "n": 300,
+      "chrf": 68.60890000568543,
+      "paired_sentence_chrf_delta": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n": 300
+      },
+      "routes": {
+        "none": 300
+      },
+      "judgments": {
+        "tie": 300
+      },
+      "accuracy_on_distinct_outputs": {},
+      "error_categories": {},
+      "terminology_consistency_on_distinct_outputs": {},
+      "by_fuzzy_band": {
+        "85-94": {
+          "n": 6,
+          "paired_sentence_chrf_delta": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n": 6
+          }
+        },
+        "75-84": {
+          "n": 16,
+          "paired_sentence_chrf_delta": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n": 16
+          }
+        },
+        "50-74": {
+          "n": 71,
+          "paired_sentence_chrf_delta": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n": 71
+          }
+        },
+        "<50": {
+          "n": 207,
+          "paired_sentence_chrf_delta": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n": 207
+          }
+        }
+      }
+    },
+    "fuzzy-only": {
+      "n": 300,
+      "chrf": 69.29031597697815,
+      "paired_sentence_chrf_delta": {
+        "mean": 0.718,
+        "ci95": [
+          0.2627,
+          1.2935
+        ],
+        "n": 300
+      },
+      "routes": {
+        "none": 278,
+        "fuzzy": 22
+      },
+      "judgments": {
+        "tie": 288,
+        "baseline": 2,
+        "treatment": 10
+      },
+      "accuracy_on_distinct_outputs": {
+        "assessed_n": 14,
+        "treatment": 12,
+        "baseline": 14,
+        "introduced_errors": 2,
+        "fixed_errors": 0
+      },
+      "error_categories": {
+        "conditions": 1,
+        "terminology": 10,
+        "other": 2,
+        "placeholders": 1
+      },
+      "terminology_consistency_on_distinct_outputs": {
+        "assessed_n": 14,
+        "treatment": 13,
+        "baseline": 3
+      },
+      "by_fuzzy_band": {
+        "85-94": {
+          "n": 6,
+          "paired_sentence_chrf_delta": {
+            "mean": 4.8254,
+            "ci95": [
+              -2.7558,
+              14.0536
+            ],
+            "n": 6
+          }
+        },
+        "75-84": {
+          "n": 16,
+          "paired_sentence_chrf_delta": {
+            "mean": 11.6536,
+            "ci95": [
+              5.0148,
+              19.0396
+            ],
+            "n": 16
+          }
+        },
+        "50-74": {
+          "n": 71,
+          "paired_sentence_chrf_delta": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n": 71
+          }
+        },
+        "<50": {
+          "n": 207,
+          "paired_sentence_chrf_delta": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n": 207
+          }
+        }
+      }
+    },
+    "always-semantic": {
+      "n": 300,
+      "chrf": 70.22227119236223,
+      "paired_sentence_chrf_delta": {
+        "mean": 2.2015,
+        "ci95": [
+          0.9138,
+          3.5594
+        ],
+        "n": 300
+      },
+      "routes": {
+        "semantic": 300
+      },
+      "judgments": {
+        "tie": 148,
+        "baseline": 49,
+        "treatment": 103
+      },
+      "accuracy_on_distinct_outputs": {
+        "assessed_n": 201,
+        "treatment": 180,
+        "baseline": 184,
+        "introduced_errors": 17,
+        "fixed_errors": 13
+      },
+      "error_categories": {
+        "other": 62,
+        "terminology": 102,
+        "conditions": 2,
+        "addition": 7,
+        "omission": 5,
+        "placeholders": 8
+      },
+      "terminology_consistency_on_distinct_outputs": {
+        "assessed_n": 201,
+        "treatment": 176,
+        "baseline": 103
+      },
+      "by_fuzzy_band": {
+        "85-94": {
+          "n": 6,
+          "paired_sentence_chrf_delta": {
+            "mean": 4.2691,
+            "ci95": [
+              -1.8937,
+              9.9752
+            ],
+            "n": 6
+          }
+        },
+        "75-84": {
+          "n": 16,
+          "paired_sentence_chrf_delta": {
+            "mean": 10.1566,
+            "ci95": [
+              3.0165,
+              18.5091
+            ],
+            "n": 16
+          }
+        },
+        "50-74": {
+          "n": 71,
+          "paired_sentence_chrf_delta": {
+            "mean": 4.5569,
+            "ci95": [
+              1.8225,
+              7.4488
+            ],
+            "n": 71
+          }
+        },
+        "<50": {
+          "n": 207,
+          "paired_sentence_chrf_delta": {
+            "mean": 0.7188,
+            "ci95": [
+              -0.7416,
+              2.1466
+            ],
+            "n": 207
+          }
+        }
+      }
+    },
+    "router": {
+      "n": 300,
+      "chrf": 69.46418634303659,
+      "paired_sentence_chrf_delta": {
+        "mean": 0.9427,
+        "ci95": [
+          0.2643,
+          1.6454
+        ],
+        "n": 300
+      },
+      "routes": {
+        "none": 235,
+        "semantic": 43,
+        "fuzzy": 22
+      },
+      "judgments": {
+        "tie": 267,
+        "treatment": 22,
+        "baseline": 11
+      },
+      "accuracy_on_distinct_outputs": {
+        "assessed_n": 43,
+        "treatment": 35,
+        "baseline": 40,
+        "introduced_errors": 6,
+        "fixed_errors": 1
+      },
+      "error_categories": {
+        "other": 9,
+        "terminology": 29,
+        "conditions": 1,
+        "placeholders": 2,
+        "omission": 1,
+        "addition": 1
+      },
+      "terminology_consistency_on_distinct_outputs": {
+        "assessed_n": 43,
+        "treatment": 38,
+        "baseline": 17
+      },
+      "by_fuzzy_band": {
+        "85-94": {
+          "n": 6,
+          "paired_sentence_chrf_delta": {
+            "mean": 4.8254,
+            "ci95": [
+              -2.7558,
+              14.0536
+            ],
+            "n": 6
+          }
+        },
+        "75-84": {
+          "n": 16,
+          "paired_sentence_chrf_delta": {
+            "mean": 11.6536,
+            "ci95": [
+              5.0148,
+              19.0396
+            ],
+            "n": 16
+          }
+        },
+        "50-74": {
+          "n": 71,
+          "paired_sentence_chrf_delta": {
+            "mean": 1.4865,
+            "ci95": [
+              -0.0148,
+              3.265
+            ],
+            "n": 71
+          }
+        },
+        "<50": {
+          "n": 207,
+          "paired_sentence_chrf_delta": {
+            "mean": -0.1842,
+            "ci95": [
+              -0.5164,
+              0.1491
+            ],
+            "n": 207
+          }
+        }
+      }
+    }
+  },
+  "de": {
+    "zero-shot": {
+      "n": 300,
+      "chrf": 58.767686579516145,
+      "paired_sentence_chrf_delta": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n": 300
+      },
+      "routes": {
+        "none": 300
+      },
+      "judgments": {
+        "tie": 300
+      },
+      "accuracy_on_distinct_outputs": {},
+      "error_categories": {},
+      "terminology_consistency_on_distinct_outputs": {},
+      "by_fuzzy_band": {
+        "85-94": {
+          "n": 6,
+          "paired_sentence_chrf_delta": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n": 6
+          }
+        },
+        "75-84": {
+          "n": 16,
+          "paired_sentence_chrf_delta": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n": 16
+          }
+        },
+        "50-74": {
+          "n": 71,
+          "paired_sentence_chrf_delta": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n": 71
+          }
+        },
+        "<50": {
+          "n": 207,
+          "paired_sentence_chrf_delta": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n": 207
+          }
+        }
+      }
+    },
+    "fuzzy-only": {
+      "n": 300,
+      "chrf": 59.55693073678604,
+      "paired_sentence_chrf_delta": {
+        "mean": 0.8186,
+        "ci95": [
+          0.3167,
+          1.4615
+        ],
+        "n": 300
+      },
+      "routes": {
+        "none": 278,
+        "fuzzy": 22
+      },
+      "judgments": {
+        "tie": 288,
+        "treatment": 8,
+        "baseline": 4
+      },
+      "accuracy_on_distinct_outputs": {
+        "assessed_n": 13,
+        "treatment": 10,
+        "baseline": 13,
+        "introduced_errors": 3,
+        "fixed_errors": 0
+      },
+      "error_categories": {
+        "terminology": 10,
+        "other": 6,
+        "placeholders": 3
+      },
+      "terminology_consistency_on_distinct_outputs": {
+        "assessed_n": 13,
+        "treatment": 10,
+        "baseline": 1
+      },
+      "by_fuzzy_band": {
+        "85-94": {
+          "n": 6,
+          "paired_sentence_chrf_delta": {
+            "mean": 14.4991,
+            "ci95": [
+              3.9118,
+              28.2749
+            ],
+            "n": 6
+          }
+        },
+        "75-84": {
+          "n": 16,
+          "paired_sentence_chrf_delta": {
+            "mean": 9.9114,
+            "ci95": [
+              3.2091,
+              18.5416
+            ],
+            "n": 16
+          }
+        },
+        "50-74": {
+          "n": 71,
+          "paired_sentence_chrf_delta": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n": 71
+          }
+        },
+        "<50": {
+          "n": 207,
+          "paired_sentence_chrf_delta": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n": 207
+          }
+        }
+      }
+    },
+    "always-semantic": {
+      "n": 300,
+      "chrf": 62.18751778688472,
+      "paired_sentence_chrf_delta": {
+        "mean": 4.1958,
+        "ci95": [
+          2.4191,
+          5.8638
+        ],
+        "n": 300
+      },
+      "routes": {
+        "semantic": 300
+      },
+      "judgments": {
+        "tie": 138,
+        "treatment": 110,
+        "baseline": 52
+      },
+      "accuracy_on_distinct_outputs": {
+        "assessed_n": 194,
+        "treatment": 170,
+        "baseline": 169,
+        "introduced_errors": 15,
+        "fixed_errors": 16
+      },
+      "error_categories": {
+        "other": 73,
+        "terminology": 113,
+        "addition": 3,
+        "omission": 9,
+        "placeholders": 9,
+        "numbers": 2,
+        "conditions": 2
+      },
+      "terminology_consistency_on_distinct_outputs": {
+        "assessed_n": 194,
+        "treatment": 173,
+        "baseline": 90
+      },
+      "by_fuzzy_band": {
+        "85-94": {
+          "n": 6,
+          "paired_sentence_chrf_delta": {
+            "mean": 18.0913,
+            "ci95": [
+              4.9448,
+              32.0754
+            ],
+            "n": 6
+          }
+        },
+        "75-84": {
+          "n": 16,
+          "paired_sentence_chrf_delta": {
+            "mean": 13.7675,
+            "ci95": [
+              5.7066,
+              23.256
+            ],
+            "n": 16
+          }
+        },
+        "50-74": {
+          "n": 71,
+          "paired_sentence_chrf_delta": {
+            "mean": 6.233,
+            "ci95": [
+              1.8727,
+              10.5604
+            ],
+            "n": 71
+          }
+        },
+        "<50": {
+          "n": 207,
+          "paired_sentence_chrf_delta": {
+            "mean": 2.3545,
+            "ci95": [
+              0.6748,
+              4.1175
+            ],
+            "n": 207
+          }
+        }
+      }
+    },
+    "router": {
+      "n": 300,
+      "chrf": 60.16400480369184,
+      "paired_sentence_chrf_delta": {
+        "mean": 1.6307,
+        "ci95": [
+          0.8897,
+          2.4918
+        ],
+        "n": 300
+      },
+      "routes": {
+        "none": 235,
+        "semantic": 43,
+        "fuzzy": 22
+      },
+      "judgments": {
+        "tie": 266,
+        "treatment": 28,
+        "baseline": 6
+      },
+      "accuracy_on_distinct_outputs": {
+        "assessed_n": 43,
+        "treatment": 38,
+        "baseline": 39,
+        "introduced_errors": 3,
+        "fixed_errors": 2
+      },
+      "error_categories": {
+        "terminology": 28,
+        "other": 12,
+        "addition": 1,
+        "placeholders": 5,
+        "conditions": 1,
+        "omission": 1
+      },
+      "terminology_consistency_on_distinct_outputs": {
+        "assessed_n": 43,
+        "treatment": 36,
+        "baseline": 13
+      },
+      "by_fuzzy_band": {
+        "85-94": {
+          "n": 6,
+          "paired_sentence_chrf_delta": {
+            "mean": 14.4991,
+            "ci95": [
+              3.9118,
+              28.2749
+            ],
+            "n": 6
+          }
+        },
+        "75-84": {
+          "n": 16,
+          "paired_sentence_chrf_delta": {
+            "mean": 9.9114,
+            "ci95": [
+              3.2091,
+              18.5416
+            ],
+            "n": 16
+          }
+        },
+        "50-74": {
+          "n": 71,
+          "paired_sentence_chrf_delta": {
+            "mean": 3.195,
+            "ci95": [
+              1.495,
+              5.2839
+            ],
+            "n": 71
+          }
+        },
+        "<50": {
+          "n": 207,
+          "paired_sentence_chrf_delta": {
+            "mean": 0.0811,
+            "ci95": [
+              -0.342,
+              0.5637
+            ],
+            "n": 207
+          }
+        }
+      }
+    }
+  },
+  "zh_CN": {
+    "zero-shot": {
+      "n": 300,
+      "chrf": 42.22025915559097,
+      "paired_sentence_chrf_delta": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n": 300
+      },
+      "routes": {
+        "none": 300
+      },
+      "judgments": {
+        "tie": 300
+      },
+      "accuracy_on_distinct_outputs": {},
+      "error_categories": {},
+      "terminology_consistency_on_distinct_outputs": {},
+      "by_fuzzy_band": {
+        "85-94": {
+          "n": 6,
+          "paired_sentence_chrf_delta": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n": 6
+          }
+        },
+        "75-84": {
+          "n": 16,
+          "paired_sentence_chrf_delta": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n": 16
+          }
+        },
+        "50-74": {
+          "n": 71,
+          "paired_sentence_chrf_delta": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n": 71
+          }
+        },
+        "<50": {
+          "n": 207,
+          "paired_sentence_chrf_delta": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n": 207
+          }
+        }
+      }
+    },
+    "fuzzy-only": {
+      "n": 300,
+      "chrf": 43.44970803348569,
+      "paired_sentence_chrf_delta": {
+        "mean": 1.2612,
+        "ci95": [
+          0.4426,
+          2.3063
+        ],
+        "n": 300
+      },
+      "routes": {
+        "none": 278,
+        "fuzzy": 22
+      },
+      "judgments": {
+        "tie": 286,
+        "treatment": 12,
+        "baseline": 2
+      },
+      "accuracy_on_distinct_outputs": {
+        "assessed_n": 16,
+        "treatment": 15,
+        "baseline": 12,
+        "introduced_errors": 1,
+        "fixed_errors": 4
+      },
+      "error_categories": {
+        "terminology": 10,
+        "omission": 1,
+        "placeholders": 3,
+        "other": 4
+      },
+      "terminology_consistency_on_distinct_outputs": {
+        "assessed_n": 16,
+        "treatment": 16,
+        "baseline": 5
+      },
+      "by_fuzzy_band": {
+        "85-94": {
+          "n": 6,
+          "paired_sentence_chrf_delta": {
+            "mean": 21.2149,
+            "ci95": [
+              4.3807,
+              41.7148
+            ],
+            "n": 6
+          }
+        },
+        "75-84": {
+          "n": 16,
+          "paired_sentence_chrf_delta": {
+            "mean": 15.6915,
+            "ci95": [
+              4.3082,
+              29.1588
+            ],
+            "n": 16
+          }
+        },
+        "50-74": {
+          "n": 71,
+          "paired_sentence_chrf_delta": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n": 71
+          }
+        },
+        "<50": {
+          "n": 207,
+          "paired_sentence_chrf_delta": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n": 207
+          }
+        }
+      }
+    },
+    "always-semantic": {
+      "n": 300,
+      "chrf": 44.833572341208196,
+      "paired_sentence_chrf_delta": {
+        "mean": 2.412,
+        "ci95": [
+          0.4944,
+          4.3985
+        ],
+        "n": 300
+      },
+      "routes": {
+        "semantic": 300
+      },
+      "judgments": {
+        "treatment": 97,
+        "tie": 152,
+        "baseline": 51
+      },
+      "accuracy_on_distinct_outputs": {
+        "assessed_n": 206,
+        "treatment": 174,
+        "baseline": 173,
+        "introduced_errors": 29,
+        "fixed_errors": 30
+      },
+      "error_categories": {
+        "other": 54,
+        "terminology": 92,
+        "addition": 8,
+        "units": 1,
+        "placeholders": 16,
+        "omission": 18,
+        "numbers": 1,
+        "conditions": 1
+      },
+      "terminology_consistency_on_distinct_outputs": {
+        "assessed_n": 206,
+        "treatment": 180,
+        "baseline": 123
+      },
+      "by_fuzzy_band": {
+        "85-94": {
+          "n": 6,
+          "paired_sentence_chrf_delta": {
+            "mean": 19.7547,
+            "ci95": [
+              2.6654,
+              40.2528
+            ],
+            "n": 6
+          }
+        },
+        "75-84": {
+          "n": 16,
+          "paired_sentence_chrf_delta": {
+            "mean": 19.2659,
+            "ci95": [
+              6.994,
+              33.2077
+            ],
+            "n": 16
+          }
+        },
+        "50-74": {
+          "n": 71,
+          "paired_sentence_chrf_delta": {
+            "mean": -0.5045,
+            "ci95": [
+              -5.132,
+              3.7091
+            ],
+            "n": 71
+          }
+        },
+        "<50": {
+          "n": 207,
+          "paired_sentence_chrf_delta": {
+            "mean": 1.6069,
+            "ci95": [
+              -0.3003,
+              3.538
+            ],
+            "n": 207
+          }
+        }
+      }
+    },
+    "router": {
+      "n": 300,
+      "chrf": 44.14472955959067,
+      "paired_sentence_chrf_delta": {
+        "mean": 1.4663,
+        "ci95": [
+          0.2711,
+          2.7864
+        ],
+        "n": 300
+      },
+      "routes": {
+        "none": 235,
+        "semantic": 43,
+        "fuzzy": 22
+      },
+      "judgments": {
+        "tie": 273,
+        "baseline": 8,
+        "treatment": 19
+      },
+      "accuracy_on_distinct_outputs": {
+        "assessed_n": 43,
+        "treatment": 37,
+        "baseline": 33,
+        "introduced_errors": 4,
+        "fixed_errors": 8
+      },
+      "error_categories": {
+        "terminology": 23,
+        "other": 9,
+        "placeholders": 5,
+        "omission": 4,
+        "addition": 1
+      },
+      "terminology_consistency_on_distinct_outputs": {
+        "assessed_n": 43,
+        "treatment": 40,
+        "baseline": 21
+      },
+      "by_fuzzy_band": {
+        "85-94": {
+          "n": 6,
+          "paired_sentence_chrf_delta": {
+            "mean": 21.2149,
+            "ci95": [
+              4.3807,
+              41.7148
+            ],
+            "n": 6
+          }
+        },
+        "75-84": {
+          "n": 16,
+          "paired_sentence_chrf_delta": {
+            "mean": 15.6915,
+            "ci95": [
+              4.3082,
+              29.1588
+            ],
+            "n": 16
+          }
+        },
+        "50-74": {
+          "n": 71,
+          "paired_sentence_chrf_delta": {
+            "mean": 0.3996,
+            "ci95": [
+              -2.7802,
+              3.3178
+            ],
+            "n": 71
+          }
+        },
+        "<50": {
+          "n": 207,
+          "paired_sentence_chrf_delta": {
+            "mean": 0.1602,
+            "ci95": [
+              -0.4026,
+              0.8124
+            ],
+            "n": 207
+          }
+        }
+      }
+    }
+  }
+}

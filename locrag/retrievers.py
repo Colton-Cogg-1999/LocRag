@@ -47,19 +47,25 @@ class FuzzyRetriever:
     name = "fuzzy"
 
     def __init__(self, tm: list[dict], prefilter: int = 100):
+        if prefilter < 1:
+            raise ValueError("prefilter must be positive")
         self.tm = tm
         self.srcs = [r["src"] for r in tm]
         self.srcs_lc = [s.lower() for s in self.srcs]
         self.prefilter = prefilter
 
     def search(self, query: str, k: int = 5) -> list[Hit]:
+        if k < 0:
+            raise ValueError("k must be non-negative")
+        if not self.tm or k == 0:
+            return []
         cands = process.extract(query.lower(), self.srcs_lc, scorer=fuzz.ratio, limit=self.prefilter)
         scored = sorted(((cat_fuzzy(query, self.srcs[i]), i) for _, _, i in cands), reverse=True)[:k]
         return [Hit(i, s, self.tm[i]["src"], self.tm[i]["tgt"]) for s, i in scored]
 
 
 class SemanticRetriever:
-    """Embedding search over TM sources (cosine, exact via matrix product; fine to ~1M on CPU)."""
+    """Exact cosine search. Measure latency and memory for the intended corpus size."""
 
     def __init__(self, tm: list[dict], model: str | None = None, query_prefix: str = "",
                  doc_prefix: str = "", cache_dir: Path = ROOT / ".cache" / "emb"):
@@ -70,6 +76,9 @@ class SemanticRetriever:
         self.name = "semantic:" + model.split("/")[-1]
         self.query_prefix = query_prefix
         self._embed = embed
+        if not tm:
+            self.mat = np.empty((0, 0), dtype=np.float32)
+            return
         h = hashlib.sha1(("\n".join(r["src"] for r in tm) + model + doc_prefix).encode()).hexdigest()[:12]
         cache = cache_dir / f"{model.replace('/', '_')}_{h}.npy"
         if cache.exists():
@@ -83,17 +92,29 @@ class SemanticRetriever:
         return self._embed([self.query_prefix + q for q in queries], self.model)
 
     def search_vec(self, qv: np.ndarray, k: int = 5) -> list[Hit]:
+        if k < 0:
+            raise ValueError("k must be non-negative")
+        k = min(k, len(self.tm))
+        if k == 0:
+            return []
+        qv = np.asarray(qv)
+        if qv.shape != (self.mat.shape[1],) or not np.isfinite(qv).all():
+            raise ValueError("query vector must be finite and match the embedding dimension")
         sims = self.mat @ qv
-        top = np.argpartition(-sims, k)[:k]
+        top = np.argpartition(-sims, k - 1)[:k]
         top = top[np.argsort(-sims[top])]
         return [Hit(int(i), float(sims[i]) * 100, self.tm[i]["src"], self.tm[i]["tgt"]) for i in top]
 
     def search(self, query: str, k: int = 5) -> list[Hit]:
+        if not self.tm or k == 0:
+            if k < 0:
+                raise ValueError("k must be non-negative")
+            return []
         return self.search_vec(self.encode_queries([query])[0], k)
 
 
 class HybridRetriever:
-    """Reciprocal-rank fusion of fuzzy + semantic (what production RAG-for-TM usually ends up as)."""
+    """Reciprocal-rank fusion of fuzzy + semantic, with a near-exact fuzzy override."""
 
     name = "hybrid"
 

@@ -25,7 +25,7 @@ import numpy as np
 import yaml
 from sacrebleu.metrics import CHRF
 
-from common.llm import JUDGE_MODEL, MT_MODEL, chat_json, describe
+from common.llm import JUDGE_MODEL, MT_MODEL, chat_json, describe, validate_judgment
 from locrag.pipeline import FUZZY_THRESHOLD, SEMANTIC_MIN_SIM, TMRouter, load_tm, translate
 from locrag.prepare_data import load_pairs
 
@@ -117,7 +117,8 @@ def constructed_sets(tm: list[dict]) -> tuple[list[dict], list[dict]]:
 
 # ------------------------------------------------------------------ evaluation
 
-def evaluate(router: TMRouter, items: list[dict], force_semantic: bool = False, workers: int = 8) -> list[dict]:
+def evaluate(router: TMRouter, items: list[dict], force_semantic: bool = False, workers: int = 8,
+             policy: str = "router") -> list[dict]:
     qv = router.semantic.encode_queries([it["src"] for it in items])
     rng = random.Random(7)
     flips = [rng.random() < 0.5 for _ in items]
@@ -130,16 +131,18 @@ def evaluate(router: TMRouter, items: list[dict], force_semantic: bool = False, 
         hits = router.semantic.search_vec(qv[i], router.k)
         it["sem_top"] = [{"src": h.src, "tgt": h.tgt, "sim": round(h.score, 1)} for h in hits]
         it["sem_top1_sim"] = it["sem_top"][0]["sim"]
-        it["route"] = ("fuzzy" if it["fuzzy_best"] >= router.fuzzy_threshold else
-                       "semantic" if it["sem_top1_sim"] >= router.semantic_min_sim else "none")
-        # RAG uses the semantic hits above the min similarity (or all top-k when forced, for the risk set)
-        ex = [h for h in it["sem_top"] if force_semantic or h["sim"] >= router.semantic_min_sim] or it["sem_top"][:1]
+        decision = router.route(it["src"], qv[i], policy="always-semantic" if force_semantic else policy)
+        it["route"] = decision.route
+        it["policy"] = "always-semantic" if force_semantic else policy
+        it["examples_used"] = decision.examples
+        it["route_reason"] = decision.reason
         it["zero_shot"] = translate(it["src"], [])
-        it["rag"] = translate(it["src"], [{"src": h["src"], "tgt": h["tgt"]} for h in ex])
+        it["rag"] = translate(it["src"], decision.examples) if decision.examples else it["zero_shot"]
         top = it["sem_top"][0]
         try:
             it["reuse"] = chat_json(REUSE_PROMPT.format(new=it["src"], tm_src=top["src"], tm_tgt=top["tgt"]),
                                     max_tokens=300, model=JUDGE_MODEL)
+            validate_judgment(it["reuse"], reuse=True)
         except Exception as e:
             it["reuse"] = {"reuse": "error", "why": str(e)[:200]}
         a, b = (it["rag"], it["zero_shot"]) if flips[i] else (it["zero_shot"], it["rag"])
@@ -147,6 +150,7 @@ def evaluate(router: TMRouter, items: list[dict], force_semantic: bool = False, 
         try:
             j = chat_json(PAIR_PROMPT.format(src=it["src"], ref_line=ref_line, a=a, b=b), max_tokens=300,
                           model=JUDGE_MODEL)
+            validate_judgment(j)
         except Exception as e:
             j = {"winner": "error", "reason": str(e)[:200]}
         rag_is_a = flips[i]
@@ -159,6 +163,7 @@ def evaluate(router: TMRouter, items: list[dict], force_semantic: bool = False, 
         try:
             L = chat_json(LOC_PROMPT.format(src=it["src"], tm_src=top["src"], tm_tgt=top["tgt"], ref_line=ref_line,
                                             a=a, b=b), max_tokens=300, model=JUDGE_MODEL)
+            validate_judgment(L, localization=True)
         except Exception as e:
             L = {"winner": "error", "reason": str(e)[:200]}
         wl = str(L.get("winner", "tie")).strip().upper()
@@ -186,6 +191,8 @@ def summarise(rows: list[dict]) -> dict:
     if not n:
         return {"n": 0}
     s = {"n": n,
+         "generic_judge_errors": sum(r["pairwise"] == "error" for r in rows),
+         "localization_judge_errors": sum(r["loc_pairwise"] == "error" for r in rows),
          "rag_wins": sum(r["pairwise"] == "rag" for r in rows),
          "zero_shot_wins": sum(r["pairwise"] == "zero_shot" for r in rows),
          "ties": sum(r["pairwise"] == "tie" for r in rows),
@@ -222,9 +229,13 @@ def fmt_row(label, s):
 
 
 def main():
+    global OUT
     ap = argparse.ArgumentParser()
     ap.add_argument("--n-real", type=int, default=300)
+    ap.add_argument("--output", type=Path, default=ROOT / "results" / "router-v2")
+    ap.add_argument("--policy", choices=("router", "fuzzy-only", "always-semantic"), default="router")
     a = ap.parse_args()
+    OUT = a.output
     OUT.mkdir(parents=True, exist_ok=True)
     print(describe(), flush=True)
 
@@ -234,8 +245,8 @@ def main():
     cons, risk = constructed_sets(tm)
     print(f"real<{FUZZY_THRESHOLD:.0f}%: {len(real)}  constructed: {len(cons)}  risk: {len(risk)}", flush=True)
 
-    R = evaluate(router, real)
-    C = evaluate(router, cons)
+    R = evaluate(router, real, policy=a.policy)
+    C = evaluate(router, cons, policy=a.policy)
     K = evaluate(router, risk, force_semantic=True)
     with (OUT / "rows.jsonl").open("w", encoding="utf-8") as f:
         for r in R + C + K:
@@ -251,13 +262,14 @@ def main():
           f"* Real new segments with fuzzy < {FUZZY_THRESHOLD:.0f}%: **{len(R)}**. Semantic search found a candidate "
           f"≥ {SEMANTIC_MIN_SIM:.0f} for **{len(routed)} ({100 * len(routed) / max(1, len(R)):.0f}%)**; the judge rated the top "
           f"match reusable (full/partial) for **{sum(r['reuse'].get('reuse') in ('full', 'partial') for r in routed)}** of them.",
-          "Two blind judges: **localization rubric** (sees the approved TM entry; accuracy first, then reuse of "
+          f"Policy: **{a.policy}**. Risk probes deliberately force semantic context. "
+          "Two rubrics from the same judge model: **localization rubric** (sees the TM entry; accuracy first, then reuse of "
           "approved terminology/phrasing) and **generic rubric** (no TM entry; accuracy then general fluency).", "",
           "| set | n | top match reusable? | **loc judge:** RAG wins / tie / zero-shot wins | accurate: zero-shot → RAG | consistent w/ approved TM: zero-shot → RAG | generic judge: RAG / tie / zero-shot | chrF++ vs human ref | chrF++ vs approved TM translation |",
           "|---|---|---|---|---|---|---|---|---|",
           fmt_row(f"real, fuzzy < {FUZZY_THRESHOLD:.0f}%, routed to semantic", summarise(routed)),
-          fmt_row(f"real, fuzzy < {FUZZY_THRESHOLD:.0f}%, all (incl. weak semantic hits)", summarise(R)),
-          fmt_row("constructed rewordings (fuzzy shows 0%)", summarise(C)),
+          fmt_row(f"real, fuzzy < {FUZZY_THRESHOLD:.0f}%, all decisions including declines", summarise(R)),
+          fmt_row("constructed rewordings", summarise(C)),
           fmt_row("**risk:** negated rewordings forced through RAG", summarise(K)), "",
           "## Where does semantic retrieval stop helping? (real set, by top-1 similarity)", "",
           "| top-1 similarity | n | reusable (full+partial) | loc judge: RAG / tie / zero-shot | accurate: zero-shot → RAG | chrF++ zero-shot → RAG |",

@@ -84,7 +84,7 @@ def chat(
         messages = [{"role": "system", "content": system}, *messages]
 
     key = hashlib.sha256(
-        json.dumps([model, BASE_URL, messages, temperature, max_tokens], ensure_ascii=False).encode()
+        json.dumps([model, BASE_URL, messages, temperature, max_tokens, REASONING_EFFORT], ensure_ascii=False).encode()
     ).hexdigest()
     if use_cache:
         with _lock:
@@ -108,6 +108,8 @@ def chat(
         if out:
             break
         time.sleep(2 * (attempt + 1))  # empty completion (provider hiccup): retry
+    if not out:
+        raise RuntimeError("The model returned empty responses after three attempts.")
     if use_cache and out:
         with _lock:
             _get_db().execute("INSERT OR REPLACE INTO cache VALUES (?, ?)", (key, out))
@@ -141,7 +143,25 @@ def chat_json(messages: list[dict] | str, **kw) -> dict | list:
         return _parse_json(chat(repair, **kw))
 
 
-_LABEL_RE = re.compile(r"^\s*(ES|Spanish|Español|Translation|Traducción)\s*:\s*", re.IGNORECASE)
+def validate_judgment(value, *, localization: bool = False, reuse: bool = False) -> dict:
+    """Reject malformed judgments instead of silently counting them as ties or failures."""
+    if not isinstance(value, dict):
+        raise ValueError("Judge response must be an object")
+    if reuse:
+        if value.get("reuse") not in ("full", "partial", "none"):
+            raise ValueError("Invalid reuse judgment")
+        return value
+    if value.get("winner") not in ("A", "B", "tie"):
+        raise ValueError("Invalid pairwise winner")
+    fields = ["a_accurate", "b_accurate"]
+    if localization:
+        fields += ["a_consistent", "b_consistent"]
+    if any(type(value.get(key)) is not bool for key in fields):
+        raise ValueError("Judge accuracy and consistency fields must be JSON booleans")
+    return value
+
+
+_LABEL_RE = re.compile(r"^\s*(ES|DE|ZH_CN|Spanish|Español|German|Deutsch|Simplified Chinese|简体中文|Translation|Traducción)\s*:\s*", re.IGNORECASE)
 
 
 def clean_translation(out: str) -> str:

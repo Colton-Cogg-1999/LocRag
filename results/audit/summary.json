@@ -1,0 +1,328 @@
+{
+  "schema_version": 1,
+  "status": "historical exploratory evidence; not a fresh validation",
+  "provenance": {
+    "results/router/rows.jsonl": "0f21362ae9d437ae8cd99681b055d5a0cd0eaf03fe4f2af9b9909080647fbd71",
+    "results/benchmarks/probes_rows.json": "3bed95963eeeacfcb949dd994ca0a225146bcb900be13227c8ccc6e688d891ff",
+    "results/benchmarks/rag_mt_outputs.jsonl": "79da2d18bfdf867922095593e1864290955f3d8e5ddff5ef147524bd163c05b0"
+  },
+  "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+  "coverage": {
+    "real_n": 300,
+    "passing_n": 85,
+    "reusable_passing_n": 65,
+    "passing_rate_ci95": [
+      0.2353,
+      0.3368
+    ],
+    "reusable_rate_ci95": [
+      0.1738,
+      0.2667
+    ]
+  },
+  "routed_subset": {
+    "n": 85,
+    "localization": {
+      "rag": 50,
+      "tie": 22,
+      "zero_shot": 13
+    },
+    "generic": {
+      "zero_shot": 25,
+      "rag": 30,
+      "tie": 30
+    },
+    "reuse": {
+      "partial": 62,
+      "none": 20,
+      "full": 3
+    },
+    "sign_test_p": 3.015952084642337e-06,
+    "accuracy": {
+      "zero_shot": 84,
+      "rag": 82,
+      "valid_n": 85
+    },
+    "consistency": {
+      "zero_shot": 36,
+      "rag": 77,
+      "valid_n": 85
+    },
+    "accuracy_delta": {
+      "mean": -0.0235,
+      "ci95": [
+        -0.0706,
+        0.0235
+      ],
+      "n": 85
+    },
+    "chrf_corpus": {
+      "zero_shot": 71.531,
+      "rag": 74.4744
+    },
+    "sentence_chrf_delta": {
+      "mean": 3.9036,
+      "ci95": [
+        0.927,
+        7.2827
+      ],
+      "n": 85
+    }
+  },
+  "all_real_original_treatment": {
+    "n": 300,
+    "localization": {
+      "tie": 117,
+      "rag": 147,
+      "zero_shot": 36
+    },
+    "generic": {
+      "tie": 113,
+      "zero_shot": 97,
+      "rag": 90
+    },
+    "reuse": {
+      "none": 146,
+      "partial": 151,
+      "full": 3
+    },
+    "sign_test_p": 4.0492946937176635e-17,
+    "accuracy": {
+      "zero_shot": 286,
+      "rag": 290,
+      "valid_n": 300
+    },
+    "consistency": {
+      "zero_shot": 157,
+      "rag": 271,
+      "valid_n": 300
+    },
+    "accuracy_delta": {
+      "mean": 0.0133,
+      "ci95": [
+        -0.0133,
+        0.0433
+      ],
+      "n": 300
+    },
+    "chrf_corpus": {
+      "zero_shot": 71.9122,
+      "rag": 73.2389
+    },
+    "sentence_chrf_delta": {
+      "mean": 1.9831,
+      "ci95": [
+        0.8477,
+        3.08
+      ],
+      "n": 300
+    }
+  },
+  "risk_original_treatment": {
+    "n": 40,
+    "localization": {
+      "rag": 34,
+      "zero_shot": 4,
+      "tie": 2
+    },
+    "generic": {
+      "zero_shot": 28,
+      "rag": 8,
+      "tie": 4
+    },
+    "reuse": {
+      "partial": 39,
+      "none": 1
+    },
+    "sign_test_p": 6.038535502739251e-07,
+    "accuracy": {
+      "zero_shot": 40,
+      "rag": 38,
+      "valid_n": 40
+    },
+    "consistency": {
+      "zero_shot": 4,
+      "rag": 38,
+      "valid_n": 40
+    },
+    "accuracy_delta": {
+      "mean": -0.05,
+      "ci95": [
+        -0.125,
+        0.0
+      ],
+      "n": 40
+    },
+    "chrf_corpus": null,
+    "sentence_chrf_delta": {
+      "mean": null,
+      "ci95": null,
+      "n": 0
+    }
+  },
+  "no_route_changed_outputs": 168,
+  "retrieval": {
+    "fuzzy": {
+      "edit": {
+        "n": 40,
+        "hits_at_1": 40,
+        "recall_at_1": 1.0
+      },
+      "paraphrase": {
+        "n": 40,
+        "hits_at_1": 10,
+        "recall_at_1": 0.25
+      },
+      "restructure": {
+        "n": 40,
+        "hits_at_1": 21,
+        "recall_at_1": 0.525
+      }
+    },
+    "hybrid(bge-m3)": {
+      "edit": {
+        "n": 40,
+        "hits_at_1": 40,
+        "recall_at_1": 1.0
+      },
+      "paraphrase": {
+        "n": 40,
+        "hits_at_1": 18,
+        "recall_at_1": 0.45
+      },
+      "restructure": {
+        "n": 40,
+        "hits_at_1": 27,
+        "recall_at_1": 0.675
+      }
+    },
+    "semantic:bge-m3": {
+      "edit": {
+        "n": 40,
+        "hits_at_1": 39,
+        "recall_at_1": 0.975
+      },
+      "paraphrase": {
+        "n": 40,
+        "hits_at_1": 39,
+        "recall_at_1": 0.975
+      },
+      "restructure": {
+        "n": 40,
+        "hits_at_1": 40,
+        "recall_at_1": 1.0
+      }
+    },
+    "semantic:qwen3-embedding-8b": {
+      "edit": {
+        "n": 40,
+        "hits_at_1": 39,
+        "recall_at_1": 0.975
+      },
+      "paraphrase": {
+        "n": 40,
+        "hits_at_1": 38,
+        "recall_at_1": 0.95
+      },
+      "restructure": {
+        "n": 40,
+        "hits_at_1": 40,
+        "recall_at_1": 1.0
+      }
+    },
+    "semantic:text-embedding-3-large": {
+      "edit": {
+        "n": 40,
+        "hits_at_1": 39,
+        "recall_at_1": 0.975
+      },
+      "paraphrase": {
+        "n": 40,
+        "hits_at_1": 38,
+        "recall_at_1": 0.95
+      },
+      "restructure": {
+        "n": 40,
+        "hits_at_1": 40,
+        "recall_at_1": 1.0
+      }
+    }
+  },
+  "mt_by_band": {
+    "95-99": {
+      "n": 40,
+      "chrf": {
+        "zero_shot": 71.2,
+        "fuzzy": 92.2,
+        "semantic": 92.1,
+        "fuzzy_cat75": 92.9,
+        "hybrid": 91.8,
+        "tiered": 92.9
+      }
+    },
+    "85-94": {
+      "n": 40,
+      "chrf": {
+        "zero_shot": 74.3,
+        "fuzzy": 87.3,
+        "semantic": 87.2,
+        "fuzzy_cat75": 89.2,
+        "hybrid": 88.2,
+        "tiered": 89.2
+      }
+    },
+    "75-84": {
+      "n": 40,
+      "chrf": {
+        "zero_shot": 71.2,
+        "fuzzy": 82.9,
+        "semantic": 82.6,
+        "fuzzy_cat75": 82.2,
+        "hybrid": 82.3,
+        "tiered": 82.6
+      }
+    },
+    "50-74": {
+      "n": 40,
+      "chrf": {
+        "zero_shot": 75.6,
+        "fuzzy": 79.7,
+        "semantic": 81.3,
+        "fuzzy_cat75": 75.6,
+        "hybrid": 78.3,
+        "tiered": 81.3
+      }
+    },
+    "<50": {
+      "n": 40,
+      "chrf": {
+        "zero_shot": 67.1,
+        "fuzzy": 67.0,
+        "semantic": 68.3,
+        "fuzzy_cat75": 67.1,
+        "hybrid": 69.6,
+        "tiered": 68.3
+      }
+    },
+    "ALL": {
+      "n": 200,
+      "chrf": {
+        "zero_shot": 71.7,
+        "fuzzy": 83.0,
+        "semantic": 83.5,
+        "fuzzy_cat75": 82.8,
+        "hybrid": 83.2,
+        "tiered": 84.1
+      }
+    }
+  },
+  "limitations": [
+    "The original evaluation always supplied at least one semantic example, even for route=none.",
+    "The 85 passing real segments are a selected subset, not an independent validation set.",
+    "Thresholds were chosen after exploratory analysis; frozen validation is still required.",
+    "Generic and localization judgments use one model with different rubrics, not independent judges.",
+    "The corpus acts as a proxy for approved client translations; corpus entries can contain errors.",
+    "No dedicated, human-verified polarity labels support a 40/40 polarity-safety claim.",
+    "Intervals resample segments and do not account for document dependence or judge error."
+  ]
+}

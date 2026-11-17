@@ -1,5 +1,7 @@
 # Experiment A: retrieval probes (EMEA TM, 20k units, 40 items × 4 variants)
 
+> Historical exploratory result. The hybrid meaning-AUC column uses the fuzzy-score proxy in the original evaluator, not the fusion score. Gold near-duplicates are accepted by fuzzy similarity and are not individually verified meaning equivalents. See [architecture notes](../../docs/architecture.md).
+
 | retriever | edit R@1 | paraphrase R@1 | paraphrase R@5 | restructure R@1 | restructure R@5 | meaning AUC |
 |---|---|---|---|---|---|---|
 | fuzzy | 1.00 | 0.25 | 0.38 | 0.53 | 0.62 | 0.01 |

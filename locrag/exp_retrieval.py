@@ -14,6 +14,7 @@ opposite meaning"? (AUC of gold-score: paraphrase/restructure vs negation; 0.5 =
 from __future__ import annotations
 
 import json
+import argparse
 from pathlib import Path
 
 import numpy as np
@@ -37,6 +38,9 @@ def auc(pos: list[float], neg: list[float]) -> float:
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--output", type=Path, default=ROOT / "results" / "benchmarks")
+    args = ap.parse_args()
     tm = load_tm()
     id2idx = {r["id"]: i for i, r in enumerate(tm)}
     probes = yaml.safe_load((ROOT / "locrag" / "probes_emea.yaml").read_text(encoding="utf-8"))
@@ -78,10 +82,14 @@ def main():
             # retriever's own score for the ORIGINAL unit (for the negation analysis)
             if isinstance(r, SemanticRetriever):
                 gold_score = float(r.mat[oi] @ qvecs[r.name][qi]) * 100
+            elif isinstance(r, HybridRetriever):
+                # Measure the actual fusion score, not a fuzzy-score proxy.
+                fused = r.fuse(f_hits, s_hits, k=len(f_hits) + len(s_hits))
+                gold_score = next((hit.score for hit in fused if hit.idx == oi), 0.0)
             else:
                 gold_score = cat_fuzzy(q, tm[oi]["src"])
             rows.append({"tm": tid, "cat": cat, "retriever": name, "rank": rank,
-                         "gold_score": round(gold_score, 1),
+                         "gold_score": round(gold_score, 6 if isinstance(r, HybridRetriever) else 1),
                          "fuzzy_to_gold": round(cat_fuzzy(q, tm[oi]["src"]), 1),
                          "top1": hits[0].src if hits else None})
 
@@ -109,7 +117,7 @@ def main():
     surfaced = {c: round(float(np.mean([r["fuzzy_to_gold"] >= 75 for r in rows
                                         if r["retriever"] == "fuzzy" and r["cat"] == c])), 3) for c in CATS}
 
-    out = ROOT / "results" / "benchmarks"
+    out = args.output
     out.mkdir(parents=True, exist_ok=True)
     (out / "probes_rows.json").write_text(json.dumps(rows, ensure_ascii=False, indent=1))
     res = {"n_items": len(probes), "summary": summary, "cat_surfaced_at_75": surfaced}

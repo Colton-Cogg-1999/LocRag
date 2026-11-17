@@ -1,0 +1,15 @@
+{
+  "status": "original data rebuilt; translation reruns pending service access",
+  "memory_size": 20000,
+  "test_size": 200,
+  "below_threshold_size": 300,
+  "original_200_matched": true,
+  "original_300_matched": true,
+  "sha256": {
+    "data/raw/EMEA/EMEA.en-es.en": "5f3a96378c71401d5b2a0778295edb91c09eceede8b1e4cd7ae24cf64a3161c2",
+    "data/raw/EMEA/EMEA.en-es.es": "7e4c71d6a66f5835ff71bb8488fe37a65130d71e2503d65e8e545edca8ad9bc5",
+    "data/tm/EMEA/tm.jsonl": "096dcc123ceeb7e3b2d9cc91020b035fe923fafd685726495bd9c30047c91e00",
+    "data/tm/EMEA/test.jsonl": "72da8743cee3b2a6a2be80529264438dc29c826368fb71b4dc0079daaf0c9994",
+    "data/tm/EMEA/below75.jsonl": "950a115ecd2301e15f8f64173a8f1bee15ff7f35b548939e140bc5b62cde80a7"
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "table": {
+    "95-99": {
+      "zero_shot": [
+        70.1,
+        49.5
+      ],
+      "fuzzy_cat75": [
+        92.9,
+        89.2
+      ],
+      "fuzzy": [
+        92.2,
+        88.1
+      ],
+      "semantic": [
+        91.3,
+        86.5
+      ],
+      "hybrid": [
+        92.0,
+        88.0
+      ],
+      "tiered": [
+        92.9,
+        89.2
+      ],
+      "leverage_fuzzy": [
+        92.0,
+        87.9
+      ],
+      "leverage_semantic": [
+        93.1,
+        89.5
+      ],
+      "n": 40,
+      "mean_overlap": 1.57
+    },
+    "85-94": {
+      "zero_shot": [
+        74.3,
+        54.1
+      ],
+      "fuzzy_cat75": [
+        88.7,
+        80.0
+      ],
+      "fuzzy": [
+        87.8,
+        77.1
+      ],
+      "semantic": [
+        88.1,
+        77.7
+      ],
+      "hybrid": [
+        88.0,
+        78.3
+      ],
+      "tiered": [
+        88.7,
+        80.0
+      ],
+      "leverage_fuzzy": [
+        77.6,
+        63.3
+      ],
+      "leverage_semantic": [
+        77.3,
+        62.8
+      ],
+      "n": 40,
+      "mean_overlap": 1.55
+    },
+    "75-84": {
+      "zero_shot": [
+        71.1,
+        52.5
+      ],
+      "fuzzy_cat75": [
+        82.8,
+        69.9
+      ],
+      "fuzzy": [
+        83.9,
+        72.7
+      ],
+      "semantic": [
+        83.0,
+        72.6
+      ],
+      "hybrid": [
+        81.6,
+        68.9
+      ],
+      "tiered": [
+        83.0,
+        72.6
+      ],
+      "leverage_fuzzy": [
+        69.7,
+        53.0
+      ],
+      "leverage_semantic": [
+        70.0,
+        55.9
+      ],
+      "n": 40,
+      "mean_overlap": 1.32
+    },
+    "50-74": {
+      "zero_shot": [
+        76.2,
+        59.0
+      ],
+      "fuzzy_cat75": [
+        76.2,
+        59.0
+      ],
+      "fuzzy": [
+        78.7,
+        65.6
+      ],
+      "semantic": [
+        79.8,
+        66.1
+      ],
+      "hybrid": [
+        79.1,
+        66.7
+      ],
+      "tiered": [
+        79.8,
+        66.1
+      ],
+      "leverage_fuzzy": [
+        52.5,
+        34.9
+      ],
+      "leverage_semantic": [
+        49.0,
+        26.2
+      ],
+      "n": 40,
+      "mean_overlap": 0.72
+    },
+    "<50": {
+      "zero_shot": [
+        68.7,
+        49.7
+      ],
+      "fuzzy_cat75": [
+        68.7,
+        49.7
+      ],
+      "fuzzy": [
+        66.7,
+        47.9
+      ],
+      "semantic": [
+        67.3,
+        46.6
+      ],
+      "hybrid": [
+        71.2,
+        52.5
+      ],
+      "tiered": [
+        67.3,
+        46.6
+      ],
+      "leverage_fuzzy": [
+        26.5,
+        6.8
+      ],
+      "leverage_semantic": [
+        30.3,
+        6.0
+      ],
+      "n": 40,
+      "mean_overlap": 0.38
+    },
+    "ALL": {
+      "zero_shot": [
+        71.7,
+        52.5
+      ],
+      "fuzzy_cat75": [
+        83.2,
+        72.4
+      ],
+      "fuzzy": [
+        83.1,
+        72.9
+      ],
+      "semantic": [
+        83.0,
+        72.2
+      ],
+      "hybrid": [
+        83.6,
+        73.5
+      ],
+      "tiered": [
+        83.6,
+        73.4
+      ],
+      "leverage_fuzzy": [
+        67.2,
+        55.9
+      ],
+      "leverage_semantic": [
+        67.3,
+        53.5
+      ],
+      "n": 200,
+      "mean_overlap": 1.11
+    }
+  },
+  "paired": {
+    "semantic_vs_fuzzy_topk": {
+      "semantic>fuzzy": 44,
+      "fuzzy>semantic": 48,
+      "tie": 108,
+      "sign_test_p": 0.7547
+    },
+    "semantic_vs_fuzzy_cat75": {
+      "semantic>fuzzy_cat75": 49,
+      "fuzzy_cat75>semantic": 53,
+      "tie": 98,
+      "sign_test_p": 0.7666
+    },
+    "semantic_vs_zero_shot": {
+      "semantic>zero_shot": 122,
+      "zero_shot>semantic": 44,
+      "tie": 34,
+      "sign_test_p": 0.0
+    },
+    "tiered_vs_fuzzy_cat75": {
+      "tiered>fuzzy_cat75": 40,
+      "fuzzy_cat75>tiered": 37,
+      "tie": 123,
+      "sign_test_p": 0.8199
+    }
+  }
+}

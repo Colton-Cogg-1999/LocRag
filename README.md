@@ -1,264 +1,119 @@
-# Fuzzy Matching vs. Semantic Search in Localization Workflows
+# LocRAG
 
-*An exploratory, comparative study of translation-memory retrieval for LLM-based machine translation
-(EMEA corpus, English → Spanish).*
+**When should a translator reuse a translation memory—and when should the system decline?**
 
-## Summary
+LocRAG compares fuzzy matching, semantic retrieval, and selective routing for translation-memory-assisted machine translation. It includes a no-key evidence workbench, auditable experiment outputs, and a matched Spanish / German / Simplified Chinese evaluation protocol.
 
-Translation-memory (TM) lookup in CAT tools relies on fuzzy matching, an edit-distance score between the
-new sentence and stored sentences. Below a match threshold, usually 75%, the tool shows the translator
-nothing. This project tests what that threshold leaves out. It compares fuzzy matching with
-embedding-based semantic search, first as retrievers and then as sources of in-context examples for an LLM
-translator.
+![LocRAG workbench](docs/workbench.png)
 
-**Main finding: the 75% threshold throws away reusable translations, and semantic search recovers them.**
+**[Audited findings](results/audit/report.md)** · **[Architecture](docs/architecture.md)** · **[Reproduction](docs/reproduction.md)** · **[Multilingual protocol](docs/multilingual.md)**
 
-1. **Fuzzy matching cannot see reworded content.** When a TM sentence was paraphrased or restructured, the
-   correct entry *never* reached the 75% threshold (0% of probes). Embedding search ranked it first 95–100% of
-   the time, and all three embedding models gave nearly identical results.
-2. **About a quarter of "no match" segments have a usable earlier translation.** Of 300 real segments where a
-   CAT tool would show nothing, semantic search found a match for 85 (28%).
-3. **Using those matches makes translations more consistent with approved work, with no loss of accuracy.**
-   A blind judge preferred translations that used them 50 : 13 (p ≈ 3×10⁻⁶). Agreement with previously
-   approved translations roughly doubled (36 → 77 of 85), and accuracy was essentially unchanged (84 → 82).
-4. **The 50–74% band ("near misses") benefits most.** These segments are discarded by CAT tools today, and the
-   judge preferred the semantic version there 38 : 7 (p ≈ 3×10⁻⁶).
-5. **Each method has its own range.** Above about 85% fuzzy, fuzzy matching is as good or better. Below the
-   threshold, semantic search adds value. A tiered setup (fuzzy above 85%, semantic below) scored best overall.
-6. **Misleading examples did not mislead the translator.** Given TM examples with the opposite meaning (negated
-   sentences), the model still translated the polarity correctly in 40/40 cases.
+## Latest completed evaluation
 
-The benefit is specifically *consistency with approved translations*, such as product names, house phrasing
-and formatting. A judge that ignored the TM saw no difference, and the chrF++ gain against the human
-reference (71.5 → 74.5) was not significant (p ≈ 0.06). All results come from one language pair, one domain
-and LLM judges (see [Limitations](#limitations)).
+**[Plain-language results and full evidence](results/runs/2026-11-16/README.md)** — all three language runs and the original Spanish experiments completed.
 
-## Research questions
+Adding semantic fallback to ordinary fuzzy matching, on 300 software-localization sentences per target language:
 
-* **RQ1 (retrieval).** How often does fuzzy matching find a TM entry that means the same thing as the new
-  sentence but is worded differently, and how does embedding search compare?
-* **RQ2 (translation, all bands).** When retrieved TM entries are given to an LLM as examples, how does
-  translation quality depend on the retriever and on the fuzzy-match band of the segment?
-* **RQ3 (translation, below threshold).** For real segments where a CAT tool shows no match, does adding
-  semantically retrieved examples improve on the current baseline, which is zero-shot translation?
-* **RQ4 (risk).** Do near-identical TM entries with the opposite meaning (for example, a negated sentence)
-  mislead the retriever or the translator?
+| Target | Better | Worse | Tie |
+|---|---:|---:|---:|
+| Spanish | 14 | 8 | 278 |
+| German | 20 | 3 | 277 |
+| Simplified Chinese | 8 | 6 | 286 |
 
-## Data and setup
+German shows the clearest benefit in this sample; Spanish and Chinese are mixed. The new search was used on 43/300 inputs, so most cases were unchanged. Meaning errors were both introduced and fixed; general accuracy improvement is unproven. These are automated judgments, not human review. The corrected medical-text router received 50 wins, 9 losses and 241 ties on 300 cases.
 
-| | |
-|---|---|
-| Corpus | OPUS **EMEA** (European Medicines Agency documents), en→es |
-| Translation memory | 20,000 aligned units; held-out test segments drawn from the rest of the corpus, stratified by best fuzzy score |
-| Fuzzy matcher | CAT-style word-level Levenshtein similarity (0–100) |
-| Embeddings | **BGE-M3** (primary); text-embedding-3-large and Qwen3-embedding-8B for comparison |
-| Hybrid | reciprocal-rank fusion of fuzzy and BGE-M3 rankings |
-| Translator | **GPT-5.4 mini**, k ≤ 3 TM examples in the prompt |
-| Judge | **Claude Sonnet 5.5**, blind A/B with randomized order |
-| Metrics | Recall@k; chrF++ (and BLEU) against the human reference; judge preferences; paired exact sign tests |
+The demo below presents the original archived study; the linked report contains the completed new evaluation.
 
-All model calls went through OpenRouter and are cached on disk, so every number below can be reproduced from
-the cache.
+Owner-only [hosted preview](https://locrag-translation-workbench.warm-pika-3490.chatgpt.site). Public portfolio sharing is not enabled; anyone cloning the repo can use the local no-key demo below.
 
-## Experiment 1: Retrieval probes (RQ1, RQ4)
+## Try the workbench
 
-**Method.** 40 TM units were each rewritten by hand in four ways: a small **edit**, a **paraphrase**, a
-**restructure** (clauses reordered), and a **negation** (same words, opposite meaning). Each variant was used
-as a query against the full 20k-unit TM. R@1 counts a hit if the original unit, or a ≥ 90% duplicate of it, is
-ranked first. *Meaning AUC* is the probability that the retriever scores a same-meaning variant above the
-negated one: 0.5 means it cannot tell them apart, and values below 0.5 mean it prefers the wrong meaning.
+```bash
+uv sync --locked
+uv run python -m locrag.demo
+python -m http.server 8000 --bind 127.0.0.1 --directory demo/dist
+```
 
-| retriever | edit R@1 | paraphrase R@1 | paraphrase R@5 | restructure R@1 | restructure R@5 | meaning AUC |
-|---|---|---|---|---|---|---|
-| fuzzy (word-level Levenshtein) | **1.00** | 0.25 | 0.38 | 0.53 | 0.62 | 0.01 |
-| semantic: BGE-M3 | 0.97 | **0.97** | 1.00 | **1.00** | 1.00 | 0.63 |
-| semantic: text-embedding-3-large | 0.97 | 0.95 | 1.00 | 1.00 | 1.00 | 0.49 |
-| semantic: Qwen3-embedding-8B | 0.97 | 0.95 | 1.00 | 1.00 | 1.00 | 0.59 |
-| hybrid (RRF, BGE-M3) | 1.00 | 0.45 | 0.90 | 0.68 | 0.97 | 0.01 |
+Open **http://127.0.0.1:8000**. No API key, embedding model, or corpus download is needed. Inspect 420 recorded examples, output differences, judge notes, and failure cases. Selective replay is explicitly labeled; it reuses saved outputs and performs no fresh inference.
 
-Share of probes whose correct unit scored ≥ 75% fuzzy, i.e. would be displayed by a CAT tool:
+## What the evidence supports
 
-| edit | paraphrase | restructure | negation |
-|---|---|---|---|
-| 100% | **0%** | **0%** | 82% |
+The original study uses a 20,000-entry English→Spanish EMEA memory. The fuzzy matcher is a word-level Levenshtein approximation with a configured 75% threshold, not a reproduction of a particular commercial CAT tool.
 
-**Observations**
-* Fuzzy matching works well on small edits and poorly on everything else. The three embedding models perform
-  almost the same, so the result does not depend on the choice of embedding model.
-* The 75% threshold hides every paraphrase and restructure, even when the TM holds a translation of the same
-  sentence.
-* Fuzzy matching scores the *negated* sentence higher than a correct paraphrase (AUC 0.01). Embeddings are close
-  to chance (0.49–0.63). Neither score can serve as a check that the meaning is the same.
-
-Raw rows: `results/benchmarks/probes_rows.json`, summary: `results/benchmarks/probes_summary.md`.
-
-## Experiment 2: Retrieval-augmented MT across fuzzy bands (RQ2)
-
-**Method.** 200 held-out segments, 40 in each band of best fuzzy score. Each segment was translated with no
-examples (zero-shot) and with top-3 examples from each retriever. The *CAT* condition passes only fuzzy matches
-≥ 75%, as a CAT tool would. *Tiered* uses fuzzy matches when the best one is ≥ 85% and semantic matches
-otherwise. Scores are chrF++ against the human reference.
-
-| fuzzy band | zero-shot | CAT fuzzy ≥ 75% | fuzzy top-3 | semantic top-3 | hybrid | tiered |
-|---|---|---|---|---|---|---|
-| 95–99 | 71.2 | **92.9** | 92.2 | 92.1 | 91.8 | **92.9** |
-| 85–94 | 74.3 | **89.2** | 87.3 | 87.2 | 88.2 | **89.2** |
-| 75–84 | 71.2 | 82.2 | **82.9** | 82.6 | 82.3 | 82.6 |
-| 50–74 | 75.6 | 75.6 *(nothing shown)* | 79.7 | **81.3** | 78.3 | **81.3** |
-| < 50 | 67.1 | 67.1 *(nothing shown)* | 67.0 | 68.3 | **69.6** | 68.3 |
-| **all** | 71.7 | 82.8 | 83.0 | 83.5 | 83.2 | **84.1** |
-
-Paired sentence-level comparisons (chrF++ margin 0.5, exact sign test):
-
-| comparison | wins / losses / ties | p |
+| Question | Observed result | Interpretation |
 |---|---|---|
-| semantic vs zero-shot | 129 / 38 / 33 | < 0.001 |
-| semantic vs CAT fuzzy ≥ 75% | 55 / 44 / 101 | 0.31 |
-| semantic vs fuzzy top-3 | 50 / 42 / 108 | 0.47 |
-| tiered vs CAT fuzzy ≥ 75% | 47 / 29 / 124 | 0.05 |
+| Can semantic search find reworded entries? | BGE-M3 ranked the original or an accepted near-duplicate first on 39/40 paraphrases and 40/40 restructures. | Strong retrieval on a small, hand-written probe set. |
+| How many below-threshold segments have useful candidates? | 85/300 passed the semantic floor; 65 of those were judged reusable. | 28% coverage; about 22% of all segments had a passing candidate judged useful. |
+| Does context improve terminology/phrasing consistency? | Localization rubric: 50 wins / 22 ties / 13 losses among the 85 passing segments. | A workflow-specific benefit in a selected subset. |
+| Is translation accuracy improved or equivalent? | Rated accurate: 84/85 zero-shot versus 82/85 with retrieval. | Neither improvement nor equivalence is established. |
+| Does it generalize to German and Chinese? | The new matched KDE4 evaluation is complete; see the table above. | German shows clearer added benefit; Chinese is mixed. |
 
-**Observations**
-* Adding any TM examples is the largest effect (about +11 chrF++).
-* The retrievers differ only below the threshold. In the 50–74% band, semantic examples score +5.7 over
-  zero-shot, against +4.1 for fuzzy top-3. Below 50%, every condition stays within 2.5 points of zero-shot.
-* The tiered rule scored highest overall, but the 85% cut-off was chosen *after* seeing the per-band results,
-  so the comparison is exploratory and needs a fresh split to confirm.
+**Evaluation correction:** the original 300-segment experiment supplied a semantic example even when its route label was `none`. Its full-set results describe that exploratory treatment, not the selective router. Original raw outputs remain unchanged. New evaluations use `TMRouter.route()` directly and no-route decisions supply no examples. See the [generated audit](results/audit/report.md).
 
-Full table with BLEU and the "use the TM target unchanged" baselines: `results/benchmarks/rag_mt_summary.md`.
+The generic and localization rubrics used the same judge model. They are not independent human judgments. No human-reviewed polarity benchmark supports a general safety claim.
 
-## Experiment 3: Real segments below the fuzzy threshold (RQ3, RQ4)
+## How it works
 
-**Method.** This experiment covers only the case where a CAT tool currently gives the translator nothing:
-300 real held-out segments whose best fuzzy match is < 75%. The baseline is zero-shot translation. The
-treatment retrieves semantically and adds the matches as examples when the top cosine similarity is ≥ 0.80
-(code: `TMRouter` in `locrag/pipeline.py`). Two blind A/B judges compared the outputs:
+```mermaid
+flowchart LR
+    A[English segment] --> B[Fuzzy lookup]
+    B -->|At least 75%| C[Fuzzy examples]
+    B -->|Below 75%| D[Semantic lookup]
+    D -->|Cosine at least 0.80| E[Semantic examples]
+    D -->|Below floor| F[No examples]
+    C --> G[Translate source meaning]
+    E --> G
+    F --> G
+```
 
-* a **localization rubric**: the judge sees the approved TM entry and judges accuracy first, then reuse of
-  approved terminology and phrasing;
-* a **generic rubric**: the judge does not see the TM entry and judges accuracy, then fluency.
+Thresholds are configurable and exploratory. Similarity is not a correctness probability. The router explains each decision, handles small and empty memories, and loads embeddings only when needed.
 
-Two constructed sets were added: 80 reworded TM entries (fuzzy score 0% to their source) and 40 *negated*
-TM entries forced through retrieval as a stress test.
+## Check the evidence
 
-| set | n | top match reusable (judge) | loc. judge: RAG / tie / zero-shot | accurate: zero-shot → RAG | consistent with approved TM | generic judge: RAG / tie / zero-shot | chrF++ vs human ref |
-|---|---|---|---|---|---|---|---|
-| real, < 75%, semantic match ≥ 0.80 | 85 | 3 full + 62 partial | **50 / 22 / 13** | 84 → 82 | **36 → 77** | 30 / 30 / 25 | 71.5 → 74.5 |
-| real, < 75%, all | 300 | 3 full + 151 partial | 147 / 117 / 36 | 286 → 290 | 157 → 271 | 90 / 113 / 97 | 71.9 → 73.2 |
-| reworded TM entries | 80 | 53 full + 25 partial | 60 / 7 / 13 | 79 → 73 | 14 → 73 | 12 / 12 / 56 | n/a |
-| negated TM entries (stress test) | 40 | 39 partial | 34 / 2 / 4 | 40 → 38 | 4 → 38 | 8 / 4 / 28 | n/a |
+```bash
+uv run pytest -q
+uv run python -m locrag.evidence
+```
 
-Breakdown of the 300 real segments:
+These commands run offline after dependency installation. Reports are rebuilt from committed outputs with source SHA-256 hashes, metric signatures, and explicitly labeled uncertainty. CI also builds the static workbench.
 
-| by best fuzzy score | n | sent to semantic | loc. judge: RAG / tie / zero-shot |
-|---|---|---|---|
-| 50–74% | 59 | 37 | **38 / 14 / 7** (p ≈ 3×10⁻⁶) |
-| 30–49% | 127 | 36 | 52 / 59 / 16 |
-| 0–29% | 114 | 12 | 57 / 44 / 13 |
+## Spanish, German, and Simplified Chinese
 
-| by top-1 semantic similarity | n | judged reusable | loc. judge: RAG / tie / zero-shot | chrF++ zero-shot → RAG |
-|---|---|---|---|---|
-| 0.90–1.00 | 17 | 17 | 13 / 3 / 1 | 68.8 → 75.1 |
-| 0.85–0.90 | 17 | 12 | 12 / 3 / 2 | 70.5 → 71.5 |
-| 0.80–0.85 | 51 | 36 | 25 / 16 / 10 | 72.5 → 75.2 |
-| 0.75–0.80 | 70 | 45 | 38 / 22 / 10 | 69.9 → 71.5 |
-| < 0.75 | 145 | 44 | 59 / 73 / 13 | 73.0 → 73.5 |
+The next study uses **the same English source segments** from OPUS KDE4 software localization for all three targets: 42,461 shared eligible sources; 5,000 memory entries, 150 development segments, and 300 test segments per language. Normalized-source groups keep numeric/placeholder variants in one split.
 
-**Observations**
-* Semantic search found a usable candidate for about a quarter of the segments that CAT tools would show
-  nothing for. The 50–74% band ("near misses") benefits most.
-* The two judges disagree in a consistent way. The localization judge, which values reuse of approved wording,
-  prefers RAG. The generic judge sees no difference on real segments and prefers zero-shot on reworded ones,
-  where approved phrasing sometimes fits the new wording awkwardly (12/80 rated less accurate by at least one
-  judge, against 1/80 for zero-shot). Whether RAG "helps" therefore depends on what the workflow values.
-* The 0.80 similarity cut-off is conservative. Segments at 0.75–0.80 still showed a judge preference (38 : 10).
-* **Polarity risk.** With an opposite-meaning TM example in the prompt, the translator kept the correct polarity
-  in 40/40 cases. In 1–2 cases it copied unrelated wording from the example. Experiment 1 shows that the
-  retriever offers no protection here, so the translation model is the only safeguard.
+```bash
+bash scripts/download_kde4.sh
+uv run python -m locrag.multilingual prepare
+uv run python -m locrag.multilingual plan
+```
 
-Example (real segment, from `results/router/examples.md`):
+Four conditions compare zero-shot, thresholded fuzzy, always-semantic, and selective routing. Character-only chrF is the primary multilingual metric; meaning errors and terminology judgments remain separate. The [data audit](results/multilingual/data_audit.json) records hashes, counts, fuzzy bands and measured prefilter behavior. The completed [raw outputs and metrics](results/multilingual/validation-v1/) are available. Read the [protocol](docs/multilingual.md) before repeating inference.
 
-| | |
+## Translate a new segment
+
+Configure a provider in `.env` using `.env.example`, then supply a JSONL memory with `src` and `tgt` fields:
+
+```bash
+uv run python -m locrag.pipeline "Open the settings window." \
+  --tm data/multilingual/de/tm.jsonl --target de \
+  --domain "software interface localization" --json
+```
+
+Targets: `es`, `de`, `zh_CN`. JSON responses include route, examples, reason, translation and durations. Credentials stay on the machine running the CLI. For local embeddings install `uv sync --extra local`; weights download separately on first use. The static demo never calls a provider.
+
+## Repository map
+
+| Path | Purpose |
 |---|---|
-| new segment | Irbesartan Hydrochlorothiazide Winthrop 300 mg/ 12.5 mg tablets. |
-| best fuzzy match | 67%: *CoAprovel 150 mg/ 12.5 mg tablets.* (below threshold, not shown) |
-| semantic match (0.92) | *Irbesartan Hydrochlorothiazide Winthrop 300 mg/ 25 mg film-coated tablets.* → *Irbesartan Hydrochlorothiazide Winthrop, 300 mg/ 25 mg, comprimidos recubiertos con película.* |
-| zero-shot | Irbesartán hidroclorotiazida Winthrop 300 mg/12,5 mg comprimidos. |
-| with semantic examples | Irbesartan Hydrochlorothiazide Winthrop, 300 mg/ 12,5 mg, comprimidos. *(identical to the human reference)* |
+| `locrag/pipeline.py`, `retrievers.py` | Shared routing, translation, retrieval |
+| `locrag/evidence.py` | Offline evidence reconstruction |
+| `locrag/multilingual.py` | Matched splits, fuzzy audit, explicit model runs |
+| `experiments/multilingual.json` | Frozen study configuration |
+| `demo/src/`, `locrag/demo.py` | Browser workbench and artifact builder |
+| `tests/`, `.github/workflows/` | Regression checks and CI |
+| `results/benchmarks/`, `results/router/` | Original exploratory results |
+| `results/audit/`, `results/multilingual/` | Corrected summaries and new data audit |
 
-Per-segment outputs and verdicts: `results/router/rows.jsonl`, report: `results/router/report.md`.
+## Data and license
 
-## Discussion
-
-The results fit a simple division of labour. Fuzzy matching is precise when it fires, and above about 85% it is
-as good as or better than embeddings for selecting examples. However, it is blind to rewording, and the 75%
-threshold turns that blindness into an outright absence: the translator, or the LLM, receives nothing.
-Semantic search fills part of that gap. Most of the measurable benefit is *consistency with previously
-approved translations*, such as product names, house phrasing and formatting conventions, rather than better
-translation in a general sense. That matters in regulated, terminology-heavy content like EMEA, where
-approved wording carries weight. It may matter less in domains where fluency is the priority.
-
-The negation results set the main limit. Neither edit distance nor cosine similarity measures whether two
-sentences mean the same thing, so retrieval cannot double as verification. In this setup the LLM translator
-handled misleading examples well, but that is a property of this model and should not be assumed for others.
-
-## Limitations
-
-* **One language pair and one domain** (en→es, EU pharmaceutical texts). EMEA is repetitive and
-  formulaic, which probably favours TM reuse of any kind.
-* **LLM judges.** Preferences come from one judge model with fixed rubrics. Human evaluation was not
-  performed.
-* **Single reference.** chrF++ uses one human reference, and the RQ3 chrF++ gain is not significant.
-* **Hand-written probes** (n = 160) are small and written by one person.
-* **Post-hoc thresholds.** The 85% tiered cut-off and the 0.80 similarity floor were not pre-registered. The
-  similarity breakdown suggests 0.80 is not optimal.
-* **One translation model** (GPT-5.4 mini). Robustness to misleading examples may differ in other models.
-
-## Reproducing
-
-```bash
-uv sync
-cp .env.example .env                    # OpenRouter key, or any OpenAI-compatible endpoint
-uv run python -m common.check           # one small call per configured model
-
-./scripts/download_emea.sh              # OPUS EMEA en-es → data/raw/EMEA
-uv run python -m locrag.prepare_data    # 20k-unit TM + stratified held-out test set → data/tm/EMEA/
-
-uv run python -m locrag.exp_retrieval   # Experiment 1 → results/benchmarks/probes_*
-uv run python -m locrag.exp_rag_mt      # Experiment 2 → results/benchmarks/rag_mt_*
-uv run python -m locrag.exp_router      # Experiment 3 → results/router/
-```
-
-To trace one segment through the setup (best fuzzy match, route, examples used, translation, and the zero-shot
-translation for comparison):
-
-```bash
-uv run python -m locrag.pipeline "Irbesartan Hydrochlorothiazide Winthrop 300 mg/ 12.5 mg tablets."
-```
-
-Configuration (`.env`): `L10N_MT_MODEL` (translator), `L10N_JUDGE_MODEL`, `L10N_RETRIEVAL_MODEL`
-(`openrouter:` prefix = hosted, otherwise local sentence-transformers), `L10N_FUZZY_THRESHOLD` (75),
-`L10N_SEMANTIC_MIN_SIM` (80). LLM calls are cached in `.cache/`.
-
-## Repository layout
-
-```
-locrag/
-  retrievers.py     fuzzy (word-level Levenshtein), semantic (embeddings), hybrid (RRF)
-  pipeline.py       fuzzy → semantic → LLM routing used in Experiment 3; single-segment CLI
-  prepare_data.py   TM + stratified test set from OPUS EMEA
-  exp_retrieval.py  Experiment 1          probes_emea.yaml  40 TM units × 4 hand-written variants
-  exp_rag_mt.py     Experiment 2
-  exp_router.py     Experiment 3
-common/             OpenAI-compatible client with disk cache, embeddings, .env loader
-results/            all raw outputs and summaries referenced above
-```
-
-## Data
-
-EMEA parallel corpus from OPUS: J. Tiedemann, *Parallel Data, Tools and Interfaces in OPUS*, LREC 2012.
-The download script fetches the corpus, which is not redistributed here. Result files include short excerpts
-for illustration.
-
-## License
-
-MIT
+Code: MIT. Data: [OPUS EMEA](https://opus.nlpl.eu/legacy/EMEA.php) and [OPUS KDE4](https://opus.nlpl.eu/legacy/KDE4.php), credited to their contributors. Corpora are not covered by the code license. Downloads/prepared splits are ignored; results and the demo contain excerpts for analysis. Citation: Jörg Tiedemann, *Parallel Data, Tools and Interfaces in OPUS*, LREC 2012.

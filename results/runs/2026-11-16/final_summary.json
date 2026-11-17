@@ -1,0 +1,100 @@
+{
+  "status": "completed automated evaluation",
+  "incremental_semantic_fallback": {
+    "es": {
+      "n": 300,
+      "preferences": {
+        "tie": 278,
+        "better": 14,
+        "worse": 8
+      },
+      "accuracy_changes": {
+        "introduced": 3,
+        "fixed": 1
+      },
+      "routes": {
+        "none": 235,
+        "semantic": 43,
+        "fuzzy": 22
+      },
+      "sign_test_p": 0.28627872467041016,
+      "paired_sentence_chrf_delta": {
+        "mean": 0.2247,
+        "ci95": [
+          -0.2194,
+          0.6951
+        ],
+        "n": 300
+      }
+    },
+    "de": {
+      "n": 300,
+      "preferences": {
+        "tie": 277,
+        "better": 20,
+        "worse": 3
+      },
+      "accuracy_changes": {
+        "introduced": 1,
+        "fixed": 2
+      },
+      "routes": {
+        "none": 235,
+        "semantic": 43,
+        "fuzzy": 22
+      },
+      "sign_test_p": 0.00048828125,
+      "paired_sentence_chrf_delta": {
+        "mean": 0.8121,
+        "ci95": [
+          0.301,
+          1.4256
+        ],
+        "n": 300
+      }
+    },
+    "zh_CN": {
+      "n": 300,
+      "preferences": {
+        "tie": 286,
+        "worse": 6,
+        "better": 8
+      },
+      "accuracy_changes": {
+        "introduced": 2,
+        "fixed": 5
+      },
+      "routes": {
+        "none": 235,
+        "semantic": 43,
+        "fuzzy": 22
+      },
+      "sign_test_p": 0.79052734375,
+      "paired_sentence_chrf_delta": {
+        "mean": 0.2051,
+        "ci95": [
+          -0.6243,
+          1.0431
+        ],
+        "n": 300
+      }
+    }
+  },
+  "medical_real_preferences": {
+    "tie": 241,
+    "rag": 50,
+    "zero_shot": 9
+  },
+  "medical_accuracy_changes": {
+    "introduced": 2,
+    "fixed": 1
+  },
+  "source_sha256": {
+    "results/multilingual/validation-v1/rows.jsonl": "2cff4106ef6b44d478152d1a17eb1b441f72e240ead1b7d24c84eaf59b523129",
+    "results/multilingual/validation-v1/manifest.json": "75a383eb813571d6c3e373e4d57da7f8f2d4031ef6980bb86064d8232c57921e",
+    "results/runs/2026-11-16/emea-router/rows.jsonl": "e5d08033a4db7448380b3f9a3489d98d53771d8b15d3acd2b1c2b0993386906c",
+    "results/runs/2026-11-16/emea-mt-deduplicated/rag_mt_outputs.jsonl": "185a3a0e6fc4f90e85a11456f96bc9a8e724147a76ddbbfe2a98852dcff24dee",
+    "results/runs/2026-11-16/emea-retrieval/probes_rows.json": "257fc45ce6bdc38ec596e1e867378890a80757a53bb786eb9c6719cca5d64f49"
+  },
+  "validation": "3600 multilingual condition rows, 200 medical comparison inputs, 420 router inputs; no grading errors; no-context invariants pass"
+}

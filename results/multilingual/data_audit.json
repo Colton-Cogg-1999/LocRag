@@ -1,0 +1,244 @@
+{
+  "status": "data preparation and fuzzy audit complete; no model inference performed",
+  "config": {
+    "name": "kde4-matched-en-es-de-zh-cn-v1",
+    "corpus": "KDE4",
+    "version": "v2",
+    "domain": "software interface localization",
+    "languages": [
+      "es",
+      "de",
+      "zh_CN"
+    ],
+    "seed": 20261116,
+    "tm_size": 5000,
+    "development_size": 150,
+    "test_size": 300,
+    "min_source_words": 4,
+    "max_source_words": 60,
+    "fuzzy_threshold": 75,
+    "semantic_min_sim": 80,
+    "k": 3,
+    "policies": [
+      "zero-shot",
+      "fuzzy-only",
+      "always-semantic",
+      "router"
+    ],
+    "primary_metric": "chrF (character-only, word_order=0)",
+    "status": "frozen protocol; translation results pending model access"
+  },
+  "eligible_pairs": {
+    "es": 83510,
+    "de": 83426,
+    "zh_CN": 44109
+  },
+  "shared_english_sources": 42461,
+  "split_sizes": {
+    "tm": 5000,
+    "development": 150,
+    "test": 300
+  },
+  "split_method": "shared normalized English source groups; numbers/placeholders collapsed within groups",
+  "document_split": false,
+  "limitation": "Moses files do not retain document IDs; semantic near-duplicates may remain.",
+  "source_urls": {
+    "es": "https://object.pouta.csc.fi/OPUS-KDE4/v2/moses/en-es.txt.zip",
+    "de": "https://object.pouta.csc.fi/OPUS-KDE4/v2/moses/de-en.txt.zip",
+    "zh_CN": "https://object.pouta.csc.fi/OPUS-KDE4/v2/moses/en-zh_CN.txt.zip"
+  },
+  "archive_sha256": {
+    "es": "010f5538095fe328ca6adb9423905d153ab5d671f1933f82b8c3518a60938a81",
+    "de": "b84a04507395bdb4d0fa8d501e8bd0f9bc1aeaa507f15ce28eaaf777b668ee12",
+    "zh_CN": "94f50453f7bd2dc09627675e6bffb688a3c7398bd8c5e7d2f590c7aa7d4a0626"
+  },
+  "file_sha256": {
+    "es/tm.jsonl": "416efa6ce010c4b1875da6fdc0d9afcd7db91c965981b9106260ca2b62d2f20e",
+    "es/development.jsonl": "014050bfedce02be1a6309b3ab6debf77f28c2633c64d87f64f6e06f42f148b5",
+    "es/test.jsonl": "1553b8a08911ac3e94609570c9bfd0f7b383b7f00b4d728223bd609211b70c11",
+    "de/tm.jsonl": "721d24e3fd7158ac7b18c8393accb1d3ee7ea5759e32fa8527142a71b24b6719",
+    "de/development.jsonl": "50704257752960623ee130351c6d474afaa0847f12cefeed634ef11141a1e528",
+    "de/test.jsonl": "13e413989b214e60f2b891ad2fd99584a2a71d96caef17324d43f75cbdda1ee5",
+    "zh_CN/tm.jsonl": "dde0d1c372ab1da944dc7311c7e258099ece6fb3596fe0ef59ce27d26381d71b",
+    "zh_CN/development.jsonl": "fe2e7f3f08bc1bb82e2cd85b82224f3a79ee7f1e5bbab86ee854aa5240238403",
+    "zh_CN/test.jsonl": "abd5a976b36c55e3ccc7b52d36c37e2245f0d53addeb9472cb0e54c0df691fc5"
+  },
+  "test_fuzzy_bands": {
+    "<50": 207,
+    "50-74": 71,
+    "75-84": 16,
+    "85-94": 6
+  },
+  "fuzzy_prefilter_audit": {
+    "n": 300,
+    "missed_best": 26,
+    "threshold_crossings": 0,
+    "rows": [
+      {
+        "id": "eab507b8180c3fc0",
+        "prefilter_best": 18.181818181818176,
+        "exhaustive_best": 27.27272727272727,
+        "threshold_crossing": false
+      },
+      {
+        "id": "927331fe4b04f3ec",
+        "prefilter_best": 19.999999999999996,
+        "exhaustive_best": 26.66666666666667,
+        "threshold_crossing": false
+      },
+      {
+        "id": "130f1add5207f69c",
+        "prefilter_best": 25.0,
+        "exhaustive_best": 26.66666666666667,
+        "threshold_crossing": false
+      },
+      {
+        "id": "85112f2a831e66c2",
+        "prefilter_best": 15.384615384615385,
+        "exhaustive_best": 16.92307692307692,
+        "threshold_crossing": false
+      },
+      {
+        "id": "65b2fe90d9478307",
+        "prefilter_best": 15.625,
+        "exhaustive_best": 18.75,
+        "threshold_crossing": false
+      },
+      {
+        "id": "e2503e55fa2403ee",
+        "prefilter_best": 38.888888888888886,
+        "exhaustive_best": 50.0,
+        "threshold_crossing": false
+      },
+      {
+        "id": "b0d20d8b7a48b7de",
+        "prefilter_best": 19.999999999999996,
+        "exhaustive_best": 30.000000000000004,
+        "threshold_crossing": false
+      },
+      {
+        "id": "e66081a4dd14eb7a",
+        "prefilter_best": 19.999999999999996,
+        "exhaustive_best": 25.0,
+        "threshold_crossing": false
+      },
+      {
+        "id": "fbeec2f2329faf7c",
+        "prefilter_best": 16.666666666666664,
+        "exhaustive_best": 22.22222222222222,
+        "threshold_crossing": false
+      },
+      {
+        "id": "c5117d9382c405c0",
+        "prefilter_best": 32.14285714285714,
+        "exhaustive_best": 33.333333333333336,
+        "threshold_crossing": false
+      },
+      {
+        "id": "cce1da3a9bd666a0",
+        "prefilter_best": 21.212121212121215,
+        "exhaustive_best": 23.076923076923073,
+        "threshold_crossing": false
+      },
+      {
+        "id": "bc6f7a107f83467f",
+        "prefilter_best": 26.66666666666667,
+        "exhaustive_best": 27.27272727272727,
+        "threshold_crossing": false
+      },
+      {
+        "id": "a87c0b5af2b49b7f",
+        "prefilter_best": 22.22222222222222,
+        "exhaustive_best": 27.27272727272727,
+        "threshold_crossing": false
+      },
+      {
+        "id": "1dd570290e85e98c",
+        "prefilter_best": 19.999999999999996,
+        "exhaustive_best": 21.42857142857143,
+        "threshold_crossing": false
+      },
+      {
+        "id": "bc20e35acddc50b7",
+        "prefilter_best": 18.181818181818176,
+        "exhaustive_best": 22.22222222222222,
+        "threshold_crossing": false
+      },
+      {
+        "id": "f961f44e3c907c15",
+        "prefilter_best": 19.999999999999996,
+        "exhaustive_best": 25.0,
+        "threshold_crossing": false
+      },
+      {
+        "id": "1af3c73e8974ed1d",
+        "prefilter_best": 19.999999999999996,
+        "exhaustive_best": 25.0,
+        "threshold_crossing": false
+      },
+      {
+        "id": "5d769e1d9fc82c73",
+        "prefilter_best": 23.529411764705888,
+        "exhaustive_best": 29.411764705882348,
+        "threshold_crossing": false
+      },
+      {
+        "id": "04cb079b065437c5",
+        "prefilter_best": 16.666666666666664,
+        "exhaustive_best": 33.333333333333336,
+        "threshold_crossing": false
+      },
+      {
+        "id": "5e9fcd4d368f96ab",
+        "prefilter_best": 0.0,
+        "exhaustive_best": 19.999999999999996,
+        "threshold_crossing": false
+      },
+      {
+        "id": "d7d85bb3c43c43c9",
+        "prefilter_best": 23.076923076923073,
+        "exhaustive_best": 30.76923076923077,
+        "threshold_crossing": false
+      },
+      {
+        "id": "c233be179354d187",
+        "prefilter_best": 16.666666666666664,
+        "exhaustive_best": 18.75,
+        "threshold_crossing": false
+      },
+      {
+        "id": "8c9ee02fc2ef61a6",
+        "prefilter_best": 33.333333333333336,
+        "exhaustive_best": 40.0,
+        "threshold_crossing": false
+      },
+      {
+        "id": "0e27d6955a1145aa",
+        "prefilter_best": 21.052631578947366,
+        "exhaustive_best": 23.684210526315784,
+        "threshold_crossing": false
+      },
+      {
+        "id": "d2309f70e505e506",
+        "prefilter_best": 28.57142857142857,
+        "exhaustive_best": 33.333333333333336,
+        "threshold_crossing": false
+      },
+      {
+        "id": "3c02594c0671526a",
+        "prefilter_best": 25.0,
+        "exhaustive_best": 27.27272727272727,
+        "threshold_crossing": false
+      }
+    ]
+  },
+  "fuzzy_latency_ms": {
+    "p50": 1.5928430075291544,
+    "p95": 3.399764334608335
+  },
+  "hardware": {
+    "platform": "Linux-7.2.15-1-omarchy-x86_64-with-glibc2.44",
+    "processor": "",
+    "python": "3.14.8"
+  }
+}

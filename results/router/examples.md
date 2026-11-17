@@ -1,5 +1,7 @@
 # Side-by-side examples
 
+> Historical outputs from the original always-context experiment. Route labels do not always describe the examples actually supplied. See [the audit](../audit/report.md). References to what a CAT tool shows refer only to this project's configured fuzzy approximation.
+
 ### Real segment win 1
 
 **New segment:** Irbesartan Hydrochlorothiazide Winthrop 300 mg/ 12.5 mg tablets.

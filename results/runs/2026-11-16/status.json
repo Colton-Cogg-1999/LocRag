@@ -1,0 +1,15 @@
+{
+  "status": "completed_automated_evaluation",
+  "completed": [
+    "300 held-out software sentences in Spanish, German and Simplified Chinese under four conditions (3600 condition rows)",
+    "200 original Spanish medical inputs across five generated conditions and a derived tiered policy",
+    "300 real + 80 constructed + 40 opposite-meaning Spanish router inputs",
+    "160 controlled retrieval queries across five retrievers including all three embedding models",
+    "Full result integrity checks and plain-language report"
+  ],
+  "pending": [],
+  "translation_key_configured": true,
+  "active_runs": [],
+  "report": "results/runs/2026-11-16/README.md",
+  "human_review": "not performed"
+}

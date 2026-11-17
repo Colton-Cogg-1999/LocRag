@@ -40,9 +40,10 @@ def prompt(src: str, examples) -> str:
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--per-band", type=int, default=20)
+    ap.add_argument("--per-band", type=int, default=40)
     ap.add_argument("--k", type=int, default=3)
     ap.add_argument("--workers", type=int, default=2)
+    ap.add_argument("--output", type=Path, default=ROOT / "results" / "benchmarks")
     a = ap.parse_args()
 
     d = ROOT / "data" / "tm" / "EMEA"
@@ -55,7 +56,9 @@ def main():
     hyb = HybridRetriever(fuzzy, sem)
     qv = sem.encode_queries([t["src"] for t in test])
 
-    jobs = []
+    # Equivalent conditions must share a generated output. Otherwise concurrent
+    # cache misses can make two identical prompts look like a treatment effect.
+    jobs_by_prompt = {}
     for i, t in enumerate(test):
         f_hits = fuzzy.search(t["src"], k=20)
         s_hits = sem.search_vec(qv[i], k=20)
@@ -66,23 +69,27 @@ def main():
         t["top_fuzzy_score"] = f_hits[0].score
         t["overlap_fuzzy_semantic"] = len({h.idx for h in ret["fuzzy"]} & {h.idx for h in ret["semantic"]})
         for cond, ex in ret.items():
-            jobs.append((i, cond, prompt(t["src"], ex)))
+            p = prompt(t["src"], ex)
+            jobs_by_prompt.setdefault((i, p), []).append(cond)
+
+    jobs = [(i, conditions, p) for (i, p), conditions in jobs_by_prompt.items()]
 
     print(describe())
-    print(f"{len(test)} segments × 5 conditions = {len(jobs)} LLM calls (cached ones are free)")
+    print(f"{len(test)} segments × 5 conditions; {len(jobs)} unique prompts (cached ones are free)")
     done = [0]
 
     def run(job):
-        i, cond, p = job
+        i, conditions, p = job
         out = clean_translation(chat(p, system=SYSTEM, max_tokens=300, model=MT_MODEL))
         done[0] += 1
         if done[0] % 20 == 0:
             print(f"  {done[0]}/{len(jobs)}", flush=True)
-        return i, cond, out
+        return i, conditions, out
 
     with ThreadPoolExecutor(a.workers) as ex:
-        for i, cond, out in ex.map(run, jobs):
-            test[i].setdefault("hyp", {})[cond] = out
+        for i, conditions, out in ex.map(run, jobs):
+            for cond in conditions:
+                test[i].setdefault("hyp", {})[cond] = out
 
     # tiered policy (no extra calls): trust the CAT fuzzy match when it is strong, else semantic retrieval
     for t in test:
@@ -126,7 +133,7 @@ def main():
             "semantic_vs_zero_shot": paired("semantic", "zero_shot"),
             "tiered_vs_fuzzy_cat75": paired("tiered", "fuzzy_cat75")}
 
-    out = ROOT / "results" / "benchmarks"
+    out = a.output
     out.mkdir(parents=True, exist_ok=True)
     (out / "rag_mt_outputs.jsonl").write_text("\n".join(json.dumps(t, ensure_ascii=False) for t in test))
     (out / "rag_mt_summary.json").write_text(json.dumps({"table": table, "paired": wins}, indent=2))

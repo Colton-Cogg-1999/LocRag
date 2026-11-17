@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Inspect how translation-memory retrieval helps, where it fails, and what the evidence supports. A reproducible LocRAG research workbench.">
+  <title>LocRAG · Translation memory, examined</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="data.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to workbench</a>
+<aside class="sidebar">
+  <a class="brand" href="#workbench"><span class="brand-mark">L<span>↗</span></span>loc<span>rag</span><small>RESEARCH WORKBENCH</small></a>
+  <p class="side-label">EXPLORE THE EVIDENCE</p>
+  <nav aria-label="Main navigation">
+    <button class="nav active" data-view="workbench"><span>01</span> Translation workbench</button>
+    <button class="nav" data-view="evidence"><span>02</span> Results &amp; limitations</button>
+    <button class="nav" data-view="languages"><span>03</span> Multilingual study <i>NEW</i></button>
+  </nav>
+  <div class="sidebar-note"><span class="status-dot"></span> Recorded research, open to inspection<p>No API key needed. Every example links to its original result.</p></div>
+  <a class="repo-link" href="https://github.com/Colton-Cogg-1999/locrag" target="_blank" rel="noreferrer">Explore the repository <span>↗</span></a>
+</aside>
+<main id="main">
+  <header class="topbar"><span>APPLIED LANGUAGE TECHNOLOGY <span class="slash">/</span> LOCRAG</span><span class="recorded"><span class="status-dot"></span> Offline evidence explorer</span></header>
+  <section id="workbench" class="view">
+    <div class="intro"><div><p class="eyebrow">TRANSLATION MEMORY, EXAMINED</p><h1>The right words might<br>already be in your memory.</h1><p class="lede">Fuzzy matching sees similar wording. Semantic search can recover related meaning. Explore when that helps—and when it doesn’t.</p></div><div class="language-stamp">EN <span>→</span> ES<small>EMEA · MEDICAL TEXT</small></div></div>
+    <div class="section-heading"><h2>Start with a decision</h2><span>Five cases. Including the failures.</span></div>
+    <div id="case-list" class="case-list" aria-label="Curated examples"></div>
+    <div class="explore-bar"><label>Or inspect the full study <input id="search" type="search" placeholder="Search 420 recorded segments…"></label><label>Dataset<select id="set-filter"><option value="all">All datasets</option><option value="real">Real segments (300)</option><option value="constructed">Constructed probes (80)</option><option value="risk">Negation stress tests (40)</option></select></label><button id="browse" class="secondary">Browse records <span>↓</span></button></div>
+    <div id="browse-results" hidden></div>
+    <article class="workbench" aria-label="Translation decision">
+      <div class="workbench-header"><div><span class="eyebrow">INSPECT A SEGMENT</span><h2 id="case-title">Terminology recovered</h2></div><label class="mode-label">Treatment<select id="mode"><option value="recorded">Original recorded experiment</option><option value="replay">Selective router replay</option></select></label></div>
+      <div class="source"><div class="micro">NEW SOURCE <span id="source-tag">ENGLISH</span></div><p id="source-text"></p></div>
+      <div id="record-note" class="notice"></div>
+      <div class="retrieval-grid">
+        <section class="match"><div class="card-title"><h3>01 <span>Fuzzy match</span></h3><span id="fuzzy-score" class="score"></span></div><div class="meter"><span id="fuzzy-meter"></span><i style="left:75%" title="75% threshold"></i></div><p id="fuzzy-source" class="match-text"></p><div id="fuzzy-caption" class="caption"></div></section>
+        <section class="match semantic"><div class="card-title"><h3>02 <span>Semantic match</span></h3><span id="semantic-score" class="score"></span></div><div class="meter"><span id="semantic-meter"></span><i style="left:80%" title="0.80 similarity floor"></i></div><p id="semantic-source" class="match-text"></p><p id="semantic-target" class="match-target" lang="es"></p><div class="caption">Cosine similarity measures proximity, not correctness.</div></section>
+      </div>
+      <div class="decision"><span class="route-icon">↳</span><div><div class="micro">ROUTING DECISION</div><strong id="route-name"></strong><p id="route-reason"></p></div><span id="example-count" class="pill"></span></div>
+      <div class="translations"><section><div class="card-title"><h3>Without memory</h3><span class="micro">ZERO-SHOT</span></div><p id="zero-translation" lang="es"></p></section><section class="translation-treated"><div class="card-title"><h3 id="treatment-title">With retrieved examples</h3><span id="change-label" class="micro">WORDING CHANGES HIGHLIGHTED</span></div><p id="rag-translation" lang="es"></p></section></div>
+      <details class="reference"><summary>Inspect reference, examples, and original judge notes</summary><div class="detail-content"><h4>Human reference</h4><p id="reference-text" lang="es"></p><h4>Examples supplied to the original treatment</h4><div id="used-examples"></div><h4>Original localization judgment</h4><p id="judge-note"></p><h4>Original generic judgment</h4><p id="generic-note"></p><p class="caption">A/B labels in these notes refer to the original randomized judging order. They are not labels for the columns above. Both rubrics used the same judge model.</p></div></details>
+      <div class="record-footer"><span id="provenance"></span><button id="download" class="text-button">Download this record ↓</button></div>
+    </article>
+    <div class="bottom-note"><strong>Useful retrieval ≠ guaranteed accuracy.</strong><p>These results come from one language pair, one domain, and automated judgments. The original study also tested weak matches that the selective router would decline.</p><button data-view="evidence" class="text-button">Read the evidence and its limits →</button></div>
+  </section>
+  <section id="evidence" class="view" hidden>
+    <p class="eyebrow">WHAT THE STUDY ACTUALLY SHOWS</p><h1>More consistent wording.<br>A narrower claim.</h1><p class="lede">Semantic retrieval recovered useful examples below a fuzzy threshold. The clearest observed benefit was consistency with memory—not established accuracy improvement.</p>
+    <div id="metrics" class="metrics"></div>
+    <div class="panel"><div class="section-heading"><h2>Where examples helped</h2><span>Original 200-segment study · chrF++</span></div><div class="legend"><span><i class="zero-key"></i>Zero-shot</span><span><i class="fuzzy-key"></i>Thresholded fuzzy</span><span><i class="semantic-key"></i>Semantic</span></div><div id="band-chart"></div><p class="caption">40 segments per fuzzy band. Higher is better. Bands are deliberately balanced; this is not an estimate of production traffic.</p></div>
+    <div class="panel"><h2>What changed in the audit</h2><p>The original experiment supplied at least one semantic example even when it recorded <code>route=none</code>. Its full 300-segment result measures that exploratory treatment, not the selective router. The corrected evaluation now calls the same router as the CLI.</p><p>85 of 300 candidates passed the similarity floor. Of those, 65 were judged reusable. Passing a threshold and being useful are different outcomes.</p><div id="limits"></div><a class="text-button" href="evidence.json" download>Download metrics and source hashes ↓</a></div>
+  </section>
+  <section id="languages" class="view" hidden>
+    <p class="eyebrow">THE NEXT TEST · MATCHED MULTILINGUAL EVALUATION</p><h1>Same source.<br>Three target languages.</h1><p class="lede">Spanish, German, and Simplified Chinese share the same English memory and test inputs. This isolates target-language translation behavior within a software-localization corpus.</p>
+    <div class="language-cards"><article><span>ES</span><h2>Spanish</h2><p>Connect the existing work to a new localization domain.</p><small>New translation results pending</small></article><article><span>DE</span><h2>German</h2><p>Test terminology reuse with compounds and richer inflection.</p><small>New translation results pending</small></article><article><span>简</span><h2>Simplified Chinese</h2><p>Test a different writing system without word-tokenization assumptions.</p><small>New translation results pending</small></article></div>
+    <div class="panel"><h2>Prepared, reproducible, and clearly separated</h2><div id="language-data"></div><p>Retrieval is over identical English sources, so retrieval results are shared—not three independent replications. Translation effects will be reported separately for every target language.</p><p>The primary multilingual metric is character-only chrF. Language-specific terminology and meaning judgments remain separate. The original Spanish medical study uses chrF++ and is not pooled into this comparison.</p><a class="text-button" href="https://github.com/Colton-Cogg-1999/locrag/blob/main/docs/multilingual.md" target="_blank" rel="noreferrer">Read the frozen protocol ↗</a></div>
+  </section>
+  <footer>LocRAG <span>·</span> A study of retrieval, reuse, and the limits of similarity.<a href="https://github.com/Colton-Cogg-1999/locrag">Code &amp; methodology ↗</a></footer>
+</main>
+</body></html>

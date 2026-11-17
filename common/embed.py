@@ -31,7 +31,10 @@ _LOCAL_LOCK = threading.Lock()  # local torch models are not safe to share acros
 
 @lru_cache(maxsize=4)
 def get_model(name: str):
-    from sentence_transformers import SentenceTransformer
+    try:
+        from sentence_transformers import SentenceTransformer
+    except ImportError as exc:
+        raise RuntimeError("Local embeddings require `uv sync --extra local`; alternatively configure a hosted embedding model.") from exc
 
     return SentenceTransformer(name, device="cpu")
 

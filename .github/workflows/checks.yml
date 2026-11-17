@@ -1,0 +1,26 @@
+name: Offline checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: '0.13.8'
+      - run: uv sync --locked --python 3.12
+      - run: uv run pytest -q
+      - name: Rebuild evidence without models or keys
+        run: |
+          uv run python -m locrag.evidence
+          git diff --exit-code -- results/audit
+      - name: Build static workbench
+        run: |
+          uv run python -m locrag.demo
+          node --check demo/src/app.js
+      - uses: actions/upload-artifact@v4
+        with:
+          name: locrag-workbench
+          path: demo/dist

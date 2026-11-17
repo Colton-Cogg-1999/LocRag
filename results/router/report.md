@@ -1,5 +1,7 @@
 # Project 2: semantic retrieval where fuzzy matching fails (< 75%)
 
+> Historical exploratory report. The original treatment supplied a semantic example even for `route=none`; this is not the corrected router's full-set performance. Two rubrics below use one judge model, not independent judges. See [the audited report](../audit/report.md) for current claims and provenance. Raw outputs are preserved.
+
 TM: 20,000 EMEA units (en→es). MT: **openai/gpt-5.4-mini**, k ≤ 3. Retrieval: **openrouter:baai/bge-m3**. Judge (blind A/B): **anthropic/claude-sonnet-5.5**. Semantic route used when top similarity ≥ 80.
 
 Baseline = what happens today when the best fuzzy match is below threshold: the CAT/TMS offers nothing, so the LLM translates with no TM context (zero-shot).

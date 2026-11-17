@@ -1,0 +1,19 @@
+{
+  "name": "kde4-matched-en-es-de-zh-cn-v1",
+  "corpus": "KDE4",
+  "version": "v2",
+  "domain": "software interface localization",
+  "languages": ["es", "de", "zh_CN"],
+  "seed": 20261116,
+  "tm_size": 5000,
+  "development_size": 150,
+  "test_size": 300,
+  "min_source_words": 4,
+  "max_source_words": 60,
+  "fuzzy_threshold": 75,
+  "semantic_min_sim": 80,
+  "k": 3,
+  "policies": ["zero-shot", "fuzzy-only", "always-semantic", "router"],
+  "primary_metric": "chrF (character-only, word_order=0)",
+  "status": "frozen protocol; translation results pending model access"
+}

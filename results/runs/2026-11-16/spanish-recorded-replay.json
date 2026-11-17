@@ -1,0 +1,104 @@
+{
+  "status": "replay of original recorded route labels; no new translation or judging calls",
+  "source_sha256": "0f21362ae9d437ae8cd99681b055d5a0cd0eaf03fe4f2af9b9909080647fbd71",
+  "original": {
+    "n": 300,
+    "localization": {
+      "tie": 117,
+      "rag": 147,
+      "zero_shot": 36
+    },
+    "generic": {
+      "tie": 113,
+      "zero_shot": 97,
+      "rag": 90
+    },
+    "reuse": {
+      "none": 146,
+      "partial": 151,
+      "full": 3
+    },
+    "sign_test_p": 4.0492946937176635e-17,
+    "accuracy": {
+      "zero_shot": 286,
+      "rag": 290,
+      "valid_n": 300
+    },
+    "consistency": {
+      "zero_shot": 157,
+      "rag": 271,
+      "valid_n": 300
+    },
+    "accuracy_delta": {
+      "mean": 0.0133,
+      "ci95": [
+        -0.0133,
+        0.0433
+      ],
+      "n": 300
+    },
+    "chrf_corpus": {
+      "zero_shot": 71.9122,
+      "rag": 73.2389
+    },
+    "sentence_chrf_delta": {
+      "mean": 1.9831,
+      "ci95": [
+        0.8477,
+        3.08
+      ],
+      "n": 300
+    }
+  },
+  "selective_replay": {
+    "n": 300,
+    "localization": {
+      "tie": 237,
+      "rag": 50,
+      "zero_shot": 13
+    },
+    "generic": {
+      "tie": 245,
+      "zero_shot": 25,
+      "rag": 30
+    },
+    "reuse": {
+      "none": 146,
+      "partial": 151,
+      "full": 3
+    },
+    "sign_test_p": 3.015952084642337e-06,
+    "accuracy": {
+      "zero_shot": 286,
+      "rag": 284,
+      "valid_n": 300
+    },
+    "consistency": {
+      "zero_shot": 157,
+      "rag": 198,
+      "valid_n": 300
+    },
+    "accuracy_delta": {
+      "mean": -0.0067,
+      "ci95": [
+        -0.02,
+        0.0067
+      ],
+      "n": 300
+    },
+    "chrf_corpus": {
+      "zero_shot": 71.9122,
+      "rag": 72.6099
+    },
+    "sentence_chrf_delta": {
+      "mean": 1.106,
+      "ci95": [
+        0.2161,
+        2.03
+      ],
+      "n": 300
+    }
+  },
+  "introduced_accuracy_errors": 3,
+  "fixed_accuracy_errors": 1
+}

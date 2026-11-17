@@ -1,0 +1,67 @@
+{
+  "status": "complete",
+  "config": {
+    "name": "kde4-matched-en-es-de-zh-cn-v1",
+    "corpus": "KDE4",
+    "version": "v2",
+    "domain": "software interface localization",
+    "languages": [
+      "es",
+      "de",
+      "zh_CN"
+    ],
+    "seed": 20261116,
+    "tm_size": 5000,
+    "development_size": 150,
+    "test_size": 300,
+    "min_source_words": 4,
+    "max_source_words": 60,
+    "fuzzy_threshold": 75,
+    "semantic_min_sim": 80,
+    "k": 3,
+    "policies": [
+      "zero-shot",
+      "fuzzy-only",
+      "always-semantic",
+      "router"
+    ],
+    "primary_metric": "chrF (character-only, word_order=0)",
+    "status": "frozen protocol; translation results pending model access"
+  },
+  "split": "test",
+  "limit": null,
+  "workers": 8,
+  "exploratory_smoke_run": false,
+  "data_manifest_sha256": "9bfa686baada090bf9e9ec261d6ca0b1e3366503c0fd52e7342b1ca659aa790e",
+  "git_commit": "8bc02b242ce642288a8fdaa567c658f26923e148",
+  "git_dirty": true,
+  "code_sha256": {
+    "locrag/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "locrag/demo.py": "770e6c15c7b43a37e05169beb9d75d09e88514eb8a4c8d20b8b26ee5ae36cc4b",
+    "locrag/evidence.py": "a9f7b6c82cd702fd14283adca40d7e77f2bca6444e44380221eb68cc7f9870fd",
+    "locrag/exp_rag_mt.py": "5aa19e55c03bec0883753af4d8262fc2853225718961cefe6d7125cbd2936242",
+    "locrag/exp_retrieval.py": "650b76b2165fe50c0b0e2385b2ae949332c48e43411a62946b1295b525c12fa2",
+    "locrag/exp_router.py": "cb2b582e506b5736109959cc2cff94ab3bd20ddcc2277a9f19b17345010275cd",
+    "locrag/multilingual.py": "904b39f2eb8d637a6eac2b26368b70ca6a1a7a8d2e2cff8e88362405e85fcd31",
+    "locrag/pipeline.py": "e3fceb62a6a242803e31d962bd27f28de33bd441327a3d1b197609f3596d8f80",
+    "locrag/prepare_data.py": "42fe29be00daf0602db03c4052671b144432307e960b55166caaeda506b4e1c6",
+    "locrag/replay.py": "b91e1bedb66bcd52b00439537bb726fc6980a30142871713144dc9a5ec60674b",
+    "locrag/retrieval_audit.py": "409268dd2f92eac9057eeafa178405d9eb5bde2b7d2d7771c7a05d1a62ee9fc4",
+    "locrag/retrievers.py": "37f1674f9887a7e901379d4654ed39eb99b3f70740a4c3a848b32aed8ceae3a6",
+    "common/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "common/check.py": "47d716f5a20da346146c86ba095fa0eeb8eaef57293141b8e55d7aa4a96fc054",
+    "common/embed.py": "7b49e597ea6ef5feb6b57ae73620f2c0f32fb80c4a0623107c8a223ca755392e",
+    "common/env.py": "c88e73e04fd32ec03bfc110d00b2a70fd6d4c666ec9b52089e87beb1e2722a3c",
+    "common/llm.py": "79afcbb322af7b94e04136291a636d0f156c835ac3eec0eabc442281c2e48280"
+  },
+  "models": {
+    "translation": "openai/gpt-5.4-mini",
+    "judge": "anthropic/claude-sonnet-5.5",
+    "retrieval": "openrouter:baai/bge-m3"
+  },
+  "endpoint": "https://openrouter.ai/api/v1",
+  "reasoning_effort": "low",
+  "note": "Durations include cache hits when available; provider token/cost accounting is not available.",
+  "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+  "rows_sha256": "2cff4106ef6b44d478152d1a17eb1b441f72e240ead1b7d24c84eaf59b523129"
+}
