@@ -1,0 +1,117 @@
+{
+  "row_id": "K68e7713825d9:es",
+  "translations": {
+    "random_ctx": {
+      "text": "No existe ningún archivo ChangeLog. ¿Desea crear uno?",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "11aade18622d0577def847060cc2b874c1bafa574d83b743cefa89d4ed4cdfff",
+      "usage": {
+        "input_tokens": 254,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 17,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 271
+      },
+      "cost_upper_usd": 0.002712
+    },
+    "fuzzy_ctx": {
+      "text": "No existe ningún archivo ChangeLog. ¿Desea crear uno?",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "9e855d6a156658af0349e7fad79e235e5354979f03a051caa5f6ac786a18c348",
+      "usage": {
+        "input_tokens": 245,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 17,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 262
+      },
+      "cost_upper_usd": 0.00264
+    },
+    "zero_shot": {
+      "text": "No existe ningún archivo ChangeLog. ¿Desea crear uno?",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "bc370636b8d95372b6ded3c587cbf3a20afa914dfedbf2d646a15f95593842eb",
+      "usage": {
+        "input_tokens": 105,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 17,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 122
+      },
+      "cost_upper_usd": 0.00152
+    },
+    "semantic_ctx": {
+      "text": "No existe ningún archivo de registro de cambios. ¿Desea crear uno?",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "d2a1cddeecdeeca636dc0e36f2413a37098bd20f73cac3e75f09198300535738",
+      "usage": {
+        "input_tokens": 234,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 19,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 253
+      },
+      "cost_upper_usd": 0.002632
+    },
+    "hybrid_ctx": {
+      "text": "No existe ningún archivo ChangeLog. ¿Desea crear uno?",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "2882aacddf99829faa3bf738988ca1348c3a275ed1799d33a69936187fdf4e9d",
+      "usage": {
+        "input_tokens": 240,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 17,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 257
+      },
+      "cost_upper_usd": 0.0026
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

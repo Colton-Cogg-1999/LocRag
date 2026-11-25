@@ -1,0 +1,87 @@
+# LocRAG 2.0 study protocol. Changing anything here changes the config hash recorded in every run manifest.
+name: locrag-v2
+seed: 20261117
+
+corpora:
+  EMEA:
+    kind: emea
+    domain: EU medicinal product information (SmPC and package leaflets)
+    targets: [es]
+    raw: data/raw/EMEA
+    tm_size: 100000
+    min_words: 4
+    max_words: 60
+    pool_scan_limit: 60000        # held-out candidates screened for band assignment
+    bands: {"100": 100, "95-99": 250, "85-94": 300, "75-84": 350, "50-74": 500, "<50": 500}
+    dev_per_band: 20
+  KDE4:
+    kind: kde4
+    domain: software user-interface localization (KDE desktop applications)
+    targets: [es, de, zh_CN]
+    raw: data/raw/KDE4
+    tm_size: 30000
+    min_words: 4
+    max_words: 60
+    pool_scan_limit: 12000
+    bands: {"100": 50, "95-99": 100, "85-94": 120, "75-84": 150, "50-74": 190, "<50": 190}
+    dev_per_band: 10
+
+heldout_declustering_fuzzy: 90   # no two held-out sources (same corpus) with word-level fuzzy >= this
+
+retrieval:
+  embedding_model: openrouter:baai/bge-m3
+  k: 3
+  pool_depth: 20                 # fuzzy top-N and semantic top-N fused for hybrid
+  rrf_c: 60
+  near_exact_override: 95        # hybrid: fuzzy >= this always ranks first
+  semantic_floor: 0.80           # coverage metric only (cosine); conditions always use top-k
+
+translation:
+  model: google/gemma-4-31b-it
+  temperature: 0.0
+  max_tokens: 512
+  seed: 7
+  reasoning_effort: none
+  provider: {quantizations: [bf16, fp8], allow_fallbacks: true}
+  workers: 8
+
+extractor:
+  model: google/gemma-4-31b-it   # same model as translator: realistic one-extra-call deployment
+  temperature: 0.0
+  max_tokens: 900
+
+conditions: [zero_shot, fuzzy_ctx, semantic_ctx, hybrid_ctx, structured_ctx]
+noise_floor:
+  condition: zero_shot_repeat
+  dev_fraction: 1.0              # all dev rows
+  test_rows: 600                 # stratified subsample of test rows
+
+nmt:
+  provider: deepl
+  formality: default
+  targets: {es: ES, de: DE, zh_CN: ZH-HANS}
+
+auditor:
+  model: anthropic/claude-sonnet-5.5
+  use_batch_api: false          # account has Zero Data Retention; the Batch API retains data and is refused
+  max_tokens: 4000               # includes the (mandatory) reasoning budget
+  reasoning_effort: minimal      # Sonnet 5.5 rejects reasoning=none on OpenRouter
+  extraction_audit_sample: 300
+  reuse_test_rows: 2000          # budget: stratified test subsample for reuse labels (dev: all rows)
+  mqm_sample_per_condition: 60
+
+qe:
+  primary: cometkiwi22
+  robustness: metricx24_qe
+  reference_based: [chrf, comet22]
+  models:
+    cometkiwi22: Unbabel/wmt22-cometkiwi-da
+    comet22: Unbabel/wmt22-comet-da
+    metricx24_qe: google/metricx-24-hybrid-large-v2p6
+    metricx_tokenizer: google/mt5-xl
+  noise_floor_quantile: 0.90     # over zero-shot regenerations whose outputs differ
+  reference_test_rows: 1500      # CPU budget: COMET-22 on a stratified test subsample (QE metrics: all rows)
+
+stats:
+  bootstrap: 10000
+  alpha: 0.05

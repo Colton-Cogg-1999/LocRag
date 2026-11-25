@@ -1,0 +1,117 @@
+{
+  "row_id": "K75b8670d00d6:es",
+  "translations": {
+    "zero_shot": {
+      "text": "Mostrar la imagen de KPNO AOP",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "2fb7ece7e31acf02e457a10327ef2c57876d5384c72e4e4d6914b53ba63d95fc",
+      "usage": {
+        "input_tokens": 101,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 13,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 114
+      },
+      "cost_upper_usd": 0.001328
+    },
+    "fuzzy_ctx": {
+      "text": "Mostrar la imagen de KPNO AOP",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "7d20cbe3fd5204904cc49942d4fa5cf8db6314e01345ccfbc1c117af1a2d5095",
+      "usage": {
+        "input_tokens": 233,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 13,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 246
+      },
+      "cost_upper_usd": 0.002384
+    },
+    "random_ctx": {
+      "text": "Mostrar la imagen de KPNO AOP",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "bbaf73726d2d7f3a97cd7799c2b91d9ea014ff3b45f8a8ed4da5d7416d5a0be0",
+      "usage": {
+        "input_tokens": 247,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 13,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 260
+      },
+      "cost_upper_usd": 0.002496
+    },
+    "hybrid_ctx": {
+      "text": "Mostrar la imagen de KPNO AOP",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "781445af87194aa5dcce78b15c18680d4bdec7a28ca06a27499b609d6e73d750",
+      "usage": {
+        "input_tokens": 226,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 13,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 239
+      },
+      "cost_upper_usd": 0.002328
+    },
+    "semantic_ctx": {
+      "text": "Mostrar imagen de KPNO AOP",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "523053e9f785dd3a52922294e961b935ab91f60912ce26d3135c224e518ebaeb",
+      "usage": {
+        "input_tokens": 225,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 237
+      },
+      "cost_upper_usd": 0.00228
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

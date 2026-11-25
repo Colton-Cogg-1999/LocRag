@@ -1,0 +1,166 @@
+{
+  "row_id": "K93a7dfc9937f:es",
+  "translations": {
+    "semantic_ctx": {
+      "text": "Introduzca la información relativa a su impresora o clase. El nombre es obligatorio, pero la ubicación y la descripción no lo son (puede que ni siquiera se utilicen en algunos sistemas).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "33ea2fc35bd4535a8582c2dc2c224876c85f8d923af7f0f08c2058b095e8fea2",
+      "usage": {
+        "input_tokens": 256,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 43,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 299
+      },
+      "cost_upper_usd": 0.003768
+    },
+    "zero_shot": {
+      "text": "Introduzca la información relativa a su impresora o clase. El nombre es obligatorio, pero la ubicación y la descripción no lo son (puede que ni siquiera se utilicen en algunos sistemas).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "ba5750312e089d801e121d1cc0e30c3d7766ef2e1ced4505ab8a3f0083f10410",
+      "usage": {
+        "input_tokens": 123,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 43,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 166
+      },
+      "cost_upper_usd": 0.002704
+    },
+    "random_ctx": {
+      "text": "Introduzca la información sobre su impresora o clase. El nombre es obligatorio, pero la ubicación y la descripción no lo son (puede que ni siquiera se utilicen en algunos sistemas).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "0fe2a101f7aec25f0897801f1ddd8b3b388a0d826bd4cb807437cc576a038cfa",
+      "usage": {
+        "input_tokens": 324,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 42,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 366
+      },
+      "cost_upper_usd": 0.004272
+    },
+    "hybrid_ctx": {
+      "text": "Introduzca la información relativa a su impresora o clase. El nombre es obligatorio, pero la ubicación y la descripción no lo son (puede que ni siquiera se utilicen en algunos sistemas).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "5385efd0575b2a8ac79081d4e03eab521906a2576242ee979212b0b558fa547f",
+      "usage": {
+        "input_tokens": 303,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 43,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 346
+      },
+      "cost_upper_usd": 0.004144
+    },
+    "fuzzy_ctx": {
+      "text": "Introduzca la información sobre su impresora o clase. El nombre es obligatorio, pero la ubicación y la descripción no lo son (puede que ni siquiera se utilicen en algunos sistemas).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "e7ce1732837602d805cc7a6644af611652c2ea317d2fd094e655891ef6091c15",
+      "usage": {
+        "input_tokens": 324,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 42,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 366
+      },
+      "cost_upper_usd": 0.004272
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both «sobre su impresora o clase» (A) and «relativa a su impresora o clase» (B) accurately translate “concerning your printer or class.” Both also preserve that Name is required, while Location and Description are optional and may not be used on some systems.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "05587dca374de6cabcc9e56628457135264725eda07ebdda8d4b98e3b3919ec7",
+      "usage": {
+        "input_tokens": 265,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 76,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 341
+      },
+      "cost_upper_usd": 0.00129,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both «la información relativa a su impresora o clase» (A) and «la información sobre su impresora o clase» (B) accurately translate “the information concerning your printer or class.” The remaining text is identical and preserves which fields are mandatory, which are optional, and the caveat that some systems may not use the optional fields.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "c914627faa255475b88b791f7a3e794906453e246208e4431ff5cd79505058e5",
+      "usage": {
+        "input_tokens": 265,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 87,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 352
+      },
+      "cost_upper_usd": 0.0014,
+      "swapped": false,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

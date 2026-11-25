@@ -1,0 +1,117 @@
+{
+  "row_id": "Kf89a143c7c43:es",
+  "translations": {
+    "zero_shot": {
+      "text": "Mostrar caracteres &no imprimibles",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "9efa8a210e4bb24f8e72784ca3ea690f1aef065b01d7a81238c7e46b8d5a142f",
+      "usage": {
+        "input_tokens": 101,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 10,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 111
+      },
+      "cost_upper_usd": 0.001208
+    },
+    "hybrid_ctx": {
+      "text": "Mostrar caracteres &no imprimibles",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "bbb6cc9e735c8b52baf281a0207997f2b0c7030dd698da296ef310676dc8f583",
+      "usage": {
+        "input_tokens": 239,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 10,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 249
+      },
+      "cost_upper_usd": 0.002312
+    },
+    "semantic_ctx": {
+      "text": "Mostrar caracteres &no imprimibles",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "e0381f1c05ba7475288526a81a681f189306b5e9802d9bd08f43ecc9100e3586",
+      "usage": {
+        "input_tokens": 239,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 10,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 249
+      },
+      "cost_upper_usd": 0.002312
+    },
+    "fuzzy_ctx": {
+      "text": "Mostrar caracteres &no imprimibles",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "348de853634b2cf04450576e9d27ccafcde8d9a39921932b40cfbb5e0f03e0ef",
+      "usage": {
+        "input_tokens": 241,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 10,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 251
+      },
+      "cost_upper_usd": 0.002328
+    },
+    "random_ctx": {
+      "text": "Mostrar caracteres &no imprimibles",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "38361f4e35a54e71679fa781e7b5f46a9ba52bc29e9d638b14e9c6a68ec0dc86",
+      "usage": {
+        "input_tokens": 236,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 10,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 246
+      },
+      "cost_upper_usd": 0.002288
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

@@ -1,0 +1,117 @@
+{
+  "row_id": "K1318bfbe7b7f:es",
+  "translations": {
+    "zero_shot": {
+      "text": "Consultando MusicBrainz para la pista %1.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "ea5eee7930b11d87aa6d5d8d9e5548260f2a1f3c669f244a3494780ee8e830ae",
+      "usage": {
+        "input_tokens": 104,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 15,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 119
+      },
+      "cost_upper_usd": 0.001432
+    },
+    "fuzzy_ctx": {
+      "text": "Consultando MusicBrainz para la pista %1.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "043f02450a6ae2ba9e4c3c380e95bd92303ccec40732e5412545b45e5e4ad222",
+      "usage": {
+        "input_tokens": 236,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 15,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 251
+      },
+      "cost_upper_usd": 0.002488
+    },
+    "semantic_ctx": {
+      "text": "Consultando MusicBrainz para obtener información sobre la pista %1.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "09be7bef8dd77e1167344a36dc11366ccf36971411b357b26fea6a8be6d350c1",
+      "usage": {
+        "input_tokens": 254,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 18,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 272
+      },
+      "cost_upper_usd": 0.002752
+    },
+    "hybrid_ctx": {
+      "text": "Consultando MusicBrainz para la pista %1.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "84cbee66d40296b69bd1f3d55ac8b0d34d44210bab9517cf2d36ce56120209d7",
+      "usage": {
+        "input_tokens": 244,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 15,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 259
+      },
+      "cost_upper_usd": 0.002552
+    },
+    "random_ctx": {
+      "text": "Consultando MusicBrainz para la pista %1.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "ef39f714407511ef4e9596b6d78bbafad36869e5102ce8740bd810912accce86",
+      "usage": {
+        "input_tokens": 229,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 15,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 244
+      },
+      "cost_upper_usd": 0.002432
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

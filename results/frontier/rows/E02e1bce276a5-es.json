@@ -1,0 +1,117 @@
+{
+  "row_id": "E02e1bce276a5:es",
+  "translations": {
+    "semantic_ctx": {
+      "text": "Si le han diagnosticado angina de pecho (dolor en el pecho) o enfermedad arterial periférica (disminución del flujo sanguíneo hacia las piernas):",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "df7f9bf1cbef8eed354d4b11f43a81ff3b79bd02f8ed81801db0a2a3da33b92e",
+      "usage": {
+        "input_tokens": 398,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 38,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 436
+      },
+      "cost_upper_usd": 0.004704
+    },
+    "hybrid_ctx": {
+      "text": "Si le han diagnosticado angina de pecho (dolor en el pecho) o enfermedad arterial periférica (disminución del flujo sanguíneo hacia las piernas):",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "d32f5effb38d350e1f5b7e266c312d2e83c1a429b49ee531bb20b897269decfc",
+      "usage": {
+        "input_tokens": 351,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 38,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 389
+      },
+      "cost_upper_usd": 0.004328
+    },
+    "random_ctx": {
+      "text": "Si le han diagnosticado angina de pecho (dolor en el pecho) o enfermedad arterial periférica (disminución del flujo sanguíneo a las piernas):",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "c74bb9c4a928c0fc0e9e5f29d720c37bfc3d384451a0d89148e58b0d65c306ff",
+      "usage": {
+        "input_tokens": 365,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 38,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 403
+      },
+      "cost_upper_usd": 0.00444
+    },
+    "zero_shot": {
+      "text": "Si le han diagnosticado angina de pecho (dolor en el pecho) o enfermedad arterial periférica (disminución del flujo sanguíneo hacia las piernas):",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "e4875f6ad061229efc8e2f5f2fdf2d962a4f2bd100caf8f8ec0b485acaff4510",
+      "usage": {
+        "input_tokens": 122,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 38,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 160
+      },
+      "cost_upper_usd": 0.002496
+    },
+    "fuzzy_ctx": {
+      "text": "Si le han diagnosticado angina de pecho (dolor en el pecho) o enfermedad arterial periférica (disminución del flujo sanguíneo hacia las piernas):",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "bd7b8221739c852b26f5c7a9d482a38e0310a1c19675c183b279adaa5bddc465",
+      "usage": {
+        "input_tokens": 357,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 38,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 395
+      },
+      "cost_upper_usd": 0.004376
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

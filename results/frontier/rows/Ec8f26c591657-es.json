@@ -1,0 +1,166 @@
+{
+  "row_id": "Ec8f26c591657:es",
+  "translations": {
+    "random_ctx": {
+      "text": "La experiencia con el tratamiento en pacientes de 65 años o más es limitada.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "3da0f4572cbff0d672b8e13548139f6d52d43dc3d39157bfabc19576e1385622",
+      "usage": {
+        "input_tokens": 302,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 20,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 322
+      },
+      "cost_upper_usd": 0.003216
+    },
+    "semantic_ctx": {
+      "text": "La experiencia en el tratamiento de pacientes de 65 años o más es limitada.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "8c8e9b0b692a88022cd555762650af61952fae9765d2c7df7084419aa1d02300",
+      "usage": {
+        "input_tokens": 279,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 20,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 299
+      },
+      "cost_upper_usd": 0.003032
+    },
+    "zero_shot": {
+      "text": "La experiencia con el tratamiento en pacientes de 65 años o más es limitada.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "019c7d608847a123786513bdb39a152a1b37fbc6d1b375d7fd14784e7606be64",
+      "usage": {
+        "input_tokens": 111,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 20,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 131
+      },
+      "cost_upper_usd": 0.001688
+    },
+    "fuzzy_ctx": {
+      "text": "La experiencia de tratamiento en pacientes de 65 años o más es limitada.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "5881c2f06e171fd5b582cf541cdc89bdd71eee7129662d923173f66774d2a747",
+      "usage": {
+        "input_tokens": 305,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 19,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 324
+      },
+      "cost_upper_usd": 0.0032
+    },
+    "hybrid_ctx": {
+      "text": "La experiencia con el tratamiento en pacientes de 65 años o más es limitada.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "47608cce647c604582994a8118a5bbb5a9e41a7412a732dd1f57f8382da560ff",
+      "usage": {
+        "input_tokens": 273,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 20,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 293
+      },
+      "cost_upper_usd": 0.002984
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both “experiencia de tratamiento” (A) and “experiencia con el tratamiento” (B) convey “treatment experience.” Both preserve “is limited” and the inclusive age threshold “65 years of age and older” with “es limitada” and “de 65 años o más.”\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "a743bae1cec6832f1b6b99c9b9d7825de860a0e40e8fc26e129c207425842c0c",
+      "usage": {
+        "input_tokens": 205,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 77,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 282
+      },
+      "cost_upper_usd": 0.00118,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both «experiencia con el tratamiento» (A) and «experiencia de tratamiento» (B) convey “treatment experience.” Both preserve “limited” as «limitada» and the inclusive age threshold as «65 años o más».\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "aa9df795bfa5f9fcd3e398b87c4386fa5ffd89e0e969c94891965cc3556255ef",
+      "usage": {
+        "input_tokens": 205,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 67,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 272
+      },
+      "cost_upper_usd": 0.00108,
+      "swapped": false,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

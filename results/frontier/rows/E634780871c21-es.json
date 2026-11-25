@@ -1,0 +1,117 @@
+{
+  "row_id": "E634780871c21:es",
+  "translations": {
+    "semantic_ctx": {
+      "text": "Poblaciones especiales No se ha evaluado la influencia de la insuficiencia renal y hepática sobre la exposición al porfímero sódico (ver secciones 4.2, 4.3 y 4.4).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "c3b5482c6cc78d8c3d2a2cf8a82f597cca758700e2dc5ddaece7d67f6de53e24",
+      "usage": {
+        "input_tokens": 394,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 54,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 448
+      },
+      "cost_upper_usd": 0.005312
+    },
+    "random_ctx": {
+      "text": "Poblaciones especiales No se ha evaluado la influencia de la insuficiencia renal y hepática sobre la exposición al porfímero de sodio (ver secciones 4.2, 4.3 y 4.4).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "a682edb718ab4e7ff76d5fd68c2a2682ce40a527cacbf9d86cf2ca46d68213e0",
+      "usage": {
+        "input_tokens": 367,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 54,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 421
+      },
+      "cost_upper_usd": 0.005096
+    },
+    "zero_shot": {
+      "text": "Poblaciones especiales No se ha evaluado la influencia de la insuficiencia renal y hepática en la exposición al porfímero de sodio (ver secciones 4.2, 4.3 y 4.4).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "5c0fc6e68035f0b1e6f4d0fe80aad4ac5718b6a82beb17ddc675b6f9835d1cdb",
+      "usage": {
+        "input_tokens": 134,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 54,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 188
+      },
+      "cost_upper_usd": 0.003232
+    },
+    "fuzzy_ctx": {
+      "text": "Poblaciones especiales No se ha estudiado el efecto de la insuficiencia renal y hepática sobre la exposición al porfímero sódico (ver secciones 4.2, 4.3 y 4.4).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "1183fbb0daa632e622dca54a171d3fac8e9b55f64460b093349992a1c1448763",
+      "usage": {
+        "input_tokens": 423,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 54,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 477
+      },
+      "cost_upper_usd": 0.005544
+    },
+    "hybrid_ctx": {
+      "text": "Poblaciones especiales No se ha estudiado el efecto de la insuficiencia renal y hepática sobre la exposición al porfímero sódico (ver secciones 4.2, 4.3 y 4.4).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "b8e0cb520322e495ee187961d86ea49dac907055597cd5c7236235d885f772f4",
+      "usage": {
+        "input_tokens": 416,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 54,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 470
+      },
+      "cost_upper_usd": 0.005488
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

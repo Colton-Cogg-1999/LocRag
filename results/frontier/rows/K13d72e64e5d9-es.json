@@ -1,0 +1,166 @@
+{
+  "row_id": "K13d72e64e5d9:es",
+  "translations": {
+    "fuzzy_ctx": {
+      "text": "Imprimir el nombre del archivo debajo de la imagen",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "1e9b0e0a34d90b0e15cc7b93a44fe0f0a1a397289ef6b5e32f8ed4854d6dca3f",
+      "usage": {
+        "input_tokens": 218,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 232
+      },
+      "cost_upper_usd": 0.002304
+    },
+    "semantic_ctx": {
+      "text": "Imprimir el nombre del archivo debajo de la imagen",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "b29999b23422b831f1f3e15aef728d52f6ed5e19260490c45c0a874bee4bdd63",
+      "usage": {
+        "input_tokens": 235,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 249
+      },
+      "cost_upper_usd": 0.00244
+    },
+    "random_ctx": {
+      "text": "Imprimir el nombre del archivo debajo de la imagen",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "0ce70c83f3d8f23499e47285b538f230b1db8ccc73dde96de32ce3cfb2c04551",
+      "usage": {
+        "input_tokens": 223,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 237
+      },
+      "cost_upper_usd": 0.002344
+    },
+    "zero_shot": {
+      "text": "Imprimir el nombre del archivo debajo de la imagen",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "2e89c0a78c2851baa884784236ec4ababb42316e45e045f59a4c2188c935483f",
+      "usage": {
+        "input_tokens": 98,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 112
+      },
+      "cost_upper_usd": 0.001344
+    },
+    "hybrid_ctx": {
+      "text": "Imprimir el nombre de archivo debajo de la imagen",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "d69920cf870f3570296be04af8610a7458c3b9a7f484a3c5c8a97529a760892e",
+      "usage": {
+        "input_tokens": 220,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 234
+      },
+      "cost_upper_usd": 0.00232
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both “nombre de archivo” (A) and “nombre del archivo” (B) accurately render “filename.” Both preserve “Print” as “Imprimir” and “below image” as “debajo de la imagen.”\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "e580e928e9fba92f05b5033d76d0ab1f0857446a2bce2eb7df8376a2f1ceb1dc",
+      "usage": {
+        "input_tokens": 183,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 63,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 246
+      },
+      "cost_upper_usd": 0.000996,
+      "swapped": false,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both «el nombre del archivo» (A) and «el nombre de archivo» (B) convey “filename,” and both render “Print … below image” as «Imprimir … debajo de la imagen».\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "111918ff863bd751e80f6a4611408daa75b36ed053e495edf05f3b2f512bdcec",
+      "usage": {
+        "input_tokens": 183,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 61,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 244
+      },
+      "cost_upper_usd": 0.000976,
+      "swapped": true,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

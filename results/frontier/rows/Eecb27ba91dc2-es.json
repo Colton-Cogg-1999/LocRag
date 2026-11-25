@@ -1,0 +1,166 @@
+{
+  "row_id": "Eecb27ba91dc2:es",
+  "translations": {
+    "fuzzy_ctx": {
+      "text": "Si toma más Kuvan del que debiera Si toma más Kuvan del que le han prescrito, puede experimentar efectos adversos que podrían incluir dolor de cabeza y mareo.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "6f6b995574a25c138da567157c614c55fd7d2cd832362f89e4270263dad654a6",
+      "usage": {
+        "input_tokens": 387,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 40,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 427
+      },
+      "cost_upper_usd": 0.004696
+    },
+    "zero_shot": {
+      "text": "Si toma más Kuvan del que debe Si toma más Kuvan del que le han recetado, puede sufrir efectos adversos, que podrían incluir dolor de cabeza y mareos.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "44632b179101cc5f63a541c3547af3078768c103032d35a575c83736b9ab42fb",
+      "usage": {
+        "input_tokens": 126,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 41,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 167
+      },
+      "cost_upper_usd": 0.002648
+    },
+    "hybrid_ctx": {
+      "text": "Si toma más Kuvan del que debe Si toma más Kuvan de lo prescrito, puede experimentar efectos adversos que podrían incluir dolor de cabeza y mareos.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "e09adfbd94ea7a639aa9fd6a8908d57b262f41f3bc4b33f9f2669753c7a3e361",
+      "usage": {
+        "input_tokens": 384,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 37,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 421
+      },
+      "cost_upper_usd": 0.004552
+    },
+    "random_ctx": {
+      "text": "Si toma más Kuvan del que debe\n\nSi toma más Kuvan del que le han recetado, puede experimentar efectos adversos, como dolor de cabeza y mareos.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "6e86a813c14c70f9e36fa4fd273148d1f68e13f89641193795becca4ad8299d1",
+      "usage": {
+        "input_tokens": 406,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 40,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 446
+      },
+      "cost_upper_usd": 0.004848
+    },
+    "semantic_ctx": {
+      "text": "Si toma más Kuvan del que debe Si toma más Kuvan del que le han recetado, puede experimentar efectos adversos que podrían incluir dolor de cabeza y mareos.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "ab69eb8715d5c936eea05a06bb060c7d3ad61500b17c4b962f27afd80bb4a950",
+      "usage": {
+        "input_tokens": 439,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 40,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 479
+      },
+      "cost_upper_usd": 0.005112
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both accurately render “If you take more Kuvan than prescribed” as “Si toma más Kuvan del que le han prescrito” (A) or “Si toma más Kuvan de lo prescrito” (B). Both preserve the possibility of side effects, and “mareo” and “mareos” are equivalent renderings of “dizziness” here.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "b24a70b0779ac798beede6434a9e9cb431a91d2543a55e2a298b01cd29b838d1",
+      "usage": {
+        "input_tokens": 258,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 91,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 349
+      },
+      "cost_upper_usd": 0.001426,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both preserve the distinction between “more Kuvan than you should” (“del que debe” / “del que debiera”) and “more Kuvan than prescribed” (“de lo prescrito” / “del que le han prescrito”). Both also preserve the possibility of headache and dizziness; “mareos” and “mareo” are equivalent here.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "e1fdc6c85e1ccf781f763f7584a31a66d5817636333ce71f7add35c6cc39f3db",
+      "usage": {
+        "input_tokens": 258,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 88,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 346
+      },
+      "cost_upper_usd": 0.001396,
+      "swapped": false,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

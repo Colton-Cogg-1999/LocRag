@@ -1,0 +1,117 @@
+{
+  "row_id": "E743623c0e5a4:es",
+  "translations": {
+    "hybrid_ctx": {
+      "text": "El Comité de Medicamentos de Uso Humano (CHMP) concluyó que EMSELEX mostró una eficacia similar a la de otros medicamentos anticolinérgicos utilizados en el tratamiento del síndrome de vejiga hiperactiva.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "e79d3eb5672c3671b9ba9c8854263c38ed0b9d75669a386b1024356227e5dd60",
+      "usage": {
+        "input_tokens": 453,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 51,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 504
+      },
+      "cost_upper_usd": 0.005664
+    },
+    "semantic_ctx": {
+      "text": "El Comité de Medicamentos de Uso Humano (CHMP) concluyó que EMSELEX mostró una eficacia similar a la de otros medicamentos anticolinérgicos utilizados en el tratamiento del síndrome de la vejiga hiperactiva.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "2ae7ebfd9c517642c227a9c0770e18c813ebfbdfed8b09c7190959bd06bc902c",
+      "usage": {
+        "input_tokens": 527,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 52,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 579
+      },
+      "cost_upper_usd": 0.006296
+    },
+    "zero_shot": {
+      "text": "El Comité de Medicamentos de Uso Humano (CHMP) concluyó que EMSELEX mostró una eficacia similar a la de otros medicamentos anticolinérgicos utilizados para tratar el síndrome de vejiga hiperactiva.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "ab8ccb01ad674b5f3a0a45ec3a82e2ea56ad72188bcb8dfa0ce95ca583310523",
+      "usage": {
+        "input_tokens": 134,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 50,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 184
+      },
+      "cost_upper_usd": 0.003072
+    },
+    "fuzzy_ctx": {
+      "text": "El Comité de Medicamentos de Uso Humano (CHMP) concluyó que EMSELEX mostró una eficacia similar a la de otros medicamentos anticolinérgicos utilizados en el tratamiento del síndrome de vejiga hiperactiva.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "9a803208543e51302423b95c224c969e01dcb8ea00563425ba58ee496bfb4fac",
+      "usage": {
+        "input_tokens": 453,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 51,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 504
+      },
+      "cost_upper_usd": 0.005664
+    },
+    "random_ctx": {
+      "text": "El Comité de Medicamentos de Uso Humano (CHMP) concluyó que EMSELEX mostró una eficacia similar a la de otros medicamentos anticolinérgicos utilizados en el tratamiento del síndrome de vejiga hiperactiva.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "edcfa910f61e86350b4454a1cadab1f198f1be6ebf49376614ebfbd376686483",
+      "usage": {
+        "input_tokens": 444,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 51,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 495
+      },
+      "cost_upper_usd": 0.005592
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

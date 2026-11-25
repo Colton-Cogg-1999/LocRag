@@ -1,0 +1,166 @@
+{
+  "row_id": "Kb69643a039df:es",
+  "translations": {
+    "random_ctx": {
+      "text": "La función GCD() devuelve el máximo común divisor de dos o más valores enteros.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "637589b1b7eacadd88f4ac1eefc115f1d4e5bead769a9fc7cfeb582fc9707cb4",
+      "usage": {
+        "input_tokens": 301,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 22,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 323
+      },
+      "cost_upper_usd": 0.003288
+    },
+    "hybrid_ctx": {
+      "text": "La función GCD() devuelve el máximo común divisor de dos o más valores enteros.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "c8126c7e8589098d57ca5b1bc7aa520c55a254da006e58adb082550565b0ebd6",
+      "usage": {
+        "input_tokens": 288,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 22,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 310
+      },
+      "cost_upper_usd": 0.003184
+    },
+    "fuzzy_ctx": {
+      "text": "La función GCD() devuelve el máximo común denominador de dos o más valores enteros.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "7780cb8ce3402a260268753a5027b036911fd6b411810e4cf213ec2f8a1cbf27",
+      "usage": {
+        "input_tokens": 299,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 23,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 322
+      },
+      "cost_upper_usd": 0.003312
+    },
+    "semantic_ctx": {
+      "text": "La función GCD() devuelve el máximo común divisor de dos o más valores enteros.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "6699ebff8ab84064996afb88a7cf58755b823458088bb87020e34171e74df731",
+      "usage": {
+        "input_tokens": 298,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 22,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 320
+      },
+      "cost_upper_usd": 0.003264
+    },
+    "zero_shot": {
+      "text": "La función GCD() devuelve el máximo común divisor de dos o más valores enteros.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "8db6f3b59399e9a66b3bc6667f7a02b5b70eac879ea3b7fa28e6e6f07483d2da",
+      "usage": {
+        "input_tokens": 111,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 22,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 133
+      },
+      "cost_upper_usd": 0.001768
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\n  \"winner\": \"A\",\n  \"evidence\": \"In context, “GCD()” denotes the greatest common divisor. A uses the standard Spanish term “máximo común divisor,” whereas B translates the source’s mistaken “denominator” literally as “denominador.” Both preserve “two or more integer values.”\"\n}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "5af47550f3667dd9513f87df43819a7a3016be1056d3a41b58fe64ff33d64cc7",
+      "usage": {
+        "input_tokens": 211,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 77,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 288
+      },
+      "cost_upper_usd": 0.001192,
+      "swapped": false,
+      "pick": "hybrid_ctx"
+    },
+    {
+      "text": "{\n  \"winner\": \"B\",\n  \"evidence\": \"In this function description, GCD() and “two or more integer values” identify the greatest common divisor. B correctly uses the standard Spanish term “máximo común divisor,” while A’s “máximo común denominador” carries over the English source’s terminology error.\"\n}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "89943a91d6c2050a3d461aa3076862a0670c35d868aa54a1e8b3b58de5185f64",
+      "usage": {
+        "input_tokens": 211,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 77,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 288
+      },
+      "cost_upper_usd": 0.001192,
+      "swapped": true,
+      "pick": "hybrid_ctx"
+    }
+  ],
+  "winner": "hybrid_ctx"
+}

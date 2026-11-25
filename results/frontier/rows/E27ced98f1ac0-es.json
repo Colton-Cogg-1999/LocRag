@@ -1,0 +1,166 @@
+{
+  "row_id": "E27ced98f1ac0:es",
+  "translations": {
+    "random_ctx": {
+      "text": "Si es posible, la primera dosis debe administrarse antes de que comience esta temporada.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "fa521817072479e79d465d89f7cd7626b0a7d1fba85516f4794ef9a8e79a5d48",
+      "usage": {
+        "input_tokens": 273,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 22,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 295
+      },
+      "cost_upper_usd": 0.003064
+    },
+    "semantic_ctx": {
+      "text": "Si es posible, la primera dosis debe administrarse antes de que comience esta temporada.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "98e608b9049899313d1127bcf612913556419812ab1f602d6c2aa8c38dde40f0",
+      "usage": {
+        "input_tokens": 288,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 22,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 310
+      },
+      "cost_upper_usd": 0.003184
+    },
+    "fuzzy_ctx": {
+      "text": "Si es posible, la primera dosis debe administrarse antes de que comience esta temporada.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "372aadd81ce34e8b4da6403f77a0e7103cd775766c74e6c0c42f314345cdbf6c",
+      "usage": {
+        "input_tokens": 280,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 22,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 302
+      },
+      "cost_upper_usd": 0.00312
+    },
+    "zero_shot": {
+      "text": "Si es posible, se debe administrar la primera dosis antes de que comience esta temporada.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "d0984ab25723b698702ccb914928abe23c37d17807f90f4f0efcbe5b83431765",
+      "usage": {
+        "input_tokens": 110,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 22,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 132
+      },
+      "cost_upper_usd": 0.00176
+    },
+    "hybrid_ctx": {
+      "text": "Si es posible, la primera dosis se debe administrar antes de que comience esta temporada.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "fcbef0f192424bae3808f31aafa72b336a3259bd81a4fe5ad419b71751fb566f",
+      "usage": {
+        "input_tokens": 275,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 22,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 297
+      },
+      "cost_upper_usd": 0.00308
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both versions preserve the condition “If possible” as “Si es posible” and the timing “before this season starts” as “antes de que comience esta temporada.” A’s “debe administrarse” and B’s “se debe administrar” are equivalent renderings of “should be given.”\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "b45041f621fef1f03fb1afa520a5a10b91aeb20e40354b13bd28c5d890c04e67",
+      "usage": {
+        "input_tokens": 209,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 77,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 286
+      },
+      "cost_upper_usd": 0.001188,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both “se debe administrar” (A) and “debe administrarse” (B) accurately convey “should be given.” Both preserve “If possible,” “the first dose,” and “before this season starts.”\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "3c61a2e208a19ac1fbb37e19fd2b3e5d3e48c62f1e1ba55a985a948fe8748c69",
+      "usage": {
+        "input_tokens": 209,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 61,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 270
+      },
+      "cost_upper_usd": 0.001028,
+      "swapped": false,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

@@ -1,0 +1,166 @@
+{
+  "row_id": "Kf8220958553b:es",
+  "translations": {
+    "zero_shot": {
+      "text": "Establecer el formato de la celda para que se muestre como un porcentaje",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "f840244539e15ee67e5d703d4d5615134492b841e7b2008548fa807cbca88a1a",
+      "usage": {
+        "input_tokens": 103,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 21,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 124
+      },
+      "cost_upper_usd": 0.001664
+    },
+    "fuzzy_ctx": {
+      "text": "Establece el formato de la celda para que su contenido se muestre como un porcentaje",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "3cfd8e3af38a8d53456706e82d59e9e7ac76f6dc55621adef2acfe50fd4eb3aa",
+      "usage": {
+        "input_tokens": 254,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 23,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 277
+      },
+      "cost_upper_usd": 0.002952
+    },
+    "hybrid_ctx": {
+      "text": "Establece el formato de la celda para que su valor se muestre como un porcentaje",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "a04bff8fcedae8bd1362bd66f28f271d4ac7cebaa4d1f84f1e86cccbd32f3b31",
+      "usage": {
+        "input_tokens": 255,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 23,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 278
+      },
+      "cost_upper_usd": 0.00296
+    },
+    "random_ctx": {
+      "text": "Establecer el formato de la celda para mostrar su contenido como porcentaje",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "72608179bf5bda9c49d0d28209090d5d4fefd98094dad632d92debc58fabb45f",
+      "usage": {
+        "input_tokens": 254,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 19,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 273
+      },
+      "cost_upper_usd": 0.002792
+    },
+    "semantic_ctx": {
+      "text": "Establecer el formato de la celda para que su valor se muestre como porcentaje",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "53d2a0378a40afcdc2efb0748dcac378aa1cb327785eb5e0d503bcebe018b087",
+      "usage": {
+        "input_tokens": 232,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 22,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 254
+      },
+      "cost_upper_usd": 0.002736
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both preserve “Set the cell formatting to look like a percentage”: “Establece el formato de la celda” specifies a formatting change, and both “su valor se muestre como un porcentaje” (A) and “su contenido se muestre como un porcentaje” (B) describe how the cell is displayed.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "fca8a01ccdad7dddaf6fb035fb50e20ffba715fe2f3da7c1a0b9a8a6ad828816",
+      "usage": {
+        "input_tokens": 206,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 82,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 288
+      },
+      "cost_upper_usd": 0.001232,
+      "swapped": false,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both “su contenido se muestre como un porcentaje” (A) and “su valor se muestre como un porcentaje” (B) convey “Set the cell formatting to look like a percentage”: the change is to how the cell is displayed, not to its underlying data.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "b12ef88e0d4c716454629a83ed6255a89c8ec5e2f924313ccee29987ab542acc",
+      "usage": {
+        "input_tokens": 206,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 73,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 279
+      },
+      "cost_upper_usd": 0.001142,
+      "swapped": true,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

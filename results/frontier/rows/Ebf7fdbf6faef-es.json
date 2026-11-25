@@ -1,0 +1,117 @@
+{
+  "row_id": "Ebf7fdbf6faef:es",
+  "translations": {
+    "random_ctx": {
+      "text": "Caelyx no debe administrarse por vía intramuscular ni subcutánea.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "092b179b853c22ecff2662f4688e624fef29be1c8328875ebff3db152dde90f9",
+      "usage": {
+        "input_tokens": 277,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 21,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 298
+      },
+      "cost_upper_usd": 0.003056
+    },
+    "hybrid_ctx": {
+      "text": "Caelyx no debe administrarse por vía intramuscular ni subcutánea.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "4c96c167c239dae31f95296ebfd48eb5a6642bc74332f668da2bb7dc9f6d2d64",
+      "usage": {
+        "input_tokens": 295,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 21,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 316
+      },
+      "cost_upper_usd": 0.0032
+    },
+    "fuzzy_ctx": {
+      "text": "Caelyx no debe administrarse por vía intramuscular ni subcutánea.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "d613be4d8362305e69a63ebbc33ff168dcad393daacebc36c01149f4ea92c8d6",
+      "usage": {
+        "input_tokens": 272,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 21,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 293
+      },
+      "cost_upper_usd": 0.003016
+    },
+    "semantic_ctx": {
+      "text": "Caelyx no se debe administrar por vía intramuscular ni subcutánea.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "d1df748b790ba9caa3b75f9f4c81461043fc34d26b3d9e943e9239a619c8b851",
+      "usage": {
+        "input_tokens": 271,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 21,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 292
+      },
+      "cost_upper_usd": 0.003008
+    },
+    "zero_shot": {
+      "text": "Caelyx no debe administrarse por vía intramuscular ni subcutánea.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "118eb8476405e27306be8e2a6e67c94f1d5d5cd23237ca258c30467c36edef15",
+      "usage": {
+        "input_tokens": 113,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 21,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 134
+      },
+      "cost_upper_usd": 0.001744
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

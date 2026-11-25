@@ -1,0 +1,166 @@
+{
+  "row_id": "Kc4ed9e2eb39f:es",
+  "translations": {
+    "semantic_ctx": {
+      "text": "No se han detectado errores de LaTeX.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "14176409826626234cb15e6c6be47ae7030122069029264afe1d246d14204b60",
+      "usage": {
+        "input_tokens": 226,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 15,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 241
+      },
+      "cost_upper_usd": 0.002408
+    },
+    "fuzzy_ctx": {
+      "text": "No se detectaron errores de LaTeX.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "69f2b5dadfe95da5f0319ef3bf09b9953009f7f054188c6f749f3169d76979f4",
+      "usage": {
+        "input_tokens": 225,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 239
+      },
+      "cost_upper_usd": 0.00236
+    },
+    "hybrid_ctx": {
+      "text": "No se han detectado errores de LaTeX.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "ffda8c9cc2bee4c00180c7c0348c473ff34b256eab7e4f87e3e3a22b6874a19b",
+      "usage": {
+        "input_tokens": 224,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 15,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 239
+      },
+      "cost_upper_usd": 0.002392
+    },
+    "random_ctx": {
+      "text": "No se han detectado errores de LaTeX.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "82488564c18484bc6a292286ca862bd523395fbe56b70a5bd68ae42b2bce50e0",
+      "usage": {
+        "input_tokens": 232,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 15,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 247
+      },
+      "cost_upper_usd": 0.002456
+    },
+    "zero_shot": {
+      "text": "No se han detectado errores de LaTeX.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "c26d250fe5898049fcaebe31d2dee5905213c10bcbd5f06085f62112f05e94f2",
+      "usage": {
+        "input_tokens": 101,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 15,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 116
+      },
+      "cost_upper_usd": 0.001408
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both A’s «No se detectaron errores de LaTeX» and B’s «No se han detectado errores de LaTeX» convey the source status «No LaTeX errors detected.» The tense difference does not change the result.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "17ef4347485118b76c12bc2d64254fe5ce56eb59b3f64239c49c52eaaadc106a",
+      "usage": {
+        "input_tokens": 185,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 67,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 252
+      },
+      "cost_upper_usd": 0.00104,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both “No se han detectado errores de LaTeX” (A) and “No se detectaron errores de LaTeX” (B) accurately convey “No LaTeX errors detected.” The tense difference does not change the reported result.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "bfe98ad36bb22f409bc710eeb256a5adab7d15b9c3281026094decbc0d251f18",
+      "usage": {
+        "input_tokens": 185,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 68,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 253
+      },
+      "cost_upper_usd": 0.00105,
+      "swapped": false,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

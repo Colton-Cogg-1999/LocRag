@@ -1,0 +1,1089 @@
+{
+  "groups": {
+    "all": {
+      "n": 480,
+      "eligible": 451,
+      "arms": {
+        "zero_shot": {
+          "consistent": 326,
+          "accurate": 473
+        },
+        "fuzzy_ctx": {
+          "consistent": 374,
+          "accurate": 444
+        },
+        "router": {
+          "consistent": 368,
+          "accurate": 441
+        }
+      },
+      "paired": {
+        "router_minus_fuzzy_ctx": {
+          "consistency_pp": -1.3303769401330376,
+          "consistency_ci95": [
+            -3.303964757709251,
+            0.44943820224719105
+          ],
+          "accuracy_pp": -0.625,
+          "accuracy_ci95": [
+            -2.5,
+            1.25
+          ],
+          "con_fixes": 7,
+          "con_losses": 13,
+          "con_fixes_both_accurate": 7,
+          "con_losses_both_accurate": 9,
+          "meaning_errors_introduced": 13,
+          "meaning_errors_fixed": 10
+        },
+        "router_minus_zero_shot": {
+          "consistency_pp": 9.312638580931264,
+          "consistency_ci95": [
+            5.482456140350877,
+            13.129102844638949
+          ],
+          "accuracy_pp": -6.666666666666667,
+          "accuracy_ci95": [
+            -9.166666666666666,
+            -4.5781250000000755
+          ],
+          "con_fixes": 62,
+          "con_losses": 20,
+          "con_fixes_both_accurate": 57,
+          "con_losses_both_accurate": 17,
+          "meaning_errors_introduced": 35,
+          "meaning_errors_fixed": 3
+        },
+        "fuzzy_ctx_minus_zero_shot": {
+          "consistency_pp": 10.643015521064301,
+          "consistency_ci95": [
+            6.51685393258427,
+            14.79028697571744
+          ],
+          "accuracy_pp": -6.041666666666667,
+          "accuracy_ci95": [
+            -8.333333333333332,
+            -3.75
+          ],
+          "con_fixes": 72,
+          "con_losses": 24,
+          "con_fixes_both_accurate": 64,
+          "con_losses_both_accurate": 21,
+          "meaning_errors_introduced": 33,
+          "meaning_errors_fixed": 4
+        }
+      },
+      "routes": {
+        "fuzzy": 320,
+        "semantic": 82,
+        "none": 78
+      },
+      "examples_supplied_by_router": {
+        "2": 78,
+        "3": 125,
+        "1": 199,
+        "0": 78
+      },
+      "eligible_citation_overlap": 11
+    },
+    "low": {
+      "n": 160,
+      "eligible": 152,
+      "arms": {
+        "zero_shot": {
+          "consistent": 113,
+          "accurate": 158
+        },
+        "fuzzy_ctx": {
+          "consistent": 123,
+          "accurate": 149
+        },
+        "router": {
+          "consistent": 118,
+          "accurate": 154
+        }
+      },
+      "paired": {
+        "router_minus_fuzzy_ctx": {
+          "consistency_pp": -3.289473684210526,
+          "consistency_ci95": [
+            -8.441558441558442,
+            1.3513513513513513
+          ],
+          "accuracy_pp": 3.125,
+          "accuracy_ci95": [
+            -1.25,
+            7.5
+          ],
+          "con_fixes": 5,
+          "con_losses": 10,
+          "con_fixes_both_accurate": 5,
+          "con_losses_both_accurate": 6,
+          "meaning_errors_introduced": 4,
+          "meaning_errors_fixed": 9
+        },
+        "router_minus_zero_shot": {
+          "consistency_pp": 3.289473684210526,
+          "consistency_ci95": [
+            -0.6666666666666667,
+            7.741935483870968
+          ],
+          "accuracy_pp": -2.5,
+          "accuracy_ci95": [
+            -5.0,
+            -0.625
+          ],
+          "con_fixes": 8,
+          "con_losses": 3,
+          "con_fixes_both_accurate": 8,
+          "con_losses_both_accurate": 3,
+          "meaning_errors_introduced": 4,
+          "meaning_errors_fixed": 0
+        },
+        "fuzzy_ctx_minus_zero_shot": {
+          "consistency_pp": 6.578947368421052,
+          "consistency_ci95": [
+            0.6578947368421052,
+            12.5
+          ],
+          "accuracy_pp": -5.625,
+          "accuracy_ci95": [
+            -10.0,
+            -1.25
+          ],
+          "con_fixes": 16,
+          "con_losses": 6,
+          "con_fixes_both_accurate": 12,
+          "con_losses_both_accurate": 6,
+          "meaning_errors_introduced": 11,
+          "meaning_errors_fixed": 2
+        }
+      },
+      "routes": {
+        "semantic": 82,
+        "none": 78
+      },
+      "examples_supplied_by_router": {
+        "1": 39,
+        "3": 31,
+        "2": 12,
+        "0": 78
+      },
+      "eligible_citation_overlap": 0
+    },
+    "middle": {
+      "n": 160,
+      "eligible": 150,
+      "arms": {
+        "zero_shot": {
+          "consistent": 101,
+          "accurate": 156
+        },
+        "fuzzy_ctx": {
+          "consistent": 123,
+          "accurate": 151
+        },
+        "router": {
+          "consistent": 123,
+          "accurate": 147
+        }
+      },
+      "paired": {
+        "router_minus_fuzzy_ctx": {
+          "consistency_pp": 0.0,
+          "consistency_ci95": [
+            -2.666666666666667,
+            2.684563758389262
+          ],
+          "accuracy_pp": -2.5,
+          "accuracy_ci95": [
+            -5.625,
+            0.0
+          ],
+          "con_fixes": 2,
+          "con_losses": 2,
+          "con_fixes_both_accurate": 2,
+          "con_losses_both_accurate": 2,
+          "meaning_errors_introduced": 5,
+          "meaning_errors_fixed": 1
+        },
+        "router_minus_zero_shot": {
+          "consistency_pp": 14.666666666666666,
+          "consistency_ci95": [
+            6.943247126436783,
+            22.516556291390728
+          ],
+          "accuracy_pp": -5.625,
+          "accuracy_ci95": [
+            -10.625,
+            -1.25
+          ],
+          "con_fixes": 30,
+          "con_losses": 8,
+          "con_fixes_both_accurate": 28,
+          "con_losses_both_accurate": 6,
+          "meaning_errors_introduced": 12,
+          "meaning_errors_fixed": 3
+        },
+        "fuzzy_ctx_minus_zero_shot": {
+          "consistency_pp": 14.666666666666666,
+          "consistency_ci95": [
+            6.756756756756757,
+            22.76012497107149
+          ],
+          "accuracy_pp": -3.125,
+          "accuracy_ci95": [
+            -6.875000000000001,
+            0.0
+          ],
+          "con_fixes": 31,
+          "con_losses": 9,
+          "con_fixes_both_accurate": 29,
+          "con_losses_both_accurate": 7,
+          "meaning_errors_introduced": 7,
+          "meaning_errors_fixed": 2
+        }
+      },
+      "routes": {
+        "fuzzy": 160
+      },
+      "examples_supplied_by_router": {
+        "2": 28,
+        "3": 61,
+        "1": 71
+      },
+      "eligible_citation_overlap": 10
+    },
+    "high": {
+      "n": 160,
+      "eligible": 149,
+      "arms": {
+        "zero_shot": {
+          "consistent": 112,
+          "accurate": 159
+        },
+        "fuzzy_ctx": {
+          "consistent": 128,
+          "accurate": 144
+        },
+        "router": {
+          "consistent": 127,
+          "accurate": 140
+        }
+      },
+      "paired": {
+        "router_minus_fuzzy_ctx": {
+          "consistency_pp": -0.6711409395973155,
+          "consistency_ci95": [
+            -2.0689655172413794,
+            0.0
+          ],
+          "accuracy_pp": -2.5,
+          "accuracy_ci95": [
+            -5.0,
+            -0.625
+          ],
+          "con_fixes": 0,
+          "con_losses": 1,
+          "con_fixes_both_accurate": 0,
+          "con_losses_both_accurate": 1,
+          "meaning_errors_introduced": 4,
+          "meaning_errors_fixed": 0
+        },
+        "router_minus_zero_shot": {
+          "consistency_pp": 10.06711409395973,
+          "consistency_ci95": [
+            2.7027027027027026,
+            17.449664429530202
+          ],
+          "accuracy_pp": -11.875,
+          "accuracy_ci95": [
+            -16.875,
+            -7.5
+          ],
+          "con_fixes": 24,
+          "con_losses": 9,
+          "con_fixes_both_accurate": 21,
+          "con_losses_both_accurate": 8,
+          "meaning_errors_introduced": 19,
+          "meaning_errors_fixed": 0
+        },
+        "fuzzy_ctx_minus_zero_shot": {
+          "consistency_pp": 10.738255033557047,
+          "consistency_ci95": [
+            3.3783783783783785,
+            18.181818181818183
+          ],
+          "accuracy_pp": -9.375,
+          "accuracy_ci95": [
+            -13.750000000000002,
+            -5.0
+          ],
+          "con_fixes": 25,
+          "con_losses": 9,
+          "con_fixes_both_accurate": 23,
+          "con_losses_both_accurate": 8,
+          "meaning_errors_introduced": 15,
+          "meaning_errors_fixed": 0
+        }
+      },
+      "routes": {
+        "fuzzy": 160
+      },
+      "examples_supplied_by_router": {
+        "2": 38,
+        "1": 89,
+        "3": 33
+      },
+      "eligible_citation_overlap": 1
+    },
+    "<50": {
+      "n": 80,
+      "eligible": 77,
+      "arms": {
+        "zero_shot": {
+          "consistent": 63,
+          "accurate": 79
+        },
+        "fuzzy_ctx": {
+          "consistent": 65,
+          "accurate": 77
+        },
+        "router": {
+          "consistent": 64,
+          "accurate": 78
+        }
+      },
+      "paired": {
+        "router_minus_fuzzy_ctx": {
+          "consistency_pp": -1.2987012987012987,
+          "consistency_ci95": [
+            -9.090909090909092,
+            6.41025641025641
+          ],
+          "accuracy_pp": 1.25,
+          "accuracy_ci95": [
+            -2.5,
+            6.25
+          ],
+          "con_fixes": 4,
+          "con_losses": 5,
+          "con_fixes_both_accurate": 4,
+          "con_losses_both_accurate": 4,
+          "meaning_errors_introduced": 1,
+          "meaning_errors_fixed": 2
+        },
+        "router_minus_zero_shot": {
+          "consistency_pp": 1.2987012987012987,
+          "consistency_ci95": [
+            0.0,
+            4.0
+          ],
+          "accuracy_pp": -1.25,
+          "accuracy_ci95": [
+            -3.75,
+            0.0
+          ],
+          "con_fixes": 1,
+          "con_losses": 0,
+          "con_fixes_both_accurate": 1,
+          "con_losses_both_accurate": 0,
+          "meaning_errors_introduced": 1,
+          "meaning_errors_fixed": 0
+        },
+        "fuzzy_ctx_minus_zero_shot": {
+          "consistency_pp": 2.5974025974025974,
+          "consistency_ci95": [
+            -4.054054054054054,
+            10.256410256410255
+          ],
+          "accuracy_pp": -2.5,
+          "accuracy_ci95": [
+            -7.5,
+            2.5
+          ],
+          "con_fixes": 5,
+          "con_losses": 3,
+          "con_fixes_both_accurate": 4,
+          "con_losses_both_accurate": 3,
+          "meaning_errors_introduced": 3,
+          "meaning_errors_fixed": 1
+        }
+      },
+      "routes": {
+        "semantic": 22,
+        "none": 58
+      },
+      "examples_supplied_by_router": {
+        "2": 3,
+        "0": 58,
+        "3": 7,
+        "1": 12
+      },
+      "eligible_citation_overlap": 0
+    },
+    "50-74": {
+      "n": 80,
+      "eligible": 75,
+      "arms": {
+        "zero_shot": {
+          "consistent": 50,
+          "accurate": 79
+        },
+        "fuzzy_ctx": {
+          "consistent": 58,
+          "accurate": 72
+        },
+        "router": {
+          "consistent": 54,
+          "accurate": 76
+        }
+      },
+      "paired": {
+        "router_minus_fuzzy_ctx": {
+          "consistency_pp": -5.333333333333333,
+          "consistency_ci95": [
+            -11.842105263157894,
+            0.0
+          ],
+          "accuracy_pp": 5.0,
+          "accuracy_ci95": [
+            -2.5,
+            12.5
+          ],
+          "con_fixes": 1,
+          "con_losses": 5,
+          "con_fixes_both_accurate": 1,
+          "con_losses_both_accurate": 2,
+          "meaning_errors_introduced": 3,
+          "meaning_errors_fixed": 7
+        },
+        "router_minus_zero_shot": {
+          "consistency_pp": 5.333333333333333,
+          "consistency_ci95": [
+            -2.7027027027027026,
+            13.698630136986301
+          ],
+          "accuracy_pp": -3.75,
+          "accuracy_ci95": [
+            -8.75,
+            0.0
+          ],
+          "con_fixes": 7,
+          "con_losses": 3,
+          "con_fixes_both_accurate": 7,
+          "con_losses_both_accurate": 3,
+          "meaning_errors_introduced": 3,
+          "meaning_errors_fixed": 0
+        },
+        "fuzzy_ctx_minus_zero_shot": {
+          "consistency_pp": 10.666666666666666,
+          "consistency_ci95": [
+            1.3157894736842104,
+            20.27027027027027
+          ],
+          "accuracy_pp": -8.75,
+          "accuracy_ci95": [
+            -16.25,
+            -2.5
+          ],
+          "con_fixes": 11,
+          "con_losses": 3,
+          "con_fixes_both_accurate": 8,
+          "con_losses_both_accurate": 3,
+          "meaning_errors_introduced": 8,
+          "meaning_errors_fixed": 1
+        }
+      },
+      "routes": {
+        "semantic": 60,
+        "none": 20
+      },
+      "examples_supplied_by_router": {
+        "1": 27,
+        "3": 24,
+        "0": 20,
+        "2": 9
+      },
+      "eligible_citation_overlap": 0
+    },
+    "75-84": {
+      "n": 80,
+      "eligible": 76,
+      "arms": {
+        "zero_shot": {
+          "consistent": 50,
+          "accurate": 78
+        },
+        "fuzzy_ctx": {
+          "consistent": 63,
+          "accurate": 76
+        },
+        "router": {
+          "consistent": 63,
+          "accurate": 75
+        }
+      },
+      "paired": {
+        "router_minus_fuzzy_ctx": {
+          "consistency_pp": 0.0,
+          "consistency_ci95": [
+            -3.896103896103896,
+            3.896103896103896
+          ],
+          "accuracy_pp": -1.25,
+          "accuracy_ci95": [
+            -3.75,
+            0.0
+          ],
+          "con_fixes": 1,
+          "con_losses": 1,
+          "con_fixes_both_accurate": 1,
+          "con_losses_both_accurate": 1,
+          "meaning_errors_introduced": 1,
+          "meaning_errors_fixed": 0
+        },
+        "router_minus_zero_shot": {
+          "consistency_pp": 17.105263157894736,
+          "consistency_ci95": [
+            6.493506493506493,
+            28.000000000000004
+          ],
+          "accuracy_pp": -3.75,
+          "accuracy_ci95": [
+            -10.0,
+            1.25
+          ],
+          "con_fixes": 17,
+          "con_losses": 4,
+          "con_fixes_both_accurate": 16,
+          "con_losses_both_accurate": 3,
+          "meaning_errors_introduced": 4,
+          "meaning_errors_fixed": 1
+        },
+        "fuzzy_ctx_minus_zero_shot": {
+          "consistency_pp": 17.105263157894736,
+          "consistency_ci95": [
+            5.405405405405405,
+            28.57142857142857
+          ],
+          "accuracy_pp": -2.5,
+          "accuracy_ci95": [
+            -7.5,
+            2.5
+          ],
+          "con_fixes": 18,
+          "con_losses": 5,
+          "con_fixes_both_accurate": 17,
+          "con_losses_both_accurate": 4,
+          "meaning_errors_introduced": 3,
+          "meaning_errors_fixed": 1
+        }
+      },
+      "routes": {
+        "fuzzy": 80
+      },
+      "examples_supplied_by_router": {
+        "3": 23,
+        "1": 41,
+        "2": 16
+      },
+      "eligible_citation_overlap": 6
+    },
+    "85-94": {
+      "n": 80,
+      "eligible": 74,
+      "arms": {
+        "zero_shot": {
+          "consistent": 51,
+          "accurate": 78
+        },
+        "fuzzy_ctx": {
+          "consistent": 60,
+          "accurate": 75
+        },
+        "router": {
+          "consistent": 60,
+          "accurate": 72
+        }
+      },
+      "paired": {
+        "router_minus_fuzzy_ctx": {
+          "consistency_pp": 0.0,
+          "consistency_ci95": [
+            -4.054054054054054,
+            4.0
+          ],
+          "accuracy_pp": -3.75,
+          "accuracy_ci95": [
+            -8.75,
+            1.25
+          ],
+          "con_fixes": 1,
+          "con_losses": 1,
+          "con_fixes_both_accurate": 1,
+          "con_losses_both_accurate": 1,
+          "meaning_errors_introduced": 4,
+          "meaning_errors_fixed": 1
+        },
+        "router_minus_zero_shot": {
+          "consistency_pp": 12.162162162162161,
+          "consistency_ci95": [
+            1.36986301369863,
+            22.666666666666664
+          ],
+          "accuracy_pp": -7.5,
+          "accuracy_ci95": [
+            -15.0,
+            0.0
+          ],
+          "con_fixes": 13,
+          "con_losses": 4,
+          "con_fixes_both_accurate": 12,
+          "con_losses_both_accurate": 3,
+          "meaning_errors_introduced": 8,
+          "meaning_errors_fixed": 2
+        },
+        "fuzzy_ctx_minus_zero_shot": {
+          "consistency_pp": 12.162162162162161,
+          "consistency_ci95": [
+            1.36986301369863,
+            22.666666666666664
+          ],
+          "accuracy_pp": -3.75,
+          "accuracy_ci95": [
+            -8.75,
+            1.25
+          ],
+          "con_fixes": 13,
+          "con_losses": 4,
+          "con_fixes_both_accurate": 12,
+          "con_losses_both_accurate": 3,
+          "meaning_errors_introduced": 4,
+          "meaning_errors_fixed": 1
+        }
+      },
+      "routes": {
+        "fuzzy": 80
+      },
+      "examples_supplied_by_router": {
+        "2": 12,
+        "3": 38,
+        "1": 30
+      },
+      "eligible_citation_overlap": 4
+    },
+    "95-99": {
+      "n": 80,
+      "eligible": 79,
+      "arms": {
+        "zero_shot": {
+          "consistent": 57,
+          "accurate": 80
+        },
+        "fuzzy_ctx": {
+          "consistent": 67,
+          "accurate": 74
+        },
+        "router": {
+          "consistent": 66,
+          "accurate": 72
+        }
+      },
+      "paired": {
+        "router_minus_fuzzy_ctx": {
+          "consistency_pp": -1.2658227848101267,
+          "consistency_ci95": [
+            -3.8461538461538463,
+            0.0
+          ],
+          "accuracy_pp": -2.5,
+          "accuracy_ci95": [
+            -6.25,
+            0.0
+          ],
+          "con_fixes": 0,
+          "con_losses": 1,
+          "con_fixes_both_accurate": 0,
+          "con_losses_both_accurate": 1,
+          "meaning_errors_introduced": 2,
+          "meaning_errors_fixed": 0
+        },
+        "router_minus_zero_shot": {
+          "consistency_pp": 11.39240506329114,
+          "consistency_ci95": [
+            1.282051282051282,
+            21.518987341772153
+          ],
+          "accuracy_pp": -10.0,
+          "accuracy_ci95": [
+            -16.25,
+            -3.75
+          ],
+          "con_fixes": 13,
+          "con_losses": 4,
+          "con_fixes_both_accurate": 12,
+          "con_losses_both_accurate": 3,
+          "meaning_errors_introduced": 8,
+          "meaning_errors_fixed": 0
+        },
+        "fuzzy_ctx_minus_zero_shot": {
+          "consistency_pp": 12.658227848101266,
+          "consistency_ci95": [
+            2.5316455696202533,
+            22.78481012658228
+          ],
+          "accuracy_pp": -7.5,
+          "accuracy_ci95": [
+            -13.750000000000002,
+            -2.5
+          ],
+          "con_fixes": 14,
+          "con_losses": 4,
+          "con_fixes_both_accurate": 14,
+          "con_losses_both_accurate": 3,
+          "meaning_errors_introduced": 6,
+          "meaning_errors_fixed": 0
+        }
+      },
+      "routes": {
+        "fuzzy": 80
+      },
+      "examples_supplied_by_router": {
+        "2": 22,
+        "1": 39,
+        "3": 19
+      },
+      "eligible_citation_overlap": 1
+    },
+    "100": {
+      "n": 80,
+      "eligible": 70,
+      "arms": {
+        "zero_shot": {
+          "consistent": 55,
+          "accurate": 79
+        },
+        "fuzzy_ctx": {
+          "consistent": 61,
+          "accurate": 70
+        },
+        "router": {
+          "consistent": 61,
+          "accurate": 68
+        }
+      },
+      "paired": {
+        "router_minus_fuzzy_ctx": {
+          "consistency_pp": 0.0,
+          "consistency_ci95": [
+            0.0,
+            0.0
+          ],
+          "accuracy_pp": -2.5,
+          "accuracy_ci95": [
+            -6.25,
+            0.0
+          ],
+          "con_fixes": 0,
+          "con_losses": 0,
+          "con_fixes_both_accurate": 0,
+          "con_losses_both_accurate": 0,
+          "meaning_errors_introduced": 2,
+          "meaning_errors_fixed": 0
+        },
+        "router_minus_zero_shot": {
+          "consistency_pp": 8.571428571428571,
+          "consistency_ci95": [
+            -1.6899350649350438,
+            19.402985074626866
+          ],
+          "accuracy_pp": -13.750000000000002,
+          "accuracy_ci95": [
+            -21.25,
+            -7.5
+          ],
+          "con_fixes": 11,
+          "con_losses": 5,
+          "con_fixes_both_accurate": 9,
+          "con_losses_both_accurate": 5,
+          "meaning_errors_introduced": 11,
+          "meaning_errors_fixed": 0
+        },
+        "fuzzy_ctx_minus_zero_shot": {
+          "consistency_pp": 8.571428571428571,
+          "consistency_ci95": [
+            -1.6899350649350438,
+            19.402985074626866
+          ],
+          "accuracy_pp": -11.25,
+          "accuracy_ci95": [
+            -17.5,
+            -5.0
+          ],
+          "con_fixes": 11,
+          "con_losses": 5,
+          "con_fixes_both_accurate": 9,
+          "con_losses_both_accurate": 5,
+          "meaning_errors_introduced": 9,
+          "meaning_errors_fixed": 0
+        }
+      },
+      "routes": {
+        "fuzzy": 80
+      },
+      "examples_supplied_by_router": {
+        "2": 16,
+        "1": 50,
+        "3": 14
+      },
+      "eligible_citation_overlap": 0
+    },
+    "low_semantic_activated": {
+      "n": 82,
+      "eligible": 78,
+      "arms": {
+        "zero_shot": {
+          "consistent": 53,
+          "accurate": 82
+        },
+        "fuzzy_ctx": {
+          "consistent": 60,
+          "accurate": 78
+        },
+        "router": {
+          "consistent": 58,
+          "accurate": 78
+        }
+      },
+      "paired": {
+        "router_minus_fuzzy_ctx": {
+          "consistency_pp": -2.5641025641025643,
+          "consistency_ci95": [
+            -8.75,
+            2.7027027027027026
+          ],
+          "accuracy_pp": 0.0,
+          "accuracy_ci95": [
+            -4.878048780487805,
+            4.878048780487805
+          ],
+          "con_fixes": 2,
+          "con_losses": 4,
+          "con_fixes_both_accurate": 2,
+          "con_losses_both_accurate": 4,
+          "meaning_errors_introduced": 2,
+          "meaning_errors_fixed": 2
+        },
+        "router_minus_zero_shot": {
+          "consistency_pp": 6.410256410256411,
+          "consistency_ci95": [
+            -1.2991285030758712,
+            14.473684210526317
+          ],
+          "accuracy_pp": -4.878048780487805,
+          "accuracy_ci95": [
+            -9.75609756097561,
+            -1.2195121951219512
+          ],
+          "con_fixes": 8,
+          "con_losses": 3,
+          "con_fixes_both_accurate": 8,
+          "con_losses_both_accurate": 3,
+          "meaning_errors_introduced": 4,
+          "meaning_errors_fixed": 0
+        },
+        "fuzzy_ctx_minus_zero_shot": {
+          "consistency_pp": 8.974358974358974,
+          "consistency_ci95": [
+            0.0,
+            17.72151898734177
+          ],
+          "accuracy_pp": -4.878048780487805,
+          "accuracy_ci95": [
+            -9.75609756097561,
+            -1.2195121951219512
+          ],
+          "con_fixes": 10,
+          "con_losses": 3,
+          "con_fixes_both_accurate": 10,
+          "con_losses_both_accurate": 3,
+          "meaning_errors_introduced": 4,
+          "meaning_errors_fixed": 0
+        }
+      },
+      "routes": {
+        "semantic": 82
+      },
+      "examples_supplied_by_router": {
+        "1": 39,
+        "3": 31,
+        "2": 12
+      },
+      "eligible_citation_overlap": 0
+    },
+    "low_abstained": {
+      "n": 78,
+      "eligible": 74,
+      "arms": {
+        "zero_shot": {
+          "consistent": 60,
+          "accurate": 76
+        },
+        "fuzzy_ctx": {
+          "consistent": 63,
+          "accurate": 71
+        },
+        "router": {
+          "consistent": 60,
+          "accurate": 76
+        }
+      },
+      "paired": {
+        "router_minus_fuzzy_ctx": {
+          "consistency_pp": -4.054054054054054,
+          "consistency_ci95": [
+            -11.688311688311687,
+            3.847402597402579
+          ],
+          "accuracy_pp": 6.41025641025641,
+          "accuracy_ci95": [
+            0.0,
+            14.102564102564102
+          ],
+          "con_fixes": 3,
+          "con_losses": 6,
+          "con_fixes_both_accurate": 3,
+          "con_losses_both_accurate": 2,
+          "meaning_errors_introduced": 2,
+          "meaning_errors_fixed": 7
+        },
+        "router_minus_zero_shot": {
+          "consistency_pp": 0.0,
+          "consistency_ci95": [
+            0.0,
+            0.0
+          ],
+          "accuracy_pp": 0.0,
+          "accuracy_ci95": [
+            0.0,
+            0.0
+          ],
+          "con_fixes": 0,
+          "con_losses": 0,
+          "con_fixes_both_accurate": 0,
+          "con_losses_both_accurate": 0,
+          "meaning_errors_introduced": 0,
+          "meaning_errors_fixed": 0
+        },
+        "fuzzy_ctx_minus_zero_shot": {
+          "consistency_pp": 4.054054054054054,
+          "consistency_ci95": [
+            -3.8474025974025965,
+            11.688311688311687
+          ],
+          "accuracy_pp": -6.41025641025641,
+          "accuracy_ci95": [
+            -14.102564102564102,
+            0.0
+          ],
+          "con_fixes": 6,
+          "con_losses": 3,
+          "con_fixes_both_accurate": 2,
+          "con_losses_both_accurate": 3,
+          "meaning_errors_introduced": 7,
+          "meaning_errors_fixed": 2
+        }
+      },
+      "routes": {
+        "none": 78
+      },
+      "examples_supplied_by_router": {
+        "0": 78
+      },
+      "eligible_citation_overlap": 0
+    },
+    "no_cited_entry_in_router": {
+      "n": 469,
+      "eligible": 440,
+      "arms": {
+        "zero_shot": {
+          "consistent": 324,
+          "accurate": 462
+        },
+        "fuzzy_ctx": {
+          "consistent": 365,
+          "accurate": 435
+        },
+        "router": {
+          "consistent": 359,
+          "accurate": 432
+        }
+      },
+      "paired": {
+        "router_minus_fuzzy_ctx": {
+          "consistency_pp": -1.3636363636363635,
+          "consistency_ci95": [
+            -3.3860045146726865,
+            0.672645739910314
+          ],
+          "accuracy_pp": -0.6396588486140725,
+          "accuracy_ci95": [
+            -2.55863539445629,
+            1.279317697228145
+          ],
+          "con_fixes": 7,
+          "con_losses": 13,
+          "con_fixes_both_accurate": 7,
+          "con_losses_both_accurate": 9,
+          "meaning_errors_introduced": 13,
+          "meaning_errors_fixed": 10
+        },
+        "router_minus_zero_shot": {
+          "consistency_pp": 7.954545454545454,
+          "consistency_ci95": [
+            4.109355009829313,
+            11.737089201877934
+          ],
+          "accuracy_pp": -6.396588486140725,
+          "accuracy_ci95": [
+            -8.742004264392325,
+            -4.051172707889126
+          ],
+          "con_fixes": 55,
+          "con_losses": 20,
+          "con_fixes_both_accurate": 51,
+          "con_losses_both_accurate": 17,
+          "meaning_errors_introduced": 33,
+          "meaning_errors_fixed": 3
+        },
+        "fuzzy_ctx_minus_zero_shot": {
+          "consistency_pp": 9.318181818181818,
+          "consistency_ci95": [
+            5.227272727272727,
+            13.40943410616229
+          ],
+          "accuracy_pp": -5.756929637526652,
+          "accuracy_ci95": [
+            -8.102345415778252,
+            -3.411513859275053
+          ],
+          "con_fixes": 65,
+          "con_losses": 24,
+          "con_fixes_both_accurate": 58,
+          "con_losses_both_accurate": 21,
+          "meaning_errors_introduced": 31,
+          "meaning_errors_fixed": 4
+        }
+      }
+    }
+  },
+  "repeat_grades": {
+    "accuracy_tested": 78,
+    "accuracy_agree": 77,
+    "consistency_tested": 72,
+    "consistency_agree": 72
+  },
+  "unique_calls": 2348,
+  "uncached_rate_usd": 5.003682
+}

@@ -1,0 +1,117 @@
+{
+  "row_id": "K948db2b1a0da:es",
+  "translations": {
+    "random_ctx": {
+      "text": "Tarea de envío a CVS finalizada",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "cf3345897e7ab0a187bf2fc757d335946936304b4e5a27083044f195bc5b2b49",
+      "usage": {
+        "input_tokens": 248,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 260
+      },
+      "cost_upper_usd": 0.002464
+    },
+    "zero_shot": {
+      "text": "Tarea de confirmación en CVS finalizada",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "05894ea16e6210cda333c1a04dd6a0ccf2dc83c8b7426a60493905c00e5098eb",
+      "usage": {
+        "input_tokens": 98,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 13,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 111
+      },
+      "cost_upper_usd": 0.001304
+    },
+    "semantic_ctx": {
+      "text": "Trabajo de envío al CVS terminado",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "98458a0b60a57f64605296f2b99c5b35cdcdcfd744af4e4a3a6bea1ded8c5941",
+      "usage": {
+        "input_tokens": 237,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 10,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 247
+      },
+      "cost_upper_usd": 0.002296
+    },
+    "fuzzy_ctx": {
+      "text": "Trabajo de envío a CVS finalizado",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "5b25451e96386499566653a1765ad3970230909586661ea393f94234df048b4f",
+      "usage": {
+        "input_tokens": 237,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 11,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 248
+      },
+      "cost_upper_usd": 0.002336
+    },
+    "hybrid_ctx": {
+      "text": "Trabajo de envío a CVS finalizado",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "b2513e88fcc7e6744bfda5fbe5dcaf23f315bc64f8ce583cffc28065708ad4b7",
+      "usage": {
+        "input_tokens": 234,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 11,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 245
+      },
+      "cost_upper_usd": 0.002312
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

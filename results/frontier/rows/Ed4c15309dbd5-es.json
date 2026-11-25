@@ -1,0 +1,117 @@
+{
+  "row_id": "Ed4c15309dbd5:es",
+  "translations": {
+    "hybrid_ctx": {
+      "text": "el RCP y las secciones pertinentes del prospecto.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "029b00c46c82ebf15a7d3bbabcbc5ea741097ec94605a94a03b126c5aa689eb1",
+      "usage": {
+        "input_tokens": 314,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 330
+      },
+      "cost_upper_usd": 0.003152
+    },
+    "zero_shot": {
+      "text": "la ficha técnica y las secciones pertinentes del prospecto.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "a3f5affb31d945b3dfba5bfb983e110c3c30fc3cdcd8a11828ce9cd65307378d",
+      "usage": {
+        "input_tokens": 109,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 125
+      },
+      "cost_upper_usd": 0.001512
+    },
+    "semantic_ctx": {
+      "text": "el RCP y las secciones pertinentes del prospecto.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "e1954da45f2f3aef3bada2bf951a79551e1305456389f4abb3c17143186b2c77",
+      "usage": {
+        "input_tokens": 309,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 325
+      },
+      "cost_upper_usd": 0.003112
+    },
+    "fuzzy_ctx": {
+      "text": "el RCP y las secciones pertinentes del prospecto.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "d3805ab1e92be42f9c6e6579cf67a3c2cbb66f3c65af1520c419bd080ee5b5ae",
+      "usage": {
+        "input_tokens": 327,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 343
+      },
+      "cost_upper_usd": 0.003256
+    },
+    "random_ctx": {
+      "text": "la ficha técnica y las secciones pertinentes del prospecto.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "99e6b18e8cefb9a44eff2a4bc77fd1a74337ba7321b4a8ded1eeffa17abff08f",
+      "usage": {
+        "input_tokens": 351,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 367
+      },
+      "cost_upper_usd": 0.003448
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

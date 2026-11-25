@@ -1,0 +1,166 @@
+{
+  "row_id": "Ke26df5610d3c:es",
+  "translations": {
+    "fuzzy_ctx": {
+      "text": "Error interno: no se ha podido localizar el controlador.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "6988018ed1a789f09e1b194fe4408b9531b9459a81056a0606e8c8ac30f4b045",
+      "usage": {
+        "input_tokens": 244,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 15,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 259
+      },
+      "cost_upper_usd": 0.002552
+    },
+    "random_ctx": {
+      "text": "Error interno: no se ha podido localizar el controlador.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "7b76c6d25010a913cef0afe528685f4378b1d4f597b5947d4616d23c5899a474",
+      "usage": {
+        "input_tokens": 247,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 15,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 262
+      },
+      "cost_upper_usd": 0.002576
+    },
+    "semantic_ctx": {
+      "text": "Error interno: no se ha podido encontrar el controlador.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "3eb2632e63ecb5d59a52befb02b880a17da361ecb7a6441497c1b2c1c11e24bd",
+      "usage": {
+        "input_tokens": 238,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 15,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 253
+      },
+      "cost_upper_usd": 0.002504
+    },
+    "hybrid_ctx": {
+      "text": "Error interno: no se ha podido encontrar el controlador.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "bf1d3b312d04d8be5cc5646d0c3909bf2c67457945da4b2c10d424908b7b55f2",
+      "usage": {
+        "input_tokens": 243,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 15,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 258
+      },
+      "cost_upper_usd": 0.002544
+    },
+    "zero_shot": {
+      "text": "Error interno: no se ha podido localizar el controlador.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "688b73a08a1f54635748c4395b9e2fb049310fa9b0e55aa2b9455ad8b300f980",
+      "usage": {
+        "input_tokens": 103,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 15,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 118
+      },
+      "cost_upper_usd": 0.001424
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both “no se ha podido encontrar el controlador” (A) and “no se ha podido localizar el controlador” (B) accurately convey “unable to locate the driver.” Both also preserve “Internal error” as “Error interno.”\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "402c2201a8d0cd74f3c68e2875e824c73474ec8424228e303a0c4e9bb3441ff2",
+      "usage": {
+        "input_tokens": 188,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 64,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 252
+      },
+      "cost_upper_usd": 0.001016,
+      "swapped": false,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both preserve “Internal error” as “Error interno” and “unable to locate the driver” as “no se ha podido localizar el controlador” (A) or “no se ha podido encontrar el controlador” (B). “Localizar” and “encontrar” are equivalent in this context.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "5c3a5386b1d02769847fffa1962d033cf6702d4ae070086623495320f9f65911",
+      "usage": {
+        "input_tokens": 188,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 78,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 266
+      },
+      "cost_upper_usd": 0.001156,
+      "swapped": true,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

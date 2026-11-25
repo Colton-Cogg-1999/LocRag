@@ -1,0 +1,117 @@
+{
+  "row_id": "E185c86382ba0:es",
+  "translations": {
+    "zero_shot": {
+      "text": "Conducción y uso de máquinas Xyrem le afectará si conduce o maneja herramientas o máquinas.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "1a594f56539952920ecf0078fa5e3192cf6dff78965e63001e351619bcb346e6",
+      "usage": {
+        "input_tokens": 115,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 26,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 141
+      },
+      "cost_upper_usd": 0.00196
+    },
+    "fuzzy_ctx": {
+      "text": "Conducción y uso de máquinas Xyrem le afectará si conduce o maneja herramientas o máquinas.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "5940834f77650f0db48a8678df673da03b4243b5d06618b2fdcd323c000bfd0f",
+      "usage": {
+        "input_tokens": 333,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 26,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 359
+      },
+      "cost_upper_usd": 0.003704
+    },
+    "hybrid_ctx": {
+      "text": "Conducción y uso de máquinas Xyrem le afectará si conduce o maneja herramientas o máquinas.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "01288ca1cb8cb080d94f5b35c831526a6cb5395944eb579488c198508f163908",
+      "usage": {
+        "input_tokens": 312,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 26,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 338
+      },
+      "cost_upper_usd": 0.003536
+    },
+    "random_ctx": {
+      "text": "Conducción y uso de máquinas Xyrem le afectará si conduce o utiliza herramientas o máquinas.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "aedbec6d8af12807ffcd926d3016623cf20741002b2f77b18f42a02d2a2b6c59",
+      "usage": {
+        "input_tokens": 339,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 25,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 364
+      },
+      "cost_upper_usd": 0.003712
+    },
+    "semantic_ctx": {
+      "text": "Conducción y uso de máquinas Xyrem le afectará si conduce o utiliza herramientas o máquinas.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "8d95e91dad811a84eaf8fd010272c6de62c846921dd1c8bd1e75694cfef423ba",
+      "usage": {
+        "input_tokens": 312,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 25,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 337
+      },
+      "cost_upper_usd": 0.003496
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

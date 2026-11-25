@@ -1,0 +1,117 @@
+{
+  "row_id": "Ed3198dc3a57b:es",
+  "translations": {
+    "random_ctx": {
+      "text": "Las conclusiones científicas y los motivos de la retirada se exponen en el anexo B.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "10ed3dba0ad3151cd9e8ad392ac05ed68fc5e01dcb71ded9b52b8bf4728b22dc",
+      "usage": {
+        "input_tokens": 355,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 24,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 379
+      },
+      "cost_upper_usd": 0.0038
+    },
+    "fuzzy_ctx": {
+      "text": "Las conclusiones científicas y los motivos de la retirada figuran en el anexo B.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "560f6ae5ee9dae3adbbd99c99db67f4ff9ae8430ea9f5c02809a81f955ca5533",
+      "usage": {
+        "input_tokens": 346,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 23,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 369
+      },
+      "cost_upper_usd": 0.003688
+    },
+    "semantic_ctx": {
+      "text": "Las conclusiones científicas y los motivos de la retirada se recogen en el anexo B.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "2477f03c720e5e5ab9923953e905626ccddef4f2e5d00f4fab6d19316a96a6c2",
+      "usage": {
+        "input_tokens": 319,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 24,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 343
+      },
+      "cost_upper_usd": 0.003512
+    },
+    "zero_shot": {
+      "text": "Las conclusiones científicas y los motivos de la retirada figuran en el anexo B.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "188109edb7e43af27ec4bdcd0a5ead71c991b1edd0424adb95d98744bd5ee77a",
+      "usage": {
+        "input_tokens": 111,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 23,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 134
+      },
+      "cost_upper_usd": 0.001808
+    },
+    "hybrid_ctx": {
+      "text": "Las conclusiones científicas y los motivos de la retirada figuran en el anexo B.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "560f6ae5ee9dae3adbbd99c99db67f4ff9ae8430ea9f5c02809a81f955ca5533",
+      "usage": {
+        "input_tokens": 346,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 23,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 369
+      },
+      "cost_upper_usd": 0.003688
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

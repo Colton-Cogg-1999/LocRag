@@ -1,0 +1,166 @@
+{
+  "row_id": "Eab944dfd7377:es",
+  "translations": {
+    "random_ctx": {
+      "text": "La progenie de las cerdas adultas y nulíparas vacunadas adquiere inmunidad pasiva a través del calostro.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "4cbcf9b66fb41cd7630c777134c9ad46c9531f204add15c5df8c058a7c5ff05f",
+      "usage": {
+        "input_tokens": 299,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 32,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 331
+      },
+      "cost_upper_usd": 0.003672
+    },
+    "fuzzy_ctx": {
+      "text": "La descendencia de las cerdas adultas y nulíparas vacunadas adquiere inmunidad pasiva a través del calostro.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "c81a0b888a1d949a111457b192536986b3237baa1bcee4cc6136c12b15360b78",
+      "usage": {
+        "input_tokens": 298,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 32,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 330
+      },
+      "cost_upper_usd": 0.003664
+    },
+    "hybrid_ctx": {
+      "text": "La descendencia de las cerdas reproductoras y futuras reproductoras vacunadas adquiere inmunidad pasiva a través del calostro.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "b2ee09e163212c917cf99869880ffcfffc4aac0fab6202a3483d24b2afb8ac06",
+      "usage": {
+        "input_tokens": 385,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 32,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 417
+      },
+      "cost_upper_usd": 0.00436
+    },
+    "zero_shot": {
+      "text": "La descendencia de las cerdas adultas y nulíparas vacunadas adquiere inmunidad pasiva a través del calostro.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "42f684b4304d07bdb10741293d7089cabc23327ad6849ef14ea248c7af1115c7",
+      "usage": {
+        "input_tokens": 116,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 32,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 148
+      },
+      "cost_upper_usd": 0.002208
+    },
+    "semantic_ctx": {
+      "text": "La progenie de las cerdas reproductoras y futuras reproductoras vacunadas adquiere inmunidad pasiva a través del calostro.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "7fcadfba6861f0b3341c836ea7edabd9afe0c5b706c6a7baaccfde9c0b0f018c",
+      "usage": {
+        "input_tokens": 412,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 32,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 444
+      },
+      "cost_upper_usd": 0.004576
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"B\",\"evidence\":\"For “sows and gilts,” B’s “cerdas adultas y nulíparas” explicitly preserves the defining distinction that gilts have not yet farrowed. A’s “futuras reproductoras” describes intended breeding use rather than parity. Both versions preserve the acquisition of passive immunity via colostrum.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "7944ed6450bf99c0b955afcdf1ba27fbb2a642a492f3b9d485c2aa3621716247",
+      "usage": {
+        "input_tokens": 235,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 82,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 317
+      },
+      "cost_upper_usd": 0.00129,
+      "swapped": false,
+      "pick": "fuzzy_ctx"
+    },
+    {
+      "text": "{\"winner\":\"A\",\"evidence\":\"For “sows and gilts,” A’s “cerdas adultas y nulíparas” better preserves the distinction between the two groups. B’s “futuras reproductoras” describes intended breeding use without specifying that the animals have not yet farrowed.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "9ff880d6090e76f04971719be6a005b84b6b4b7e43390c251d0b63314c8c10f2",
+      "usage": {
+        "input_tokens": 235,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 71,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 306
+      },
+      "cost_upper_usd": 0.00118,
+      "swapped": true,
+      "pick": "fuzzy_ctx"
+    }
+  ],
+  "winner": "fuzzy_ctx"
+}

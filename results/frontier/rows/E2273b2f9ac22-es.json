@@ -1,0 +1,117 @@
+{
+  "row_id": "E2273b2f9ac22:es",
+  "translations": {
+    "semantic_ctx": {
+      "text": "Fentanilo indujo efectos mutagénicos en células de mamíferos in vitro, comparables a los inducidos por otros analgésicos opioides.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "2700686bb3cae908c85d7ddda7de1e6df189c398656bfaedd31071ca55bd41ab",
+      "usage": {
+        "input_tokens": 374,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 39,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 413
+      },
+      "cost_upper_usd": 0.004552
+    },
+    "random_ctx": {
+      "text": "El fentanilo indujo efectos mutagénicos en células de mamíferos in vitro, comparables a los de otros analgésicos opioides.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "f0ea4bba0ec68c091c6e81cd7ddcce4febdf9ebe150c42143fd0eb38f8c898ae",
+      "usage": {
+        "input_tokens": 332,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 38,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 370
+      },
+      "cost_upper_usd": 0.004176
+    },
+    "zero_shot": {
+      "text": "El fentanilo indujo efectos mutagénicos en células de mamífero in vitro, comparables a los de otros analgésicos opioides.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "08f2f7c1e2b47f700e2cb8f6d9efa32abc556e2a36b7c9d8475b955d67c847a2",
+      "usage": {
+        "input_tokens": 118,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 38,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 156
+      },
+      "cost_upper_usd": 0.002464
+    },
+    "hybrid_ctx": {
+      "text": "El fentanilo indujo efectos mutagénicos en células de mamíferos in vitro, comparables a los de otros analgésicos opioides.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "a914976cb81c272aac9549d87c63549bd2ed998a51e5170bb4dc5823e152c7cc",
+      "usage": {
+        "input_tokens": 309,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 38,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 347
+      },
+      "cost_upper_usd": 0.003992
+    },
+    "fuzzy_ctx": {
+      "text": "El fentanilo indujo efectos mutagénicos en células de mamíferos in vitro, comparables a los de otros analgésicos opioides.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "54f92886d6e85cafce6a464da0a7a214bdd2044e9bc7fb5560c3acca435555ba",
+      "usage": {
+        "input_tokens": 314,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 38,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 352
+      },
+      "cost_upper_usd": 0.004032
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

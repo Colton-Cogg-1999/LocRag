@@ -1,0 +1,117 @@
+{
+  "row_id": "K2e9cffac5440:es",
+  "translations": {
+    "hybrid_ctx": {
+      "text": "Archivos de traducción para KLocale",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "08caf077f6bf116d8bd74f4d81af398ad916b83f0ce58e5e111533841a2a099c",
+      "usage": {
+        "input_tokens": 262,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 274
+      },
+      "cost_upper_usd": 0.002576
+    },
+    "zero_shot": {
+      "text": "Archivos de traducción para KLocale",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "e959b39b0246fe07e92a36fa1baa3ba7702a66bba099e06a45868886b47fbbc7",
+      "usage": {
+        "input_tokens": 99,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 111
+      },
+      "cost_upper_usd": 0.001272
+    },
+    "fuzzy_ctx": {
+      "text": "Archivos de traducción para KLocale",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "2be5f912d4ce6375b5a4cdf518795a1a4cb81dd6df45b0bae17bdbb3f6146a15",
+      "usage": {
+        "input_tokens": 231,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 243
+      },
+      "cost_upper_usd": 0.002328
+    },
+    "random_ctx": {
+      "text": "Archivos de traducción para KLocale",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "5fafb6e06ada7b5c6a8faaaacaac7222682874c563aa1b90a7dcc8f882bcfbb1",
+      "usage": {
+        "input_tokens": 236,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 248
+      },
+      "cost_upper_usd": 0.002368
+    },
+    "semantic_ctx": {
+      "text": "Archivos de traducción para KLocale",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "47125eec4aa098a680401505f31699564a7d5874d7f319fbeb3ac191cbfb3bbf",
+      "usage": {
+        "input_tokens": 275,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 287
+      },
+      "cost_upper_usd": 0.00268
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

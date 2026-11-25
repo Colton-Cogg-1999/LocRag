@@ -1,0 +1,117 @@
+{
+  "row_id": "Kc0962894bc82:es",
+  "translations": {
+    "hybrid_ctx": {
+      "text": "Iconos de Oxygen para niños y adultos",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "888fe65ac1cd1359863eb2221f9a56926f32fe82eb51f8389331713507dd48c6",
+      "usage": {
+        "input_tokens": 229,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 241
+      },
+      "cost_upper_usd": 0.002312
+    },
+    "random_ctx": {
+      "text": "Iconos de Oxygen para niños y adultos",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "62503e2c8061bcfaf5883dbc6266d2d4e51dd1ccb3c2caae9edb36a544159ed9",
+      "usage": {
+        "input_tokens": 236,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 248
+      },
+      "cost_upper_usd": 0.002368
+    },
+    "semantic_ctx": {
+      "text": "Iconos de Oxygen para niños y adultos",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "dc33198a98386315be4125fb3627f7422d7c396f4ced9f93eadbeb9cf07c841c",
+      "usage": {
+        "input_tokens": 227,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 239
+      },
+      "cost_upper_usd": 0.002296
+    },
+    "fuzzy_ctx": {
+      "text": "Iconos de Oxygen para niños y adultos",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "4a439ec830177d1092e669a226d330a91cb94872532ada05fbde217e03f614cd",
+      "usage": {
+        "input_tokens": 223,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 235
+      },
+      "cost_upper_usd": 0.002264
+    },
+    "zero_shot": {
+      "text": "Iconos Oxygen para niños y adultos",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "6fb59ca1d9c90b7de3bf79a58a4e9a68ad7453cd542a776829fcd2295211f651",
+      "usage": {
+        "input_tokens": 100,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 11,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 111
+      },
+      "cost_upper_usd": 0.00124
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

@@ -1,0 +1,117 @@
+{
+  "row_id": "E00d76b990392:es",
+  "translations": {
+    "random_ctx": {
+      "text": "Esto se debió principalmente a una reducción de la incidencia de ictus.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "93dbc0191a704e8cab6990eceb12bf60dda10102977c3f4f344b7e0258cd4a01",
+      "usage": {
+        "input_tokens": 294,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 19,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 313
+      },
+      "cost_upper_usd": 0.003112
+    },
+    "semantic_ctx": {
+      "text": "Esto se debió principalmente a una reducción de la incidencia de ictus.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "dcb6647401c58782bc1b21bc8f69cff70490927b60881bcd7b9b49b34b08e455",
+      "usage": {
+        "input_tokens": 274,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 19,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 293
+      },
+      "cost_upper_usd": 0.002952
+    },
+    "fuzzy_ctx": {
+      "text": "Esto se debió principalmente a una reducción de la incidencia de ictus.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "b220998d50e1c3e99a87024b301f8be0059f8de8aa570da9692a188cfcf67038",
+      "usage": {
+        "input_tokens": 264,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 19,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 283
+      },
+      "cost_upper_usd": 0.002872
+    },
+    "zero_shot": {
+      "text": "Esto se debió principalmente a una reducción de la incidencia de ictus.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "b3514ecc8f60e028531c96c084a98d78be2781847f157ff5c942bfa422f34230",
+      "usage": {
+        "input_tokens": 109,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 19,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 128
+      },
+      "cost_upper_usd": 0.001632
+    },
+    "hybrid_ctx": {
+      "text": "Esto se debió principalmente a una reducción de la incidencia de ictus.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "bbac0a3281443719a5ec3263322634d439435625cd47319fe92dd034e7ca2150",
+      "usage": {
+        "input_tokens": 275,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 19,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 294
+      },
+      "cost_upper_usd": 0.00296
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

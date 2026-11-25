@@ -1,0 +1,166 @@
+{
+  "row_id": "Ec49d31f47dca:es",
+  "translations": {
+    "fuzzy_ctx": {
+      "text": "Se debe advertir a los pacientes de que el tratamiento antirretroviral actual no cura la infección por el VIH y de que no se ha demostrado que evite la transmisión del VIH a otras personas a través de la sangre o por contacto sexual.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "d86c9a9ccaf1a0592af9fed1236994ce37352e7e4d143d602ba4252de1a22b6a",
+      "usage": {
+        "input_tokens": 450,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 54,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 504
+      },
+      "cost_upper_usd": 0.00576
+    },
+    "hybrid_ctx": {
+      "text": "Se debe advertir a los pacientes de que el tratamiento antirretroviral actual no cura la infección por el VIH y de que no se ha demostrado que prevenga la transmisión del VIH a otras personas a través de la sangre o del contacto sexual.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "4a981fb091cf198d25717d7e719ced2cd5e6df794f29274c60c572e50343a935",
+      "usage": {
+        "input_tokens": 450,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 54,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 504
+      },
+      "cost_upper_usd": 0.00576
+    },
+    "random_ctx": {
+      "text": "Se debe informar a los pacientes de que el tratamiento antirretroviral actual no cura la infección por el VIH y de que no se ha demostrado que impida la transmisión del VIH a otras personas a través de la sangre o por contacto sexual.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "e0ed668b453f6239ef714fa40dce3074febf27ad96c13c1a8eea9dcd8eebbab5",
+      "usage": {
+        "input_tokens": 507,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 53,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 560
+      },
+      "cost_upper_usd": 0.006176
+    },
+    "zero_shot": {
+      "text": "Se debe advertir a los pacientes de que el tratamiento antirretroviral actual no cura la infección por el VIH y de que no se ha demostrado que impida la transmisión del VIH a otras personas a través de la sangre o por contacto sexual.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "7dce2f5ccb09725cbdce884dda82724597e47d30d006c08524133a741d858f04",
+      "usage": {
+        "input_tokens": 130,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 54,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 184
+      },
+      "cost_upper_usd": 0.0032
+    },
+    "semantic_ctx": {
+      "text": "Se debe advertir a los pacientes de que el tratamiento antirretroviral actual no cura la infección por el VIH y de que no se ha demostrado que prevenga la transmisión del VIH a otras personas a través de la sangre o del contacto sexual.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "4a981fb091cf198d25717d7e719ced2cd5e6df794f29274c60c572e50343a935",
+      "usage": {
+        "input_tokens": 450,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 54,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 504
+      },
+      "cost_upper_usd": 0.00576
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both preserve the two claims: “does not cure HIV” is rendered as “no cura la infección por el VIH” in both, and “has not been proven to prevent” is accurately rendered as “no se ha demostrado que evite” in A and “no se ha demostrado que prevenga” in B. Both retain transmission to others through blood or sexual contact.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "48156f98e73035438bb67c8d073579a7d2d8edd46fdea6acbfd85446d15142fb",
+      "usage": {
+        "input_tokens": 293,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 92,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 385
+      },
+      "cost_upper_usd": 0.001506,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both render “does not cure HIV” as “no cura la infección por el VIH.” For “has not been proven to prevent … through blood or sexual contact,” A’s “no se ha demostrado que prevenga … a través de la sangre o del contacto sexual” and B’s “no se ha demostrado que evite … a través de la sangre o por contacto sexual” preserve the same evidentiary qualification and transmission routes.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "7c65caed8e78293024f2a0c5edb761113778f5a3986d5f87747744b5e788402d",
+      "usage": {
+        "input_tokens": 293,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 104,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 397
+      },
+      "cost_upper_usd": 0.001626,
+      "swapped": false,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

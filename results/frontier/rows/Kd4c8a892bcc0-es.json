@@ -1,0 +1,117 @@
+{
+  "row_id": "Kd4c8a892bcc0:es",
+  "translations": {
+    "hybrid_ctx": {
+      "text": "Imposible cambiar las propiedades de la impresora. Error recibido del gestor: %1",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "858de62cf0bdc81aae8813e9d95730090716fd6c98ed59c159de42e0b87c2bfc",
+      "usage": {
+        "input_tokens": 290,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 22,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 312
+      },
+      "cost_upper_usd": 0.0032
+    },
+    "fuzzy_ctx": {
+      "text": "Imposible cambiar las propiedades de la impresora. Error recibido del gestor: %1",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "c2e673f7cbc477bd1bf0b6ef376fd9e85cdab45e5976c92e73ee41fd8d38b01e",
+      "usage": {
+        "input_tokens": 279,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 22,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 301
+      },
+      "cost_upper_usd": 0.003112
+    },
+    "random_ctx": {
+      "text": "No se han podido cambiar las propiedades de la impresora. Error recibido del gestor: %1",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "0ec1386e4714c9942952a1f1e7bc0f696a5234540c3fb05de4bdfa21129c6255",
+      "usage": {
+        "input_tokens": 268,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 23,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 291
+      },
+      "cost_upper_usd": 0.003064
+    },
+    "semantic_ctx": {
+      "text": "Imposible cambiar las propiedades de la impresora. Error recibido del gestor: %1",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "d91c6d7f89afe8f3e90c5edc59ab41ce8ec476aa28b03ded64f418a1ab4d1010",
+      "usage": {
+        "input_tokens": 258,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 22,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 280
+      },
+      "cost_upper_usd": 0.002944
+    },
+    "zero_shot": {
+      "text": "No se han podido cambiar las propiedades de la impresora. Error recibido del gestor: %1",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "b154c668f37e034d7a359707b9099ba0473c93f186d9ea16323a251cc6c2c88d",
+      "usage": {
+        "input_tokens": 107,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 23,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 130
+      },
+      "cost_upper_usd": 0.001776
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

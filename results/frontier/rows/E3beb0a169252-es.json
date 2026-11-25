@@ -1,0 +1,166 @@
+{
+  "row_id": "E3beb0a169252:es",
+  "translations": {
+    "semantic_ctx": {
+      "text": "Tend en el estado estacionario es de 25 días (intervalo: 13-35 días).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "7bd732c1fa484b8356bb266be8d99b1020e0aac32177420c626064dc1ffe24b9",
+      "usage": {
+        "input_tokens": 311,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 26,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 337
+      },
+      "cost_upper_usd": 0.003528
+    },
+    "fuzzy_ctx": {
+      "text": "Tend en estado estacionario es de 25 días (rango: 13-35 días).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "f705a67eaf82c487646ca658454b6a85339a6a77ba7fa8e3cd73fc95a1d50c58",
+      "usage": {
+        "input_tokens": 312,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 25,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 337
+      },
+      "cost_upper_usd": 0.003496
+    },
+    "random_ctx": {
+      "text": "Tend en el estado estacionario es de 25 días (intervalo: 13-35 días).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "24f2a5444e14c06650293a80e0f7b2d7c4a7024ffe2dad6d45a8e605c45d9bb6",
+      "usage": {
+        "input_tokens": 330,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 26,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 356
+      },
+      "cost_upper_usd": 0.00368
+    },
+    "hybrid_ctx": {
+      "text": "Tend en estado estacionario es de 25 días (intervalo: 13-35 días).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "873563fa6456e8a87b6d0f36ea32a28be8ed2a9f3bbff89383b54451656ad106",
+      "usage": {
+        "input_tokens": 290,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 25,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 315
+      },
+      "cost_upper_usd": 0.00332
+    },
+    "zero_shot": {
+      "text": "Tend en el estado estacionario es de 25 días (intervalo: 13-35 días).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "059dfcd64b071dc855148f298c11f1fb2fdd61b27dd034724f6fbef816be4371",
+      "usage": {
+        "input_tokens": 112,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 26,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 138
+      },
+      "cost_upper_usd": 0.001936
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both preserve “Tend at steady state” as “Tend en estado estacionario” and accurately render “25 days (range 13-35 days).” A’s “rango” and B’s “intervalo” are equivalent here.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "89e1d41e0ffdcffd04f084e5aa435b9f525b45594caf221441ec947f84fc1549",
+      "usage": {
+        "input_tokens": 220,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 67,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 287
+      },
+      "cost_upper_usd": 0.00111,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both preserve “Tend at steady state is 25 days (range 13-35 days).” A’s “intervalo: 13-35 días” and B’s “rango: 13-35 días” convey the same range, and both retain Tend, the steady-state condition, and the 25-day value.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "66665dd59e96571b5e3fddc556ab36be4c48f13cd434c576813519ff55455162",
+      "usage": {
+        "input_tokens": 220,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 85,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 305
+      },
+      "cost_upper_usd": 0.00129,
+      "swapped": false,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

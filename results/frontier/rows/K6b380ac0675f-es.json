@@ -1,0 +1,117 @@
+{
+  "row_id": "K6b380ac0675f:es",
+  "translations": {
+    "zero_shot": {
+      "text": "Un estilo no puede heredar de sí mismo.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "ac66600ce7a75831766da08f099b6fb21e91fc0fc3d6abdab34453e5a903b9e6",
+      "usage": {
+        "input_tokens": 101,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 115
+      },
+      "cost_upper_usd": 0.001368
+    },
+    "random_ctx": {
+      "text": "Un estilo no puede heredar de sí mismo.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "31a78c4653db7d095322e5f81d838a416994fbaad885be9a57c830400bc8a874",
+      "usage": {
+        "input_tokens": 244,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 258
+      },
+      "cost_upper_usd": 0.002512
+    },
+    "semantic_ctx": {
+      "text": "Un estilo no puede heredar de sí mismo.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "061adf3c6a990584caa8208a2f8e18d0ab18c1f64db963f0d36935c081a077de",
+      "usage": {
+        "input_tokens": 249,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 263
+      },
+      "cost_upper_usd": 0.002552
+    },
+    "fuzzy_ctx": {
+      "text": "Un estilo no puede heredar de sí mismo.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "a2b3f353ed105f0a1907985a07aaac87ccdae544061953f2f93f2c8e51bf55f1",
+      "usage": {
+        "input_tokens": 245,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 259
+      },
+      "cost_upper_usd": 0.00252
+    },
+    "hybrid_ctx": {
+      "text": "Un estilo no puede heredar de sí mismo.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "c90ab5832ff68d94f9ebd2825a512b6530baf14d90a6e2c9e9656486dfc0199b",
+      "usage": {
+        "input_tokens": 245,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 259
+      },
+      "cost_upper_usd": 0.00252
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

@@ -1,0 +1,117 @@
+{
+  "row_id": "E65043186a738:es",
+  "translations": {
+    "fuzzy_ctx": {
+      "text": "Rolf Bass Noël Wathion",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "a4b63a0bdb76f30c64366ee7b5774e43396f96a3456983ae28dc25774a41a8f5",
+      "usage": {
+        "input_tokens": 433,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 11,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 444
+      },
+      "cost_upper_usd": 0.003904
+    },
+    "hybrid_ctx": {
+      "text": "Rolf Bass Noël Wathion",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "4aa62c76862f05a5a9265ac787e525d072fdb6f2637283a034a0bc97d75b461a",
+      "usage": {
+        "input_tokens": 377,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 11,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 388
+      },
+      "cost_upper_usd": 0.003456
+    },
+    "random_ctx": {
+      "text": "Rolf Bass Noël Wathion",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "2e060e3d22dd046be6d34b0f18500f34d947b7b4ea88a6387726b404b637bfcd",
+      "usage": {
+        "input_tokens": 387,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 11,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 398
+      },
+      "cost_upper_usd": 0.003536
+    },
+    "semantic_ctx": {
+      "text": "Rolf Bass Noël Wathion",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "a0c06abdcae443606b004813ba959b5d8d37add279fa5e3a54654acc4ff62c05",
+      "usage": {
+        "input_tokens": 321,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 11,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 332
+      },
+      "cost_upper_usd": 0.003008
+    },
+    "zero_shot": {
+      "text": "Rolf Bass Noël Wathion",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "7b874f967d98fe54527cd34b5fbfada8dd0a4900e367f9aec16a6c03963580a7",
+      "usage": {
+        "input_tokens": 103,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 11,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 114
+      },
+      "cost_upper_usd": 0.001264
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

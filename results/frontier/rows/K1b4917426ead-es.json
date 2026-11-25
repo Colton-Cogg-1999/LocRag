@@ -1,0 +1,117 @@
+{
+  "row_id": "K1b4917426ead:es",
+  "translations": {
+    "zero_shot": {
+      "text": "Proporciona acceso a los contactos almacenados en un servidor de directorio LDAP",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "fe347a26d651288a5e18285406b10ce4572903d7014709a99f868257266369f7",
+      "usage": {
+        "input_tokens": 104,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 20,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 124
+      },
+      "cost_upper_usd": 0.001632
+    },
+    "semantic_ctx": {
+      "text": "Proporciona acceso a los contactos almacenados en un servidor de directorio LDAP",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "34151c1d4eab392f5b0bf6abe0ec247a1d924426ffcd1305e2f4f110c3af81aa",
+      "usage": {
+        "input_tokens": 241,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 20,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 261
+      },
+      "cost_upper_usd": 0.002728
+    },
+    "fuzzy_ctx": {
+      "text": "Provee acceso a los contactos almacenados en un servidor de directorio LDAP",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "abeb8665d0a444871e7bf670acea7d2606b44c58d2d5931c4402d67d73ad79b0",
+      "usage": {
+        "input_tokens": 296,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 19,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 315
+      },
+      "cost_upper_usd": 0.003128
+    },
+    "hybrid_ctx": {
+      "text": "Provee acceso a los contactos almacenados en un servidor de directorio LDAP",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "f7ce9e0840893caadbd287f31f0b04a0a473ba0da932a5dc9eec3f0ef0007895",
+      "usage": {
+        "input_tokens": 296,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 19,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 315
+      },
+      "cost_upper_usd": 0.003128
+    },
+    "random_ctx": {
+      "text": "Proporciona acceso a los contactos almacenados en un servidor de directorio LDAP",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "d6fc4106714ea48960d740e6729956f1c380312cd863be182cdea2f947e79e7c",
+      "usage": {
+        "input_tokens": 304,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 20,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 324
+      },
+      "cost_upper_usd": 0.003232
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

@@ -1,0 +1,166 @@
+{
+  "row_id": "K524af75e9983:es",
+  "translations": {
+    "fuzzy_ctx": {
+      "text": "Mostrar &consejos y mensajes informativos",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "ace50b407d0096b6911f9198aeb2fa664b20f8b18c362ff1fd7b115e6e26a59a",
+      "usage": {
+        "input_tokens": 238,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 13,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 251
+      },
+      "cost_upper_usd": 0.002424
+    },
+    "random_ctx": {
+      "text": "Mostrar &sugerencias y mensajes informativos",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "616c10ed003618192b92f71ccca969e3ed04e4b09ce7060a90be7b69ab58f052",
+      "usage": {
+        "input_tokens": 253,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 13,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 266
+      },
+      "cost_upper_usd": 0.002544
+    },
+    "semantic_ctx": {
+      "text": "Mostrar & sugerencias y mensajes informativos",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "3301fa6b4dc9dcf8fcb3323f781a92f1e541db46326d46f126ddba171b9bd8f7",
+      "usage": {
+        "input_tokens": 229,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 241
+      },
+      "cost_upper_usd": 0.002312
+    },
+    "hybrid_ctx": {
+      "text": "Mostrar & sugerencias y mensajes informativos",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "4d76a552943e77fb3224051e02a18d56a8f4060d972a3b01597b170f083dd74f",
+      "usage": {
+        "input_tokens": 221,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 233
+      },
+      "cost_upper_usd": 0.002248
+    },
+    "zero_shot": {
+      "text": "Mostrar &sugerencias y mensajes informativos",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "be90dc4a46cc64d9cdedaf3e84a39f4e13964baac86387dd4e40e0352eafffda",
+      "usage": {
+        "input_tokens": 100,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 13,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 113
+      },
+      "cost_upper_usd": 0.00132
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"A\",\"evidence\":\"Both translations convey “hints and info messages,” but A’s “&consejos” attaches the KDE mnemonic marker to a letter. B’s “& sugerencias” leaves it before a space, so it does not mark the intended shortcut letter.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "3d62a32a4557ab5045da17e14beafe33607b06622e1ecfc3ec35fa2805c0f3e7",
+      "usage": {
+        "input_tokens": 182,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 68,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 250
+      },
+      "cost_upper_usd": 0.001044,
+      "swapped": true,
+      "pick": "fuzzy_ctx"
+    },
+    {
+      "text": "{\"winner\":\"B\",\"evidence\":\"In the UI label “Show & hints and info messages,” “&” is a mnemonic marker, not a conjunction. B’s “&consejos” attaches it to a letter, whereas A’s “& sugerencias” leaves it before a space. Both “consejos” and “sugerencias” convey “hints.”\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "1bb4848532022c9586750a030af662067bdaee505a774bd2f0c1b016abea5dcc",
+      "usage": {
+        "input_tokens": 182,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 86,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 268
+      },
+      "cost_upper_usd": 0.001224,
+      "swapped": false,
+      "pick": "fuzzy_ctx"
+    }
+  ],
+  "winner": "fuzzy_ctx"
+}

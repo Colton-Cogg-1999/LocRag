@@ -1,0 +1,207 @@
+{
+  "run": "dev-v1",
+  "split": "development",
+  "per_band": null,
+  "n_rows": 300,
+  "n_sources": 180,
+  "created": "2026-11-16T21:51:02",
+  "config_hash": "97106613f6170e94",
+  "config": {
+    "name": "locrag-v2",
+    "seed": 20261117,
+    "corpora": {
+      "EMEA": {
+        "kind": "emea",
+        "domain": "EU medicinal product information (SmPC and package leaflets)",
+        "targets": [
+          "es"
+        ],
+        "raw": "data/raw/EMEA",
+        "tm_size": 100000,
+        "min_words": 4,
+        "max_words": 60,
+        "pool_scan_limit": 60000,
+        "bands": {
+          "100": 100,
+          "95-99": 250,
+          "85-94": 300,
+          "75-84": 350,
+          "50-74": 500,
+          "<50": 500
+        },
+        "dev_per_band": 20
+      },
+      "KDE4": {
+        "kind": "kde4",
+        "domain": "software user-interface localization (KDE desktop applications)",
+        "targets": [
+          "es",
+          "de",
+          "zh_CN"
+        ],
+        "raw": "data/raw/KDE4",
+        "tm_size": 30000,
+        "min_words": 4,
+        "max_words": 60,
+        "pool_scan_limit": 12000,
+        "bands": {
+          "100": 50,
+          "95-99": 100,
+          "85-94": 120,
+          "75-84": 150,
+          "50-74": 190,
+          "<50": 190
+        },
+        "dev_per_band": 10
+      }
+    },
+    "heldout_declustering_fuzzy": 90,
+    "retrieval": {
+      "embedding_model": "openrouter:baai/bge-m3",
+      "k": 3,
+      "pool_depth": 20,
+      "rrf_c": 60,
+      "near_exact_override": 95,
+      "semantic_floor": 0.8
+    },
+    "translation": {
+      "model": "google/gemma-4-31b-it",
+      "temperature": 0.0,
+      "max_tokens": 512,
+      "seed": 7,
+      "reasoning_effort": "none",
+      "provider": {
+        "quantizations": [
+          "bf16",
+          "fp8"
+        ],
+        "allow_fallbacks": true
+      },
+      "workers": 8
+    },
+    "extractor": {
+      "model": "google/gemma-4-31b-it",
+      "temperature": 0.0,
+      "max_tokens": 900
+    },
+    "conditions": [
+      "zero_shot",
+      "fuzzy_ctx",
+      "semantic_ctx",
+      "hybrid_ctx",
+      "structured_ctx"
+    ],
+    "noise_floor": {
+      "condition": "zero_shot_repeat",
+      "dev_fraction": 1.0,
+      "test_rows": 600
+    },
+    "nmt": {
+      "provider": "deepl",
+      "formality": "default",
+      "targets": {
+        "es": "ES",
+        "de": "DE",
+        "zh_CN": "ZH-HANS"
+      }
+    },
+    "auditor": {
+      "model": "anthropic/claude-sonnet-5.5",
+      "use_batch_api": false,
+      "max_tokens": 4000,
+      "reasoning_effort": "minimal",
+      "extraction_audit_sample": 300,
+      "reuse_test_rows": 2000,
+      "mqm_sample_per_condition": 60
+    },
+    "qe": {
+      "primary": "cometkiwi22",
+      "robustness": "metricx24_qe",
+      "reference_based": [
+        "chrf",
+        "comet22"
+      ],
+      "models": {
+        "cometkiwi22": "Unbabel/wmt22-cometkiwi-da",
+        "comet22": "Unbabel/wmt22-comet-da",
+        "metricx24_qe": "google/metricx-24-hybrid-large-v2p6",
+        "metricx_tokenizer": "google/mt5-xl"
+      },
+      "noise_floor_quantile": 0.9,
+      "reference_test_rows": 1500
+    },
+    "stats": {
+      "bootstrap": 10000,
+      "alpha": 0.05
+    }
+  },
+  "git": {
+    "commit": "79bad9172c7baab67a7f14f01d6d7ed79bce594a",
+    "dirty": true
+  },
+  "code_sha256": {
+    "locrag/study/__init__.py": "5f71d4c448804b120f05fd5712f6f51eed5757b701269ab6b7fe180d094f0ca1",
+    "locrag/study/__main__.py": "014bdfd6c8335cc1aee8600a741d5b2a11cb3d8bad9c21d52281d8e440bc09d7",
+    "locrag/study/analyze.py": "3475c0dca924ae6ff0bef101b61c05f47f3ab32209be92d7c530140a13c01017",
+    "locrag/study/audit.py": "113ff0f9f9b225f9f2d07ce1b2427f788b95921f310a787f85974f02a62f841f",
+    "locrag/study/config.py": "6f7e5bc567c1a7d4a4a40d041dc659e99057849b3a2055d094c6fa1ab2c9163a",
+    "locrag/study/context.py": "693ff43cdda85cf2f7e5cb15493df337d6c9f0e49e28a82e42024ad757da77b3",
+    "locrag/study/data.py": "c7f66f8f52e4af47c0d939a470bd0b4b99f5e35964c2028afb2a2fcd816f3028",
+    "locrag/study/features.py": "554d4c48f32cf6c26f43c7ed49773bd368b6783bd69abcaac05c4e546e51fce6",
+    "locrag/study/fuzzy.py": "ae4b996d03cda354e42cb68c4a6e8516bb2be3f4c7755667145c0aee2c6fa3fb",
+    "locrag/study/generate.py": "15fb74f3bc6a35890aa988c0d9ea914b9b45344b3300812f6010208417511c93",
+    "locrag/study/llm.py": "d9620e129a309477e9e6619b9c15f77899ebe44b0911380b3713833d9bcfc8ef",
+    "locrag/study/nmt.py": "18bfc0a2209f2c08412d06f79a1ccea9becd2a05e4b75621b3923bee38fa1929",
+    "locrag/study/prompts.py": "6c3359cacb70f00a96d1bb849f41b9a9a315ff0d2cabbace0450769aa9fa4cf4",
+    "locrag/study/qe_bridge.py": "da8592ca44b1bb637ff8c93c364bbc9b3f70b1b5c68e86329154e20a1e44c928",
+    "locrag/study/retrieval.py": "f192cf37434a050424bf943ffceabb0059eb5b333e9ab305a4176191d25dd729",
+    "locrag/study/stats.py": "81f78dd4020f4257792631ce001f27e4fc4f151210c7adb73b10e457db290cc9",
+    "common/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "common/check.py": "47d716f5a20da346146c86ba095fa0eeb8eaef57293141b8e55d7aa4a96fc054",
+    "common/embed.py": "7b49e597ea6ef5feb6b57ae73620f2c0f32fb80c4a0623107c8a223ca755392e",
+    "common/env.py": "c88e73e04fd32ec03bfc110d00b2a70fd6d4c666ec9b52089e87beb1e2722a3c",
+    "common/llm.py": "79afcbb322af7b94e04136291a636d0f156c835ac3eec0eabc442281c2e48280",
+    "qe/locrag_qe/__init__.py": "c7c5f13298c496f7f089ceed6fdc32c4490ebf4e05b7a1ab82a1e39e4047e4de",
+    "qe/locrag_qe/metricx.py": "4bed112702ad7fa46c5b9abb154b89eb7bffb532a52763b32f761cd2ac3ffa3f",
+    "qe/locrag_qe/score.py": "2c2749f3ced383b1fdd249ee8c0ac22ed96a7facd71960eeb0dc7025146ec851"
+  },
+  "template_version": "v2.0",
+  "template_sha": {
+    "system": "f5ae5cd990d14820",
+    "task": "3b61aeae4e2666ae",
+    "raw_header": "a99e9cd98c532337",
+    "struct_header": "7dce59eb3103e377",
+    "extractor": "5fd01a64dcd1c2c8",
+    "reuse": "ae5d8ae995ff0509",
+    "extraction_audit": "f41b56607af07674",
+    "mqm": "44741c1c30a2b7cc"
+  },
+  "data_sha256": {
+    "EMEA": {
+      "tm_es.jsonl": "18e2e6e188de16ca908fb1d2e370ce8910036a1d96ff0e4bc30ab32cf76d06d7",
+      "heldout.jsonl": "3a5410e27d6fe64b07d6cbbc9cd1dc57bb16fd4d4fdf45680dda423c5a4af6b0",
+      "references.jsonl": "62f011658823214a3b873e6b1f13e2dcd7162991b028be21c0281e7774d3d1be"
+    },
+    "KDE4": {
+      "tm_es.jsonl": "02d61450b2362c33fe781ee3c332bc3ca98e35dde6b3ee816ebaa888652ef019",
+      "tm_de.jsonl": "ceff3a401fd1519daf32bf5272b7edc0e5df6ad62eee62a7b90d7a690d994b28",
+      "tm_zh_CN.jsonl": "5b01ebd6db2e406856f207b3679182605bd34b594cc9c5f914ccbcdcb4c4f692",
+      "heldout.jsonl": "d82cafc70d7cfb5b53caaaf2526c0491ad53dcd49d7a6152a3f58689879947cd",
+      "references.jsonl": "36459b4625fe4cb81db110173463d0f3786a791cc8479029c39c629b4eb9f292"
+    }
+  },
+  "rows_by_corpus_band": {
+    "EMEA/100": 20,
+    "EMEA/50-74": 20,
+    "EMEA/75-84": 20,
+    "EMEA/85-94": 20,
+    "EMEA/95-99": 20,
+    "EMEA/<50": 20,
+    "KDE4/100": 30,
+    "KDE4/50-74": 30,
+    "KDE4/75-84": 30,
+    "KDE4/85-94": 30,
+    "KDE4/95-99": 30,
+    "KDE4/<50": 30
+  }
+}

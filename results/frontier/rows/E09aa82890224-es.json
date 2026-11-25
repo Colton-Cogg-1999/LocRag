@@ -1,0 +1,166 @@
+{
+  "row_id": "E09aa82890224:es",
+  "translations": {
+    "zero_shot": {
+      "text": "Posología La pauta posológica recomendada de galsulfasa es de 1 mg/kg de peso corporal administrado una vez por semana mediante perfusión intravenosa.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "a88fed4aa5afb071ba25991dbbb528d04d0cb2c6a1550c194dc821cd6e504df9",
+      "usage": {
+        "input_tokens": 123,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 37,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 160
+      },
+      "cost_upper_usd": 0.002464
+    },
+    "hybrid_ctx": {
+      "text": "Posología La pauta posológica recomendada de galsulfasa es de 1 mg/kg de peso corporal, administrado una vez por semana por perfusión intravenosa.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "26db03a8bb4b92191edc9d03575c0401e3d5bd0fc7ccb72c13d191686c422e12",
+      "usage": {
+        "input_tokens": 354,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 38,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 392
+      },
+      "cost_upper_usd": 0.004352
+    },
+    "random_ctx": {
+      "text": "Posología La pauta posológica recomendada de galsulfasa es de 1 mg/kg de peso corporal, administrado una vez a la semana mediante perfusión intravenosa.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "ee0639b940947c3cd6485cefef935031ead3cf00bf66a100a7e82bb6d4ef360d",
+      "usage": {
+        "input_tokens": 440,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 39,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 479
+      },
+      "cost_upper_usd": 0.00508
+    },
+    "semantic_ctx": {
+      "text": "Posología La pauta posológica recomendada de galsulfasa es de 1 mg/kg de peso corporal, administrado una vez por semana mediante perfusión intravenosa.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "4931cf5cfeaf7f6c848b40aaa1ff8b14a8bdd75d9f91b3c8dbe22987f17ee914",
+      "usage": {
+        "input_tokens": 438,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 38,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 476
+      },
+      "cost_upper_usd": 0.005024
+    },
+    "fuzzy_ctx": {
+      "text": "Posología La pauta posológica recomendada de galsulfasa es de 1 mg/kg de peso corporal, administrada una vez por semana por perfusión intravenosa.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "8defe6dd62356ac994bfeba8fbb181afde404012ec3860171c9935292ab7de4a",
+      "usage": {
+        "input_tokens": 373,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 38,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 411
+      },
+      "cost_upper_usd": 0.004504
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"A\",\"evidence\":\"In the source, “1 mg/kg body weight administered once every week” describes administration of the dose. A’s “1 mg/kg de peso corporal, administrado una vez por semana” preserves that link, whereas B’s “administrada” agrees with the feminine “pauta posológica,” implying that the regimen itself is administered.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "823b76728c20814425f96b64bb61c91aedffd6fe87f3f494620a1f9eae08f38f",
+      "usage": {
+        "input_tokens": 254,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 84,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 338
+      },
+      "cost_upper_usd": 0.001348,
+      "swapped": false,
+      "pick": "hybrid_ctx"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both preserve the recommended 1 mg/kg body-weight dose and translate “administered once every week as an intravenous infusion” as “administrada/administrado una vez por semana por perfusión intravenosa.” The difference in grammatical agreement does not change the dosing instructions.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "db40a7d646a5e516d1c27548ef9d3a8d4c094912a5c15d503a1c660698538af2",
+      "usage": {
+        "input_tokens": 254,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 71,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 325
+      },
+      "cost_upper_usd": 0.001218,
+      "swapped": true,
+      "pick": "tie"
+    }
+  ],
+  "winner": "order_disagreement"
+}

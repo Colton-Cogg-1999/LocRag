@@ -1,0 +1,166 @@
+{
+  "row_id": "K8353bd50e79c:es",
+  "translations": {
+    "zero_shot": {
+      "text": "Usar estas opciones durante la fusión",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "1107fcd168ca36b4e05f90a678d7e1443676f42f0b6dc72675f6aef01f7ddafa",
+      "usage": {
+        "input_tokens": 99,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 111
+      },
+      "cost_upper_usd": 0.001272
+    },
+    "hybrid_ctx": {
+      "text": "Utilizar estas opciones durante la fusión",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "558ee1d9c553cd88df32c712142e8de9862675202d1d07b2f1b5a9829099622d",
+      "usage": {
+        "input_tokens": 235,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 247
+      },
+      "cost_upper_usd": 0.00236
+    },
+    "fuzzy_ctx": {
+      "text": "Usar estas opciones durante la fusión",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "7456bb287ecefeb16a2c38325e48599fe153df1d2288de9e59688061c0115074",
+      "usage": {
+        "input_tokens": 238,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 250
+      },
+      "cost_upper_usd": 0.002384
+    },
+    "random_ctx": {
+      "text": "Usar estas opciones durante la fusión",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "4f2225f6cbc2564968afdf4d1ece2d4e129ca00268e7466c97ca5891461a40ac",
+      "usage": {
+        "input_tokens": 244,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 256
+      },
+      "cost_upper_usd": 0.002432
+    },
+    "semantic_ctx": {
+      "text": "Usar estas opciones durante la fusión",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "bf9124fa6aa12de82ecfaa9ac04069e6a1fcebde381f3a171cebe3d955895ec2",
+      "usage": {
+        "input_tokens": 225,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 237
+      },
+      "cost_upper_usd": 0.00228
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both preserve “Use These Options During Merge”: “Usar estas opciones durante la fusión” (A) and “Utilizar estas opciones durante la fusión” (B) differ only in the synonymous verbs “Usar” and “Utilizar”.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "2652270d368034247955301dd7ba5126c7d2a026385886ad222a321805457147",
+      "usage": {
+        "input_tokens": 180,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 69,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 249
+      },
+      "cost_upper_usd": 0.00105,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both “Utilizar estas opciones durante la fusión” (A) and “Usar estas opciones durante la fusión” (B) accurately convey “Use These Options During Merge.” “Utilizar” and “usar” are equivalent here.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "b940746ea4ae6b62ca1d617eba44db0294b34e3ac03430ed8a4f83359cb331c3",
+      "usage": {
+        "input_tokens": 180,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 66,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 246
+      },
+      "cost_upper_usd": 0.00102,
+      "swapped": false,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

@@ -1,0 +1,117 @@
+{
+  "row_id": "E6703f69658cc:es",
+  "translations": {
+    "random_ctx": {
+      "text": "Esta vacuna no debe ser manipulada por personas inmunodeficientes o que estén tomando medicamentos inmunosupresores.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "7faf990c33716c44906d81463cb2b56a24125a0f42bd3640340631ac676019e8",
+      "usage": {
+        "input_tokens": 335,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 28,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 363
+      },
+      "cost_upper_usd": 0.0038
+    },
+    "fuzzy_ctx": {
+      "text": "Esta vacuna no debe ser manipulada por personas inmunodeficientes o que estén tomando medicamentos inmunosupresores.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "229be1151ab92bc306f1b797ea0a8286240c11c6f9a152e57827a6353b7b483a",
+      "usage": {
+        "input_tokens": 289,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 28,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 317
+      },
+      "cost_upper_usd": 0.003432
+    },
+    "semantic_ctx": {
+      "text": "Esta vacuna no debe ser manipulada por personas inmunodeficientes o que estén tomando medicamentos inmunosupresores.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "6e2313d21bafb0b919db6545998f8196b180b4d363f5df3a3de707e711bd8e85",
+      "usage": {
+        "input_tokens": 349,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 28,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 377
+      },
+      "cost_upper_usd": 0.003912
+    },
+    "hybrid_ctx": {
+      "text": "Esta vacuna no debe ser manipulada por personas inmunodeficientes o que estén tomando medicamentos inmunosupresores.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "c1e6f11ae785e0b0cfafb84a52dd4af827ccee0bd6ff7884d68ed41d3976139b",
+      "usage": {
+        "input_tokens": 297,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 28,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 325
+      },
+      "cost_upper_usd": 0.003496
+    },
+    "zero_shot": {
+      "text": "Esta vacuna no debe ser manipulada por personas inmunodeficientes o que estén tomando medicamentos inmunosupresores.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "98ab26c3b3f35765721cf75e6895915813a535f96357c7a6e896a48e1bcc82c3",
+      "usage": {
+        "input_tokens": 118,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 28,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 146
+      },
+      "cost_upper_usd": 0.002064
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

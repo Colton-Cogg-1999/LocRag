@@ -1,0 +1,166 @@
+{
+  "row_id": "K2fc6ac6be1f7:es",
+  "translations": {
+    "random_ctx": {
+      "text": "Poner en mayúscula la primera letra",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "ee2b6280a6f50609303ceba9428193171be5bbb1ddc1f6dd61acebe89ce5b4c8",
+      "usage": {
+        "input_tokens": 236,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 13,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 249
+      },
+      "cost_upper_usd": 0.002408
+    },
+    "fuzzy_ctx": {
+      "text": "Poner en mayúscula la primera letra",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "7b93b7ab8c8243d8ab0589ffa01a85a4b580eb95a303081cc18f45ce27e711d6",
+      "usage": {
+        "input_tokens": 222,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 13,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 235
+      },
+      "cost_upper_usd": 0.002296
+    },
+    "hybrid_ctx": {
+      "text": "Convertir la primera letra en mayúscula",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "d39f5249390becbeb49a95655a426865fcccb632246e000151cd7538493e7d48",
+      "usage": {
+        "input_tokens": 227,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 13,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 240
+      },
+      "cost_upper_usd": 0.002336
+    },
+    "semantic_ctx": {
+      "text": "Convertir la primera letra en mayúscula",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "5b15f1fc7aa31d4d661947e27e780e70cea7c0dfb7339158b30eec695404975a",
+      "usage": {
+        "input_tokens": 235,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 13,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 248
+      },
+      "cost_upper_usd": 0.0024
+    },
+    "zero_shot": {
+      "text": "Poner en mayúscula la primera letra",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "4f94bcb0043f2d5457448877b53567189916fdf2b5f82ead5850cf8549c21dce",
+      "usage": {
+        "input_tokens": 99,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 13,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 112
+      },
+      "cost_upper_usd": 0.001312
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both A’s “Poner en mayúscula la primera letra” and B’s “Convertir la primera letra en mayúscula” accurately convey “Capitalize the first letter” and preserve its scope.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "821ee737c20a28b216bdfcc411565c82837f13a8ebe51c5589b1b6e28622b9a5",
+      "usage": {
+        "input_tokens": 182,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 59,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 241
+      },
+      "cost_upper_usd": 0.000954,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both «Convertir la primera letra en mayúscula» (A) and «Poner en mayúscula la primera letra» (B) accurately convey “Capitalize the first letter,” preserving the action and its scope.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "4ae527d462d8b21cf8139a298ebcdc2473ea355eb30b176367c9847669c3a50a",
+      "usage": {
+        "input_tokens": 182,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 63,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 245
+      },
+      "cost_upper_usd": 0.000994,
+      "swapped": false,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

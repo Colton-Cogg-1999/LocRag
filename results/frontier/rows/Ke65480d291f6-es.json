@@ -1,0 +1,166 @@
+{
+  "row_id": "Ke65480d291f6:es",
+  "translations": {
+    "random_ctx": {
+      "text": "La URL indicada no es válida. Pruebe con «Archivo → Guardar como...» en su lugar.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "d0dc4b81cf6c6da012761c888c4cfd6d546ba520fe69b0ee5c49d15dd5758e60",
+      "usage": {
+        "input_tokens": 240,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 26,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 266
+      },
+      "cost_upper_usd": 0.00296
+    },
+    "hybrid_ctx": {
+      "text": "La URL introducida no es válida. Pruebe con «Archivo → Guardar como...» en su lugar.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "bebb183ca85a5673c88630df25ae751ba8279d4554d7b497108df17ff28193cd",
+      "usage": {
+        "input_tokens": 247,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 27,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 274
+      },
+      "cost_upper_usd": 0.003056
+    },
+    "zero_shot": {
+      "text": "La URL indicada no es válida. Pruebe con «Archivo → Guardar como...» en su lugar.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "d016e63763b78100a8ad8410c4881198624512a99f7f693f66e47caeb27562ea",
+      "usage": {
+        "input_tokens": 109,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 26,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 135
+      },
+      "cost_upper_usd": 0.001912
+    },
+    "fuzzy_ctx": {
+      "text": "La URL introducida no es válida. Pruebe «Archivo → Guardar como...» en su lugar.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "9fa8522926df892eb7c55b86310e30f7244c86ff8f3cd50f2f94d28f1cfd447f",
+      "usage": {
+        "input_tokens": 251,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 26,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 277
+      },
+      "cost_upper_usd": 0.003048
+    },
+    "semantic_ctx": {
+      "text": "La URL introducida no es válida. Pruebe con «Archivo → Guardar como...» en su lugar.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "0feccf230d43127ea1a76e4aed61d464475c167f5edda6c48d4e6f0afd603937",
+      "usage": {
+        "input_tokens": 245,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 27,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 272
+      },
+      "cost_upper_usd": 0.00304
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both translations preserve “The given URL is invalid” as “La URL introducida no es válida” and render “Try 'File save as...' instead” as a suggestion to use «Archivo → Guardar como...» instead. “Pruebe” and “Pruebe con” are equivalent here.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "73d826ab2c73cf59f0e45a4ee175d20d717c99fb1fdca518520e9672e7897d59",
+      "usage": {
+        "input_tokens": 217,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 78,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 295
+      },
+      "cost_upper_usd": 0.001214,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both render “The given URL is invalid” as “La URL introducida no es válida” and identify “File save as...” as “Archivo → Guardar como...”. “Pruebe con” (A) and “Pruebe” (B) convey the same instruction here.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "db135d43452fa41900a622d4ad7adb14d2c16e65596c75f9f8e7fa5984028c79",
+      "usage": {
+        "input_tokens": 217,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 76,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 293
+      },
+      "cost_upper_usd": 0.001194,
+      "swapped": false,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

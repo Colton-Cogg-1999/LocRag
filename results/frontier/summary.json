@@ -1,0 +1,94 @@
+{
+  "n": 100,
+  "identical_fuzzy_hybrid": 50,
+  "meaning_preference": {
+    "hybrid_ctx": 3,
+    "fuzzy_ctx": 4,
+    "tie": 87,
+    "order_disagreement": 6
+  },
+  "paired_contrasts": {
+    "net_hybrid_win_share": {
+      "mean": -0.01,
+      "ci95": [
+        -0.060000000000000005,
+        0.04
+      ]
+    },
+    "hybrid_minus_fuzzy_chrF": {
+      "mean": 1.422956202940653,
+      "ci95": [
+        -0.009439503640496425,
+        2.933258540186045
+      ]
+    },
+    "fuzzy_minus_zero_chrF": {
+      "mean": 0.6756809385253834,
+      "ci95": [
+        -0.7775263645922083,
+        2.1675498977866883
+      ]
+    },
+    "semantic_minus_zero_chrF": {
+      "mean": 2.2346223672569447,
+      "ci95": [
+        0.16952274576319656,
+        4.4932638397625535
+      ]
+    },
+    "hybrid_minus_zero_chrF": {
+      "mean": 2.0986371414660367,
+      "ci95": [
+        0.403983469208377,
+        3.7893406632503717
+      ]
+    },
+    "random_minus_zero_chrF": {
+      "mean": 0.05120369260082683,
+      "ci95": [
+        -1.1223167844211182,
+        1.1356765104041924
+      ]
+    },
+    "fuzzy_minus_random_chrF": {
+      "mean": 0.6244772459245567,
+      "ci95": [
+        -0.8383156778431008,
+        2.119863740416881
+      ]
+    }
+  },
+  "mean_segment_chrF": {
+    "zero_shot": 76.06087947778263,
+    "random_ctx": 76.11208317038347,
+    "fuzzy_ctx": 76.73656041630802,
+    "semantic_ctx": 78.2955018450396,
+    "hybrid_ctx": 78.15951661924868
+  },
+  "domain_mean_chrF": {
+    "EMEA": {
+      "zero_shot": 76.61496436613861,
+      "random_ctx": 76.99234252671222,
+      "fuzzy_ctx": 76.21005463103091,
+      "semantic_ctx": 76.4895224500521,
+      "hybrid_ctx": 76.89162078456307
+    },
+    "KDE4": {
+      "zero_shot": 75.50679458942669,
+      "random_ctx": 75.23182381405472,
+      "fuzzy_ctx": 77.26306620158515,
+      "semantic_ctx": 80.10148124002708,
+      "hybrid_ctx": 79.4274124539343
+    }
+  },
+  "matched_gemma_chrF": {
+    "zero_shot": 73.62534042955677,
+    "fuzzy_ctx": 77.60508722838198,
+    "semantic_ctx": 77.5483014831309,
+    "hybrid_ctx": 78.74906836062848
+  },
+  "completed_unique_calls": 590,
+  "completed_cost_upper_usd": 1.685928,
+  "panel_sha256": "df085e46feebfc9a219ac5e9a032f77c841fa548ce4dcd90502d6f5ca4a39e81",
+  "reference_sha256": "8f35e4aab8b928744a620ceb7b8a85ef10c99549cd480dc31885745275fe1c06"
+}

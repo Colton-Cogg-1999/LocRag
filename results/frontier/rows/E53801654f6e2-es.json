@@ -1,0 +1,166 @@
+{
+  "row_id": "E53801654f6e2:es",
+  "translations": {
+    "zero_shot": {
+      "text": "En pacientes con sospecha de sensibilidad a la calcitonina, se deben realizar pruebas cutáneas antes de iniciar el tratamiento con calcitonina.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "22b3266366cd5b1670dc78bb318c0e84483d0a717f7468b6b32cdc3c308760c7",
+      "usage": {
+        "input_tokens": 119,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 34,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 153
+      },
+      "cost_upper_usd": 0.002312
+    },
+    "fuzzy_ctx": {
+      "text": "Se deberán realizar pruebas cutáneas en los pacientes con sospecha de sensibilidad a la calcitonina antes de iniciar el tratamiento con calcitonina.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "0f91cebb6eb07dbfa1513744aa7c8a632f099f030b0af4e11d5ac0636125f6ce",
+      "usage": {
+        "input_tokens": 350,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 34,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 384
+      },
+      "cost_upper_usd": 0.00416
+    },
+    "hybrid_ctx": {
+      "text": "En pacientes con sospecha de sensibilidad a la calcitonina, se deberán realizar pruebas cutáneas antes de iniciar el tratamiento con calcitonina.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "78c496053dd6e6942c50448406da100b483ffe54c8d838e5325b83419cb4c4d7",
+      "usage": {
+        "input_tokens": 339,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 34,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 373
+      },
+      "cost_upper_usd": 0.004072
+    },
+    "semantic_ctx": {
+      "text": "En pacientes con sospecha de sensibilidad a la calcitonina, se deben realizar pruebas cutáneas antes de iniciar el tratamiento con calcitonina.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "1e7a960a502e67cb82b48a7a2956d9021ecd7fe3456e0920d79b084ec7d2ca90",
+      "usage": {
+        "input_tokens": 337,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 34,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 371
+      },
+      "cost_upper_usd": 0.004056
+    },
+    "random_ctx": {
+      "text": "En los pacientes con sospecha de sensibilidad a la calcitonina, se deben realizar pruebas cutáneas antes de iniciar el tratamiento con calcitonina.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "ab8f5e48beb19137b78be5c1dc868602e64da1a4f080a5786c4d744e1c0d83eb",
+      "usage": {
+        "input_tokens": 365,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 400
+      },
+      "cost_upper_usd": 0.00432
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both translations preserve “skin testing” as “pruebas cutáneas,” restrict the recommendation to “pacientes con sospecha de sensibilidad a la calcitonina,” and render “prior to their treatment with calcitonin” as “antes de iniciar el tratamiento con calcitonina.” The change in word order does not affect meaning.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "a3e253b69f977448ad8999f4a7d38112901d8c0a5cd8f45c2cd1c87b000f4f38",
+      "usage": {
+        "input_tokens": 242,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 85,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 327
+      },
+      "cost_upper_usd": 0.001334,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both translate “skin testing” as “pruebas cutáneas,” limit the recommendation to “pacientes con sospecha de sensibilidad a la calcitonina,” and preserve the timing “prior to their treatment with calcitonin” as “antes de iniciar el tratamiento con calcitonina.” The different word order does not change the meaning.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "6c12b4802e5878e2beef9976d67eb46b9ef0a332e54b7a7380d10145b669487d",
+      "usage": {
+        "input_tokens": 242,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 86,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 328
+      },
+      "cost_upper_usd": 0.001344,
+      "swapped": false,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

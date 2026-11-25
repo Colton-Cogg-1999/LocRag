@@ -1,0 +1,166 @@
+{
+  "row_id": "K425c97f1f6bb:es",
+  "translations": {
+    "fuzzy_ctx": {
+      "text": "p, li {white-space: pre-wrap;} ADVERTENCIA DE SEGURIDAD No se puede verificar la huella digital del servidor al que se está conectando. Compruebe que la huella digital que se muestra a continuación es auténtica.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "f1e4e7ddb8bb5c73199c191fb4ed22241c9b42142f98a7a0811f5a9b99aa437d",
+      "usage": {
+        "input_tokens": 367,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 55,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 422
+      },
+      "cost_upper_usd": 0.005136
+    },
+    "zero_shot": {
+      "text": "p, li {white-space: pre-wrap;} ADVERTENCIA DE SEGURIDAD No se puede verificar la huella digital del servidor al que se está conectando. Compruebe que la huella digital que aparece a continuación sea auténtica.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "2987af33a9f373d6b7d3534dc6d81f581fc30282f03515009cea9acff115a729",
+      "usage": {
+        "input_tokens": 128,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 54,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 182
+      },
+      "cost_upper_usd": 0.003184
+    },
+    "hybrid_ctx": {
+      "text": "p, li {white-space: pre-wrap;} ADVERTENCIA DE SEGURIDAD No se puede verificar la huella del servidor al que se está conectando. Compruebe que la huella que se muestra a continuación es auténtica.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "33240777283539a98651eaf253f2281fba8b177ced89d240ed7d77a94b839b02",
+      "usage": {
+        "input_tokens": 374,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 53,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 427
+      },
+      "cost_upper_usd": 0.005112
+    },
+    "semantic_ctx": {
+      "text": "p, li {white-space: pre-wrap;} AVISO DE SEGURIDAD No se puede verificar la huella digital del servidor al que se está conectando. Compruebe que la huella digital que se muestra a continuación es auténtica.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "afa1a136d9c6fe5929074d1dfbf4d14ad6f12a9bb8aeddeaf785d83771a6074f",
+      "usage": {
+        "input_tokens": 453,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 54,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 507
+      },
+      "cost_upper_usd": 0.005784
+    },
+    "random_ctx": {
+      "text": "p, li {white-space: pre-wrap;} ADVERTENCIA DE SEGURIDAD No se puede verificar la huella digital del servidor al que se está conectando. Compruebe que la huella digital que se muestra a continuación es auténtica.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "2a01faa20a475cb52d1bfd90ea4594ba6956fe524d000eea6d054ced26717b4e",
+      "usage": {
+        "input_tokens": 335,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 55,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 390
+      },
+      "cost_upper_usd": 0.00488
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both “huella digital” (A) and “huella” (B) convey “fingerprint” in this server-security context. Both preserve the verification warning, the request to check authenticity, and the CSS unchanged.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "eace51806f2c4e6f0ac9ae61d3f34e319b80527bf58df57f93775e4b7b0a49b0",
+      "usage": {
+        "input_tokens": 291,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 62,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 353
+      },
+      "cost_upper_usd": 0.001202,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both «huella del servidor» (A) and «huella digital del servidor» (B) accurately convey “the fingerprint of the server.” Both preserve the warning that it cannot be verified, the instruction to check its authenticity, and the CSS unchanged.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "91d45ae3050293b35521d14e6c07aa2d0f4a01388a3ab6f181e8ea900ef9e2dc",
+      "usage": {
+        "input_tokens": 291,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 69,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 360
+      },
+      "cost_upper_usd": 0.001272,
+      "swapped": false,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

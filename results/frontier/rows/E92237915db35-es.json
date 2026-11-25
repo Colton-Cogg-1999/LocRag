@@ -1,0 +1,166 @@
+{
+  "row_id": "E92237915db35:es",
+  "translations": {
+    "fuzzy_ctx": {
+      "text": "- Ponga el lado adherente del parche sobre la parte superior o inferior de la espalda,",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "48aca289d7444368b2f91c0ffbbaa38402df614e988c087b4901ec5bc0751229",
+      "usage": {
+        "input_tokens": 284,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 23,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 307
+      },
+      "cost_upper_usd": 0.003192
+    },
+    "semantic_ctx": {
+      "text": "- Ponga el lado adherente del parche en la parte superior o inferior de la espalda,",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "a6454f1fbea8f4adf7a53df342870e297ce0debc495d4d2af811782edab5711f",
+      "usage": {
+        "input_tokens": 459,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 23,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 482
+      },
+      "cost_upper_usd": 0.004592
+    },
+    "hybrid_ctx": {
+      "text": "- Ponga el lado adherente del parche en la parte superior o inferior de la espalda,",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "16bfe0b94951de858cc3b045749ec8e83bd98f5a22e7ecf39119774ba18d160b",
+      "usage": {
+        "input_tokens": 284,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 23,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 307
+      },
+      "cost_upper_usd": 0.003192
+    },
+    "random_ctx": {
+      "text": "- Coloque el lado adhesivo del parche en la parte superior o inferior de la espalda,",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "5b17eb025dbab3027ea4876477d5d3dc7a39619f3583c9073e9983daafc835bc",
+      "usage": {
+        "input_tokens": 294,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 23,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 317
+      },
+      "cost_upper_usd": 0.003272
+    },
+    "zero_shot": {
+      "text": "- Coloque el lado adhesivo del parche en la parte superior o inferior de la espalda,",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "49e98fe7a007edaff969514a72d13a1c8186c3f3c8683f62e62cbd6a56d9fc26",
+      "usage": {
+        "input_tokens": 111,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 23,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 134
+      },
+      "cost_upper_usd": 0.001808
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"A («sobre la parte superior o inferior de la espalda») y B («en la parte superior o inferior de la espalda») traducen fielmente «on the upper or lower back». Ambas indican que el lado adherente del parche debe quedar en contacto con esa zona.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "4291ada7bf4fe6a935fef28972b97311a8b872b10efd6e9daabd7b56c0984b8a",
+      "usage": {
+        "input_tokens": 209,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 71,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 280
+      },
+      "cost_upper_usd": 0.001128,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both translations render “the sticky side of the patch” as “el lado adherente del parche” and preserve “the upper or lower back” as “la parte superior o inferior de la espalda.” In this application instruction, A’s “en” and B’s “sobre” both accurately convey “on.”\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "ef594f60407e646949d26b9b0623956ff87414bafa3944900c598d3cabfc706e",
+      "usage": {
+        "input_tokens": 209,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 79,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 288
+      },
+      "cost_upper_usd": 0.001208,
+      "swapped": false,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}
