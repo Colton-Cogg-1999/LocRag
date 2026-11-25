@@ -1,9 +1,10 @@
 """Replay cross-band accuracy, consistency and paired uncertainty from frozen annotations."""
+import json
 from collections import Counter
 
 import numpy as np
 
-from locrag.study.config import write_json
+from locrag.study.config import RESULTS_DIR, write_json
 from locrag.study.consistency_panel import ARMS, BANDS, DIR, OUT, SEED
 from locrag.study.data import read_jsonl
 
@@ -94,6 +95,26 @@ def estimate(rows, seed=SEED):
     return out, samples
 
 
+def qe_on_consistency_fixes(rows):
+    """Exploratory: did archived reference-free QE detect accuracy-preserving fixes?"""
+    archive = RESULTS_DIR / "test-v1"
+    eps = json.loads((archive / "summary.json").read_text())["noise_floor"]["eps"]
+    subset = [r for r in rows if r["model"] == "Gemma" and r["band"] in GROUPS["low"] and r["eligible"]]
+    ids = {r["id"] for r in subset}
+    qe = {(r["row_id"], r["condition"]): r["qe"]["cometkiwi22"]
+          for r in read_jsonl(archive / "rows_analysis.jsonl") if r["row_id"] in ids and r["condition"] in ARMS}
+    out = {"archived_epsilon": eps}
+    for before in ("zero_shot", "fuzzy_ctx"):
+        deltas = [qe[r["id"], "semantic_ctx"] - qe[r["id"], before] for r in subset
+                  if r["accuracy"][before] and r["accuracy"]["semantic_ctx"]
+                  and not r["consistency"][before] and r["consistency"]["semantic_ctx"]]
+        out["semantic_ctx_minus_" + before] = {
+            "fixes": len(deltas), "up": sum(d >= eps for d in deltas),
+            "within_noise_floor": sum(abs(d) < eps for d in deltas), "down": sum(d <= -eps for d in deltas),
+        }
+    return out
+
+
 def main():
     rows, reliability, calls = assemble()
     summary = {"models": {}, "reversal_agreement": reliability,
@@ -111,7 +132,12 @@ def main():
             tag = "semantic_ctx_minus_fuzzy_ctx"
             point = out["low"]["paired"][tag]["consistency_pp"] - out["high"]["paired"][tag]["consistency_pp"]
             out["low_minus_high_semantic_advantage"] = {"pp": point, "ci95": (100 * np.nanquantile(delta,[.025,.975])).tolist()}
+        out["low_by_domain"] = {
+            corpus: estimate([r for r in sub if r["band"] in GROUPS["low"] and r["corpus"] == corpus])[0]
+            for corpus in sorted({r["corpus"] for r in sub})
+        }
         summary["models"][model] = out
+    summary["exploratory_qe_on_low_band_fixes"] = qe_on_consistency_fixes(rows)
     write_json(OUT / "summary.json", summary)
 
 

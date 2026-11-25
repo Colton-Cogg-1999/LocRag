@@ -20,6 +20,10 @@ jobs:
         run: |
           uv run python -m locrag.study.frontier summarize
           git diff --exit-code -- results/frontier/summary.json
+      - name: Reproduce terminology and accuracy study from recorded reviews
+        run: |
+          uv run python -m locrag.study.consistency_analysis
+          git diff --exit-code -- results/consistency/summary.json
       - name: Build static workbench
         run: |
           uv run python -m locrag.demo

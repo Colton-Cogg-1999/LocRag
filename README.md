@@ -2,17 +2,18 @@
 
 A localization tool configured with a 75% fuzzy-match cutoff can return an empty result even when the translation memory (TM) contains exactly the phrase a translator needs. LocRAG tests what happens on those rejected segments. The baseline translates the new source with no memory examples. The alternatives retrieve older bilingual examples and let the translator reuse the parts that still apply.
 
-## A match the cutoff hid
+## Does the memory make wording more consistent?
 
-For the KDE command **“Refresh Project & Tree”**, the best fuzzy score was **40%**. An earlier error message, “Could Not Refresh Project Tree,” contained the Spanish phrase *actualizar el árbol del proyecto*. The two strings serve different purposes in the interface, but the action and its object carry over.
+For the English term **“Starter pack,”** the best fuzzy match scored **41.67%**. The three closest lexical matches contained lists of tablet counts. Gemma translated the term as *Pack de inicio* both with those matches and without memory. Semantic retrieval found a historical starter-pack description, and Gemma used *Envase de iniciación*. Two separate TM entries documented that wording. A source-only accuracy judge accepted all three translations.
 
-| What GPT-6.2 Astra saw | Translation |
-|---|---|
-| Source alone | *Actualizar proyecto y árbol* (“refresh project and tree”) |
-| Three random examples from the same software TM | *Actualizar el proyecto y el árbol* (“refresh the project and the tree”) |
-| Three semantic matches, including the error message | *Actualizar el & árbol del proyecto* (“refresh the project tree”), exactly the corpus reference |
+How often did that happen? We froze one independently evidenced convention per eligible source and scored **consistency and accuracy separately** on blinded outputs. The main panel covered 480 English→Spanish medical and software segments in six fuzzy bands, with a below-cutoff replication on 100 Astra segments.
 
-Unthresholded fuzzy retrieval also found the error message. This example shows how a segment rejected as a whole can still supply a useful phrase. [Retrieved entries](experiments/frontier/panel.jsonl) · [All five outputs](results/frontier/rows/K934a8ff8a553-es.json)
+| Below 75% fuzzy · Gemma | No memory | Top-3 fuzzy | Top-3 semantic |
+|---|---:|---:|---:|
+| Followed the established convention | 109/152 (71.7%) | 119/152 (78.3%) | 120/152 (78.9%) |
+| Passed the separate meaning check | 155/160 (96.9%) | 152/160 (95.0%) | 150/160 (93.8%) |
+
+Most of the consistency gain below the cutoff came from supplying TM examples by either method. The semantic-over-fuzzy consistency advantage was **+0.7 percentage points below 75** and **+2.0 points at 95–100**. The difference between those advantages was **−1.4 points [95% interval −7.4, +4.6]**. The predicted increase at low fuzzy scores did not appear. On the 100-source Astra replication both retrieval methods followed the convention on 78 of 94 eligible sources, compared with 74 without memory. All ratings are automated. [Consistency and accuracy report, including all six bands, QE and failure cases](docs/consistency-results.md)
 
 ## How often was there something to reuse?
 
@@ -33,7 +34,7 @@ The larger Gemma run showed a gain in reference agreement even with simple fuzzy
 
 ### Does the choice of retriever matter?
 
-This was the frontier run’s original primary comparison. Both candidates received memory. A blinded judge comparing hybrid against fuzzy context on meaning preferred hybrid on 3 segments and fuzzy on 4, with 87 ties and 6 order-dependent verdicts. Judging either output against translation **without** memory remains open for this panel. The figure below shows how often changing the retrieval method changed the examples and the final translation in the larger Gemma run.
+This was the frontier run’s original primary comparison. Both candidates received memory. A blinded judge comparing hybrid against fuzzy context on meaning preferred hybrid on 3 segments and fuzzy on 4, with 87 ties and 6 order-dependent verdicts. The subsequent consistency study grades both fuzzy and semantic translations alongside zero-shot for accuracy and adherence to established wording. The figure below shows how often changing the retrieval method changed the examples and the final translation in the larger Gemma run.
 
 ![Share of segments with different retrieved examples and different translations, by domain and language](results/retriever-comparison/retrieval-and-translation.png)
 
