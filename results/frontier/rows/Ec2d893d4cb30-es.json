@@ -1,0 +1,117 @@
+{
+  "row_id": "Ec2d893d4cb30:es",
+  "translations": {
+    "zero_shot": {
+      "text": "Perros: tratamiento de la sarna sarcóptica (causada por S. scabiei).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "f8b83f983ecc3841a3a96bc5df8ff9ef0199f51493e5ce705a67ed39ebe5421d",
+      "usage": {
+        "input_tokens": 114,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 28,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 142
+      },
+      "cost_upper_usd": 0.002032
+    },
+    "hybrid_ctx": {
+      "text": "Perros: tratamiento de la sarna sarcóptica (causada por S. scabiei).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "8145318e0dc546a96e11f30813f9a6dd09c7b55a415ca03f84c6a985563204c9",
+      "usage": {
+        "input_tokens": 309,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 28,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 337
+      },
+      "cost_upper_usd": 0.003592
+    },
+    "semantic_ctx": {
+      "text": "Perros: tratamiento de la sarna sarcóptica (causada por S. scabiei).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "8145318e0dc546a96e11f30813f9a6dd09c7b55a415ca03f84c6a985563204c9",
+      "usage": {
+        "input_tokens": 309,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 28,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 337
+      },
+      "cost_upper_usd": 0.003592
+    },
+    "fuzzy_ctx": {
+      "text": "Perros: tratamiento de la sarna sarcóptica (causada por S. scabiei).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "9456fee57f7d2b9e63e2b2b0c4d4402aac1a35266a010ad801d923661f3c7dd0",
+      "usage": {
+        "input_tokens": 304,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 28,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 332
+      },
+      "cost_upper_usd": 0.003552
+    },
+    "random_ctx": {
+      "text": "Perros: tratamiento de la sarna sarcóptica (causada por S. scabiei).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "8c9a703315c5cb935673eac8717913d3980416a34d8c0cc70f71f20f7a13593c",
+      "usage": {
+        "input_tokens": 288,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 28,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 316
+      },
+      "cost_upper_usd": 0.003424
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

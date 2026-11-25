@@ -1,0 +1,166 @@
+{
+  "row_id": "K7f09fbffb785:es",
+  "translations": {
+    "semantic_ctx": {
+      "text": "No se ha podido encontrar el recurso compartido en el servidor indicado",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "00d118d324954dbe5975176a51ae8782c94a2d3cf45840f9e213b1c804c103c4",
+      "usage": {
+        "input_tokens": 246,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 17,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 263
+      },
+      "cost_upper_usd": 0.002648
+    },
+    "fuzzy_ctx": {
+      "text": "No se ha encontrado el recurso compartido en el servidor indicado",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "da675f567cae8d7bc580d5bc7f2fcf14cffc424c10b6e7428ad689fd01fbcba6",
+      "usage": {
+        "input_tokens": 235,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 251
+      },
+      "cost_upper_usd": 0.00252
+    },
+    "hybrid_ctx": {
+      "text": "No se pudo encontrar el recurso compartido en el servidor indicado.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "b3fd769dec20a0f260414ed40eacc3b1e397c0156fb40b858d7cda1045aa9c25",
+      "usage": {
+        "input_tokens": 250,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 17,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 267
+      },
+      "cost_upper_usd": 0.00268
+    },
+    "zero_shot": {
+      "text": "No se ha podido encontrar el recurso compartido en el servidor indicado",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "4e7079d2b9a0c9552b819a46e65752ace9c9ffa0ca12fe470a20933d95b97b39",
+      "usage": {
+        "input_tokens": 102,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 17,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 119
+      },
+      "cost_upper_usd": 0.001496
+    },
+    "random_ctx": {
+      "text": "No se ha podido encontrar el recurso compartido en el servidor indicado",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "6f59ac7d3428c53abfbed9e834afe6f971656a0e39c4d8eed2b861d6e85a8c2d",
+      "usage": {
+        "input_tokens": 247,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 17,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 264
+      },
+      "cost_upper_usd": 0.002656
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"A\",\"evidence\":\"A’s “No se pudo encontrar” preserves the sense of inability in “could not be found,” whereas B’s “No se ha encontrado” states only that the share was not found. Both correctly translate “on given server” as “en el servidor indicado.”\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "0fab4117c6ec98b3c4d27ae767829ab1ee95e54599f0d115cfcef865b5f68769",
+      "usage": {
+        "input_tokens": 191,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 70,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 261
+      },
+      "cost_upper_usd": 0.001082,
+      "swapped": false,
+      "pick": "hybrid_ctx"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both accurately convey “Share could not be found on given server.” A’s “No se ha encontrado” and B’s “No se pudo encontrar” are equivalent in this UI error context, and both retain “el recurso compartido en el servidor indicado.”\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "91df1db328dc0118af3ea436e80deceffaf12f8a8bc0129851e21d5e48c41183",
+      "usage": {
+        "input_tokens": 192,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 68,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 260
+      },
+      "cost_upper_usd": 0.001064,
+      "swapped": true,
+      "pick": "tie"
+    }
+  ],
+  "winner": "order_disagreement"
+}

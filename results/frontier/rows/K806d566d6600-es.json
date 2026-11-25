@@ -1,0 +1,117 @@
+{
+  "row_id": "K806d566d6600:es",
+  "translations": {
+    "fuzzy_ctx": {
+      "text": "Crear plantilla de la función principal",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "0286334687b530ebac0c48369b04b45ab0931a98d2a01b313b38563212b3bbfb",
+      "usage": {
+        "input_tokens": 226,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 10,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 236
+      },
+      "cost_upper_usd": 0.002208
+    },
+    "semantic_ctx": {
+      "text": "Crear plantilla de la función principal",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "146d41d8844d0348c2b7ef163c78fa056f919f08a96c19160408d74b87eea020",
+      "usage": {
+        "input_tokens": 222,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 10,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 232
+      },
+      "cost_upper_usd": 0.002176
+    },
+    "random_ctx": {
+      "text": "Crear plantilla de la función principal",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "481a15695804a92a8b60e677abc79f6f10f4da4880cb8352a2e6c7792a363a71",
+      "usage": {
+        "input_tokens": 225,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 10,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 235
+      },
+      "cost_upper_usd": 0.0022
+    },
+    "hybrid_ctx": {
+      "text": "Crear plantilla de la función principal",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "219a803a9e5a5fae7b0a77172003e3fa34a354f880f2ae1723c755dc3b60bcef",
+      "usage": {
+        "input_tokens": 234,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 10,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 244
+      },
+      "cost_upper_usd": 0.002272
+    },
+    "zero_shot": {
+      "text": "Crear plantilla de la función principal",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "cf0ef050f2b150578a0261a814fdb926c704849dda52a727a16a6b65347f455e",
+      "usage": {
+        "input_tokens": 98,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 10,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 108
+      },
+      "cost_upper_usd": 0.001184
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

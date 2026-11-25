@@ -1,0 +1,166 @@
+{
+  "row_id": "K2ea7be251a5d:es",
+  "translations": {
+    "zero_shot": {
+      "text": "San Pedro y Miquelón",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "a20dc21d3fece90a2b6257620cdb73be05a963ad5b442b66a7ad64a4571c0d6a",
+      "usage": {
+        "input_tokens": 101,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 11,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 112
+      },
+      "cost_upper_usd": 0.001248
+    },
+    "fuzzy_ctx": {
+      "text": "San Pedro y Miquelón",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "9778d32c909d2e8b204ec7ae41542030698cc3f522e58bc43fbbc1297ee3a34a",
+      "usage": {
+        "input_tokens": 232,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 11,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 243
+      },
+      "cost_upper_usd": 0.002296
+    },
+    "random_ctx": {
+      "text": "San Pedro y Miquelón",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "fd3b689933cf00fc090ea2fd12e75e554ebfe71e5be02f9fc4b89c8a05250b5f",
+      "usage": {
+        "input_tokens": 244,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 11,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 255
+      },
+      "cost_upper_usd": 0.002392
+    },
+    "hybrid_ctx": {
+      "text": "San Pedro y Miguelón",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "8d3f42f52b9310c149bb13534dd8aa7421da04d0d7ac278434c9de270d526119",
+      "usage": {
+        "input_tokens": 232,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 9,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 241
+      },
+      "cost_upper_usd": 0.002216
+    },
+    "semantic_ctx": {
+      "text": "San Pedro y Miguelón",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "8d3f42f52b9310c149bb13534dd8aa7421da04d0d7ac278434c9de270d526119",
+      "usage": {
+        "input_tokens": 232,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 9,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 241
+      },
+      "cost_upper_usd": 0.002216
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"A\",\"evidence\":\"The source place name “St. Pierre and Miquelon” has the established Spanish form “San Pedro y Miguelón” (A). B uses “Miquelón” instead of the standard “Miguelón”.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "7273a4906a47f732dd840bb3504b264068a82ea4b1dc711b614a14645bcd9c40",
+      "usage": {
+        "input_tokens": 178,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 63,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 241
+      },
+      "cost_upper_usd": 0.000986,
+      "swapped": false,
+      "pick": "hybrid_ctx"
+    },
+    {
+      "text": "{\"winner\":\"A\",\"evidence\":\"A’s “Miquelón” is the correct Spanish form of “Miquelon”; B’s “Miguelón” misspells the place name.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "1e3dbb8283a608de0da4c54f4d4a993005ecb8c83f820cb8cd87153d06ebe427",
+      "usage": {
+        "input_tokens": 178,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 50,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 228
+      },
+      "cost_upper_usd": 0.000856,
+      "swapped": true,
+      "pick": "fuzzy_ctx"
+    }
+  ],
+  "winner": "order_disagreement"
+}

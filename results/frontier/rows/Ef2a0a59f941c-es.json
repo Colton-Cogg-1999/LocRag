@@ -1,0 +1,166 @@
+{
+  "row_id": "Ef2a0a59f941c:es",
+  "translations": {
+    "zero_shot": {
+      "text": "Se debe tener precaución en pacientes con migraña tratados con alcaloides del cornezuelo del centeno de acción vasoconstrictora.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "477654f59fc9289ec55728404e80215e98fee43b4e614193d0a85cbeeb56e7d4",
+      "usage": {
+        "input_tokens": 119,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 37,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 156
+      },
+      "cost_upper_usd": 0.002432
+    },
+    "fuzzy_ctx": {
+      "text": "Se debe tener precaución en pacientes con migraña tratados con alcaloides vasoconstrictores del cornezuelo de centeno.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "dee9b87bc0d24e3d046fc64e4ae6d85c30dcdc3facab29b38aeb084ae8bf7609",
+      "usage": {
+        "input_tokens": 302,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 337
+      },
+      "cost_upper_usd": 0.003816
+    },
+    "semantic_ctx": {
+      "text": "Se debe tener precaución en pacientes con migraña tratados con alcaloides vasoconstrictores del ergot.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "981c4343ef150b04258d941048811cf6d0f1e5f905d04f4981ce35c1459466d1",
+      "usage": {
+        "input_tokens": 389,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 30,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 419
+      },
+      "cost_upper_usd": 0.004312
+    },
+    "hybrid_ctx": {
+      "text": "Se debe tener precaución en los pacientes con migraña tratados con alcaloides vasoconstrictores del cornezuelo de centeno.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "545aac6f0992118a2f7661507ac69cfdaa61a7161dd15ff04bd4f6d86af66138",
+      "usage": {
+        "input_tokens": 323,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 36,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 359
+      },
+      "cost_upper_usd": 0.004024
+    },
+    "random_ctx": {
+      "text": "Se debe tener precaución en pacientes con migraña tratados con vasoconstrictores del grupo de los alcaloides del cornezuelo del centeno.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "e0729c3f475d16636a7bd80e9aae802d54eb282a0063369bdbf3792319fa65f7",
+      "usage": {
+        "input_tokens": 301,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 39,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 340
+      },
+      "cost_upper_usd": 0.003968
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both translate “patients suffering from migraine treated with ergot alkaloid vasoconstrictors” as “pacientes con migraña tratados con alcaloides vasoconstrictores del cornezuelo de centeno.” The added article “los” in B does not change the scope or meaning of the caution.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "eca0578bb66ebbfd5515f2e87a12342aaaa33ee1a4915a52fc0e0c54b3a71fed",
+      "usage": {
+        "input_tokens": 245,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 83,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 328
+      },
+      "cost_upper_usd": 0.00132,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both accurately translate “in patients suffering from migraine treated with ergot alkaloid vasoconstrictors.” A’s “en los pacientes con migraña tratados con” and B’s “en pacientes con migraña tratados con” refer to the same patient group; the article does not change the scope.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "274d7a393b2b8290e7cacf973ade6384641b50ab92870d0a6a624303db832feb",
+      "usage": {
+        "input_tokens": 245,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 80,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 325
+      },
+      "cost_upper_usd": 0.00129,
+      "swapped": false,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

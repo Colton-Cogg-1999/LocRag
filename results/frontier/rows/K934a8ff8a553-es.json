@@ -1,0 +1,166 @@
+{
+  "row_id": "K934a8ff8a553:es",
+  "translations": {
+    "semantic_ctx": {
+      "text": "Actualizar el & árbol del proyecto",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "56119056450697fcbbcbd7aaa4ba7a9344044903be1f2d16be829dbfc7238e65",
+      "usage": {
+        "input_tokens": 223,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 10,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 233
+      },
+      "cost_upper_usd": 0.002184
+    },
+    "fuzzy_ctx": {
+      "text": "Actualizar el á&rbol del proyecto",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "818031b0f107d27b9bf5073e288e8bdd9ecfb777437aef8c11290208a34f2711",
+      "usage": {
+        "input_tokens": 225,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 11,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 236
+      },
+      "cost_upper_usd": 0.00224
+    },
+    "hybrid_ctx": {
+      "text": "Actualizar el árbol del proyecto",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "694243f266bafbfe23e2aafc72023611acc5eaa49a65981a16e33e3ca31d7e0a",
+      "usage": {
+        "input_tokens": 221,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 9,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 230
+      },
+      "cost_upper_usd": 0.002128
+    },
+    "zero_shot": {
+      "text": "Actualizar proyecto y árbol",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "952edf97748741e18d0136c8426af4786537bddedc4ba920c5a194f9505bc914",
+      "usage": {
+        "input_tokens": 98,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 8,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 106
+      },
+      "cost_upper_usd": 0.001104
+    },
+    "random_ctx": {
+      "text": "Actualizar el proyecto y el árbol",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "94faf786f83b107ad476039387a51abe26646f1fc9e1fb9ae8023a3e8aaa4fe0",
+      "usage": {
+        "input_tokens": 230,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 10,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 240
+      },
+      "cost_upper_usd": 0.00224
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"The source “Refresh Project & Tree” names both the project and the tree. Both “Actualizar el á&rbol del proyecto” (A) and “Actualizar el árbol del proyecto” (B) refer only to refreshing the project’s tree. A uses “&” as a KDE keyboard mnemonic, not as the source’s conjunction.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "4b4ba693c226fb9d81f1d30260c7de31f1f6c18986ad0ea269a6429dba024680",
+      "usage": {
+        "input_tokens": 175,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 84,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 259
+      },
+      "cost_upper_usd": 0.00119,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"B\",\"evidence\":\"In KDE UI text, the “&” in “Refresh Project & Tree” marks a keyboard mnemonic. B preserves it in “á&rbol,” while A’s “árbol” omits it. Both render the label as refreshing the project tree.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "50fd87cb52e7c152c75ebf594f822512ea02164b4869e618e79188e4a5470d14",
+      "usage": {
+        "input_tokens": 175,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 68,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 243
+      },
+      "cost_upper_usd": 0.00103,
+      "swapped": false,
+      "pick": "fuzzy_ctx"
+    }
+  ],
+  "winner": "order_disagreement"
+}

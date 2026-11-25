@@ -1,0 +1,117 @@
+{
+  "row_id": "E27ea7f1eddcb:es",
+  "translations": {
+    "random_ctx": {
+      "text": "Ambos hallazgos sugieren un menor aclaramiento y/o una mayor biodisponibilidad oral de sildenafilo en los pacientes con hipertensión arterial pulmonar en comparación con los voluntarios sanos.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "09b371b13e76833b4f164342554f39cdee761be6fa9e6fd4e61f37014cfa96d1",
+      "usage": {
+        "input_tokens": 371,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 47,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 418
+      },
+      "cost_upper_usd": 0.004848
+    },
+    "fuzzy_ctx": {
+      "text": "Ambos hallazgos sugieren un menor aclaramiento y/o una mayor biodisponibilidad oral de sildenafilo en pacientes con hipertensión arterial pulmonar en comparación con los voluntarios sanos.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "ca602bf81082ddb8880638d424b5c545c27a08b1797344bc2b78866780757f1d",
+      "usage": {
+        "input_tokens": 369,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 46,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 415
+      },
+      "cost_upper_usd": 0.004792
+    },
+    "semantic_ctx": {
+      "text": "Ambos hallazgos sugieren un menor aclaramiento y/o una mayor biodisponibilidad oral de sildenafilo en pacientes con hipertensión arterial pulmonar en comparación con los voluntarios sanos.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "1f0863fe54683a1a6f8f470b7d5ea4a0a4e8c274810d76a51d73666b8a1afa1f",
+      "usage": {
+        "input_tokens": 439,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 46,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 485
+      },
+      "cost_upper_usd": 0.005352
+    },
+    "hybrid_ctx": {
+      "text": "Ambos hallazgos sugieren un menor aclaramiento y/o una mayor biodisponibilidad oral de sildenafilo en pacientes con hipertensión arterial pulmonar en comparación con los voluntarios sanos.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "56561a30779cabf51c77c8114880241dca057319129c21f312c93d66041f3b4e",
+      "usage": {
+        "input_tokens": 448,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 46,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 494
+      },
+      "cost_upper_usd": 0.005424
+    },
+    "zero_shot": {
+      "text": "Ambos hallazgos sugieren un menor aclaramiento y/o una mayor biodisponibilidad oral de sildenafilo en pacientes con hipertensión arterial pulmonar en comparación con voluntarios sanos.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "a9e80e29f33e1261ed7f4c9d4facd38d9311e7ffb7913a9a6485c0b09378bfe9",
+      "usage": {
+        "input_tokens": 123,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 45,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 168
+      },
+      "cost_upper_usd": 0.002784
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

@@ -1,0 +1,117 @@
+{
+  "row_id": "E5db4fd3a6ed6:es",
+  "translations": {
+    "fuzzy_ctx": {
+      "text": "En ese caso, su médico controlará el nivel de metionina en su organismo y podrá revisar su dieta.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "5954ef1456d1b0c7c240d682f57b3eb11dad365a2409799c2786813501bd8f71",
+      "usage": {
+        "input_tokens": 291,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 27,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 318
+      },
+      "cost_upper_usd": 0.003408
+    },
+    "semantic_ctx": {
+      "text": "En ese caso, su médico controlará el nivel de metionina en su organismo y podrá revisar su dieta.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "fafa27ba93592f9f7dd0b1e27457c585f158bd9988ec77904904f296b8e07325",
+      "usage": {
+        "input_tokens": 302,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 27,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 329
+      },
+      "cost_upper_usd": 0.003496
+    },
+    "hybrid_ctx": {
+      "text": "En ese caso, su médico controlará el nivel de metionina en su organismo y podrá revisar su dieta.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "6d36520d3309cbf68f17d132761dec1c036b9219ea8b24fa928a310b1fd902e6",
+      "usage": {
+        "input_tokens": 326,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 27,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 353
+      },
+      "cost_upper_usd": 0.003688
+    },
+    "zero_shot": {
+      "text": "En ese caso, su médico controlará el nivel de metionina en su organismo y es posible que revise su dieta.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "53d970e1208d5f6a04938233ac2ba4ee760da200bb02cdc84c5cfac7cf9510fb",
+      "usage": {
+        "input_tokens": 117,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 29,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 146
+      },
+      "cost_upper_usd": 0.002096
+    },
+    "random_ctx": {
+      "text": "En ese caso, su médico controlará el nivel de metionina en su organismo y podrá revisar su dieta.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "907eee84659bb0098dba1c8f0526d9da2ea8f41878267b67da4eef60f1113e80",
+      "usage": {
+        "input_tokens": 342,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 27,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 369
+      },
+      "cost_upper_usd": 0.003816
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

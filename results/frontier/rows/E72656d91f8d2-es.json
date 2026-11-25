@@ -1,0 +1,117 @@
+{
+  "row_id": "E72656d91f8d2:es",
+  "translations": {
+    "fuzzy_ctx": {
+      "text": "Se recomienda iniciar la administración lo antes posible.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "838d518dac0e3a2eaa3bf1e31c8512b978797ee814d9db4f1f73607a894ecaa0",
+      "usage": {
+        "input_tokens": 304,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 13,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 317
+      },
+      "cost_upper_usd": 0.002952
+    },
+    "semantic_ctx": {
+      "text": "Se recomienda iniciar la administración lo antes posible.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "389a7eaba34000351f2f03341a6f79b5cd19b7deb52b1597a8a5e43287e4e861",
+      "usage": {
+        "input_tokens": 271,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 13,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 284
+      },
+      "cost_upper_usd": 0.002688
+    },
+    "random_ctx": {
+      "text": "Se recomienda iniciar la administración lo antes posible.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "10b56f4a481a12c879d9cc5e8b11f82f8c97e50ec7e31586491f32078c6cefba",
+      "usage": {
+        "input_tokens": 322,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 13,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 335
+      },
+      "cost_upper_usd": 0.003096
+    },
+    "zero_shot": {
+      "text": "Se recomienda iniciar la administración lo antes posible.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "a8fcd61a44081b20ca30e6a111188a353a966fa2eab584584dd310806e4a08be",
+      "usage": {
+        "input_tokens": 108,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 13,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 121
+      },
+      "cost_upper_usd": 0.001384
+    },
+    "hybrid_ctx": {
+      "text": "Se recomienda iniciar la administración lo antes posible.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "35b380abd85fb26c18b213c6b3058c124bad74148b1136b5b5bbdb1b5e602fe2",
+      "usage": {
+        "input_tokens": 309,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 13,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 322
+      },
+      "cost_upper_usd": 0.002992
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

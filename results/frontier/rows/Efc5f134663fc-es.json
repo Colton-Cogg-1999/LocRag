@@ -1,0 +1,166 @@
+{
+  "row_id": "Efc5f134663fc:es",
+  "translations": {
+    "hybrid_ctx": {
+      "text": "En los estudios de toxicidad reproductiva en ratas no se han observado efectos sobre la fertilidad de los machos ni de las hembras (ver sección 5.3).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "c69b135a1b16a8655e14329f6139b0cc7fc4b46e0511f4678d88c3acbb298856",
+      "usage": {
+        "input_tokens": 368,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 41,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 409
+      },
+      "cost_upper_usd": 0.004584
+    },
+    "semantic_ctx": {
+      "text": "En los estudios de toxicidad para la reproducción realizados en ratas no se han observado efectos sobre la fertilidad de los machos ni de las hembras (ver sección 5.3).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "485007103065aaea679206b5817aa8a3bcaf5ad54791cd4dc23db6e953c3dcda",
+      "usage": {
+        "input_tokens": 349,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 43,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 392
+      },
+      "cost_upper_usd": 0.004512
+    },
+    "random_ctx": {
+      "text": "No se han observado efectos sobre la fertilidad de machos o hembras en los estudios de toxicidad para la reproducción en ratas (ver sección 5.3).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "833f7bb207b892e2e8f5f5608ef4c7f5b2377fe7fad68ea68419aacad4ea7f5f",
+      "usage": {
+        "input_tokens": 297,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 39,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 336
+      },
+      "cost_upper_usd": 0.003936
+    },
+    "zero_shot": {
+      "text": "No se han observado efectos sobre la fertilidad de machos ni de hembras en los estudios de toxicidad para la reproducción en ratas (ver sección 5.3).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "7a300e4e5837fb58e540d2ae05246566172cf6114fe27d55515ffeeaa5e5eace",
+      "usage": {
+        "input_tokens": 120,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 40,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 160
+      },
+      "cost_upper_usd": 0.00256
+    },
+    "fuzzy_ctx": {
+      "text": "En los estudios de toxicidad para la reproducción en ratas no se han observado efectos sobre la fertilidad de los machos ni de las hembras (ver sección 5.3).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "95803c65964f18da35c80800cecd51f726d4fa39514c8357a06b5a32f2114580",
+      "usage": {
+        "input_tokens": 334,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 42,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 376
+      },
+      "cost_upper_usd": 0.004352
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both «toxicidad reproductiva» (A) and «toxicidad para la reproducción» (B) convey “reproductive toxicity.” Both preserve the finding of no observed effects on male or female fertility in rats and the reference to section 5.3.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "4de2fe2d3540ada485fb0a00654ac1d719d5c320d184b551a135491cb743eb7d",
+      "usage": {
+        "input_tokens": 260,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 71,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 331
+      },
+      "cost_upper_usd": 0.00123,
+      "swapped": false,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both «estudios de toxicidad para la reproducción» (A) and «estudios de toxicidad reproductiva» (B) accurately render “reproductive toxicity studies.” Both preserve the rat population, the absence of observed effects on fertility in either sex, and the reference to section 5.3.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "2673693ac2d36b5e7e907070cc9cdddb62678f09528414d117954351789ce94e",
+      "usage": {
+        "input_tokens": 260,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 79,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 339
+      },
+      "cost_upper_usd": 0.00131,
+      "swapped": true,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

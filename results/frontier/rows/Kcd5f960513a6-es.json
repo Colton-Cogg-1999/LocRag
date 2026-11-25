@@ -1,0 +1,117 @@
+{
+  "row_id": "Kcd5f960513a6:es",
+  "translations": {
+    "random_ctx": {
+      "text": "No se ha podido obtener la información del usuario a partir del resultado devuelto por el servidor, ya que no es un mapa.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "8222ade2ccbc5166113766a34167331f647bd01d099173697c7552027a2f3d01",
+      "usage": {
+        "input_tokens": 291,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 30,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 321
+      },
+      "cost_upper_usd": 0.003528
+    },
+    "zero_shot": {
+      "text": "No se pudo obtener la información del usuario a partir del resultado del servidor porque este no es un mapa.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "a4b08b20ec8016630be19d323c2901d10ecdbf2519258bd6b265c1231b011a7b",
+      "usage": {
+        "input_tokens": 111,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 25,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 136
+      },
+      "cost_upper_usd": 0.001888
+    },
+    "hybrid_ctx": {
+      "text": "No se pudo obtener la información del usuario a partir del resultado del servidor, ya que no es un mapa.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "313c73530cc7ba4d7f9b6509045fafb04ab55b085fd111926fb27ecacce010a3",
+      "usage": {
+        "input_tokens": 286,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 26,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 312
+      },
+      "cost_upper_usd": 0.003328
+    },
+    "semantic_ctx": {
+      "text": "No se pudo obtener la información del usuario a partir del resultado del servidor, ya que no es un mapa.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "313c73530cc7ba4d7f9b6509045fafb04ab55b085fd111926fb27ecacce010a3",
+      "usage": {
+        "input_tokens": 286,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 26,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 312
+      },
+      "cost_upper_usd": 0.003328
+    },
+    "fuzzy_ctx": {
+      "text": "No se pudo obtener la información del usuario a partir del resultado del servidor, ya que no es un mapa.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "73bfff22d2e82ecf605597d5edcddb4328e77c07a174a174abaf1e1711d624e5",
+      "usage": {
+        "input_tokens": 282,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 26,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 308
+      },
+      "cost_upper_usd": 0.003296
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

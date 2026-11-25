@@ -1,0 +1,166 @@
+{
+  "row_id": "K1b69a750e3f2:es",
+  "translations": {
+    "semantic_ctx": {
+      "text": "En la pestaña «Todos los efectos» de arriba encontrará más efectos, así como los ajustes específicos de cada efecto.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "bba27e7520ca228f964fe02dc7a601ebb2f75e99e4ce3354555297b4b374aff2",
+      "usage": {
+        "input_tokens": 383,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 28,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 411
+      },
+      "cost_upper_usd": 0.004184
+    },
+    "hybrid_ctx": {
+      "text": "En la solapa «Todos los efectos», situada arriba, puede encontrar más efectos, así como las preferencias específicas de cada efecto.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "3c5ddf89ed121e87cac0e2f91643e8afd9debd7062d2e0b0932a70ad7b0a5d6b",
+      "usage": {
+        "input_tokens": 364,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 30,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 394
+      },
+      "cost_upper_usd": 0.004112
+    },
+    "fuzzy_ctx": {
+      "text": "En la pestaña «Todos los efectos» de arriba puede encontrar más efectos, así como ajustes específicos de cada efecto.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "6e047936b447de595a55299eee921deeb47667f491f724d02e433f73964fcf8a",
+      "usage": {
+        "input_tokens": 357,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 28,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 385
+      },
+      "cost_upper_usd": 0.003976
+    },
+    "random_ctx": {
+      "text": "Puede encontrar más efectos, así como ajustes específicos de cada efecto, en la pestaña «Todos los efectos» de arriba.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "265049592a1bb46ffa5c5bb1d2ae70ecd3104f3121e7882077a40cf99d934787",
+      "usage": {
+        "input_tokens": 341,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 29,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 370
+      },
+      "cost_upper_usd": 0.003888
+    },
+    "zero_shot": {
+      "text": "Puede encontrar más efectos, así como ajustes específicos de cada efecto, en la pestaña «Todos los efectos» de la parte superior.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "cb75cedf80651037f169efb0f81de93301d3cf12b1c262563332b13842bc6d27",
+      "usage": {
+        "input_tokens": 116,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 31,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 147
+      },
+      "cost_upper_usd": 0.002168
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"A\",\"evidence\":\"Both preserve the meaning, but A’s «pestaña» is the standard KDE Spanish term for “tab,” and «ajustes específicos de cada efecto» more directly renders “effect-specific settings” than B’s «preferencias específicas de cada efecto».\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "b3d58349a248b0e8cf2354487c3c6db199fd0853be87fded83921e8b948aea3b",
+      "usage": {
+        "input_tokens": 229,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 69,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 298
+      },
+      "cost_upper_usd": 0.001148,
+      "swapped": true,
+      "pick": "fuzzy_ctx"
+    },
+    {
+      "text": "{\"winner\":\"B\",\"evidence\":\"Both versions preserve the meaning, but B’s «pestaña» and «ajustes específicos de cada efecto» are more precise KDE UI terms for “tab” and “effect-specific settings” than A’s «solapa» and «preferencias específicas de cada efecto».\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "4a6124d439dae1dea72190ca65804f67deed1d67f321b9a21a9cd8a9a2c68f80",
+      "usage": {
+        "input_tokens": 229,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 73,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 302
+      },
+      "cost_upper_usd": 0.001188,
+      "swapped": false,
+      "pick": "fuzzy_ctx"
+    }
+  ],
+  "winner": "fuzzy_ctx"
+}

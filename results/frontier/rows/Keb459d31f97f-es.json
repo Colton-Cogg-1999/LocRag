@@ -1,0 +1,166 @@
+{
+  "row_id": "Keb459d31f97f:es",
+  "translations": {
+    "random_ctx": {
+      "text": "Nombre de la máquina que se usa para generar el identificador del mensaje.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "7f3b87873654e7bd55d36d684619e8e52e817f2dc7c3b32ed9d381812164c9a2",
+      "usage": {
+        "input_tokens": 247,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 19,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 266
+      },
+      "cost_upper_usd": 0.002736
+    },
+    "semantic_ctx": {
+      "text": "Nombre de máquina que se usa para generar el id. del mensaje.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "c1c9111250a595b49cfc9b91bcf810b7e5fa40060ddb1b193f1bdd05c1f98346",
+      "usage": {
+        "input_tokens": 252,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 18,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 270
+      },
+      "cost_upper_usd": 0.002736
+    },
+    "hybrid_ctx": {
+      "text": "Nombre del servidor usado para generar el id. del mensaje.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "3024ec438536df93742537e5473fe49a6cee597fa8424d522ca33cb3b8493e17",
+      "usage": {
+        "input_tokens": 261,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 277
+      },
+      "cost_upper_usd": 0.002728
+    },
+    "zero_shot": {
+      "text": "Nombre del equipo utilizado para generar el identificador del mensaje.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "75c63e43ad64af194ee4e94b17b0da761c3a61378f33a608af7990a9d5d0e42e",
+      "usage": {
+        "input_tokens": 103,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 119
+      },
+      "cost_upper_usd": 0.001464
+    },
+    "fuzzy_ctx": {
+      "text": "Nombre del servidor usado para generar el identificador del mensaje.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "394e5d84fcd0df75206c09452e5f6b7b4abec66cd8389b00cf7892daa81d0ea6",
+      "usage": {
+        "input_tokens": 243,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 259
+      },
+      "cost_upper_usd": 0.002584
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both translate “Host name used to generate” as “Nombre del servidor usado para generar.” A’s “id. del mensaje” and B’s “identificador del mensaje” both convey “message ID.” Both narrow “host” to “servidor” (server) to the same extent.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "fec501a115ac2d80ab26893d2ee767704e90d2c15009575733112555e3bf0ddc",
+      "usage": {
+        "input_tokens": 190,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 77,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 267
+      },
+      "cost_upper_usd": 0.00115,
+      "swapped": false,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both “identificador del mensaje” (A) and “id. del mensaje” (B) convey “message ID.” Both also render “Host name” as “Nombre del servidor,” which is slightly narrower than the source.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "397b93ca15c57e1e9b4269ea560a7a955a237637fa96a0d05223284258c7c48a",
+      "usage": {
+        "input_tokens": 190,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 63,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 253
+      },
+      "cost_upper_usd": 0.00101,
+      "swapped": true,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

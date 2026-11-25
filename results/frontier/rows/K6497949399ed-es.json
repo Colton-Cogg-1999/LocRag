@@ -1,0 +1,117 @@
+{
+  "row_id": "K6497949399ed:es",
+  "translations": {
+    "random_ctx": {
+      "text": "Un juego en 3D basado en el cubo de Rubik",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "94481e5f8eaeea48d62a41d6d52d02c32d40b80c3f5969a9bf2f9e96c5889e35",
+      "usage": {
+        "input_tokens": 267,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 18,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 285
+      },
+      "cost_upper_usd": 0.002856
+    },
+    "zero_shot": {
+      "text": "Un juego en 3D basado en el cubo de Rubik",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "34959542f7b7bb59e273058b2fc43d2a88910349b6c1d57b8feac16322c84707",
+      "usage": {
+        "input_tokens": 105,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 18,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 123
+      },
+      "cost_upper_usd": 0.00156
+    },
+    "hybrid_ctx": {
+      "text": "Un juego en 3D basado en el cubo de Rubik",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "08a81861d22b0bf0884b68771211f96d742a9aab9dfc0c649a731c8cbd0f9d86",
+      "usage": {
+        "input_tokens": 255,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 18,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 273
+      },
+      "cost_upper_usd": 0.00276
+    },
+    "fuzzy_ctx": {
+      "text": "Un juego en 3D basado en el cubo de Rubik",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "366b2881333d5ec402b030670e9f0f5ca1381cbe91f9a27a9f92d505c621c831",
+      "usage": {
+        "input_tokens": 269,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 18,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 287
+      },
+      "cost_upper_usd": 0.002872
+    },
+    "semantic_ctx": {
+      "text": "Un juego en 3D basado en el cubo de Rubik",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "11ee031a3506cbed6a23c0a6ce7c665a7bf59b868477a88705d5671c72a067ff",
+      "usage": {
+        "input_tokens": 263,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 18,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 281
+      },
+      "cost_upper_usd": 0.002824
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

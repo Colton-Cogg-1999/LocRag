@@ -4,9 +4,9 @@ Test run `test-v1`, analysed with the noise floor frozen from `dev-v1`. Design a
 
 ## Summary
 
-1. **RAG finds usable TM material where a fuzzy-match threshold hides it, but the win comes from retrieving below the threshold, not from searching by meaning.** Below the 75% cutoff (where a CAT tool shows nothing), retrieved TM material moves translations closer to the human reference: +1.0 COMET-22 and +5 chrF over translating without it. Showing the top 3 fuzzy matches without a threshold surfaces most of the same material as semantic search, and all retrieval methods translate near-identically. The benefit is consistency with the client's terminology and phrasing, not fewer meaning errors (see the LLM judge section).
+1. **Translation memory improved agreement with the corpus references below the 75% cutoff.** Against zero-shot Gemma, both fuzzy top-3 and hybrid top-3 gained about 1.0 COMET-22 point and 5.0 chrF points. The two retrievers often selected different examples.
 
-   **H1, recoverability: supported.** Below the 75% fuzzy cutoff, retrieved TM units contained reusable translation material for almost every sentence. The material was substantive (full or partial reuse with a verbatim-verified span) for 96% of EMEA rows and 80% of KDE4 rows, re-weighted to each corpus's natural mix of 50–74 and <50 matches. Lifting the threshold recovers most of this; retrieval by meaning adds a meaningful share on top. Substantive material that fuzzy top-3 missed and semantic top-3 found occurred in 12.5% of EMEA below-75 rows (1 in 8) and 6.6% of KDE4 below-75 rows (1 in 15). Each is a sentence where the client's approved phrasing would otherwise be missed. Aggregate scores barely separate fuzzy, semantic and hybrid context because an effect on 1 in 8 rows is diluted in a mean; hybrid retrieval captures both at negligible cost.
+   **H1, recoverability.** The automated auditor identified substantive reusable material (full or partial reuse with a verbatim-verified span) on 96% of EMEA and 80% of KDE4 below-cutoff rows after weighting to each corpus's mix of fuzzy bands. In the audited sample, semantic top-3 found substantive material missed by fuzzy top-3 on 12.5% of below-cutoff EMEA rows and 6.6% of KDE4 rows. Those percentages describe the retrieved examples. The experiment measured translation outcomes separately and collected no editing-time data.
 2. **H2, quality vs zero-shot: the primary metric and the cross-checks disagree.**
    - **Primary metric, reference-free QE (CometKiwi-22):** every TM-context condition scores slightly *below* zero-shot Gemma, by 0.8 to 1.1 Kiwi points pooled, and DeepL scores slightly *above* it (+0.65). On the dev split, MetricX-24 QE agrees in direction. Under the pre-registered primary metric, **H2 is not supported.**
    - **Reference-based cross-checks (COMET-22, chrF):** every TM-context condition is clearly *above* zero-shot, by +1.7 to +2.4 COMET-22 points and +7.7 to +10.9 chrF points pooled. DeepL is *below* it (−0.7 COMET, −3.2 chrF). The gain holds below the 75 cutoff (+0.8 to +1.2 COMET, +3 to +5 chrF), and it holds after removing rows whose reference also occurs in the TM.
@@ -18,17 +18,17 @@ Test run `test-v1`, analysed with the noise floor frozen from `dev-v1`. Design a
    - fuzzy, semantic, hybrid RRF and "use this as a draft" (`draft_ctx`) are within about 0.3 points of each other on every metric;
    - `draft_ctx` is marginally best on reference metrics and marginally worst on QE;
    - structured extraction (E) is the weakest context condition on reference metrics and costs about 4× more.
-6. **An LLM judge settles the fuzzy-match question.** Claude scored 72 blinded rows against the reference. RAG beat the unedited fuzzy match in 64 rows, tied 8 and lost none (judge score 96.9 vs 37.2), and the fuzzy match had a major or critical error in 59 of 72 rows. RAG tied zero-shot (96.9 vs 96.8) and edged DeepL (93.7). Reference metrics rated many critically wrong fuzzy matches (wrong drug, opposite direction) as good, because those matches share almost every word with the reference.
+6. **The judge preferred hybrid translations to unedited fuzzy matches.** Claude scored 72 blinded rows against the reference. RAG beat the unedited fuzzy match in 64 rows, tied 8 and lost none (judge score 96.9 vs 37.2), and the fuzzy match had a major or critical error in 59 of 72 rows. RAG tied zero-shot (96.9 vs 96.8) and edged DeepL (93.7). Reference metrics rated many critically wrong fuzzy matches (wrong drug, opposite direction) as good, because those matches share almost every word with the reference.
 7. **Retrieval confidence doesn't predict QE benefit.** AUC is about 0.50 for fuzzy score, cosine and reuse label. Low zero-shot QE predicts improvement (AUC 0.89), but that is largely regression to the mean.
 
-The honest headline: **TM context makes a frontier LLM's output measurably more like the client's own approved translations, but it doesn't make the output look better to a reference-free quality model.** Which of those matters depends on the use case. Settling it needs human judgment, which this study didn't buy (see "What would settle it").
+Context increased Gemma's agreement with the corpus reference and lowered its reference-free QE score. Human evaluation remains an open test of which translations a localizer would accept.
 
 ## What was run
 
 | | |
 |---|---|
 | Data | OPUS EMEA en→es (TM 100k entries, 2,000 held-out test rows) and KDE4 en→de/es/zh_CN (TM 30k per language, 743 sources × 3 = 2,229 rows). Band quotas cover 100 / 95–99 / 85–94 / 75–84 / 50–74 / <50. KDE4 95–99 fell short at 43 of 100 sources. Dev split: 300 rows. |
-| Separation | The TM, held-out sources and references are disjoint. Held-out sources are de-clustered (no two above fuzzy 90). Dedup collapses numbers and placeholders. In the exact band the TM holds one translation and the reference is a *different* one. References are never read by retrieval, translation or the auditor. |
+| Separation | Normalized source groups are separated except in the designed exact-match band. Reference text can recur among TM targets. Held-out sources are de-clustered (no two above fuzzy 90). Dedup collapses numbers and placeholders. In the exact band the TM holds one translation and the reference is a *different* one. References are never read by retrieval, translation or the auditor. |
 | Retrieval | Exact word-level Levenshtein fuzzy matching, BGE-M3 cosine, and hybrid RRF with a near-exact override. k=3, frozen before translation. |
 | Translator | `google/gemma-4-31b-it` via OpenRouter, temperature 0, bf16/fp8 providers. All test rows were served by the same snapshot (`-20260402`). |
 | Conditions | A `zero_shot`, B `fuzzy_ctx`, C `semantic_ctx`, D `hybrid_ctx`, E `structured_ctx` (Gemma extracts verbatim-checked reusable items, then translates from them), F `draft_ctx` (top hybrid match framed as a draft to adapt, as fuzzy-match repair), N `nmt_deepl` (DeepL API, classic NMT), T `tm_as_is` (unedited fuzzy top-1 target), A′ `zero_shot_repeat` (noise floor, 600 rows). |
@@ -141,7 +141,7 @@ To get a judgment that reads meaning rather than surface overlap, Claude Opus 5.
 | DeepL | 93.7 | 2 / 72 | 1 / 72 |
 
 - **RAG vs fuzzy match:** RAG wins 64, ties 8 (exact matches where it reproduced the TM) and loses 0, a gap of +59.7 [51.8, 67.7]. It wins all 12 rows in every band from 95–99 down to <50. Near-matches fail on exactly the word that differs: a different product name, up vs down, "some" vs "all", encrypt vs decrypt, a different section number.
-- **RAG vs zero-shot:** a tie (+0.2 [−1.4, 1.4]). The context didn't reduce meaning errors. Its gain on reference metrics is wording conformity, and the QE penalty doesn't show up as errors either.
+- **RAG vs zero-shot.** The mean judge-score difference was +0.2 [−1.4, 1.4]. This sample had few serious errors in either system and gives limited precision for differences in meaning.
 - **RAG vs DeepL:** +3.2 [0.4, 6.8]. DeepL's two serious errors were software terminology ("watches" as wristwatches; "keyring database" as a key fob).
 - **Which metric agrees with the judge** (Spearman over all row-system pairs): CometKiwi 0.53, COMET-22 0.47, chrF 0.36.
 - **Reference metrics miss critical errors.** Of the 62 outputs with a major or critical error, COMET-22 scored 15 above the median *clean* translation and chrF 26. CometKiwi scored 2 (AUC 0.92 vs COMET 0.72, chrF 0.59). Examples: Viagra and 1998 for CHAMPIX and 2006 (COMET 0.90), "move up" for "move down" (0.92), aripiprazole for olanzapine (0.89). These share almost every word with the reference. In some rows the reference itself carries the same defect as the TM (a dropped verb, a wrong section number), which reference metrics reward.
@@ -192,7 +192,7 @@ Per row on test:
 | draft_ctx | $0.000096 | +$0.000060 |
 | structured_ctx | $0.000281 | +$0.000245 |
 
-At these prices, retrieval context adds well under a cent per thousand segments. The auditor was 78% of the spend.
+At these prices, hybrid context adds about 2.6 cents per thousand segments in translation API charges. The auditor was 78% of the spend.
 
 ## Amendments and deviations
 

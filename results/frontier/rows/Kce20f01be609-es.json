@@ -1,0 +1,117 @@
+{
+  "row_id": "Kce20f01be609:es",
+  "translations": {
+    "random_ctx": {
+      "text": "El gestor de ventanas Lars, basado en 9WM, admite ventanas en mosaico",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "179cdbf2b600f8b086902b86e13fd3517eaeb81af5375e91cedc6683ea4b1dc1",
+      "usage": {
+        "input_tokens": 277,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 21,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 298
+      },
+      "cost_upper_usd": 0.003056
+    },
+    "hybrid_ctx": {
+      "text": "El gestor de ventanas Lars, basado en 9WM, admite ventanas en mosaico",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "6f4820072dad56ddd1fe1df3c46fcf6b1f1e29b7878a4546f6c893877068b632",
+      "usage": {
+        "input_tokens": 293,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 21,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 314
+      },
+      "cost_upper_usd": 0.003184
+    },
+    "fuzzy_ctx": {
+      "text": "El gestor de ventanas Lars, basado en 9WM, admite ventanas en mosaico",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "c3dbf31188b054703ae10e4c89870114e33054d9ab6b314066405046b461cff8",
+      "usage": {
+        "input_tokens": 271,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 21,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 292
+      },
+      "cost_upper_usd": 0.003008
+    },
+    "zero_shot": {
+      "text": "El gestor de ventanas Lars, basado en 9WM, admite ventanas en mosaico.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "22d9e0499dd935379b67856ba0b86a074a519124aa0e32e74eab9f549c728b7e",
+      "usage": {
+        "input_tokens": 108,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 22,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 130
+      },
+      "cost_upper_usd": 0.001744
+    },
+    "semantic_ctx": {
+      "text": "El gestor de ventanas Lars, basado en 9WM, admite ventanas en mosaico",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "419af38d16e58fb65b0a2bc4eda8778757152694f39992640adcf1e07c37ab6e",
+      "usage": {
+        "input_tokens": 313,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 21,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 334
+      },
+      "cost_upper_usd": 0.003344
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

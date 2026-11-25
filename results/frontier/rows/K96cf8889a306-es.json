@@ -1,0 +1,166 @@
+{
+  "row_id": "K96cf8889a306:es",
+  "translations": {
+    "fuzzy_ctx": {
+      "text": "Parámetro mal formado en la orden especial epsf. Se esperaba un número de coma flotante después de %1 en %2",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "35d0e0b01e204dfd5066e572caaea3dde0fbddb1eff9ed6bc352ea15ac487d2b",
+      "usage": {
+        "input_tokens": 301,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 31,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 332
+      },
+      "cost_upper_usd": 0.003648
+    },
+    "random_ctx": {
+      "text": "Parámetro mal formado en la orden especial epsf. Se esperaba un número de coma flotante después de %1 en %2",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "f9d94e677f1e4f4e3a98679dea89f96a4f618b62e68c89e65786d2be2b530d2d",
+      "usage": {
+        "input_tokens": 284,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 31,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 315
+      },
+      "cost_upper_usd": 0.003512
+    },
+    "zero_shot": {
+      "text": "Parámetro mal formado en la orden especial epsf. Se esperaba un número de coma flotante después de %1 en %2",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "6f659b18d05f04053a99ddfa40e3563d0de155fcd6f3e5fd3714ece975b2a69c",
+      "usage": {
+        "input_tokens": 114,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 31,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 145
+      },
+      "cost_upper_usd": 0.002152
+    },
+    "semantic_ctx": {
+      "text": "Parámetro mal formado en la orden especial epsf. Se esperaba un número en coma flotante después de %1 en %2",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "4f8202bb0d2ac727c29dffb6c8078c16f77edbfc75f7b388963a178218ca8f95",
+      "usage": {
+        "input_tokens": 283,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 31,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 314
+      },
+      "cost_upper_usd": 0.003504
+    },
+    "hybrid_ctx": {
+      "text": "Parámetro mal formado en la orden especial epsf. Se esperaba un número en coma flotante después de %1 en %2",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "626eca5f40f62d0771037c9b0cc2256f5a6e92dd98e11b0f50d496d79f66c25f",
+      "usage": {
+        "input_tokens": 284,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 31,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 315
+      },
+      "cost_upper_usd": 0.003512
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both «un número en coma flotante» (A) and «un número de coma flotante» (B) accurately translate “a float.” Both preserve the epsf command and the placeholder relationship in “to follow %1 in %2.”\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "238fb2195a2dc4756ff5a0b2bdbd6361234a2f0a86ca3f6dee8860bdb5792a7d",
+      "usage": {
+        "input_tokens": 232,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 67,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 299
+      },
+      "cost_upper_usd": 0.001134,
+      "swapped": false,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both «un número de coma flotante» (A) and «un número en coma flotante» (B) accurately translate “a float.” Both preserve the epsf command and the placement of %1 and %2.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "0cbe51d0630fcb42305e713774dfa6d6bbe86666b1a8aef930348f66dd7c755c",
+      "usage": {
+        "input_tokens": 232,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 63,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 295
+      },
+      "cost_upper_usd": 0.001094,
+      "swapped": true,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

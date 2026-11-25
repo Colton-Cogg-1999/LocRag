@@ -1,0 +1,166 @@
+{
+  "row_id": "E919b7efcff00:es",
+  "translations": {
+    "semantic_ctx": {
+      "text": "Todas las demás secciones del RCP se armonizaron como resultado del procedimiento de arbitraje (con las excepciones que se indican más adelante en «Cuestiones administrativas»).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "145cbf44fa2410163c570d91cac07183161f19e0364dbc9bdb4fc1d59928f98c",
+      "usage": {
+        "input_tokens": 370,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 41,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 411
+      },
+      "cost_upper_usd": 0.0046
+    },
+    "random_ctx": {
+      "text": "Todas las demás secciones de la ficha técnica se armonizaron como resultado del procedimiento de arbitraje (con la excepción indicada más adelante; véase «Cuestiones administrativas»).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "d52a31885240a931e1c9077057a01e03ac28f4fea894cb2580970c5f4f39de56",
+      "usage": {
+        "input_tokens": 334,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 41,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 375
+      },
+      "cost_upper_usd": 0.004312
+    },
+    "hybrid_ctx": {
+      "text": "Todas las demás secciones del RCP se armonizaron como resultado del procedimiento de arbitraje (para las excepciones, véase más adelante el apartado «Cuestiones administrativas»).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "09c36bec85c1349e8762a5507f9810c0748020584ae2db7a03c71c9359f4eac3",
+      "usage": {
+        "input_tokens": 323,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 42,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 365
+      },
+      "cost_upper_usd": 0.004264
+    },
+    "fuzzy_ctx": {
+      "text": "Todas las demás secciones del RCP se armonizaron como resultado del procedimiento de arbitraje (con la excepción que se indica a continuación; cuestiones administrativas).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "87e3e708754df58385cac985201a71c8d5c75c60bcf39f8fc7867efa5ac35be5",
+      "usage": {
+        "input_tokens": 319,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 36,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 355
+      },
+      "cost_upper_usd": 0.003992
+    },
+    "zero_shot": {
+      "text": "Todas las demás secciones de la ficha técnica se armonizaron como resultado del procedimiento de arbitraje (salvo lo indicado más adelante en «Cuestiones administrativas»).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "a30cd7d28149f87096ab3177f3498a58d819b0e9675e48eb40204c8980d55f35",
+      "usage": {
+        "input_tokens": 120,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 39,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 159
+      },
+      "cost_upper_usd": 0.00252
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"B\",\"evidence\":\"In “except See Below; Administrative Issues,” the source points readers to the “Administrative Issues” section for the exceptions. B makes that cross-reference clear with “véase más adelante el apartado «Cuestiones administrativas»,” whereas A leaves “cuestiones administrativas” detached and introduces a single exception (“la excepción”) that the source does not specify.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "ebb510b1cf40aa30f0f316b6ac142541de4cbcc7ad7626a238fbc188e780c38e",
+      "usage": {
+        "input_tokens": 255,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 88,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 343
+      },
+      "cost_upper_usd": 0.00139,
+      "swapped": true,
+      "pick": "hybrid_ctx"
+    },
+    {
+      "text": "{\"winner\":\"B\",\"evidence\":\"B conserva la separación del original en «except See Below; Administrative Issues» con «con la excepción que se indica a continuación; cuestiones administrativas». A convierte «Cuestiones administrativas» en el título del apartado donde se describen las excepciones, una relación que el original no explicita.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "9c618e32eb036cf308b15b0a72afdf844674099df9798dc6e065d3a9f3ae1e99",
+      "usage": {
+        "input_tokens": 255,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 76,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 331
+      },
+      "cost_upper_usd": 0.00127,
+      "swapped": false,
+      "pick": "fuzzy_ctx"
+    }
+  ],
+  "winner": "order_disagreement"
+}

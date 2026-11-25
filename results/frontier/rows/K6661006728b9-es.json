@@ -1,0 +1,117 @@
+{
+  "row_id": "K6661006728b9:es",
+  "translations": {
+    "semantic_ctx": {
+      "text": "http: / /www. tv. com/ search. php? type=11stype=allqs=\\\\\\\\{@}x=0y=0",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "d5c506593b150c03b3d9e6be33cb848f10012a93d750ce976f7a148e6fe833c8",
+      "usage": {
+        "input_tokens": 366,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 401
+      },
+      "cost_upper_usd": 0.004328
+    },
+    "zero_shot": {
+      "text": "http: / /www. tv. com/ search. php? type=11stype=allqs=\\\\\\\\{@}x=0y=0",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "b3b35c944d02369f7ff4473b10f02a272f3543e68aea68d43bafc7e62b881c6f",
+      "usage": {
+        "input_tokens": 125,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 160
+      },
+      "cost_upper_usd": 0.0024
+    },
+    "hybrid_ctx": {
+      "text": "http: / /www. tv. com/ search. php? type=11stype=allqs=\\\\\\\\{@}x=0y=0",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "e6be694bf8f880ad27fd844cedf457838962bf5b7733114a22af5fd41b87a35c",
+      "usage": {
+        "input_tokens": 329,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 364
+      },
+      "cost_upper_usd": 0.004032
+    },
+    "random_ctx": {
+      "text": "http: / /www. tv. com/ search. php? type=11stype=allqs=\\\\\\\\{@}x=0y=0",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "f1cb5549eca06ba4c6d96f663905e23fd74738da02a1d57b3d149b9dd35cd50b",
+      "usage": {
+        "input_tokens": 283,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 318
+      },
+      "cost_upper_usd": 0.003664
+    },
+    "fuzzy_ctx": {
+      "text": "http: / /www. tv. com/ search. php? type=11stype=allqs=\\\\\\\\{@}x=0y=0",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "e1fce917d67e11245643f5cf0ce3f0521f3cf8e92addd3465eef12ecd21697e3",
+      "usage": {
+        "input_tokens": 352,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 387
+      },
+      "cost_upper_usd": 0.004216
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

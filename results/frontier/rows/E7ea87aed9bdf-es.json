@@ -1,0 +1,166 @@
+{
+  "row_id": "E7ea87aed9bdf:es",
+  "translations": {
+    "random_ctx": {
+      "text": "Los efectos adversos mencionados anteriormente pueden requerir intervención médica y algunos pueden poner en peligro la vida o ser mortales.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "e10c75c549dbd960125a62780f3316628c3982f73bd4e86444dbab263b6186e1",
+      "usage": {
+        "input_tokens": 312,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 29,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 341
+      },
+      "cost_upper_usd": 0.003656
+    },
+    "fuzzy_ctx": {
+      "text": "Los efectos adversos mencionados anteriormente pueden requerir intervención médica y algunos pueden poner en peligro la vida o ser mortales.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "71c05b82af407b30afce7690b62b101c8dc5dd78ec55d930e1c9777b483742bb",
+      "usage": {
+        "input_tokens": 308,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 29,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 337
+      },
+      "cost_upper_usd": 0.003624
+    },
+    "zero_shot": {
+      "text": "Los efectos adversos mencionados anteriormente pueden requerir intervención médica y algunos pueden poner en peligro la vida o ser mortales.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "1da6146e306ed56bd782b4ebf2c927b6e6e9bd8d603012bb99117a3338136a4b",
+      "usage": {
+        "input_tokens": 113,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 29,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 142
+      },
+      "cost_upper_usd": 0.002064
+    },
+    "hybrid_ctx": {
+      "text": "Los efectos adversos mencionados anteriormente pueden requerir intervención médica y algunos pueden poner en peligro la vida del paciente o ser mortales.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "6e60492069a5351404c4f04570a58f7e08231d112e9899143be7586146e2511a",
+      "usage": {
+        "input_tokens": 278,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 31,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 309
+      },
+      "cost_upper_usd": 0.003464
+    },
+    "semantic_ctx": {
+      "text": "Los efectos adversos mencionados anteriormente pueden requerir intervención médica y algunos pueden poner en peligro su vida o ser mortales.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "c2ad8d00b01db2b6215d5e7fdc17ba6b2cce1c0fb79d18b0c19b12c898ab33ac",
+      "usage": {
+        "input_tokens": 307,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 29,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 336
+      },
+      "cost_upper_usd": 0.003616
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both translations preserve “may require medical intervention” and “some may be life-threatening or fatal.” B’s “la vida del paciente” makes explicit whose life is at risk, without changing the meaning of A’s “la vida” or the English source.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "8625eb892c2f1aafaa61ec963db258e74d5beab056b59265c775eb1eeca5f80a",
+      "usage": {
+        "input_tokens": 228,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 68,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 296
+      },
+      "cost_upper_usd": 0.001136,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both versions accurately convey that the above side effects may require medical intervention and that some may be life-threatening or fatal. A’s «poner en peligro la vida del paciente» and B’s «poner en peligro la vida» both render “be life-threatening”; «del paciente» makes the implied referent explicit without changing the meaning.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "f080b8f46b74c6ff54562a3b82ec117b4885eab3366126bc8b28351c1eeed800",
+      "usage": {
+        "input_tokens": 228,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 83,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 311
+      },
+      "cost_upper_usd": 0.001286,
+      "swapped": false,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

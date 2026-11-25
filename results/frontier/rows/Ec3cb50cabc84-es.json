@@ -1,0 +1,166 @@
+{
+  "row_id": "Ec3cb50cabc84:es",
+  "translations": {
+    "zero_shot": {
+      "text": "El diseño del estudio no permite evaluar de forma definitiva el efecto de saquinavir sobre indinavir, pero sugiere que, durante la administración concomitante con saquinavir, el AUC8h de indinavir aumenta sin llegar a duplicarse",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "7e41dffd88fc0c2a9121d5d848eb6cbb765e44bc1f196cf01fe9cab0a58daae9",
+      "usage": {
+        "input_tokens": 146,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 57,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 203
+      },
+      "cost_upper_usd": 0.003448
+    },
+    "random_ctx": {
+      "text": "El diseño del estudio no permite evaluar de forma definitiva el efecto de saquinavir sobre indinavir, pero sugiere que el AUC8h de indinavir aumenta sin llegar a duplicarse durante la administración concomitante con saquinavir.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "677c051bd88a7b2424f30e5f637b64b0978f470c038bf98e7286c8f431f813f6",
+      "usage": {
+        "input_tokens": 443,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 56,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 499
+      },
+      "cost_upper_usd": 0.005784
+    },
+    "hybrid_ctx": {
+      "text": "El diseño del estudio no permite evaluar de forma definitiva el efecto de saquinavir sobre indinavir, pero sugiere que, durante la administración concomitante con saquinavir, el AUC8h de indinavir aumenta sin llegar a duplicarse.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "e7fd0d436ecd973aa6c01dcaaaa16c84c1c9989d3e50b9255ecd22940cbc32c7",
+      "usage": {
+        "input_tokens": 467,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 58,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 525
+      },
+      "cost_upper_usd": 0.006056
+    },
+    "fuzzy_ctx": {
+      "text": "El diseño del estudio no permite evaluar de forma definitiva el efecto de saquinavir sobre indinavir, pero sugiere que el AUC8h de indinavir aumenta, sin llegar a duplicarse, durante la administración concomitante con saquinavir",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "02ad829536c9953f5f38a63e231d04bc058e46909b70da54afddc029d0f8cdd9",
+      "usage": {
+        "input_tokens": 420,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 57,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 477
+      },
+      "cost_upper_usd": 0.00564
+    },
+    "semantic_ctx": {
+      "text": "El diseño del estudio no permite evaluar de forma definitiva el efecto de saquinavir sobre indinavir, pero sugiere que el AUC8h de indinavir aumenta sin llegar a duplicarse durante la administración concomitante con saquinavir",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "73b37b0278e6f632c7c779c49f7aac54aed69ff6ded9b50626c467ec1cf19598",
+      "usage": {
+        "input_tokens": 504,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 55,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 559
+      },
+      "cost_upper_usd": 0.006232
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both preserve the study’s limitation and render “less than a two-fold increase in indinavir AUC8h” as “el AUC8h de indinavir aumenta … sin llegar a duplicarse.” Both link the increase to concomitant administration with saquinavir; the difference in word order does not change the meaning.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "378f60369ea1eb6748e35d1393c9a74e98e8b1015cd24352fc5fff2e09a7c455",
+      "usage": {
+        "input_tokens": 317,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 84,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 401
+      },
+      "cost_upper_usd": 0.001474,
+      "swapped": false,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both A and B render “less than a two–fold increase in indinavir AUC8h” as “el AUC8h de indinavir aumenta … sin llegar a duplicarse.” Both link the increase to “la administración concomitante con saquinavir” and preserve the caveat that the study design does not permit a definitive evaluation. The change in word order does not affect meaning.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "7de868ed32d93fd1277a373e8491cd8ed277a0cead26760aaea90b20113d5e24",
+      "usage": {
+        "input_tokens": 318,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 100,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 418
+      },
+      "cost_upper_usd": 0.001636,
+      "swapped": true,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

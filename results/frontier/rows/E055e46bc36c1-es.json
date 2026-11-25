@@ -1,0 +1,117 @@
+{
+  "row_id": "E055e46bc36c1:es",
+  "translations": {
+    "fuzzy_ctx": {
+      "text": "Los animales recibieron los comprimidos una o dos veces al día.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "8a45f9f3efbcf6ebd5e737805e71f1e58c5b45685e4645eb53b3714d0e9791d6",
+      "usage": {
+        "input_tokens": 275,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 18,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 293
+      },
+      "cost_upper_usd": 0.00292
+    },
+    "zero_shot": {
+      "text": "Los animales recibieron los comprimidos una o dos veces al día.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "7913cf79e5489a1469e8a3b777a388cb053a7302e265813ded69b7eaf2c558d3",
+      "usage": {
+        "input_tokens": 107,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 18,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 125
+      },
+      "cost_upper_usd": 0.001576
+    },
+    "hybrid_ctx": {
+      "text": "Los animales recibieron los comprimidos una o dos veces al día.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "73df5a65787cf2c80d16634da93d00d7c30c0b7dd4923d3251cc339f3d8c3092",
+      "usage": {
+        "input_tokens": 303,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 18,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 321
+      },
+      "cost_upper_usd": 0.003144
+    },
+    "random_ctx": {
+      "text": "Los animales recibieron los comprimidos una o dos veces al día.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "cd50958820c96647da9a802b4a63f614344429a99a54360cc8e4e77a7f3ca305",
+      "usage": {
+        "input_tokens": 312,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 18,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 330
+      },
+      "cost_upper_usd": 0.003216
+    },
+    "semantic_ctx": {
+      "text": "Los animales recibieron los comprimidos una o dos veces al día.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "ad90a25707cc4c8c2fb94304b2d972f928b8a6de6b953433076de5a77dfdea13",
+      "usage": {
+        "input_tokens": 305,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 18,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 323
+      },
+      "cost_upper_usd": 0.00316
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

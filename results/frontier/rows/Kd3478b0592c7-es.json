@@ -1,0 +1,166 @@
+{
+  "row_id": "Kd3478b0592c7:es",
+  "translations": {
+    "hybrid_ctx": {
+      "text": "Dispositivo de cifrado de redes y sistemas informáticos",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "decf8e51a59ba28bf3d1f6542aca7cca931ffb545adc0723c857a423dd8b3440",
+      "usage": {
+        "input_tokens": 226,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 15,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 241
+      },
+      "cost_upper_usd": 0.002408
+    },
+    "zero_shot": {
+      "text": "Dispositivo de cifrado de red y de computación",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "7db767350834db586bd3469064a59740d40c053215962a69c71f275d95c98be8",
+      "usage": {
+        "input_tokens": 99,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 15,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 114
+      },
+      "cost_upper_usd": 0.001392
+    },
+    "random_ctx": {
+      "text": "Dispositivo de cifrado de red y computación",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "d707bfc57669b8a16eddaf569c618d26d3b2d1c14b0185fc370cd11368ac51d3",
+      "usage": {
+        "input_tokens": 230,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 244
+      },
+      "cost_upper_usd": 0.0024
+    },
+    "semantic_ctx": {
+      "text": "Dispositivo de cifrado de red e informático",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "714635052e20ab9847a0d84ee5fe9e9ecee0c0b2ebbfc3a6e332fdaa61ba83a3",
+      "usage": {
+        "input_tokens": 226,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 240
+      },
+      "cost_upper_usd": 0.002368
+    },
+    "fuzzy_ctx": {
+      "text": "Dispositivo de cifrado de red y computación",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "11de5cbca209679d13b06c3fc0b74dc308f39ecd51d24359aaecdf154e32aefc",
+      "usage": {
+        "input_tokens": 226,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 240
+      },
+      "cost_upper_usd": 0.002368
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"B\",\"evidence\":\"B’s «cifrado de redes y sistemas informáticos» conveys encryption for networks and computing systems. A’s «cifrado de red y computación» is more literal, but «computación» makes it sound as though the device encrypts the activity of computing itself.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "a34e4a8a89834083c6f8887d23f2bee06644228a84874d1fc705e50b3a325750",
+      "usage": {
+        "input_tokens": 185,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 74,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 259
+      },
+      "cost_upper_usd": 0.00111,
+      "swapped": true,
+      "pick": "hybrid_ctx"
+    },
+    {
+      "text": "{\"winner\":\"A\",\"evidence\":\"For “network and computing,” A’s “redes y sistemas informáticos” naturally conveys the two technical areas the device protects. B’s “red y computación” can read as encrypting computation itself rather than protecting computing systems.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "2b2a73c3a2051091e6e4b0b3ddaa38f70fa1da7bdbfbfc2a935c98e972a04ad6",
+      "usage": {
+        "input_tokens": 185,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 64,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 249
+      },
+      "cost_upper_usd": 0.00101,
+      "swapped": false,
+      "pick": "hybrid_ctx"
+    }
+  ],
+  "winner": "hybrid_ctx"
+}

@@ -1,0 +1,117 @@
+{
+  "row_id": "Kb4ce554796d1:es",
+  "translations": {
+    "fuzzy_ctx": {
+      "text": "No se puede copiar el sistema de archivos: el sistema de archivos de la partición de destino %1 es más pequeño que el de la partición de origen %2.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "9c2dc12a58c8ab2ed0efed2078c8b948a843282c59a762bfe83825a3fd95e80b",
+      "usage": {
+        "input_tokens": 333,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 39,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 372
+      },
+      "cost_upper_usd": 0.004224
+    },
+    "semantic_ctx": {
+      "text": "No se puede copiar el sistema de archivos: el sistema de archivos de la partición de destino %1 es más pequeño que el de la partición de origen %2.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "a9d198f328246cb0d8af70e8a48c109eb3f6432aed496af967d99981ba0bed36",
+      "usage": {
+        "input_tokens": 325,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 39,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 364
+      },
+      "cost_upper_usd": 0.00416
+    },
+    "zero_shot": {
+      "text": "No se puede copiar el sistema de archivos: el sistema de archivos de la partición de destino %1 es más pequeño que el sistema de archivos de la partición de origen %2.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "1d9cda6fd0cddec75d539008b13fba0d78331de423728ec598acd014148beef5",
+      "usage": {
+        "input_tokens": 118,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 42,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 160
+      },
+      "cost_upper_usd": 0.002624
+    },
+    "hybrid_ctx": {
+      "text": "No se puede copiar el sistema de archivos: el sistema de archivos de la partición de destino %1 es más pequeño que el de la partición de origen %2.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "62a0616c4025aa41c93f2daeeab2593af4fc7c2e24c39cba7908a674e898cdae",
+      "usage": {
+        "input_tokens": 325,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 39,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 364
+      },
+      "cost_upper_usd": 0.00416
+    },
+    "random_ctx": {
+      "text": "No se puede copiar el sistema de archivos: el sistema de archivos de la partición de destino %1 es más pequeño que el de la partición de origen %2.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "0517b6a4bd0608a1c04b04c024898ac93bfa750c075322ac9e9cf6c45c95563d",
+      "usage": {
+        "input_tokens": 289,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 39,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 328
+      },
+      "cost_upper_usd": 0.003872
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

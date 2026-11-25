@@ -1,0 +1,117 @@
+{
+  "row_id": "Ed720d91ed1b8:es",
+  "translations": {
+    "semantic_ctx": {
+      "text": "- Gestión y publicación de documentos - Servicios de conferencias 2",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "5c1d1eebb1ed62220253b73c959115bd6397f10562efaddc19cdf287add27834",
+      "usage": {
+        "input_tokens": 237,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 17,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 254
+      },
+      "cost_upper_usd": 0.002576
+    },
+    "fuzzy_ctx": {
+      "text": "- Gestión y publicación de documentos - Servicios de conferencias 2",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "4ff1b526ad83765922d94966696f7034abc08f1a63c10d478367784506455c11",
+      "usage": {
+        "input_tokens": 295,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 17,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 312
+      },
+      "cost_upper_usd": 0.00304
+    },
+    "hybrid_ctx": {
+      "text": "- Gestión y publicación de documentos - Servicios de conferencias 2",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "de6f064bd4c8e98944e8da67938adfa527d1ee2c9fd507a67cc21bf8e48e48ed",
+      "usage": {
+        "input_tokens": 257,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 17,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 274
+      },
+      "cost_upper_usd": 0.002736
+    },
+    "random_ctx": {
+      "text": "- Gestión y publicación de documentos - Servicios de conferencias 2",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "366be4e1e2d676901f12366c59883a43223b7f71ee1996ddded79fcc637c39b4",
+      "usage": {
+        "input_tokens": 311,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 17,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 328
+      },
+      "cost_upper_usd": 0.003168
+    },
+    "zero_shot": {
+      "text": "- Gestión y publicación de documentos - Servicios de conferencias 2",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "18a30e6fc734ddd48dcd38e27cfdb620f6287cf2aca1fa9d456f26741cc2aea9",
+      "usage": {
+        "input_tokens": 106,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 17,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 123
+      },
+      "cost_upper_usd": 0.001528
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

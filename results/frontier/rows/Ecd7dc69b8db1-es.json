@@ -1,0 +1,166 @@
+{
+  "row_id": "Ecd7dc69b8db1:es",
+  "translations": {
+    "semantic_ctx": {
+      "text": "Tasa de respondedores (respuesta al tratamiento)#",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "764efa1d5a50643b21fb83465945f3eb3f54e527521a6d8473e0de6e2bdd9523",
+      "usage": {
+        "input_tokens": 305,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 319
+      },
+      "cost_upper_usd": 0.003
+    },
+    "zero_shot": {
+      "text": "Tasa de respondedores (respuesta al tratamiento)#",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "595f802330dab7d17dca9e783b2191ccdfccbff1b78730dbc32574b6871338af",
+      "usage": {
+        "input_tokens": 104,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 118
+      },
+      "cost_upper_usd": 0.001392
+    },
+    "hybrid_ctx": {
+      "text": "Porcentaje de respondedores (respuesta al tratamiento)#",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "f35a37daf44773b552b4283e21657552888fdf0360544d7f44b5e7b123c7956d",
+      "usage": {
+        "input_tokens": 247,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 261
+      },
+      "cost_upper_usd": 0.002536
+    },
+    "random_ctx": {
+      "text": "Tasa de respondedores (respuesta al tratamiento)#",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "e7026c7d0e3d7c28f03ea89f7880eaf16949d56770376dffec1172ae65a16488",
+      "usage": {
+        "input_tokens": 265,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 279
+      },
+      "cost_upper_usd": 0.00268
+    },
+    "fuzzy_ctx": {
+      "text": "Tasa de respondedores (respuesta al tratamiento)#",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "6b65ad0d420d66079db852f7f5debee09825763f24e0ec9bd3b105c891738c6c",
+      "usage": {
+        "input_tokens": 260,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 274
+      },
+      "cost_upper_usd": 0.00264
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both «Tasa de respondedores» (A) and «Porcentaje de respondedores» (B) convey “Responder rate” in this clinical context. Both preserve “(treatment response)#” as «(respuesta al tratamiento)#».\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "2e58b8265f4958344b82e8c74f66214213fb21b0c0e5e0c5386bed4039a9c4ea",
+      "usage": {
+        "input_tokens": 188,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 67,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 255
+      },
+      "cost_upper_usd": 0.001046,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both «Porcentaje de respondedores» (A) and «Tasa de respondedores» (B) convey «Responder rate» as the proportion of patients who respond to treatment. Both preserve «(respuesta al tratamiento)#».\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "933d5c2273f6bf9bd6eeba732082bbf6d1d93bf8d1ef48de6a5f12486706c12f",
+      "usage": {
+        "input_tokens": 188,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 64,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 252
+      },
+      "cost_upper_usd": 0.001016,
+      "swapped": false,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

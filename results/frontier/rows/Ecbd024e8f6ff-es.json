@@ -1,0 +1,166 @@
+{
+  "row_id": "Ecbd024e8f6ff:es",
+  "translations": {
+    "hybrid_ctx": {
+      "text": "Dado que ritonavir se une en una elevada proporción a las proteínas, es poco probable que se elimine de forma significativa mediante hemodiálisis o diálisis peritoneal.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "3e61624cac5939d1746195b10eeca3f10a6e20636ccd61d72310f7a838e51d39",
+      "usage": {
+        "input_tokens": 377,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 42,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 419
+      },
+      "cost_upper_usd": 0.004696
+    },
+    "semantic_ctx": {
+      "text": "Dado que ritonavir se une en gran proporción a las proteínas, es poco probable que la hemodiálisis o la diálisis peritoneal lo eliminen de forma significativa.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "3a1e5bd53f6e1509d090514d215bf91b354a4254d02eb3ec8a8cacc392e1780c",
+      "usage": {
+        "input_tokens": 405,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 42,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 447
+      },
+      "cost_upper_usd": 0.00492
+    },
+    "random_ctx": {
+      "text": "Dado que ritonavir se une en gran medida a las proteínas, es poco probable que se elimine en cantidades significativas mediante hemodiálisis o diálisis peritoneal.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "727f7dbed4f0a264473eb58dadc6b04202bc0da5b63d620949efc23e50b290a7",
+      "usage": {
+        "input_tokens": 367,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 41,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 408
+      },
+      "cost_upper_usd": 0.004576
+    },
+    "fuzzy_ctx": {
+      "text": "Dado que ritonavir se une en una alta proporción a las proteínas, es poco probable que se elimine de forma significativa mediante hemodiálisis o diálisis peritoneal.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "c9fbe678256a45acac393e68e62e21388876111b1f2dcc2e65e7270b04d9a701",
+      "usage": {
+        "input_tokens": 383,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 42,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 425
+      },
+      "cost_upper_usd": 0.004744
+    },
+    "zero_shot": {
+      "text": "Dado que ritonavir se une en gran medida a las proteínas, es poco probable que se elimine en cantidades significativas mediante hemodiálisis o diálisis peritoneal.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "7cfb863e8d06b348b42f4c3a3a86f8a70b4dbd58cf3e61256d917fd332e70765",
+      "usage": {
+        "input_tokens": 123,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 41,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 164
+      },
+      "cost_upper_usd": 0.002624
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both «en una elevada proporción» (A) and «en una alta proporción» (B) accurately convey “highly protein bound.” Both also preserve that significant removal by haemodialysis or peritoneal dialysis is unlikely.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "2efc54adf3094994d61b581042e80ed6f9f6b6acaf79520bb81d50dfd59eccea",
+      "usage": {
+        "input_tokens": 262,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 66,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 328
+      },
+      "cost_upper_usd": 0.001184,
+      "swapped": false,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both accurately translate “highly protein bound”: A uses “se une en una alta proporción a las proteínas” and B uses “se une en una elevada proporción a las proteínas.” The wording is equivalent, and both preserve that significant removal by either haemodialysis or peritoneal dialysis is unlikely.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "4f438d75280a98c0fef149123c708871ce8ea5a552d0911fbe3eefd0f11395c2",
+      "usage": {
+        "input_tokens": 262,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 80,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 342
+      },
+      "cost_upper_usd": 0.001324,
+      "swapped": true,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

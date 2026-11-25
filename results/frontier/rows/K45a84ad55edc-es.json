@@ -1,0 +1,166 @@
+{
+  "row_id": "K45a84ad55edc:es",
+  "translations": {
+    "random_ctx": {
+      "text": "Usar espacios en lugar de tabuladores para sangrar",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "9d4653a962cb303067362a2ca4c0a026285bb9358bec855a5ff429157c8a9590",
+      "usage": {
+        "input_tokens": 251,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 267
+      },
+      "cost_upper_usd": 0.002648
+    },
+    "hybrid_ctx": {
+      "text": "Utilizar espacios en lugar de tabuladores para sangrar el texto",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "1122511d00e11684e19a9f747d0554d77e71fe29e912bfa59dc7f4a638b21ffc",
+      "usage": {
+        "input_tokens": 258,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 18,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 276
+      },
+      "cost_upper_usd": 0.002784
+    },
+    "fuzzy_ctx": {
+      "text": "Usar espacios en lugar de tabuladores para sangrar",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "986128758fc84a893014d4d9341e9c3eaad5491a44441e1f0be4ad2e8e25dbc0",
+      "usage": {
+        "input_tokens": 249,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 265
+      },
+      "cost_upper_usd": 0.002632
+    },
+    "semantic_ctx": {
+      "text": "Utilizar espacios en lugar de tabuladores para sangrar",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "cec5f25bf263e34219e781c90af21ae2c642fa0d2947bd47914595bb853964f5",
+      "usage": {
+        "input_tokens": 245,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 261
+      },
+      "cost_upper_usd": 0.0026
+    },
+    "zero_shot": {
+      "text": "Usar espacios en lugar de tabuladores para sangrar",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "36a409956f8dbf64924b644b6f65d80ea6a3a8e864d537097154e13488f6eb47",
+      "usage": {
+        "input_tokens": 101,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 117
+      },
+      "cost_upper_usd": 0.001448
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both preserve “Use spaces instead of tabs to indent”: A says “Usar espacios en lugar de tabuladores para sangrar,” and B says “Utilizar espacios en lugar de tabuladores para sangrar el texto.” B makes the implied object (“el texto”) explicit without changing the meaning.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "ebcfbe9fed0fa3658c7fac6f48c4f7564a09cbeec9de894abc72b9da41ec0935",
+      "usage": {
+        "input_tokens": 192,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 78,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 270
+      },
+      "cost_upper_usd": 0.001164,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both preserve “Use spaces instead of tabs” and the indentation purpose. A’s “para sangrar el texto” makes the implicit object of “to indent” explicit, while B’s “para sangrar” leaves it implicit as in the source.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "f94510a9f79fe10b5b3537ac9997a621247ef5faa8b843abc5a6385436f06d84",
+      "usage": {
+        "input_tokens": 192,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 67,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 259
+      },
+      "cost_upper_usd": 0.001054,
+      "swapped": false,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

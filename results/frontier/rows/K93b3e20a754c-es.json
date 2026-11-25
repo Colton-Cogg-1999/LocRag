@@ -1,0 +1,117 @@
+{
+  "row_id": "K93b3e20a754c:es",
+  "translations": {
+    "zero_shot": {
+      "text": "Un programa para aprender geografía",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "740604b6336fafe6aa8916c65f10f9c9628c46fb6f5a1c15bda05d6eca20b53d",
+      "usage": {
+        "input_tokens": 98,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 10,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 108
+      },
+      "cost_upper_usd": 0.001184
+    },
+    "semantic_ctx": {
+      "text": "Un programa para aprender geografía",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "8ad8c752073ff5d221cfd0e571f1bf0df73237499ed51217c1eb0fc73cd16c98",
+      "usage": {
+        "input_tokens": 246,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 10,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 256
+      },
+      "cost_upper_usd": 0.002368
+    },
+    "random_ctx": {
+      "text": "Un programa para aprender geografía",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "e554960040716743208e466161cec8544a9205d7846f033f8b3931f38bda917c",
+      "usage": {
+        "input_tokens": 242,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 10,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 252
+      },
+      "cost_upper_usd": 0.002336
+    },
+    "fuzzy_ctx": {
+      "text": "Un programa para aprender geografía",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "747cc2385bd863df9bd32c1c3ea307cd0f62ece2ca7b5317cea22431fb52c97c",
+      "usage": {
+        "input_tokens": 241,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 10,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 251
+      },
+      "cost_upper_usd": 0.002328
+    },
+    "hybrid_ctx": {
+      "text": "Un programa para aprender geografía",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "395803b00fe233629685a9797d4c5710d926cfb7a24952e6b21fa44a062acf15",
+      "usage": {
+        "input_tokens": 246,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 10,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 256
+      },
+      "cost_upper_usd": 0.002368
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

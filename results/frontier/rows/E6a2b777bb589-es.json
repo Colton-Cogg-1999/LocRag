@@ -1,0 +1,166 @@
+{
+  "row_id": "E6a2b777bb589:es",
+  "translations": {
+    "hybrid_ctx": {
+      "text": "En el estudio de extensión, aunque el número de pacientes con niveles bajos de vitamina D fue similar en el grupo que tomó Fosavance 70 mg/2.800 UI y en el que tomó Fosavance 70 mg/5.600 UI, los pacientes que tomaron Fosavance 70 mg/5.600 UI presentaron mayores aumentos de los niveles de vitamina D durante las 24 semanas del estudio.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "0dec8cb138bb42257444720a0855c54b316e321e0438a4970ba71653c6d52dd5",
+      "usage": {
+        "input_tokens": 587,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 88,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 675
+      },
+      "cost_upper_usd": 0.008216
+    },
+    "zero_shot": {
+      "text": "En el estudio de extensión, aunque el número de pacientes con niveles bajos de vitamina D fue similar en los grupos que tomaron Fosavance 70 mg/2.800 UI y Fosavance 70 mg/5.600 UI, los pacientes que tomaron Fosavance 70 mg/5.600 UI presentaron mayores aumentos de los niveles de vitamina D a lo largo de las 24 semanas del estudio.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "f7a4a6392594950446dc6e76b82129f80009da0ae28caf66669c5cd17b97b608",
+      "usage": {
+        "input_tokens": 166,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 88,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 254
+      },
+      "cost_upper_usd": 0.004848
+    },
+    "semantic_ctx": {
+      "text": "En el estudio de extensión, aunque el número de pacientes con niveles bajos de vitamina D fue similar en los grupos tratados con Fosavance 70 mg/2.800 UI y con Fosavance 70 mg/5.600 UI, las pacientes que tomaron Fosavance 70 mg/5.600 UI presentaron mayores aumentos de los niveles de vitamina D a lo largo de las 24 semanas del estudio.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "76bc514eef81594a05ba448e7e2f4e9c3b9a29942f633710b6067bb2c95a7000",
+      "usage": {
+        "input_tokens": 638,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 88,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 726
+      },
+      "cost_upper_usd": 0.008624
+    },
+    "fuzzy_ctx": {
+      "text": "En el estudio de extensión, aunque el número de pacientes con concentraciones bajas de vitamina D fue similar en los grupos tratados con Fosavance 70 mg/2.800 UI y con Fosavance 70 mg/5.600 UI, los pacientes tratados con Fosavance 70 mg/5.600 UI presentaron mayores aumentos de las concentraciones de vitamina D a lo largo de las 24 semanas del estudio.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "2556dcbfc1ac05c15e74bf32cb015f1aaf860a5c3f19cbfff64084442e074c08",
+      "usage": {
+        "input_tokens": 479,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 89,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 568
+      },
+      "cost_upper_usd": 0.007392
+    },
+    "random_ctx": {
+      "text": "En el estudio de extensión, aunque el número de pacientes con concentraciones bajas de vitamina D fue similar en los grupos que tomaban Fosavance 70 mg/2.800 UI y Fosavance 70 mg/5.600 UI, los pacientes que tomaban Fosavance 70 mg/5.600 UI presentaron mayores aumentos de las concentraciones de vitamina D a lo largo de las 24 semanas del estudio.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "51ca11db43a383ffab1ad8442a9b0ffa02947da8413d2d493c3f3850763e0112",
+      "usage": {
+        "input_tokens": 476,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 90,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 566
+      },
+      "cost_upper_usd": 0.007408
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both preserve the contrast between “similar numbers” of patients with low vitamin D and “greater increases” in the 70 mg/5,600 IU group over 24 weeks. A’s “concentraciones bajas” and “mayores aumentos de las concentraciones” are equivalent in meaning to B’s “niveles bajos” and “mayores aumentos de los niveles.”\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "2e10349b7ab8eafce976d89cbbbdae754af1cfbfeeef639d6412a706619ddc90",
+      "usage": {
+        "input_tokens": 398,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 94,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 492
+      },
+      "cost_upper_usd": 0.001736,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\n  \"winner\": \"tie\",\n  \"evidence\": \"Both accurately convey that similar numbers of patients in the two dose groups had low vitamin D levels and that the 5,600 IU group had greater increases over 24 weeks. For “greater increases in vitamin D levels over the 24 weeks,” A’s “mayores aumentos de los niveles de vitamina D durante las 24 semanas” and B’s “mayores aumentos de las concentraciones de vitamina D a lo largo de las 24 semanas” are equivalent.\"\n}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "e3b9f74b43eb8245c9b828a2f00807943c4a7a8b1d6c8069027bdef3c666ec36",
+      "usage": {
+        "input_tokens": 398,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 118,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 516
+      },
+      "cost_upper_usd": 0.001976,
+      "swapped": false,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

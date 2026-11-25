@@ -1,0 +1,166 @@
+{
+  "row_id": "E89cc08a6c853:es",
+  "translations": {
+    "zero_shot": {
+      "text": "Estaba previsto que se presentara en cápsulas para administración por vía oral que contendrían 10 o 50 mg de satraplatino.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "030942c0217fc688d88d8471ad79d8c261845a77d847f29d9768ce50d9ab065a",
+      "usage": {
+        "input_tokens": 119,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 34,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 153
+      },
+      "cost_upper_usd": 0.002312
+    },
+    "random_ctx": {
+      "text": "Estaba previsto que se presentara en cápsulas para administración por vía oral que contenían 10 o 50 mg de satraplatino.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "08e4c48210603095ea6669f5eb16250509972cec5b6e7bdf1c12979d3b87874f",
+      "usage": {
+        "input_tokens": 306,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 34,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 340
+      },
+      "cost_upper_usd": 0.003808
+    },
+    "hybrid_ctx": {
+      "text": "Estaba previsto que se presentara en forma de cápsulas para administración por vía oral que contuvieran 10 o 50 mg de satraplatino.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "200ebe6916a7e7a5d7252b9d5a3e52e942fdcac3445a141a59f57441c7fb7303",
+      "usage": {
+        "input_tokens": 303,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 37,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 340
+      },
+      "cost_upper_usd": 0.003904
+    },
+    "semantic_ctx": {
+      "text": "Estaba previsto que se presentara en cápsulas para administración oral que contuvieran 10 o 50 mg de satraplatino.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "33ad5df24e2a5740cbb52f5013a5c60aa8d88ce06eb420bf17f56fb45f0ce5d3",
+      "usage": {
+        "input_tokens": 327,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 33,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 360
+      },
+      "cost_upper_usd": 0.003936
+    },
+    "fuzzy_ctx": {
+      "text": "Estaba previsto que se presentara en forma de cápsulas para administración por vía oral que contendrían 10 o 50 mg de satraplatino.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "481e4f63ca8ff647dc70cd542e8e2a6e2d749e48c3a124342ef3cc6e2a4ddb5f",
+      "usage": {
+        "input_tokens": 298,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 36,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 334
+      },
+      "cost_upper_usd": 0.003824
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both translations preserve the planned availability, oral capsule form, and satraplatin strengths. A’s “que contuvieran 10 o 50 mg de satraplatino” and B’s “que contendrían 10 o 50 mg de satraplatino” both convey “containing 10 or 50 mg satraplatin” in the context of a planned presentation.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "3b5d4e0dae581495588b4e0c8584fe36baff87d111096e657a8817ee343a34d9",
+      "usage": {
+        "input_tokens": 247,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 95,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 342
+      },
+      "cost_upper_usd": 0.001444,
+      "swapped": false,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both versions preserve the planned availability of oral capsules containing 10 or 50 mg of satraplatin. For the source phrase “containing 10 or 50 mg satraplatin,” A’s “que contendrían” and B’s “que contuvieran” both convey the intended capsule strengths in the context of “Estaba previsto.”\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "8a149191546095f3a03931c845a11e27343f60f0d8e3f2ba395531dbca359c4c",
+      "usage": {
+        "input_tokens": 247,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 86,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 333
+      },
+      "cost_upper_usd": 0.001354,
+      "swapped": true,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

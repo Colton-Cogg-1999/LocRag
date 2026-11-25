@@ -1,0 +1,117 @@
+{
+  "row_id": "K196d9a2d8a31:es",
+  "translations": {
+    "fuzzy_ctx": {
+      "text": "& Solo estas cookies",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "760d022d11113f9936de770492f8f784cf560a9dcd6a49c9c3ed632258385faf",
+      "usage": {
+        "input_tokens": 219,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 8,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 227
+      },
+      "cost_upper_usd": 0.002072
+    },
+    "zero_shot": {
+      "text": "&Solo estas cookies",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "c4be003a25ec641f25421dd1bd249a61ffee73dc368e74cb2d97aba40640708d",
+      "usage": {
+        "input_tokens": 98,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 8,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 106
+      },
+      "cost_upper_usd": 0.001104
+    },
+    "random_ctx": {
+      "text": "& Solo estas cookies",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "7ff8de9d6699afa0ca765c1fd92fee11f21ce5e5d3a15186611426a56ee55997",
+      "usage": {
+        "input_tokens": 227,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 8,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 235
+      },
+      "cost_upper_usd": 0.002136
+    },
+    "hybrid_ctx": {
+      "text": "& Solo estas cookies",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "8146ff90d4c31082dc645de8e9111ea350ebb62307fdd51b5bd50a2f1007fc6d",
+      "usage": {
+        "input_tokens": 220,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 8,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 228
+      },
+      "cost_upper_usd": 0.00208
+    },
+    "semantic_ctx": {
+      "text": "& Solo estas cookies",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "759f65a8fa2765f83c172e6573d61f49f220ee0ce4fbc7559cefba26333afed2",
+      "usage": {
+        "input_tokens": 211,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 8,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 219
+      },
+      "cost_upper_usd": 0.002008
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

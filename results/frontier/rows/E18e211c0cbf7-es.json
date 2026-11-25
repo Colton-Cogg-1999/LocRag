@@ -1,0 +1,166 @@
+{
+  "row_id": "E18e211c0cbf7:es",
+  "translations": {
+    "fuzzy_ctx": {
+      "text": "- No use repelentes de insectos que contengan DEET (N,N-dietil-m-toluamida) ni otros productos",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "1a43a6007c875ed52e79f1760fd2f8e7343fd057b200cf5024fc8b6d609d7fb7",
+      "usage": {
+        "input_tokens": 348,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 32,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 380
+      },
+      "cost_upper_usd": 0.004064
+    },
+    "zero_shot": {
+      "text": "- No utilice repelentes de insectos que contengan DEET (N,N-dietil-m-toluamida) ni otros productos",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "7baabff5164fbb1c2cc1b3c6b904633df4f5bf1740db3325ec2c648409324677",
+      "usage": {
+        "input_tokens": 120,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 33,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 153
+      },
+      "cost_upper_usd": 0.00228
+    },
+    "random_ctx": {
+      "text": "- No utilice repelentes de insectos que contengan DEET (N,N-dietil-m-toluamida) ni otros productos",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "1498b637f13a8dc8839da7ecbed8da2244993a8e4c5a798db8b79aefd4051a4f",
+      "usage": {
+        "input_tokens": 319,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 33,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 352
+      },
+      "cost_upper_usd": 0.003872
+    },
+    "semantic_ctx": {
+      "text": "- No utilizar repelentes de insectos que contengan DEET (N,N-dietil-m-toluamida) ni otros productos",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "e170eba2e643e5af17546fe86bd51bcb96b6ae8c2b6766d36b3346f29d9e79d3",
+      "usage": {
+        "input_tokens": 269,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 32,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 301
+      },
+      "cost_upper_usd": 0.003432
+    },
+    "hybrid_ctx": {
+      "text": "- No utilice repelentes de insectos que contengan DEET (N,N-dietil-m-toluamida) ni otros productos",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "d9ced91d8e999a44fa40ee3c5d57394a4a0f76eadb36422be5233117efa3e220",
+      "usage": {
+        "input_tokens": 260,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 33,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 293
+      },
+      "cost_upper_usd": 0.0034
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\n  \"winner\": \"tie\",\n  \"evidence\": \"Both «No use» (A) and «No utilice» (B) accurately convey “Do not use.” Both preserve the DEET name and the scope of the prohibition, including “or other products” as «ni otros productos».\"\n}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "2510b88b1c18d17e241be58b3e2efff764f70b793f33c309e29c997bc33b6029",
+      "usage": {
+        "input_tokens": 239,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 73,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 312
+      },
+      "cost_upper_usd": 0.001208,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"“No utilice” (A) and “No use” (B) are equivalent translations of “Do not use.” Both preserve the reference to insect repellents containing DEET, its chemical name, and the scope of “or other products” with “ni otros productos.”\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "72304fa7ce428d5ce27521cb88eff2860df3215bd98feb850764ebc7c7f3bb7d",
+      "usage": {
+        "input_tokens": 239,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 73,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 312
+      },
+      "cost_upper_usd": 0.001208,
+      "swapped": false,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

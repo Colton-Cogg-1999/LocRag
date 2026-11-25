@@ -1,0 +1,166 @@
+{
+  "row_id": "Efd4f5474268b:es",
+  "translations": {
+    "fuzzy_ctx": {
+      "text": "1 1 ml de solución contiene 1,125 mg de sal monosódica monohidrato del ácido ibandrónico, equivalentes a 1 mg de ácido ibandrónico.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "2726691cb6274130c2f4943f14bf1227dddc52a76b063aa852c924fdf5f50eb1",
+      "usage": {
+        "input_tokens": 412,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 43,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 455
+      },
+      "cost_upper_usd": 0.005016
+    },
+    "hybrid_ctx": {
+      "text": "1 1 ml de solución contiene 1,125 mg de sal monosódica monohidrato de ácido ibandrónico, equivalentes a 1 mg de ácido ibandrónico.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "ddc2730e4ecec34ec7870d44a7e8d88c097c12d616067cd60aedce4bfc0ec236",
+      "usage": {
+        "input_tokens": 384,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 43,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 427
+      },
+      "cost_upper_usd": 0.004792
+    },
+    "semantic_ctx": {
+      "text": "1 1 ml de solución contiene 1,125 mg de ibandronato sódico monohidratado, equivalentes a 1 mg de ácido ibandrónico.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "a8b24829885ad56cb12a341b68684048bebe7ccd4ac4d04b2eae2d40f0a04cf4",
+      "usage": {
+        "input_tokens": 390,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 42,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 432
+      },
+      "cost_upper_usd": 0.0048
+    },
+    "zero_shot": {
+      "text": "1 1 ml de solución contiene 1,125 mg de ácido ibandrónico en forma de sal monosódica monohidratada, equivalentes a 1 mg de ácido ibandrónico.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "055e99a731e963633620cfa3269438150d39766f55cf45505068930e42fdaa17",
+      "usage": {
+        "input_tokens": 133,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 46,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 179
+      },
+      "cost_upper_usd": 0.002904
+    },
+    "random_ctx": {
+      "text": "1 1 ml de solución contiene 1,125 mg de ácido ibandrónico en forma de sal monosódica monohidratada, equivalentes a 1 mg de ácido ibandrónico.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "7dba46680eec5a14f8fda477ec853f3a864c81cc2b07d1b3faa13444eb5e2bd6",
+      "usage": {
+        "input_tokens": 383,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 46,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 429
+      },
+      "cost_upper_usd": 0.004904
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both versions preserve the source’s substance and quantities: “1.125 mg ibandronic acid, monosodium salt, monohydrate, corresponding to 1mg ibandronic acid.” The difference between A’s “de ácido ibandrónico” and B’s “del ácido ibandrónico” does not change the meaning.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "34b703a6d860b2cab39fca75213211e9fa19d7680b9f61f083168a68d18750da",
+      "usage": {
+        "input_tokens": 273,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 84,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 357
+      },
+      "cost_upper_usd": 0.001386,
+      "swapped": false,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both «del ácido ibandrónico» (A) and «de ácido ibandrónico» (B) identify the same substance as “ibandronic acid, monosodium salt, monohydrate.” Both preserve the 1 ml volume and the equivalence of 1.125 mg of the salt to 1 mg of ibandronic acid.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "5f2211c1ab0b3c9113176548decb71fedb2e7568200644bc29cc3a4394cf2d72",
+      "usage": {
+        "input_tokens": 273,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 89,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 362
+      },
+      "cost_upper_usd": 0.001436,
+      "swapped": true,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

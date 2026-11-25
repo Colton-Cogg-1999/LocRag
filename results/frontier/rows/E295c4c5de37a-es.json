@@ -1,0 +1,117 @@
+{
+  "row_id": "E295c4c5de37a:es",
+  "translations": {
+    "hybrid_ctx": {
+      "text": "El tratamiento con lansoprazol puede aumentar ligeramente el riesgo de infecciones gastrointestinales, como las causadas por Salmonella y Campylobacter.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "c94100cccd4d4d1464c46c25dbcd05417b3ed5812e918ad8358521740ceb227e",
+      "usage": {
+        "input_tokens": 395,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 34,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 429
+      },
+      "cost_upper_usd": 0.00452
+    },
+    "zero_shot": {
+      "text": "El tratamiento con lansoprazol puede aumentar ligeramente el riesgo de infecciones gastrointestinales, como las causadas por Salmonella y Campylobacter.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "ab9794ba4ef560db4176315ca47b751d2aa583166c942170201e829c4f7c3c96",
+      "usage": {
+        "input_tokens": 121,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 34,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 155
+      },
+      "cost_upper_usd": 0.002328
+    },
+    "random_ctx": {
+      "text": "El tratamiento con lansoprazol puede aumentar ligeramente el riesgo de infecciones gastrointestinales, como las causadas por Salmonella y Campylobacter.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "62c62fcd783b44a6aad281aa0f97277cb14b3be563c60c20693127d685bda5e7",
+      "usage": {
+        "input_tokens": 346,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 34,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 380
+      },
+      "cost_upper_usd": 0.004128
+    },
+    "semantic_ctx": {
+      "text": "El tratamiento con lansoprazol puede aumentar ligeramente el riesgo de infecciones gastrointestinales, como las causadas por Salmonella y Campylobacter.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "ac0324efdac206929636556dc501a6f89729851c55e3798505e50cabdb3c057b",
+      "usage": {
+        "input_tokens": 435,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 34,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 469
+      },
+      "cost_upper_usd": 0.00484
+    },
+    "fuzzy_ctx": {
+      "text": "El tratamiento con lansoprazol puede aumentar ligeramente el riesgo de infecciones gastrointestinales, como las causadas por Salmonella y Campylobacter.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "e232333f009f6a0e63993c19ea69230110019c6f1eac156d4d8ca0821a645a0d",
+      "usage": {
+        "input_tokens": 350,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 34,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 384
+      },
+      "cost_upper_usd": 0.00416
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

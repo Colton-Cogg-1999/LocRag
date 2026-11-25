@@ -1,0 +1,166 @@
+{
+  "row_id": "E4ca4a583be04:es",
+  "translations": {
+    "zero_shot": {
+      "text": "Es posible que este mecanismo contribuya a la acción hipotensora de los inhibidores de la ECA y sea en parte responsable de algunos de sus efectos adversos (p. ej., tos).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "72aa764573253bd0ac4011cbf1197fa79a840ebcd27f0128d421cd46d1b33a38",
+      "usage": {
+        "input_tokens": 130,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 44,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 174
+      },
+      "cost_upper_usd": 0.0028
+    },
+    "random_ctx": {
+      "text": "Es posible que este mecanismo contribuya al efecto antihipertensivo de los inhibidores de la ECA y sea parcialmente responsable de algunos de sus efectos adversos (p. ej., la tos).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "72ee80235f0af90b47386db77cb2a93a6a599a87f4d3d0dd9783929e0a046c87",
+      "usage": {
+        "input_tokens": 492,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 45,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 537
+      },
+      "cost_upper_usd": 0.005736
+    },
+    "semantic_ctx": {
+      "text": "Es posible que este mecanismo contribuya a la acción antihipertensora de los inhibidores de la ECA y sea parcialmente responsable de algunos de sus efectos adversos (p. ej., la tos).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "09798f6e0ec95913ccc85112718f1d1efd665a5966c80b5f4eb27db57dfe99a1",
+      "usage": {
+        "input_tokens": 420,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 46,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 466
+      },
+      "cost_upper_usd": 0.0052
+    },
+    "fuzzy_ctx": {
+      "text": "Es posible que este mecanismo contribuya a la acción hipotensora de los inhibidores de la ECA y sea parcialmente responsable de algunos de sus efectos adversos (por ejemplo, la tos).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "0a0e59d82e56c984945d87709d43abb28e88ce2b7a3e26f0b3bda3be669910fe",
+      "usage": {
+        "input_tokens": 402,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 43,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 445
+      },
+      "cost_upper_usd": 0.004936
+    },
+    "hybrid_ctx": {
+      "text": "Es posible que este mecanismo contribuya a la acción hipotensora de los IECA y sea parcialmente responsable de algunos de sus efectos secundarios (p. ej., la tos).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "6bfc3899010e45eed5da19324d5f7e4f03cb7283f3010e0d2698fc9156623b50",
+      "usage": {
+        "input_tokens": 422,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 39,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 461
+      },
+      "cost_upper_usd": 0.004936
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both preserve the uncertainty in “It is possible” and the partial causation in “is partially responsible.” A’s “IECA” and B’s “inhibidores de la ECA” denote the same drug class, and both “efectos secundarios” and “efectos adversos” accurately convey “side effects” in this context, with cough retained as the example.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "aaf6663e31cab4c0fa021367339ec2192208d1f3a5870c8f8188a938173e61b2",
+      "usage": {
+        "input_tokens": 269,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 95,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 364
+      },
+      "cost_upper_usd": 0.001488,
+      "swapped": false,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both preserve the uncertainty, partial responsibility, and cough example. “Inhibidores de la ECA” (A) and “IECA” (B) both denote “ACE inhibitors”; “efectos adversos” and “efectos secundarios” both convey “side effects” here.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "b24e8c49a45abe66ab8691b8f99fd9384cc0ded0e6470eecf62fa1b602370bc5",
+      "usage": {
+        "input_tokens": 269,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 77,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 346
+      },
+      "cost_upper_usd": 0.001308,
+      "swapped": true,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

@@ -1,0 +1,9 @@
+{
+  "n": 100,
+  "gemma_mean_segment_chrF": {
+    "zero_shot": 73.62534042955677,
+    "fuzzy_ctx": 77.60508722838198,
+    "semantic_ctx": 77.5483014831309,
+    "hybrid_ctx": 78.74906836062848
+  }
+}

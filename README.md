@@ -1,109 +1,46 @@
-# LocRAG
+# LocRAG · When does translation memory help?
 
-A translation memory—a collection of previously translated text—can contain useful translations even when fuzzy matching doesn't return a usable match. LocRAG uses semantic search to find that work and give it to a translation model as context, helping it reuse established terminology and phrasing.
+A localizer translating “Host name used to generate the message ID” might write *nombre del host* or *nombre del servidor*. A translation memory (TM) can show which wording appeared in earlier work. How much does it matter whether the examples come from lexical matching or semantic search?
 
-I built this around a gap in translation-memory reuse: a sentence gets rewritten, its fuzzy score drops, and a relevant past translation falls below the matching cutoff. The wording has changed, but parts of the earlier translation may still be useful. LocRAG searches by meaning to recover those examples.
+## Frontier experiment
 
-## LocRAG 2.0 study: what it found
+We translated the same 100 English medical and software segments into Spanish using GPT-6.2 Astra under five conditions. Giving the model three random examples from the same domain controls for the effect of seeing localized text. All 100 segments fell below the 75% fuzzy-match cutoff.
 
-The second study tests the idea properly. It uses 4,229 held-out sentences, stratified by fuzzy-match band, from a 100k-entry medical TM (EMEA, en→es) and 30k-entry software TMs (KDE4, en→de/es/zh_CN).
+| Context | Mean segment chrF |
+|---|---:|
+| None | 76.06 |
+| Three random, length-matched examples | 76.11 |
+| Three lexical matches (fuzzy) | 76.74 |
+| Three semantic matches (BGE-M3) | 78.30 |
+| Three matches from the combined rankings (hybrid) | 78.16 |
 
-**Systems.** Each sentence is translated by Gemma 4 31B in six ways:
-- with no context;
-- with fuzzy, semantic or hybrid (fuzzy + semantic) TM examples;
-- with reusable items extracted from those examples;
-- with the top match framed as a draft to edit.
+**Did hybrid retrieval improve meaning over fuzzy retrieval?** A blinded GPT-6.2 Sol judge evaluated every changed pair in both orders. Hybrid won **3**, fuzzy won **4**, **87** tied and **6** changed verdict with order. Fifty pairs produced identical text. The net hybrid preference was **−1 percentage point** [95% interval −6, +4]. Hybrid scored **+1.42 chrF** over fuzzy [−0.01, +2.93]. Most of the observed gain in reference agreement came from software strings. The study uses model judgments on a balanced Spanish panel. [Protocol, results and worked examples](docs/frontier.md) · [Rebuildable numerical summary](results/frontier/summary.json)
 
-The controls are DeepL and the unedited top fuzzy match, which is what a CAT tool inserts.
+## Earlier multilingual experiment
 
-**Scoring.** Every output is scored blind with three metrics:
-- reference-free quality estimation (CometKiwi), the pre-registered primary metric;
-- COMET-22, against independent human references;
-- chrF, also against those references.
+| Comparison | Result |
+|---|---|
+| Translate without examples vs supply the three closest fuzzy matches, even below the usual 75% cutoff | On 2,140 below-cutoff segments, fuzzy context gained 5.0 chrF points against corpus references. Reference-free CometKiwi fell by 0.52 points on a 100-point scale. |
+| Replace fuzzy search with BGE-M3 semantic search or fuse the two rankings | All three methods gained roughly five chrF points over zero-shot below the cutoff. Hybrid retrieved a different ordered list from fuzzy on 2,040 segments. The translations differed on 933. |
+| Extract reusable spans first or show the retrieved examples directly | Across the full v2 test, structured extraction gained 7.7 chrF over zero-shot. Direct hybrid context gained 10.4 and used fewer API dollars. |
 
-**LLM judge.** A blinded 72-row sample was scored for meaning errors by an LLM judge (Claude) against the reference. Claude Sonnet labelled reuse in the retrieved examples but never judged quality.
+![Share of segments with different retrieved examples and different translations, by domain and language](results/retriever-comparison/retrieval-and-translation.png)
 
-Full write-up: **[docs/v2-results.md](docs/v2-results.md)**.
+### Does hybrid beat the fuzzy baseline?
 
-### Takeaways
+Both systems used Gemma 4 31B, the same translation prompt, and three examples. The table gives the **paired difference, hybrid minus fuzzy**, on the below-cutoff subset of the band-stratified test. Confidence intervals use 10,000 bootstrap resamples of English source IDs, keeping each KDE source’s target languages together.
 
-1. **RAG beats pure fuzzy matching at every band below an exact match.** Every metric and the LLM judge agree on this.
-   - In the judged sample, RAG won 64 of 72 rows, tied 8 (exact matches, where it reproduced the TM) and lost none. Mean judge score: 96.9 vs 37.2.
-   - The unedited fuzzy match had a major or critical error in 59 of 72 rows. A near-match is wrong in exactly the word that changed: Torisel for Emtriva, Viagra and 1998 for CHAMPIX and 2006, "move up" for "move down", "all" for "some".
-   - By reference metrics, RAG's margin over the fuzzy match is +1.2 COMET-22 at 95–99, +4.8 at 85–94, +9.4 at 75–84 and +14.8 at 50–74.
-2. **RAG matches the human reference more closely than zero-shot LLM translation or NMT.** Overall the gain is +2.4 COMET-22 and +10 chrF over zero-shot. Below the 75% fuzzy cutoff it is +1.0 COMET-22 and +5 chrF. DeepL scores below zero-shot on both. The gain comes from adopting the client's established terminology and phrasing, which is the point of a TM.
-3. **RAG doesn't make fewer meaning errors than a strong zero-shot LLM.** The judge scored RAG and zero-shot Gemma the same (96.9 vs 96.8), with DeepL at 93.7. RAG's advantage over zero-shot is consistency, not accuracy.
-4. **Evaluation needs a judge that reads meaning.**
-   - **Overlap metrics miss critical errors.** Reference-based metrics scored many critically wrong fuzzy matches as good, because they share almost every word with the reference: Viagra-for-CHAMPIX scored 0.90 on COMET-22. Of 62 badly wrong outputs, COMET-22 rated 15 above a typical correct translation, and chrF rated 26.
-   - **The QE model catches errors but not conventions.** CometKiwi caught the blatant errors (2 of 62 slipped through) and agreed with the judge best of the three metrics. But it doesn't reward conformity with the TM, so it rates RAG slightly *below* zero-shot (−0.9 points). Under that pre-registered primary metric, "RAG improves quality" is not supported.
-5. **Where raw TM stops paying off.** By reference metrics, pasting the fuzzy match beats a context-free LLM or DeepL only above about 80–90 fuzzy. An LLM given the TM matches or beats the raw match below about 96–100. Context helps most in the 75–99 bands and fades toward zero below 50.
-6. **RAG finds usable TM material where a fuzzy-match threshold hides it.** Most of that comes from retrieving below the threshold at all; semantic search adds material for a meaningful share of sentences on top.
-   - A CAT tool shows nothing below its 75% cutoff. For those sentences, the retrieved TM units still held verbatim-verified full or partial reuse for 96% of medical sentences and 80% of software sentences.
-   - Giving that material to the LLM brought translations closer to the human reference: +1.0 COMET-22 and +5 chrF over translating without it.
-   - Simply showing the top 3 fuzzy matches without the cutoff recovers most of that material.
-   - Semantic search found substantive material that fuzzy retrieval missed for 12.5% of medical sentences below the cutoff (1 in 8) and 6.6% of software sentences (1 in 15). In each of those, the client's approved phrasing would otherwise have been missed, and someone would have to look it up or fix it in review. At TM scale that's a real editing load.
-   - Averaged over all sentences, fuzzy, semantic and hybrid context scored within a few tenths of a point of each other, as did plain vs "here's a draft" prompting. An average dilutes an effect that touches 1 in 8 rows, so it understates semantic search. Hybrid retrieval gets both sources at negligible extra cost and is the one to use. Extracting reusable items first was the weakest option and cost 4× more.
-   - The benefit is closer alignment with the client's terminology and phrasing, not fewer meaning errors.
-7. **Cost.** Context adds about $0.00003 per segment. The whole test run cost $12 in API fees, 78% of it for the auditor.
-
-**Limitations:**
-- The judged sample is 72 rows from a single LLM judge, which also helped design the study. A second judge or human review of the 305 blinded items exported in [`results/study/test-v1/human_eval/`](results/study/test-v1/human_eval/) would firm it up.
-- "Unedited fuzzy match" is a lower bound. In a real CAT workflow a translator fixes the changed words.
-- Corpus translations stand in for client TMs and contain their own errors.
-- There is only one translator model.
-
-## Earlier study (v1, historical)
-
-These are the original exploratory results. They relied on LLM preference judgments and smaller samples, and the v2 study above supersedes them. They are kept as recorded.
-
-**Semantic search recovered reusable translations below the fuzzy-matching cutoff. Using retrieved examples also produced more preferred translations than zero-shot translation in Spanish, German, and Simplified Chinese, with stronger terminology consistency.**
-
-#### Recovering translations that fuzzy matching missed
-
-The most direct test used a 20,000-entry English-to-Spanish medical translation memory and 300 real sentences whose best fuzzy matches scored below the configured 75% cutoff.
-
-Semantic search found candidates above its similarity threshold for **85 of those 300 sentences**. Of those, **66 were judged fully or partly reusable**: 3 full matches and 63 partial matches. In other words, roughly **22% of sentences that fell below the fuzzy cutoff still had useful translation material recoverable from the memory**.
-
-That reuse could be a term, a phrase, or a sentence structure; it didn't require copying an entire translation. For those 85 sentences, supplying retrieved context increased terminology/phrasing consistency ratings from **31 to 75**. Across all 300 sentences, the selective system recorded **50 wins, 9 losses, and 241 ties** against translation without memory under the localization rubric.
-
-This is the main result: semantic search makes more of an existing translation memory usable. The fuzzy and semantic comparisons help measure how much additional material can be recovered and whether it helps the translation.
-
-#### Using the recovered context to translate
-
-In a separate test, I translated a shared set of 300 English software-localization sentences into Spanish, German, and Simplified Chinese, using a 5,000-entry translation memory for each language. The experiment compared four approaches: no memory, fuzzy matching only, always supplying semantic examples, and a selective system that tries fuzzy matching before semantic search.
-
-Here is **always-on semantic RAG versus zero-shot translation**—the same translation model working without memory examples:
-
-| Target language | RAG preferred | Zero-shot preferred | Tie |
+| Metric | Paired segments | Mean difference | 95% interval |
 |---|---:|---:|---:|
-| Spanish | 103 | 49 | 148 |
-| German | 110 | 52 | 138 |
-| Simplified Chinese | 97 | 51 | 152 |
-| **Total** | **310** | **152** | **438** |
+| chrF | 2,140 | +0.07 | [−0.32, +0.45] |
+| COMET-22 × 100 | 510 | +0.03 | [−0.19, +0.25] |
+| CometKiwi × 100 | 2,140 | −0.003 | [−0.11, +0.11] |
 
-RAG won **67% of comparisons with a clear winner**. Across all 900 cases, it won 34%, lost 17%, and tied 49%. The evaluator considered preservation of meaning first, then appropriate reuse of terminology and phrasing from the memory. All reuse, consistency, and preference results here are automated judgments, not human ratings.
+The average differences are small and each interval spans zero. On the host-name example above, fuzzy context produced *Nombre del host usado para generar el ID del mensaje.* Hybrid produced *Nombre del servidor usado para generar el id. del mensaje.* chrF favored hybrid (83.2 vs 78.0), while CometKiwi favored fuzzy (0.868 vs 0.854). The corpus reference and a reference-free evaluator reward different features here. A bilingual reviewer could tell us which wording fits the interface.
 
-#### Adding semantic search to an existing matching workflow
+**Limits.** The full v2 test contains 4,229 segment–language pairs from OPUS medical text and KDE interfaces. Band quotas affect pooled averages, sentence-level splits can share document conventions, and corpus references can contain errors. The earlier blinded 72-row judge study included hybrid, zero-shot, raw TM and DeepL. The frontier replication above directly compares fuzzy and hybrid context.
 
-The selective system keeps ordinary fuzzy matching as the first step. When its score falls below 75%, it searches by meaning and uses examples only if they clear a separate similarity threshold.
-
-Adding that semantic fallback to the fuzzy-only system produced these results:
-
-| Target language | Better with fallback | Worse with fallback | Tie |
-|---|---:|---:|---:|
-| Spanish | 14 | 8 | 278 |
-| German | 20 | 3 | 277 |
-| Simplified Chinese | 8 | 6 | 286 |
-
-Fallback was used on 43 of the 300 English inputs. Fuzzy matching handled 22, and the remaining 235 received no memory examples, which explains most of the ties. German showed the clearest added benefit; the smaller Spanish and Chinese differences are less conclusive.
-
-#### What the results don't establish
-
-More consistent wording doesn't guarantee more accurate meaning. Always-on semantic RAG introduced 61 meaning errors and fixed 59 across the three languages. In the medical experiment, a separate rubric that didn't reward memory consistency preferred RAG 25 times and zero-shot 32 times. Retrieved examples can also pull a translation toward details that don't belong in the new sentence.
-
-This is evidence for a useful localization assistant, with human review still needed. It doesn't establish a general accuracy improvement or that semantic search should replace fuzzy matching. The experiments cover software and medical text, all with English source sentences. The medical reruns use previously studied inputs.
-
-The [full v1 results report](results/runs/2026-11-16/README.md) includes the remaining comparisons, failure cases, and links to raw outputs. The [multilingual summary](results/multilingual/validation-v1/summary.json) contains the numbers behind the tables above.
+Rebuild the comparison and figure offline with `uv run python -m locrag.study.retriever_comparison`. [Machine-readable results](results/retriever-comparison/summary.json) · [Full study and error analysis](docs/v2-results.md) · [Original exploratory study](results/runs/2026-11-16/README.md)
 
 ## What's implemented
 

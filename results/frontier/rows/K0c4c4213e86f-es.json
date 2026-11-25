@@ -1,0 +1,117 @@
+{
+  "row_id": "K0c4c4213e86f:es",
+  "translations": {
+    "semantic_ctx": {
+      "text": "Usar un archivo de configuración diferente.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "f81e10d6a3aafb9650121967e043da0ee20ad36c82b4239af4424413450e4414",
+      "usage": {
+        "input_tokens": 239,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 251
+      },
+      "cost_upper_usd": 0.002392
+    },
+    "random_ctx": {
+      "text": "Usar un archivo de configuración diferente.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "91a57586f18a1fd227b0ddcf94f157b2b6aa4bd4a57221c3bd879db721b912ae",
+      "usage": {
+        "input_tokens": 232,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 244
+      },
+      "cost_upper_usd": 0.002336
+    },
+    "zero_shot": {
+      "text": "Usar un archivo de configuración distinto.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "738afad72d7096b620edd3255578bea9d2d29b2d3f688082365132e7796593c7",
+      "usage": {
+        "input_tokens": 100,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 112
+      },
+      "cost_upper_usd": 0.00128
+    },
+    "fuzzy_ctx": {
+      "text": "Usar un archivo de configuración diferente.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "b17c229d346878dea35fef4c257892504720905b5d42a555ef6da15a09fc1c58",
+      "usage": {
+        "input_tokens": 229,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 241
+      },
+      "cost_upper_usd": 0.002312
+    },
+    "hybrid_ctx": {
+      "text": "Usar un archivo de configuración diferente.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "dab60373ff3fc969161bd115eb5033e001e18e13214d7d1f090e966635fb1c5c",
+      "usage": {
+        "input_tokens": 229,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 12,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 241
+      },
+      "cost_upper_usd": 0.002312
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

@@ -1,0 +1,117 @@
+{
+  "row_id": "Kbd1fba3cc718:es",
+  "translations": {
+    "fuzzy_ctx": {
+      "text": "Un complemento de KFTPGrabber para importar marcadores",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "2700773e1f2b4c532a755b2d159a5c0d7048757b70032660c809ee9b540c9c09",
+      "usage": {
+        "input_tokens": 248,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 15,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 263
+      },
+      "cost_upper_usd": 0.002584
+    },
+    "zero_shot": {
+      "text": "Un complemento de KFTPGrabber para importar marcadores",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "80e7bc1ba1e6a9e7dd3b6ed558a6232f7b910b170083e5d39eaac7248504556c",
+      "usage": {
+        "input_tokens": 103,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 15,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 118
+      },
+      "cost_upper_usd": 0.001424
+    },
+    "hybrid_ctx": {
+      "text": "Un complemento de KFTPGrabber para importar marcadores",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "cff5079b4a58f6c535c164579f451b2ed3d072fad7965458b8440fc8d97bd55f",
+      "usage": {
+        "input_tokens": 255,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 15,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 270
+      },
+      "cost_upper_usd": 0.00264
+    },
+    "random_ctx": {
+      "text": "Un complemento de KFTPGrabber para importar marcadores",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "92c24ad0af0f21eb4afdd21f1f59cf76a2a4c66309dde09e3c00998ee8bcde4b",
+      "usage": {
+        "input_tokens": 240,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 15,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 255
+      },
+      "cost_upper_usd": 0.00252
+    },
+    "semantic_ctx": {
+      "text": "Un complemento de KFTPGrabber para importar marcadores",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "f62247d908da2049fb00f708c6dbdcd6a3ce1ccc43dead9cb58296b40a5e60f6",
+      "usage": {
+        "input_tokens": 263,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 15,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 278
+      },
+      "cost_upper_usd": 0.002704
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

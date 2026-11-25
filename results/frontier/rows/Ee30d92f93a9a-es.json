@@ -1,0 +1,166 @@
+{
+  "row_id": "Ee30d92f93a9a:es",
+  "translations": {
+    "random_ctx": {
+      "text": "Estaba previsto utilizar MULTAQ para tratar a pacientes con fibrilación auricular o aleteo auricular.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "9d928bea60227ce35b01e42b623062e1052033f747d02660b4ddf26fe626f21a",
+      "usage": {
+        "input_tokens": 292,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 27,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 319
+      },
+      "cost_upper_usd": 0.003416
+    },
+    "fuzzy_ctx": {
+      "text": "Se pretendía utilizar MULTAQ para tratar a pacientes con fibrilación auricular o aleteo auricular.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "0e35d26d77bc1fb41c3c36717709759a7759042916bbfe5d7656773b95e1438a",
+      "usage": {
+        "input_tokens": 283,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 27,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 310
+      },
+      "cost_upper_usd": 0.003344
+    },
+    "semantic_ctx": {
+      "text": "MULTAQ iba a utilizarse para tratar a pacientes con fibrilación auricular o aleteo auricular.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "761c95dbf68ab5e78bbcfca9d4e6973d1cd7fd4f823ff42a0613a990649cdf7f",
+      "usage": {
+        "input_tokens": 354,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 27,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 381
+      },
+      "cost_upper_usd": 0.003912
+    },
+    "zero_shot": {
+      "text": "MULTAQ estaba destinado al tratamiento de pacientes con fibrilación auricular o aleteo auricular.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "9ea4febe939589e438be699e44b4d138c71d45ba3f410c96288e1b20ddba0978",
+      "usage": {
+        "input_tokens": 115,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 25,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 140
+      },
+      "cost_upper_usd": 0.00192
+    },
+    "hybrid_ctx": {
+      "text": "MULTAQ iba a utilizarse para tratar a pacientes con fibrilación auricular o aleteo auricular.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "ed2a9e123621fb168329af2bd1233ced978bdf08dfa8663397e639aca0b4ba8f",
+      "usage": {
+        "input_tokens": 299,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 27,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 326
+      },
+      "cost_upper_usd": 0.003472
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both «iba a utilizarse» (A) and «Se pretendía utilizar» (B) convey the intended use expressed by “was to be used,” and both preserve MULTAQ, the treatment purpose, and the two alternative conditions.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "8f55721317e90b4e51f365f93e66f9cedbc8f80238ad3052bf16b4e6085d3d8a",
+      "usage": {
+        "input_tokens": 224,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 65,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 289
+      },
+      "cost_upper_usd": 0.001098,
+      "swapped": false,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both A’s «Se pretendía utilizar MULTAQ» and B’s «MULTAQ iba a utilizarse» convey the intended use in “MULTAQ was to be used.” Both preserve the purpose of treating patients with atrial fibrillation or atrial flutter.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "ee864decb50f23aedba66cb238ef8cddb8df43e7cb706d7e8f0d39f2da8bb773",
+      "usage": {
+        "input_tokens": 224,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 69,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 293
+      },
+      "cost_upper_usd": 0.001138,
+      "swapped": true,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

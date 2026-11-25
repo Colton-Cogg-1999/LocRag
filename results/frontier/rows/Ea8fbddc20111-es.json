@@ -1,0 +1,166 @@
+{
+  "row_id": "Ea8fbddc20111:es",
+  "translations": {
+    "random_ctx": {
+      "text": "La adquisición de imágenes puede comenzar inmediatamente después de la inyección de VASOVIST.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "9d1c730227148b0a7a887f6c52d338f831d36d7b0206fc2f41e2f95c92b13cfa",
+      "usage": {
+        "input_tokens": 273,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 22,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 295
+      },
+      "cost_upper_usd": 0.003064
+    },
+    "semantic_ctx": {
+      "text": "La adquisición de imágenes puede comenzar inmediatamente después de la inyección de Vasovist.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "e5684db12d00d5f1b7f825e5e8808e178f62e672e8729e729556f51457d5ad4b",
+      "usage": {
+        "input_tokens": 313,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 21,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 334
+      },
+      "cost_upper_usd": 0.003344
+    },
+    "fuzzy_ctx": {
+      "text": "La exploración puede comenzar inmediatamente después de la inyección de VASOVIST.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "406ef91b27529e745b461af0fb3a696caa8f1c1fce3798153471d91b96b95c93",
+      "usage": {
+        "input_tokens": 260,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 21,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 281
+      },
+      "cost_upper_usd": 0.00292
+    },
+    "hybrid_ctx": {
+      "text": "La adquisición de imágenes puede comenzar inmediatamente después de la inyección de VASOVIST.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "873976d9cd4a13dcbe60a0941308886e37e8412a64916ba4f3384af345ac4534",
+      "usage": {
+        "input_tokens": 254,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 22,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 276
+      },
+      "cost_upper_usd": 0.002912
+    },
+    "zero_shot": {
+      "text": "La exploración puede comenzar inmediatamente después de la inyección de VASOVIST.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "cb59091794d42999360ebbbfe57d800606bd2f8d2b8be94db2d72933b9ab5e5e",
+      "usage": {
+        "input_tokens": 109,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 21,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 130
+      },
+      "cost_upper_usd": 0.001712
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"In this imaging context, both “La exploración” (A) and “La adquisición de imágenes” (B) convey “Scanning.” Both preserve “may start immediately after the VASOVIST injection.”\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "dc17aa106defed48e90225176bf9018ce1581b8e76ab3eb9c172175b73191b8b",
+      "usage": {
+        "input_tokens": 206,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 59,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 265
+      },
+      "cost_upper_usd": 0.001002,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"In this imaging context, both A’s «La adquisición de imágenes» and B’s «La exploración» accurately render “Scanning.” Both preserve the optional start («puede comenzar»), the timing («inmediatamente después») and the reference to the VASOVIST injection.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "b61bab5d99ee877ef7d49a89c52f28620505fd1da24310358b5f9a5185bef718",
+      "usage": {
+        "input_tokens": 206,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 73,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 279
+      },
+      "cost_upper_usd": 0.001142,
+      "swapped": false,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

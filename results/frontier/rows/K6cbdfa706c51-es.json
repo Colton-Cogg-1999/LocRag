@@ -1,0 +1,166 @@
+{
+  "row_id": "K6cbdfa706c51:es",
+  "translations": {
+    "zero_shot": {
+      "text": "La función JIS() devuelve los caracteres de ancho completo correspondientes al argumento de ancho medio.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "31805349f6508d024ce8f9f1b265067df5a6254b6db07ed851c876f56eea0e12",
+      "usage": {
+        "input_tokens": 111,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 22,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 133
+      },
+      "cost_upper_usd": 0.001768
+    },
+    "fuzzy_ctx": {
+      "text": "La función JIS() devuelve los caracteres de ancho completo correspondientes al argumento de ancho medio.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "4371c32f0765600c1fc875c59f5eac93951756588652f819b614ce39c4f743d7",
+      "usage": {
+        "input_tokens": 280,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 22,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 302
+      },
+      "cost_upper_usd": 0.00312
+    },
+    "semantic_ctx": {
+      "text": "La función JIS() devuelve los caracteres de ancho completo correspondientes al argumento de ancho medio.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "e51a3fff9995cea7f68fe010ad3c130ffe744ed8971163ffaaf885fd0fb4a8cd",
+      "usage": {
+        "input_tokens": 350,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 22,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 372
+      },
+      "cost_upper_usd": 0.00368
+    },
+    "random_ctx": {
+      "text": "La función JIS() devuelve los caracteres de ancho completo correspondientes al argumento de ancho medio.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "f1ba60ece13b193239d24a8a9d9e8616fdc77719c50f72d14e6e58f6df33faa6",
+      "usage": {
+        "input_tokens": 270,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 22,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 292
+      },
+      "cost_upper_usd": 0.00304
+    },
+    "hybrid_ctx": {
+      "text": "La función JIS() devuelve los caracteres de anchura completa correspondientes al argumento de media anchura.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "fdf165181a2d4b1692736ae88553d15c671215cef4130de6130fec0f5cb3c32b",
+      "usage": {
+        "input_tokens": 322,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 24,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 346
+      },
+      "cost_upper_usd": 0.003536
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"B\",\"evidence\":\"B traduce «half-width argument» como «argumento de media anchura», que expresa la mitad de la anchura. En A, «argumento de ancho medio» sugiere una anchura intermedia, no necesariamente la mitad.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "8d5a28075f855965e7ef8413b179fb447bd30fc79325d195c8ddbe4e3db6ef17",
+      "usage": {
+        "input_tokens": 212,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 67,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 279
+      },
+      "cost_upper_usd": 0.001094,
+      "swapped": true,
+      "pick": "hybrid_ctx"
+    },
+    {
+      "text": "{\"winner\":\"A\",\"evidence\":\"For “half-width argument,” A’s “argumento de media anchura” conveys half width, while B’s “argumento de ancho medio” suggests medium width. Both accurately translate “full-width characters.”\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "82a5547c7a37e79fcb65a60b476ef4a929a9221b67e9398d439a588a9e27cb9f",
+      "usage": {
+        "input_tokens": 212,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 59,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 271
+      },
+      "cost_upper_usd": 0.001014,
+      "swapped": false,
+      "pick": "hybrid_ctx"
+    }
+  ],
+  "winner": "hybrid_ctx"
+}

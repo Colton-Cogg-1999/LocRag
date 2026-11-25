@@ -1,0 +1,166 @@
+{
+  "row_id": "Ka735baf94623:es",
+  "translations": {
+    "random_ctx": {
+      "text": "Esta página del cuadro de diálogo de configuración de & kspread; le permite definir el tamaño de página, la orientación y las unidades que se usan de forma predeterminada tanto en la impresora como en el cuadro de diálogo Disposición de la página (que se abre al seleccionar Disposición de la página... en el menú Formato).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "a2561940a976f9144dffe9cedad745279494c52bdde97cfb539a2aa8a4a1aa05",
+      "usage": {
+        "input_tokens": 409,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 72,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 481
+      },
+      "cost_upper_usd": 0.006152
+    },
+    "semantic_ctx": {
+      "text": "Esta página del cuadro de diálogo de configuración de & kspread; le permite configurar el tamaño de página, la orientación y las unidades que usan de forma predeterminada la impresora y el cuadro de diálogo Disposición de la página (que se abre al seleccionar Disposición de la página... en el menú Formato).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "4337e895a39e65c39b730b03bf9803e5fbac8ce5acb9a316f3c3c35eb9a25b21",
+      "usage": {
+        "input_tokens": 543,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 68,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 611
+      },
+      "cost_upper_usd": 0.007064
+    },
+    "zero_shot": {
+      "text": "Esta página del cuadro de diálogo de configuración de & kspread; le permite definir el tamaño de página, la orientación y las unidades que se usan de forma predeterminada en la impresora y en el cuadro de diálogo Disposición de página (que se abre al seleccionar Disposición de página... en el menú Formato).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "ac5dfb21d547900df1f8b52ca7da7c2eda58753fffca4ac1744049a7fae9454f",
+      "usage": {
+        "input_tokens": 142,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 69,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 211
+      },
+      "cost_upper_usd": 0.003896
+    },
+    "fuzzy_ctx": {
+      "text": "Esta página del diálogo de configuración de & kspread; le permite configurar el tamaño de página, la orientación y las unidades que usan de forma predeterminada la impresora y el diálogo Diseño de página (al que se accede seleccionando Diseño de página... en el menú Formato).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "2ec496c36654a9f4f3ec1dfd7ed0d80f073f247bbbfcd1c364cbb8252934d0eb",
+      "usage": {
+        "input_tokens": 393,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 62,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 455
+      },
+      "cost_upper_usd": 0.005624
+    },
+    "hybrid_ctx": {
+      "text": "Esta página del diálogo de configuración de & kspread; permite configurar el tamaño de página, la orientación y las unidades predeterminados que utilizan tanto la impresora como el diálogo Diseño de página (que se abre al seleccionar Diseño de página... en el menú Formato).",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "319c3fe95e34f13584b4592d356a94b14dfe8529ead6ce8eb9621307b80e9605",
+      "usage": {
+        "input_tokens": 390,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 58,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 448
+      },
+      "cost_upper_usd": 0.00544
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both accurately render “the default page size, orientation and units used by the printer and by the Page Layout dialog box”: A uses “que usan de forma predeterminada la impresora y el diálogo Diseño de página,” while B uses “predeterminados que utilizan tanto la impresora como el diálogo Diseño de página.” Both preserve the & kspread; placeholder and the Format menu path.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "cc41a882edcf2df99b6638c2bd6c54e7b0695305a654a68464f23ecd1a2a1925",
+      "usage": {
+        "input_tokens": 319,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 95,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 414
+      },
+      "cost_upper_usd": 0.001588,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both preserve all three settings and their use by the printer and the Page Layout dialog. A’s «el tamaño de página, la orientación y las unidades predeterminados que utilizan» and B’s «el tamaño de página, la orientación y las unidades que usan de forma predeterminada» both convey the source’s «default page size, orientation and units used by» those two entities. Both also preserve the & kspread; placeholder and the Format menu path.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "7b3266b48fb748708f66e5bff0a6c302692c04236471893205d361dbf77a60c0",
+      "usage": {
+        "input_tokens": 319,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 110,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 429
+      },
+      "cost_upper_usd": 0.001738,
+      "swapped": false,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

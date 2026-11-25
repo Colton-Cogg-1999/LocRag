@@ -1,0 +1,166 @@
+{
+  "row_id": "Ec13e618ed9bd:es",
+  "translations": {
+    "semantic_ctx": {
+      "text": "La eficacia de Neupro en el tratamiento de la enfermedad de Parkinson en estadio inicial se estudió en dos ensayos en los que participaron un total de 830 pacientes.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "a52064e79a442b94043875cc8620731cd361b01472de0604eaba9917a990271d",
+      "usage": {
+        "input_tokens": 476,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 38,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 514
+      },
+      "cost_upper_usd": 0.005328
+    },
+    "zero_shot": {
+      "text": "La eficacia de Neupro en el tratamiento de la enfermedad de Parkinson en fase inicial se estudió en dos estudios en los que participaron un total de 830 pacientes.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "3ac45a321f2efcbd90b9f2150077f7d3709093107f86510cbcf549745cc29fe2",
+      "usage": {
+        "input_tokens": 124,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 37,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 161
+      },
+      "cost_upper_usd": 0.002472
+    },
+    "random_ctx": {
+      "text": "La eficacia de Neupro en el tratamiento de la enfermedad de Parkinson en fase inicial se estudió en dos estudios en los que participaron un total de 830 pacientes.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "fc43772a5f875f6e5e81c2c93877f03029e82d561c2116e7094949a52be283d4",
+      "usage": {
+        "input_tokens": 499,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 37,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 536
+      },
+      "cost_upper_usd": 0.005472
+    },
+    "fuzzy_ctx": {
+      "text": "La eficacia de Neupro en el tratamiento de la enfermedad de Parkinson en estadio inicial se evaluó en dos ensayos en los que participaron un total de 830 pacientes.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "51ea8e7aa5f742646e311023d1de0a236de728b3b2a555a2712bdb84e92b5d20",
+      "usage": {
+        "input_tokens": 476,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 38,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 514
+      },
+      "cost_upper_usd": 0.005328
+    },
+    "hybrid_ctx": {
+      "text": "La eficacia de Neupro en el tratamiento de la enfermedad de Parkinson en estadio inicial se estudió en dos ensayos en los que participaron un total de 830 pacientes.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "a52064e79a442b94043875cc8620731cd361b01472de0604eaba9917a990271d",
+      "usage": {
+        "input_tokens": 476,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 38,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 514
+      },
+      "cost_upper_usd": 0.005328
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both «se evaluó» (A) and «se estudió» (B) accurately convey “was studied” in reference to Neupro’s effectiveness. Both preserve early-stage Parkinson’s disease, two studies and a total of 830 patients.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "12f963e16980cb18bda61e9496ec28448152ee893ec4e68a40833f1abeb9d1f2",
+      "usage": {
+        "input_tokens": 255,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 67,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 322
+      },
+      "cost_upper_usd": 0.00118,
+      "swapped": true,
+      "pick": "tie"
+    },
+    {
+      "text": "{\"winner\":\"tie\",\"evidence\":\"Both «se estudió» (A) and «se evaluó» (B) accurately convey “was studied” in this clinical context. Both preserve Neupro, early-stage Parkinson’s disease, two studies, and a total of 830 patients.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "bcfcb527899e2104354e946db3ca0b3a0f0f7ac6812522d9dd7497b87bc537db",
+      "usage": {
+        "input_tokens": 255,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 68,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 323
+      },
+      "cost_upper_usd": 0.00119,
+      "swapped": false,
+      "pick": "tie"
+    }
+  ],
+  "winner": "tie"
+}

@@ -1,0 +1,117 @@
+{
+  "row_id": "E67cbad79b01f:es",
+  "translations": {
+    "zero_shot": {
+      "text": "Para la reconstitución, extraiga 10 ml del disolvente suministrado de su vial y añádalos al vial que contiene el polvo liofilizado.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "90d9134171deb672b33e2c19c39f9696d52e0ae2616d22edd938aa46a9c087af",
+      "usage": {
+        "input_tokens": 125,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 40,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 165
+      },
+      "cost_upper_usd": 0.0026
+    },
+    "semantic_ctx": {
+      "text": "Para la reconstitución, extraer 10 ml del disolvente suministrado de su vial y añadirlos al vial que contiene el polvo liofilizado.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "18a81a78ee41cb50652fcc9be49709228314ba33d89ef1c8b731121fc12bd37d",
+      "usage": {
+        "input_tokens": 458,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 39,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 497
+      },
+      "cost_upper_usd": 0.005224
+    },
+    "fuzzy_ctx": {
+      "text": "Para la reconstitución, extraer 10 ml del disolvente suministrado de su vial y añadirlos al vial que contiene el polvo liofilizado.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "71631439bf4174f35e0c13714d9849ef8d564a9386b871b5d48c9bf6acbbd074",
+      "usage": {
+        "input_tokens": 419,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 39,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 458
+      },
+      "cost_upper_usd": 0.004912
+    },
+    "random_ctx": {
+      "text": "Para la reconstitución, extraiga 10 ml del disolvente suministrado de su vial y añádalos al vial que contiene el polvo liofilizado.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "06f85d4cf5e864d6481d45b60e23e0b0d80ee180187824013abef1351a8a7890",
+      "usage": {
+        "input_tokens": 486,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 40,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 526
+      },
+      "cost_upper_usd": 0.005488
+    },
+    "hybrid_ctx": {
+      "text": "Para la reconstitución, extraer 10 ml del disolvente suministrado de su vial y añadirlos al vial que contiene el polvo liofilizado.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "9a0061dda6de1b6473506bbc4d42285ccb3daaaa5d322972894dc7a99462e5fb",
+      "usage": {
+        "input_tokens": 428,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 39,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 467
+      },
+      "cost_upper_usd": 0.004984
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}

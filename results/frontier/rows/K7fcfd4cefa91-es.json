@@ -1,0 +1,166 @@
+{
+  "row_id": "K7fcfd4cefa91:es",
+  "translations": {
+    "semantic_ctx": {
+      "text": "Partida detenida Haga clic para reanudar la partida.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "307a76ab92210b84a42844a007cae05ff111c2b51f5bee9829e7d111ce3e689e",
+      "usage": {
+        "input_tokens": 250,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 18,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 268
+      },
+      "cost_upper_usd": 0.00272
+    },
+    "fuzzy_ctx": {
+      "text": "Partida en pausa Pulse para reanudarla.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "7c00d226a433a406dd004c1d9939e562c7a19e9c00df30a16b6d500992a54624",
+      "usage": {
+        "input_tokens": 228,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 15,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 243
+      },
+      "cost_upper_usd": 0.002424
+    },
+    "random_ctx": {
+      "text": "Juego en pausa. Haga clic para reanudar el juego.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "36c3d679bac4a7353140f40012070b3b9d1fd4b0cf022a3db3007990d485678a",
+      "usage": {
+        "input_tokens": 231,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 18,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 249
+      },
+      "cost_upper_usd": 0.002568
+    },
+    "hybrid_ctx": {
+      "text": "Partida detenida Haga clic para continuar la partida.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "5cd477d577cfea6352a9df20f41c57549650ee6e1bb0b38f5af3858998c97a18",
+      "usage": {
+        "input_tokens": 250,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 16,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 266
+      },
+      "cost_upper_usd": 0.00264
+    },
+    "zero_shot": {
+      "text": "Partida en pausa. Haga clic para reanudar la partida.",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "2ca4a32acc98f8e8030bf1ebbad2d11f233490bcc0e4479825df277b8045b70a",
+      "usage": {
+        "input_tokens": 102,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 19,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 121
+      },
+      "cost_upper_usd": 0.001576
+    }
+  },
+  "judgments": [
+    {
+      "text": "{\"winner\":\"B\",\"evidence\":\"«Partida en pausa» preserves the temporary state in “Game Paused” more precisely than A’s «Partida detenida», which can suggest the game has stopped. B’s «reanudarla» also directly conveys “resume game,” although A’s «Haga clic» is more explicit about “Click.”\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "ff32095fae1a66608bba7b97ac4567845a1e717ad96069324272ac968eddcb38",
+      "usage": {
+        "input_tokens": 188,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 81,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 269
+      },
+      "cost_upper_usd": 0.001186,
+      "swapped": false,
+      "pick": "fuzzy_ctx"
+    },
+    {
+      "text": "{\"winner\":\"A\",\"evidence\":\"«Partida en pausa» preserves the temporary state in “Game Paused” more precisely than B’s «Partida detenida», which can imply the game was stopped. «Pulse para reanudarla» also conveys “Click to resume game” in UI context.\"}",
+      "served_model": "gpt-6.2-sol",
+      "request_hash": "206f811f11e51900066d5b0282acd0cb07b3e519247a212cfd6acf501bb9a44b",
+      "usage": {
+        "input_tokens": 188,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 72,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 260
+      },
+      "cost_upper_usd": 0.001096,
+      "swapped": true,
+      "pick": "fuzzy_ctx"
+    }
+  ],
+  "winner": "fuzzy_ctx"
+}

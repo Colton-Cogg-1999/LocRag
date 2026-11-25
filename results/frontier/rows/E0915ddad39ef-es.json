@@ -1,0 +1,117 @@
+{
+  "row_id": "E0915ddad39ef:es",
+  "translations": {
+    "semantic_ctx": {
+      "text": "10 jeringas precargadas con agujas",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "041d1a80173ad485365234fb93edc0a192c14a5b0015c8baf9156d96958b5fed",
+      "usage": {
+        "input_tokens": 282,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 296
+      },
+      "cost_upper_usd": 0.002816
+    },
+    "zero_shot": {
+      "text": "10 jeringas precargadas con agujas",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "f1ac897daf8902e244df52fa2a8cc27ef89147ed43b376284407821d089c5f6f",
+      "usage": {
+        "input_tokens": 105,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 119
+      },
+      "cost_upper_usd": 0.0014
+    },
+    "hybrid_ctx": {
+      "text": "10 jeringas precargadas con agujas",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "f8f68bff689b5e70e40a3bf05e46d07976f34ba025fb23cb34013c82cec153c6",
+      "usage": {
+        "input_tokens": 282,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 296
+      },
+      "cost_upper_usd": 0.002816
+    },
+    "random_ctx": {
+      "text": "10 jeringas precargadas con agujas",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "e2dee850e450c374bff3e1c6e3e5e9d6fe541f4ec9c5f2750b9313dcaffe4627",
+      "usage": {
+        "input_tokens": 263,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 277
+      },
+      "cost_upper_usd": 0.002664
+    },
+    "fuzzy_ctx": {
+      "text": "10 jeringas precargadas con agujas",
+      "served_model": "gpt-6.2-astra",
+      "request_hash": "f8f68bff689b5e70e40a3bf05e46d07976f34ba025fb23cb34013c82cec153c6",
+      "usage": {
+        "input_tokens": 282,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 0
+          }
+        },
+        "output_tokens": 14,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 296
+      },
+      "cost_upper_usd": 0.002816
+    }
+  },
+  "judgments": [],
+  "winner": "tie"
+}
