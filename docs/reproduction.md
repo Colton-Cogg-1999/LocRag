@@ -1,5 +1,16 @@
 # Reproducing LocRAG
 
+## Selective-router results
+
+From the repository root, run the following to rebuild the final 480-source comparison using the recorded translations and grades. No API credentials are required.
+
+```bash
+uv sync --locked
+uv run python -m locrag.study.selective_router summarize
+```
+
+The below-cutoff results are under `groups.low` in the [summary](../results/selective-router/summary.json). For paid inference or rebuilding the retrieval panel, follow the [selective-router protocol](../experiments/selective-router/protocol.md). The remaining commands cover the historical experiments and demo.
+
 Python 3.12+ and uv are required. `uv sync --locked` installs lightweight hosted/offline dependencies and test tools. Local embeddings are optional: `uv sync --locked --extra local`.
 
 ## Offline checks

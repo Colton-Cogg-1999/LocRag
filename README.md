@@ -1,75 +1,49 @@
-# LocRAG · What can a translation memory recover below the fuzzy-match cutoff?
+# LocRAG · What a fuzzy-match cutoff hides
 
-A localization tool configured with a 75% fuzzy-match cutoff can return an empty result even when the translation memory (TM) contains exactly the phrase a translator needs. LocRAG tests what happens on those rejected segments. The baseline translates the new source with no memory examples. The alternatives retrieve older bilingual examples and let the translator reuse the parts that still apply.
+A translation memory (TM) stores earlier translations as bilingual examples. A localization tool using a 75% fuzzy-match cutoff can hide a useful phrase because the rest of its sentence has changed. LocRAG looks for that phrase by meaning when lexical matching falls below the cutoff.
 
-## What did the actual LocRAG router do?
+**The cutoff hid reusable terminology. Simply showing the three closest fuzzy matches recovered much of its value.** LocRAG found terms those matches missed. On the held-out English→Spanish panel, the selective router had five fewer terminology passes and five more accuracy passes than unthresholded fuzzy retrieval. The paired estimates leave the overall advantage uncertain.
 
-On 160 held-out sources below the fuzzy cutoff, LocRAG supplied semantic examples to GPT-6.2 Astra on 82 and abstained on 78. The router followed the documented wording on **118/152** eligible sources, compared with **113/152** without memory and **123/152** with the three closest fuzzy matches. Accuracy passes were **154/160**, **158/160**, and **149/160**, respectively, under blinded automated grading. The selective policy recovered specific terms while leaving a tradeoff between consistency and accuracy. Its differences from unthresholded fuzzy retrieval were uncertain on this panel. [Full 480-source comparison, paired intervals and exact route logs](docs/selective-router-results.md)
+## A phrase worth recovering
 
-## Does the memory make wording more consistent?
+In a medical packaging description, the best fuzzy match scored **41.67%**. The three closest lexical matches contained lists of tablet counts. GPT-6.2 Astra rendered “Starter pack” as *Envase de inicio* both without memory and with those matches. One semantic example cleared LocRAG’s threshold. With it, Astra used *Envase de iniciación*, the wording documented in two separate TM entries. All three translations passed the source-accuracy check. This is the kind of change a localizer cares about even when the meaning is already correct. [Case and counterexample](docs/selective-router-results.md#two-cases)
 
-For the English term **“Starter pack,”** the best fuzzy match scored **41.67%**. The three closest lexical matches contained lists of tablet counts. Gemma translated the term as *Pack de inicio* both with those matches and without memory. Semantic retrieval found a historical starter-pack description, and Gemma used *Envase de iniciación*. Two separate TM entries documented that wording. A source-only accuracy judge accepted all three translations.
+## From pilot to policy test
 
-How often did that happen? We froze one independently evidenced convention per eligible source and scored **consistency and accuracy separately** on blinded outputs. The main panel covered 480 English→Spanish medical and software segments in six fuzzy bands, with a below-cutoff replication on 100 Astra segments.
+In the corrected Spanish medical pilot, all 300 sources fell below the fuzzy cutoff. Semantic search surfaced candidates on **85**. The automated auditor judged the top match fully or partly reusable on **66**. That established that the fallback could find useful material. It left a practical question open: how often would lifting the fuzzy cutoff achieve the same thing? [Corrected pilot results](results/runs/2026-11-16/emea-router/report.md)
 
-| Below 75% fuzzy · Gemma | No memory | Top-3 fuzzy | Top-3 semantic |
+The final study compared three policies on the same **480** English sources from OPUS medical text and software interfaces. GPT-6.2 Astra translated each source under each policy, using the same prompt template. The production LocRAG router accepts fuzzy examples at 75% or above, then falls back to semantic examples with cosine similarity of at least 0.80 if the best fuzzy match falls short. It translates without examples when neither route qualifies.
+
+### Where the fuzzy cutoff hid every suggestion
+
+| Outcome | No memory | Three closest fuzzy matches | Selective LocRAG |
 |---|---:|---:|---:|
-| Followed the established convention | 109/152 (71.7%) | 119/152 (78.3%) | 120/152 (78.9%) |
-| Passed the separate meaning check | 155/160 (96.9%) | 152/160 (95.0%) | 150/160 (93.8%) |
+| Used the documented Spanish wording | 113/152 (74.3%) | 123/152 (80.9%) | 118/152 (77.6%) |
+| Preserved source meaning | 158/160 (98.8%) | 149/160 (93.1%) | 154/160 (96.3%) |
 
-Most of the consistency gain below the cutoff came from supplying TM examples by either method. The semantic-over-fuzzy consistency advantage was **+0.7 percentage points below 75** and **+2.0 points at 95–100**. The difference between those advantages was **−1.4 points [95% interval −7.4, +4.6]**. The predicted increase at low fuzzy scores did not appear. On the 100-source Astra replication both retrieval methods followed the convention on 78 of 94 eligible sources, compared with 74 without memory. All ratings are automated. [Consistency and accuracy report, including all six bands, QE and failure cases](docs/consistency-results.md)
+All 160 below-cutoff sources counted toward accuracy. On 152, two independent historical entries supported a wording convention before scoring began. GPT-6.2 Sol graded anonymous translations separately for consistency and accuracy. Human post-editing time and client acceptance remain unmeasured.
 
-## How often was there something to reuse?
+LocRAG supplied semantic examples on **82** sources and abstained on **78**. Relative to no memory, it fixed eight terminology inconsistencies and introduced three. Both translations passed accuracy on all eleven changes. On four other sources the judge flagged a new meaning error. Compared with unthresholded fuzzy retrieval, LocRAG’s consistency difference was **−3.3 percentage points** (95% interval −8.4 to +1.4) and its accuracy difference was **+3.1 points** (−1.2 to +7.5). [Full results across six fuzzy bands](docs/selective-router-results.md) · [Prompts and selected examples](experiments/selective-router/panel.jsonl) · [Translations and judge evidence](results/selective-router/outputs.jsonl)
 
-The earlier multilingual study sampled medical text (EMEA) and software strings (KDE4). On below-cutoff segments, an automated auditor identified full or partial reuse and supplied a span that could be checked verbatim against the historical translation. After weighting the two fuzzy-score bands to their observed corpus frequencies, the estimated shares with substantive reusable material were **95.7% for EMEA** and **79.6% for KDE4**. Even when allowed to return its three best matches regardless of score, fuzzy search missed substantive material that semantic search found on **25 of 200 audited medical segments** and **8 of 121 software segments**. The audit measures availability. Whether a translator uses a span correctly is a separate outcome. [Reuse labels, sampling and limitations](docs/v2-results.md)
+### Why score terminology separately?
 
-## What changed when the translator received the examples?
+An earlier experiment always supplied three semantic examples, even on sources where LocRAG would abstain. On 21 below-cutoff Gemma segments, semantic context fixed the terminology and both versions passed accuracy. The reference-free CometKiwi score registered a gain above the study’s noise threshold on only **two**. The archived multilingual benchmark and a second translator provide additional comparisons. [Consistency and QE analysis](docs/consistency-results.md) · [Multilingual benchmark](docs/v2-results.md) · [Always-on Astra replication](docs/frontier.md)
 
-Every row in this comparison had a best fuzzy score below 75%. Each difference compares the same translator on the same source with and without TM examples. chrF measures agreement with the corpus reference.
+## Reproduce the headline table
 
-| Examples supplied below the cutoff | Gemma · 2,140 multilingual segment–language pairs · ΔchrF [95% CI] | Astra · 100 English→Spanish segments · ΔchrF [95% CI] |
-|---|---:|---:|
-| Three random examples from the same domain | — | +0.05 [−1.12, +1.14] |
-| Top three fuzzy matches with the cutoff lifted | +5.0 [+4.3, +5.7] | +0.68 [−0.78, +2.17] |
-| Top three semantic matches | +4.9 [+4.2, +5.7] | +2.23 [+0.17, +4.49] |
-| Top three from the combined rankings | +5.0 [+4.3, +5.8] | +2.10 [+0.40, +3.79] |
-
-The larger Gemma run showed a gain in reference agreement even with simple fuzzy retrieval below threshold. Its preregistered reference-free quality metric moved in the other direction (semantic context **−0.47 CometKiwi points** on a 100-point scale). In the smaller Astra panel, the semantic-context reference gain was concentrated in software strings. Its TM-versus-no-TM intervals are retrospective, pointwise comparisons. Neither study measured time saved in human post-editing. [Gemma results](docs/v2-results.md) · [Astra protocol and results](docs/frontier.md) · [Numerical summary](results/frontier/summary.json)
-
-### Does the choice of retriever matter?
-
-This was the frontier run’s original primary comparison. Both candidates received memory. A blinded judge comparing hybrid against fuzzy context on meaning preferred hybrid on 3 segments and fuzzy on 4, with 87 ties and 6 order-dependent verdicts. The subsequent consistency study grades both fuzzy and semantic translations alongside zero-shot for accuracy and adherence to established wording. The figure below shows how often changing the retrieval method changed the examples and the final translation in the larger Gemma run.
-
-![Share of segments with different retrieved examples and different translations, by domain and language](results/retriever-comparison/retrieval-and-translation.png)
-
-Rebuild the Gemma comparison with `uv run python -m locrag.study.retriever_comparison` and the Astra results with `uv run python -m locrag.study.frontier summarize`. Both use saved outputs. [Retriever comparison](results/retriever-comparison/summary.json) · [Original exploratory study](results/runs/2026-11-16/README.md)
-
-## What's implemented
-
-The v2 study lives in `locrag/study/` and runs as `python -m locrag.study`. It covers exact word-level fuzzy matching, band-stratified held-out sampling with leakage checks, a resumable cached OpenRouter client with provider and cost logging, a DeepL control, a blinded QE scorer in its own environment (`qe/`), the Sonnet reuse and extractor auditor with a credit guard, and paired bootstrap, crossover and failure analyses. See the [v2 reproduction guide](docs/v2-reproduction.md).
-
-The Python pipeline combines fuzzy matching, semantic retrieval, and translation. It supports Spanish, German, and Simplified Chinese, and reports which route it used and which examples it supplied. Empty memories and rejected matches fall back to translation without examples.
-
-The v1 evaluation code prepares matched language splits, runs the four approaches, and saves translations and judgments for inspection. The multilingual runs used GPT-5.4-mini for translation, Claude Sonnet 5.5 for judging, and BGE-M3 for embeddings. A/B presentation order was randomized. Tests cover routing and evidence reconstruction; GitHub Actions runs the offline checks.
-
-An earlier experiment supplied semantic context even when its route label said `none`. That is fixed in the current pipeline and completed reruns. The [audit](results/audit/report.md) documents the issue, and the original outputs remain available so the correction can be traced.
-
-## Run it
-
-Requires Python 3.12 or newer and [uv](https://docs.astral.sh/uv/).
+From a checkout with Python 3.12+ and uv, rebuild the report from recorded outputs without API credentials:
 
 ```bash
 uv sync --locked
-cp .env.example .env
+uv run python -m locrag.study.selective_router summarize
+uv run pytest -q
 ```
 
-Add your provider credentials to `.env`. Supply a translation memory as JSONL, with `src` and `tgt` fields on each line:
+The below-cutoff table corresponds to `groups.low` in the [numerical summary](results/selective-router/summary.json). The [protocol](experiments/selective-router/protocol.md) describes route replay, the frozen judges’ instructions and fresh inference.
 
-```json
-{"src": "Open the file.", "tgt": "Öffnen Sie die Datei."}
-```
+## Try the router
 
-Then translate a segment:
+Configure the providers in a local `.env` using `.env.example`. Supply your own TM as JSONL with `src` and `tgt` fields, then run:
 
 ```bash
 uv run python -m locrag.pipeline "Open the settings window." \
@@ -77,28 +51,8 @@ uv run python -m locrag.pipeline "Open the settings window." \
   --domain "software interface localization" --json
 ```
 
-Supported targets are `es`, `de`, and `zh_CN`. For local embeddings, install the optional dependencies with `uv sync --extra local`.
-
-To run the tests and rebuild the saved results summary without making model calls:
-
-```bash
-uv run pytest -q
-uv run python scripts/summarize_run.py
-```
-
-The [reproduction guide](docs/reproduction.md) covers the original experiments, and the [multilingual protocol](docs/multilingual.md) covers data preparation and the three-language evaluation. The [architecture notes](docs/architecture.md) explain the code structure.
-
-To browse saved examples from the original archived Spanish study, an optional local demo needs no API key:
-
-```bash
-uv run python -m locrag.demo
-python -m http.server 8000 --bind 127.0.0.1 --directory demo/dist
-```
-
-Open http://127.0.0.1:8000. The completed results linked above cover the newer runs.
+The CLI supports Spanish, German and Simplified Chinese and returns the route, the examples supplied and the translation. The historical Spanish demo lets readers inspect recorded examples offline. [Architecture](docs/architecture.md) · [Demo setup](docs/reproduction.md) · [Historical routing audit](results/audit/report.md)
 
 ## Data and license
 
-Code is licensed under MIT. Translation data comes from [OPUS EMEA](https://opus.nlpl.eu/legacy/EMEA.php) and [OPUS KDE4](https://opus.nlpl.eu/legacy/KDE4.php), credited to their contributors. The code license does not cover the corpora. Downloaded datasets are excluded from the repository; saved results contain excerpts used in the evaluation.
-
-OPUS citation: Jörg Tiedemann, *Parallel Data, Tools and Interfaces in OPUS*, LREC 2012.
+Code is licensed under MIT. The medical and software corpora have their own terms. Saved evaluation artifacts include excerpts from each. The OPUS corpus citation is Jörg Tiedemann, *Parallel Data, Tools and Interfaces in OPUS*, LREC 2012. [OPUS EMEA](https://opus.nlpl.eu/legacy/EMEA.php) · [OPUS KDE4](https://opus.nlpl.eu/legacy/KDE4.php)

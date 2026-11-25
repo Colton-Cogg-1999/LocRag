@@ -13,6 +13,12 @@
 
 Embeddings load lazily. Strong fuzzy matches need no embedding download or call. Retrieval errors propagate rather than being disguised as no-match decisions. Empty translation responses and malformed judgments are rejected.
 
+## How the production policy was evaluated
+
+The final 480-source experiment executes `TMRouter.route()` with its production fuzzy retriever and replays the archived BGE-M3 hits against the original bilingual TMs. The router applies its 75% fuzzy threshold and 0.80 cosine floor to individual examples. The fuzzy baseline supplies the exhaustive top three regardless of score. A separate no-memory arm supplies an empty example list. All three use the same product prompt template. The panel records the exact examples and messages for each arm. [Selective-router implementation](../locrag/study/selective_router.py) · [Frozen panel and protocol](../experiments/selective-router/protocol.md)
+
+The v2 benchmark and subsequent consistency study compared always-on top-three retrieval methods. They answer how the choice of examples affects translation when memory is always supplied. [Consistency study](consistency-results.md)
+
 ## Decisions
 
 **Exact vector search:** a normalized matrix keeps a 5k/20k-entry experiment inspectable. Million-entry performance is not claimed. Larger indexes need measured latency/recall comparisons before approximate search is introduced.
@@ -27,7 +33,7 @@ Embeddings load lazily. Strong fuzzy matches need no embedding download or call.
 
 ## Limits
 
-Provider aliases can change. A cache supports repeat inspection, not a guarantee of identical fresh inference. New manifests record code/data hashes, model IDs and parameters. Provider billing/token accounting is not instrumented; durations can include cache hits.
+Provider aliases can change. A cache supports repeat inspection, not a guarantee of identical fresh inference. New manifests record code/data hashes, model IDs and parameters. The original runs recorded durations that can include cache hits. The later direct OpenAI experiments recorded token usage and estimated cost in their request ledger.
 
 Original retrieval gold sets accept fuzzy near-duplicates without verified meaning-equivalence labels. The historical hybrid “meaning AUC” column uses a fuzzy-score proxy, not the fusion score; do not interpret it as an independently measured hybrid discrimination score.
 

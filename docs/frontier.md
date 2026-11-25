@@ -2,6 +2,8 @@
 
 **Question.** Does adding semantic retrieval to a strong lexical baseline improve below-cutoff English→Spanish translation when a frontier model sees the same examples as the earlier Gemma system?
 
+Every retrieval arm here used a fixed set of examples. For the subsequent test of the selective policy across all six fuzzy bands, see the [production-router comparison](selective-router-results.md).
+
 ## Results
 
 Across 100 paired segments, GPT-6.2 Sol consistently preferred hybrid on **3** and fuzzy on **4** for source meaning. Of the **87 ties**, 50 were character-identical and 37 were different translations judged equally accurate in both orders. The remaining **6** received different verdicts when the order was reversed. Net hybrid wins (wins minus losses divided by all segments) were **−1 percentage point**, with a paired, stratified bootstrap 95% interval of **[−6, +4]**. This panel resolves only fairly large differences in meaning preference. [Recorded summary](../results/frontier/summary.json)

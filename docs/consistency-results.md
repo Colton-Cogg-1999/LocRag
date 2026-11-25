@@ -2,6 +2,8 @@
 
 On Spanish medical and software text below a 75% fuzzy cutoff, both retrieval methods produced more translations that followed established TM wording than translating without memory. Semantic retrieval recovered individual terms missed by fuzzy retrieval. Its **net advantage over unthresholded fuzzy retrieval was one segment out of 152** on the main below-cutoff sample. The predicted increase in semantic advantage at low fuzzy scores did not appear.
 
+This study always supplied three examples in each retrieval arm. The later production-policy test measured what happened when the router could filter individual examples or abstain. [Selective-router results](selective-router-results.md)
+
 ## What was measured
 
 We sampled 480 existing Gemma translations of distinct English sources, 40 from each combination of two domains and six fuzzy bands. For each source we compared Gemma without memory, with the top three lexical matches regardless of cutoff, and with the top three semantic matches. An additional 100 below-cutoff Astra sources tested whether the pattern recurred with a second translator. Eighteen sources occurred in both panels. We report the panels separately.
