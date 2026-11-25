@@ -168,6 +168,8 @@ def summarize():
         stats["examples_supplied_by_router"] = dict(Counter(len(r["examples"]["router"]) for r in subset))
         stats["eligible_citation_overlap"] = sum(r["eligible"] and r["cited_entry_in_router"] for r in subset)
         results[key] = stats
+    independent = [r for r in rows if not r["cited_entry_in_router"]]
+    results["no_cited_entry_in_router"], _ = estimate(independent, arms=ARMS, pairs=pairs)
     write_json(RESULT / "summary.json", {"groups": results, "repeat_grades": dict(repeat),
                "unique_calls": len(calls), "uncached_rate_usd": sum(c["cost_upper_usd"] for c in calls.values())})
 

@@ -2,6 +2,10 @@
 
 A localization tool configured with a 75% fuzzy-match cutoff can return an empty result even when the translation memory (TM) contains exactly the phrase a translator needs. LocRAG tests what happens on those rejected segments. The baseline translates the new source with no memory examples. The alternatives retrieve older bilingual examples and let the translator reuse the parts that still apply.
 
+## What did the actual LocRAG router do?
+
+On 160 held-out sources below the fuzzy cutoff, LocRAG supplied semantic examples to GPT-6.2 Astra on 82 and abstained on 78. The router followed the documented wording on **118/152** eligible sources, compared with **113/152** without memory and **123/152** with the three closest fuzzy matches. Accuracy passes were **154/160**, **158/160**, and **149/160**, respectively, under blinded automated grading. The selective policy recovered specific terms while leaving a tradeoff between consistency and accuracy. Its differences from unthresholded fuzzy retrieval were uncertain on this panel. [Full 480-source comparison, paired intervals and exact route logs](docs/selective-router-results.md)
+
 ## Does the memory make wording more consistent?
 
 For the English term **“Starter pack,”** the best fuzzy match scored **41.67%**. The three closest lexical matches contained lists of tablet counts. Gemma translated the term as *Pack de inicio* both with those matches and without memory. Semantic retrieval found a historical starter-pack description, and Gemma used *Envase de iniciación*. Two separate TM entries documented that wording. A source-only accuracy judge accepted all three translations.
