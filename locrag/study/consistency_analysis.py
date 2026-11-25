@@ -53,10 +53,10 @@ def assemble():
     return rows, dict(reliability), calls
 
 
-def estimate(rows, seed=SEED):
+def estimate(rows, seed=SEED, arms=ARMS, pairs=PAIRS):
     eligible = np.asarray([r["eligible"] for r in rows])
-    acc = np.asarray([[r["accuracy"][a] for a in ARMS] for r in rows], dtype=int)
-    con = np.asarray([[r.get("consistency", {}).get(a, False) for a in ARMS] for r in rows], dtype=int)
+    acc = np.asarray([[r["accuracy"][a] for a in arms] for r in rows], dtype=int)
+    con = np.asarray([[r.get("consistency", {}).get(a, False) for a in arms] for r in rows], dtype=int)
     n = len(rows)
     n_conv = int(eligible.sum())
     rng = np.random.default_rng(seed)
@@ -69,10 +69,10 @@ def estimate(rows, seed=SEED):
     den = eligible[draws].sum(axis=1)
     out = {"n": n, "eligible": n_conv, "arms": {}, "paired": {}}
     samples = {}
-    for j, arm in enumerate(ARMS):
+    for j, arm in enumerate(arms):
         out["arms"][arm] = {"consistent": int(con[:, j].sum()), "accurate": int(acc[:, j].sum())}
-    for after, before in PAIRS:
-        a, b = ARMS.index(after), ARMS.index(before)
+    for after, before in pairs:
+        a, b = arms.index(after), arms.index(before)
         diff = con[:, a] - con[:, b]
         # Ineligible rows contribute zero to both arm numerators.
         con_boot = diff[draws].sum(axis=1) / np.where(den > 0, den, np.nan)
