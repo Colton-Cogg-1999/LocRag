@@ -187,6 +187,10 @@ def summarize(rows):
     paired = {
         "net_hybrid_win_share": preferences,
         "hybrid_minus_fuzzy_chrF": by_arm["hybrid_ctx"] - by_arm["fuzzy_ctx"],
+        # Retrospective contrasts for the policy that withholds TM below the cutoff.
+        "fuzzy_minus_zero_chrF": by_arm["fuzzy_ctx"] - by_arm["zero_shot"],
+        "semantic_minus_zero_chrF": by_arm["semantic_ctx"] - by_arm["zero_shot"],
+        "hybrid_minus_zero_chrF": by_arm["hybrid_ctx"] - by_arm["zero_shot"],
         "random_minus_zero_chrF": by_arm["random_ctx"] - by_arm["zero_shot"],
         "fuzzy_minus_random_chrF": by_arm["fuzzy_ctx"] - by_arm["random_ctx"],
     }

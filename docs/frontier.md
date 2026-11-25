@@ -16,6 +16,10 @@ Across 100 paired segments, GPT-6.2 Sol consistently preferred hybrid on **3** a
 
 Random examples shifted mean segment chrF by **+0.05** relative to zero-shot [−1.12, +1.14]. Fuzzy retrieval gained **+0.62** over random [−0.84, +2.12]. Hybrid gained **+1.42** over fuzzy [−0.01, +2.93]. Intervals are pointwise, from 10,000 paired bootstrap resamples within the four sampling strata. Software strings account for most of the observed reference gain from semantic or hybrid context. The two domain columns are descriptive. The original Gemma run had four comparable arms. Cross-model scores reflect their respective generation settings.
 
+### Follow-up analysis of the no-memory baseline
+
+With the 75% cutoff enforced, every source in this panel would receive no TM suggestion. The saved zero-shot translation represents that policy for this experiment. Compared with that output on the same source, fuzzy context gained **+0.68** chrF [−0.78, +2.17], semantic context **+2.23** [+0.17, +4.49], and hybrid context **+2.10** [+0.40, +3.79]. These paired intervals were added after inspecting the run, using the same stratified bootstrap. The judge evaluated hybrid versus fuzzy only. For semantic versus zero-shot the descriptive mean difference was +4.59 chrF in KDE4 and −0.13 in EMEA.
+
 ### Three decisions behind the averages
 
 - **Equivalent wording.** For “Host name used to generate the message ID,” fuzzy and hybrid both used *nombre del servidor*. One spelled out *identificador* and the other used *id.*. The judge accepted both in either order. [Translations and judgments](../results/frontier/rows/Keb459d31f97f-es.json)

@@ -1,46 +1,43 @@
-# LocRAG · When does translation memory help?
+# LocRAG · What can a translation memory recover below the fuzzy-match cutoff?
 
-A localizer translating “Host name used to generate the message ID” might write *nombre del host* or *nombre del servidor*. A translation memory (TM) can show which wording appeared in earlier work. How much does it matter whether the examples come from lexical matching or semantic search?
+A localization tool configured with a 75% fuzzy-match cutoff can return an empty result even when the translation memory (TM) contains exactly the phrase a translator needs. LocRAG tests what happens on those rejected segments. The baseline translates the new source with no memory examples. The alternatives retrieve older bilingual examples and let the translator reuse the parts that still apply.
 
-## Frontier experiment
+## A match the cutoff hid
 
-We translated the same 100 English medical and software segments into Spanish using GPT-6.2 Astra under five conditions. Giving the model three random examples from the same domain controls for the effect of seeing localized text. All 100 segments fell below the 75% fuzzy-match cutoff.
+For the KDE command **“Refresh Project & Tree”**, the best fuzzy score was **40%**. An earlier error message, “Could Not Refresh Project Tree,” contained the Spanish phrase *actualizar el árbol del proyecto*. The two strings serve different purposes in the interface, but the action and its object carry over.
 
-| Context | Mean segment chrF |
-|---|---:|
-| None | 76.06 |
-| Three random, length-matched examples | 76.11 |
-| Three lexical matches (fuzzy) | 76.74 |
-| Three semantic matches (BGE-M3) | 78.30 |
-| Three matches from the combined rankings (hybrid) | 78.16 |
-
-**Did hybrid retrieval improve meaning over fuzzy retrieval?** A blinded GPT-6.2 Sol judge evaluated every changed pair in both orders. Hybrid won **3**, fuzzy won **4**, **87** tied and **6** changed verdict with order. Fifty pairs produced identical text. The net hybrid preference was **−1 percentage point** [95% interval −6, +4]. Hybrid scored **+1.42 chrF** over fuzzy [−0.01, +2.93]. Most of the observed gain in reference agreement came from software strings. The study uses model judgments on a balanced Spanish panel. [Protocol, results and worked examples](docs/frontier.md) · [Rebuildable numerical summary](results/frontier/summary.json)
-
-## Earlier multilingual experiment
-
-| Comparison | Result |
+| What GPT-6.2 Astra saw | Translation |
 |---|---|
-| Translate without examples vs supply the three closest fuzzy matches, even below the usual 75% cutoff | On 2,140 below-cutoff segments, fuzzy context gained 5.0 chrF points against corpus references. Reference-free CometKiwi fell by 0.52 points on a 100-point scale. |
-| Replace fuzzy search with BGE-M3 semantic search or fuse the two rankings | All three methods gained roughly five chrF points over zero-shot below the cutoff. Hybrid retrieved a different ordered list from fuzzy on 2,040 segments. The translations differed on 933. |
-| Extract reusable spans first or show the retrieved examples directly | Across the full v2 test, structured extraction gained 7.7 chrF over zero-shot. Direct hybrid context gained 10.4 and used fewer API dollars. |
+| Source alone | *Actualizar proyecto y árbol* (“refresh project and tree”) |
+| Three random examples from the same software TM | *Actualizar el proyecto y el árbol* (“refresh the project and the tree”) |
+| Three semantic matches, including the error message | *Actualizar el & árbol del proyecto* (“refresh the project tree”), exactly the corpus reference |
+
+Unthresholded fuzzy retrieval also found the error message. This example shows how a segment rejected as a whole can still supply a useful phrase. [Retrieved entries](experiments/frontier/panel.jsonl) · [All five outputs](results/frontier/rows/K934a8ff8a553-es.json)
+
+## How often was there something to reuse?
+
+The earlier multilingual study sampled medical text (EMEA) and software strings (KDE4). On below-cutoff segments, an automated auditor identified full or partial reuse and supplied a span that could be checked verbatim against the historical translation. After weighting the two fuzzy-score bands to their observed corpus frequencies, the estimated shares with substantive reusable material were **95.7% for EMEA** and **79.6% for KDE4**. Even when allowed to return its three best matches regardless of score, fuzzy search missed substantive material that semantic search found on **25 of 200 audited medical segments** and **8 of 121 software segments**. The audit measures availability. Whether a translator uses a span correctly is a separate outcome. [Reuse labels, sampling and limitations](docs/v2-results.md)
+
+## What changed when the translator received the examples?
+
+Every row in this comparison had a best fuzzy score below 75%. Each difference compares the same translator on the same source with and without TM examples. chrF measures agreement with the corpus reference.
+
+| Examples supplied below the cutoff | Gemma · 2,140 multilingual segment–language pairs · ΔchrF [95% CI] | Astra · 100 English→Spanish segments · ΔchrF [95% CI] |
+|---|---:|---:|
+| Three random examples from the same domain | — | +0.05 [−1.12, +1.14] |
+| Top three fuzzy matches with the cutoff lifted | +5.0 [+4.3, +5.7] | +0.68 [−0.78, +2.17] |
+| Top three semantic matches | +4.9 [+4.2, +5.7] | +2.23 [+0.17, +4.49] |
+| Top three from the combined rankings | +5.0 [+4.3, +5.8] | +2.10 [+0.40, +3.79] |
+
+The larger Gemma run showed a gain in reference agreement even with simple fuzzy retrieval below threshold. Its preregistered reference-free quality metric moved in the other direction (semantic context **−0.47 CometKiwi points** on a 100-point scale). In the smaller Astra panel, the semantic-context reference gain was concentrated in software strings. Its TM-versus-no-TM intervals are retrospective, pointwise comparisons. Neither study measured time saved in human post-editing. [Gemma results](docs/v2-results.md) · [Astra protocol and results](docs/frontier.md) · [Numerical summary](results/frontier/summary.json)
+
+### Does the choice of retriever matter?
+
+This was the frontier run’s original primary comparison. Both candidates received memory. A blinded judge comparing hybrid against fuzzy context on meaning preferred hybrid on 3 segments and fuzzy on 4, with 87 ties and 6 order-dependent verdicts. Judging either output against translation **without** memory remains open for this panel. The figure below shows how often changing the retrieval method changed the examples and the final translation in the larger Gemma run.
 
 ![Share of segments with different retrieved examples and different translations, by domain and language](results/retriever-comparison/retrieval-and-translation.png)
 
-### Does hybrid beat the fuzzy baseline?
-
-Both systems used Gemma 4 31B, the same translation prompt, and three examples. The table gives the **paired difference, hybrid minus fuzzy**, on the below-cutoff subset of the band-stratified test. Confidence intervals use 10,000 bootstrap resamples of English source IDs, keeping each KDE source’s target languages together.
-
-| Metric | Paired segments | Mean difference | 95% interval |
-|---|---:|---:|---:|
-| chrF | 2,140 | +0.07 | [−0.32, +0.45] |
-| COMET-22 × 100 | 510 | +0.03 | [−0.19, +0.25] |
-| CometKiwi × 100 | 2,140 | −0.003 | [−0.11, +0.11] |
-
-The average differences are small and each interval spans zero. On the host-name example above, fuzzy context produced *Nombre del host usado para generar el ID del mensaje.* Hybrid produced *Nombre del servidor usado para generar el id. del mensaje.* chrF favored hybrid (83.2 vs 78.0), while CometKiwi favored fuzzy (0.868 vs 0.854). The corpus reference and a reference-free evaluator reward different features here. A bilingual reviewer could tell us which wording fits the interface.
-
-**Limits.** The full v2 test contains 4,229 segment–language pairs from OPUS medical text and KDE interfaces. Band quotas affect pooled averages, sentence-level splits can share document conventions, and corpus references can contain errors. The earlier blinded 72-row judge study included hybrid, zero-shot, raw TM and DeepL. The frontier replication above directly compares fuzzy and hybrid context.
-
-Rebuild the comparison and figure offline with `uv run python -m locrag.study.retriever_comparison`. [Machine-readable results](results/retriever-comparison/summary.json) · [Full study and error analysis](docs/v2-results.md) · [Original exploratory study](results/runs/2026-11-16/README.md)
+Rebuild the Gemma comparison with `uv run python -m locrag.study.retriever_comparison` and the Astra results with `uv run python -m locrag.study.frontier summarize`. Both use saved outputs. [Retriever comparison](results/retriever-comparison/summary.json) · [Original exploratory study](results/runs/2026-11-16/README.md)
 
 ## What's implemented
 
