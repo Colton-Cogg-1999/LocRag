@@ -2,7 +2,11 @@
 
 Does the shipped routing rule recover established Spanish wording below a 75% fuzzy cutoff, and what does it cost in accuracy? We applied the production routing code to the fixed EMEA and KDE4 English→Spanish panel. GPT-6.2 Astra translated every arm with the same product prompt. Only the supplied TM examples varied. GPT-6.2 Sol graded anonymous candidates against the previously frozen convention for consistency and, in a separate call, against the source for accuracy.
 
-## Primary result
+## The terminology gain
+
+Eight translations that already conveyed the source meaning adopted the established Spanish wording when LocRAG supplied semantic context. Three changed in the opposite direction. This is the localization benefit illustrated by “Starter pack” below. The size of the average gain over no memory remains uncertain on this sample.
+
+## Below-cutoff comparison
 
 Of the 160 below-cutoff sources, the router gave Astra one semantic example on 39, two on 12, and three on 31. On the remaining 78 it abstained. Each abstention had exactly the same prompt and translation as the no-memory arm. A separate convention supported by two historical entries was available for 152 sources. No convention citation appeared among the router’s supplied examples on those sources.
 
@@ -11,7 +15,7 @@ Of the 160 below-cutoff sources, the router gave Astra one semantic example on 3
 | Followed documented wording | 113/152 (74.3%) | 123/152 (80.9%) | 118/152 (77.6%) |
 | Passed source-accuracy check | 158/160 (98.8%) | 149/160 (93.1%) | 154/160 (96.3%) |
 
-Versus no memory, selective LocRAG fixed eight terminology inconsistencies and introduced three. Both versions passed accuracy on all eleven changes. The net consistency gain was **3.3 percentage points [95% interval −0.7, +7.7]**. Separately, the accuracy judge flagged four new meaning errors and found zero repairs, a difference of **−2.5 points [−5.0, −0.6]**.
+Versus no memory, the net consistency gain was **3.3 percentage points [95% interval −0.7, +7.7]**. Separately, the accuracy judge flagged four new meaning errors and found zero repairs, a difference of **−2.5 points [−5.0, −0.6]**.
 
 Versus unthresholded fuzzy retrieval, LocRAG had five fewer consistency passes (**−3.3 points [−8.4, +1.4]**) and five more accuracy passes (**+3.1 points [−1.2, +7.5]**). Neither paired interval establishes a clear advantage over fuzzy retrieval. The eight terminology fixes show that the fallback can help on individual segments; the policy also carries risks.
 

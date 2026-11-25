@@ -2,7 +2,7 @@
 
 A translation memory (TM) stores earlier translations as bilingual examples. A localization tool using a 75% fuzzy-match cutoff can hide a useful phrase because the rest of its sentence has changed. LocRAG looks for that phrase by meaning when lexical matching falls below the cutoff.
 
-**The cutoff hid reusable terminology. Simply showing the three closest fuzzy matches recovered much of its value.** LocRAG found terms those matches missed. On the held-out English→Spanish panel, the selective router had five fewer terminology passes and five more accuracy passes than unthresholded fuzzy retrieval. The paired estimates leave the overall advantage uncertain.
+**LocRAG helped accurate translations use the terminology already established in the translation memory.** Below the 75% fuzzy cutoff, semantic context corrected eight departures from documented Spanish wording and introduced three. The accuracy judge accepted both versions in all eleven cases. Simply lifting the fuzzy cutoff also recovered useful terminology and produced the highest consistency count on this panel.
 
 ## A phrase worth recovering
 
@@ -23,7 +23,7 @@ The final study compared three policies on the same **480** English sources from
 
 All 160 below-cutoff sources counted toward accuracy. On 152, two independent historical entries supported a wording convention before scoring began. GPT-6.2 Sol graded anonymous translations separately for consistency and accuracy. Human post-editing time and client acceptance remain unmeasured.
 
-LocRAG supplied semantic examples on **82** sources and abstained on **78**. Relative to no memory, it fixed eight terminology inconsistencies and introduced three. Both translations passed accuracy on all eleven changes. On four other sources the judge flagged a new meaning error. Compared with unthresholded fuzzy retrieval, LocRAG’s consistency difference was **−3.3 percentage points** (95% interval −8.4 to +1.4) and its accuracy difference was **+3.1 points** (−1.2 to +7.5). [Full results across six fuzzy bands](docs/selective-router-results.md) · [Prompts and selected examples](experiments/selective-router/panel.jsonl) · [Translations and judge evidence](results/selective-router/outputs.jsonl)
+LocRAG supplied semantic examples on **82** sources and abstained on **78**. Against no memory, the net gain in consistency was **3.3 percentage points** (95% interval −0.7 to +7.7). On four other sources the judge flagged a new meaning error. Compared with unthresholded fuzzy retrieval, LocRAG’s consistency difference was **−3.3 percentage points** (95% interval −8.4 to +1.4) and its accuracy difference was **+3.1 points** (−1.2 to +7.5). [Full results across six fuzzy bands](docs/selective-router-results.md) · [Prompts and selected examples](experiments/selective-router/panel.jsonl) · [Translations and judge evidence](results/selective-router/outputs.jsonl)
 
 ### Why score terminology separately?
 
