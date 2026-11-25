@@ -51,8 +51,11 @@ def encoded_request(args):
     return json.dumps(args, ensure_ascii=False, sort_keys=True).encode()
 
 
-def request(db, client, model, prompt, judge=False):
+def request(db, client, model, prompt, judge=False, *, response_format=None, max_output_tokens=1024):
     args = request_args(model, prompt, judge)
+    if response_format is not None:
+        args["text"] = {"format": response_format}
+    args["max_output_tokens"] = max_output_tokens
     encoded = encoded_request(args)
     key = hashlib.sha256(encoded).hexdigest()
     i_rate, o_rate = RATES[model]
